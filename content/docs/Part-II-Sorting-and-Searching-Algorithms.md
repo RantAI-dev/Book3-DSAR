@@ -1,6 +1,6 @@
 ---
-weight: 999
-title: "Part II Sorting and Searching Algorithms"
+weight: 1150
+title: "Part II - Sorting and Searching Algorithms"
 description: ""
 icon: "article"
 date: "2024-08-24T23:41:01+07:00"

@@ -51,38 +51,38 @@
       <description></description>
     </item>
     <item>
-      <title>Part I Fundamentals of Algorithms in Rust</title>
+      <title>Part I - Fundamentals of Algorithms in Rust</title>
       <link>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</link>
       <pubDate>Sat, 24 Aug 2024 23:37:35 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</guid>
       <description></description>
     </item>
     <item>
-      <title>Part v Specialized Techniques and Applications</title>
-      <link>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</link>
-      <pubDate>Sat, 24 Aug 2024 23:41:03 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Part IV Graph Algorithms</title>
-      <link>http://localhost:1313/docs/part-iv-graph-algorithms/</link>
-      <pubDate>Sat, 24 Aug 2024 23:41:02 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-iv-graph-algorithms/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Part II Sorting and Searching Algorithms</title>
+      <title>Part II - Sorting and Searching Algorithms</title>
       <link>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:01 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</guid>
       <description></description>
     </item>
     <item>
-      <title>Part III Complex Data Structures</title>
+      <title>Part III - Complex Data Structures</title>
       <link>http://localhost:1313/docs/part-iii-complex-data-structures/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:01 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii-complex-data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Part IV - Graph Algorithms</title>
+      <link>http://localhost:1313/docs/part-iv-graph-algorithms/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:02 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-iv-graph-algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Part V - Specialized Techniques and Applications</title>
+      <link>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:03 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</guid>
       <description></description>
     </item>
     <item>

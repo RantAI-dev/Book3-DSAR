@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Part IV on Modern Data Structures and Algorithms in Rust</title>
+    <link>http://localhost:5496/docs/part-iv/</link>
+    <description>Recent content in Part IV on Modern Data Structures and Algorithms in Rust</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Aug 2024 23:42:32 +0700</lastBuildDate>
+    <atom:link href="http://localhost:5496/docs/part-iv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chapter 15</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-15/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:24 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-15/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 16</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-16/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:24 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-16/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 17</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-17/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:25 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-17/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 18</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-18/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:26 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-18/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 19</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-19/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:26 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-19/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 20</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-20/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:27 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-20/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 21</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-21/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:28 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-21/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 22</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-22/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:28 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-22/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 23</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-23/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:29 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 24</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-24/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:30 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-24/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 25</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-25/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:30 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-25/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 26</title>
+      <link>http://localhost:5496/docs/part-iv/chapter-26/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:32 +0700</pubDate>
+      <guid>http://localhost:5496/docs/part-iv/chapter-26/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

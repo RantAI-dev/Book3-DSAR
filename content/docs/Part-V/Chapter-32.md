@@ -1,5 +1,5 @@
 ---
-weight: 4400
+weight: 4500
 title: "Chapter 32"
 description: ""
 icon: "article"
