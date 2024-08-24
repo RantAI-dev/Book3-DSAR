@@ -6,7 +6,7 @@
     <description>Recent content in Docs on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Aug 2024 21:49:21 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2024 23:50:58 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modern Data Structures and Algorithms in Rust</title>
@@ -14,6 +14,83 @@
       <pubDate>Sat, 24 Aug 2024 21:49:21 +0700</pubDate>
       <guid>http://localhost:1313/docs/dsar/</guid>
       <description>📘 Welcome to &amp;ldquo;Modern Data Structures and Algorithms in Rust&amp;rdquo; link&#xD;📘 About this Book link&#xD;📘&#xA;&#34;Modern Data Structures and Algorithms in Rust&#34; (DSAR) is a groundbreaking text that merges the time-honored concepts of data structures and algorithms with the modern, powerful features of the Rust programming language. Designed for both students and professionals, this book provides a deep dive into the fundamental (F), conceptual (C), and practical (P) implementation of algorithms, all while leveraging Rust’s unique capabilities for memory safety, concurrency, and performance.</description>
+    </item>
+    <item>
+      <title>Table of Contents</title>
+      <link>http://localhost:1313/docs/table-of-contents/</link>
+      <pubDate>Sat, 24 Aug 2024 23:24:06 +0700</pubDate>
+      <guid>http://localhost:1313/docs/table-of-contents/</guid>
+      <description>📘&#xA;DSAR&amp;rsquo;s Table of Contents linkExplore the chapters below to dive deep into the advanced programming data structures and algorithms using Rust.&#xA;Main Sections link Preface Modern Data Structures and Algorithms in Rust Foreword-1 Foreword-2 Part I - Fundamentals of Algorithms in Rust link Chapter 1: The Role of Algorithms in Modern Software Chapter 2: Introduction to Data Structures and Algorithms in Rust Chapter 3: Fundamentals of Rust Programming for Algorithms Chapter 4: Design of Algorithms and Running Times Part II - Sorting and Searching Algorithms link Chapter 5: Divide and Conquer Chapter 6: Basic Sorting Algorithms Chapter 7: Advanced Sorting Algorithms Chapter 8: Median and Order Statistics Part III - Complex Data Structures link Chapter 9: Fundamental Data Structures in Rust Chapter 10: Elementary Data Structures Chapter 11: Hashing and Hash Tables Chapter 12: Trees and Balanced Trees Chapter 13: Heaps and Priority Queues Chapter 14: Disjoint Sets Part IV - Graph Algorithms link Chapter 15: Graphs and Graph Representations Chapter 16: Algorithm Design Techniques Chapter 17: Complexity Analysis Chapter 18: Algorithm Optimization Chapter 19: Amortized Algorithms Chapter 20: Elementary Graph Theory for Algorithms Chapter 21: Graph Traversal Algorithms Chapter 22: Single-Source Shortest Paths Chapter 23: All-Pairs Shortest Paths Chapter 24: Minimum Spanning Trees Chapter 25: Network Flow Algorithms Chapter 26: Matchings in Bipartite Graphs Part V - Specialized Techniques and Applications link Chapter 27: Advanced Recursive Algorithms Chapter 28: Vector, Matrix, and Tensor Operations Chapter 29: Parallel and Distributed Algorithms Chapter 30: Cryptographic Foundations Algorithms Chapter 31: Blockchain Data Structures and Algorithms Chapter 32: Linear Programming Chapter 33: Polynomial and FFT Chapter 34: String Matching Algorithms Chapter 35: Approximate Algorithms Chapter 36: Probabilistic and Randomized Algorithms ℹ️</description>
+    </item>
+    <item>
+      <title>Preface</title>
+      <link>http://localhost:1313/docs/preface/</link>
+      <pubDate>Sat, 24 Aug 2024 23:23:20 +0700</pubDate>
+      <guid>http://localhost:1313/docs/preface/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foreword</title>
+      <link>http://localhost:1313/docs/foreword/</link>
+      <pubDate>Sat, 24 Aug 2024 23:23:28 +0700</pubDate>
+      <guid>http://localhost:1313/docs/foreword/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foreword-2</title>
+      <link>http://localhost:1313/docs/foreword-2/</link>
+      <pubDate>Sat, 24 Aug 2024 23:23:41 +0700</pubDate>
+      <guid>http://localhost:1313/docs/foreword-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How to Use DSAR</title>
+      <link>http://localhost:1313/docs/how-to-use-dsar/</link>
+      <pubDate>Sat, 24 Aug 2024 23:46:41 +0700</pubDate>
+      <guid>http://localhost:1313/docs/how-to-use-dsar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Part I Fundamentals of Algorithms in Rust</title>
+      <link>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</link>
+      <pubDate>Sat, 24 Aug 2024 23:37:35 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Part v Specialized Techniques and Applications</title>
+      <link>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:03 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Part IV Graph Algorithms</title>
+      <link>http://localhost:1313/docs/part-iv-graph-algorithms/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:02 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-iv-graph-algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Part II Sorting and Searching Algorithms</title>
+      <link>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:01 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Part III Complex Data Structures</title>
+      <link>http://localhost:1313/docs/part-iii-complex-data-structures/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:01 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-iii-complex-data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Closing Remark</title>
+      <link>http://localhost:1313/docs/closing-remark/</link>
+      <pubDate>Sat, 24 Aug 2024 23:50:58 +0700</pubDate>
+      <guid>http://localhost:1313/docs/closing-remark/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

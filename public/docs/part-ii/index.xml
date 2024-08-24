@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Part II on Modern Data Structures and Algorithms in Rust</title>
+    <link>http://localhost:1313/docs/part-ii/</link>
+    <description>Recent content in Part II on Modern Data Structures and Algorithms in Rust</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Aug 2024 23:41:53 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/part-ii/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chapter 5</title>
+      <link>http://localhost:1313/docs/part-ii/chapter-5/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-ii/chapter-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 6</title>
+      <link>http://localhost:1313/docs/part-ii/chapter-6/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-ii/chapter-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 7</title>
+      <link>http://localhost:1313/docs/part-ii/chapter-7/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:52 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-ii/chapter-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 8</title>
+      <link>http://localhost:1313/docs/part-ii/chapter-8/</link>
+      <pubDate>Sat, 24 Aug 2024 23:41:53 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-ii/chapter-8/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -5,6 +5,6 @@ description: ""
 icon: "article"
 date: "{{ .Date }}"
 lastmod: "{{ .Date }}"
-draft: true
+draft: false
 toc: true
 ---
