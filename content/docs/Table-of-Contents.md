@@ -50,12 +50,12 @@ Explore the chapters below to dive deep into the advanced programming data struc
 - [**Chapter 12: Trees and Balanced Trees**](/docs/part-iii/chapter-12/)
 - [**Chapter 13: Heaps and Priority Queues**](/docs/part-iii/chapter-13/)
 - [**Chapter 14: Disjoint Sets**](/docs/part-iii/chapter-14/)
+- [**Chapter 15: Graphs and Graph Representations**](/docs/part-iii/chapter-15/)
 
 ---
 
 ### **Part IV - Design and Analysis**
 
-- [**Chapter 15: Graphs and Graph Representations**](/docs/part-iv/chapter-15/)
 - [**Chapter 16: Algorithm Design Techniques**](/docs/part-iv/chapter-16/)
 - [**Chapter 17: Complexity Analysis**](/docs/part-iv/chapter-17/)
 - [**Chapter 18: Algorithm Optimization**](/docs/part-iv/chapter-18/)
