@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Part II on Modern Data Structures and Algorithms in Rust</title>
-    <link>http://localhost:1030/docs/part-ii/</link>
+    <link>http://localhost:1313/docs/part-ii/</link>
     <description>Recent content in Part II on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Aug 2024 23:41:53 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1030/docs/part-ii/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/part-ii/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 5</title>
-      <link>http://localhost:1030/docs/part-ii/chapter-5/</link>
+      <link>http://localhost:1313/docs/part-ii/chapter-5/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-ii/chapter-5/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-ii/chapter-5/</guid>
+      <description>📘 Chapter 5: Divide and Conquer link&#xD;💡&#xA;&amp;quot;A recursive method is often the most natural way to solve a problem that can be broken down into smaller problems of the same type.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 5 of DSAR delves deeply into the divide and conquer paradigm, a powerful algorithmic strategy that breaks complex problems into simpler subproblems, solves each recursively, and then combines the results. The chapter begins by laying a strong theoretical foundation, exploring how divide and conquer optimizes algorithmic efficiency through recurrence relations and compares it with other paradigms like dynamic programming and greedy algorithms.</description>
     </item>
     <item>
       <title>Chapter 6</title>
-      <link>http://localhost:1030/docs/part-ii/chapter-6/</link>
+      <link>http://localhost:1313/docs/part-ii/chapter-6/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-ii/chapter-6/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-ii/chapter-6/</guid>
+      <description>📘 Chapter 6: Basic Sorting Algorithms link&#xD;💡&#xA;&amp;quot;Sorting is a fundamental operation that has a significant impact on the efficiency of algorithms and systems.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 6 of DSAR provides an in-depth exploration of fundamental sorting algorithms, focusing on their implementation in Rust. It begins with an introduction to sorting, emphasizing its critical role in organizing data efficiently and its implications for algorithm performance. The chapter then delves into the practical aspects of implementing three classic sorting algorithms: Insertion Sort, Selection Sort, and Bubble Sort.</description>
     </item>
     <item>
       <title>Chapter 7</title>
-      <link>http://localhost:1030/docs/part-ii/chapter-7/</link>
+      <link>http://localhost:1313/docs/part-ii/chapter-7/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:52 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-ii/chapter-7/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-ii/chapter-7/</guid>
+      <description>📘 Chapter 7: Advanced Sorting Algorithms link&#xD;💡&#xA;&amp;quot;Sorting is a problem that can be solved in many ways, but the most interesting thing about sorting is not the algorithms but how they apply in practice and the trade-offs involved.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 7 of the DSAR delves into advanced sorting algorithms, emphasizing their conceptual underpinnings, implementation techniques, and practical applications. It begins with an exploration of the significance of sorting in data organization and the comparative analysis of sorting algorithms based on their time and space complexities.</description>
     </item>
     <item>
       <title>Chapter 8</title>
-      <link>http://localhost:1030/docs/part-ii/chapter-8/</link>
+      <link>http://localhost:1313/docs/part-ii/chapter-8/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:53 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-ii/chapter-8/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-ii/chapter-8/</guid>
+      <description>📘 Chapter 8: Median and Order Statistics link&#xD;💡&#xA;&amp;quot;The goal of Computer Science is to build something that will last at least until we can build something better.&amp;quot; — Alan Turing&#xA;📘&#xA;Chapter 8 of DSAR delves into the intricate world of median and order statistics, exploring fundamental concepts and advanced techniques essential for efficient data manipulation and analysis. It begins by defining order statistics, highlighting their critical role in algorithms for database management, statistical analysis, and data summarization.</description>
     </item>
   </channel>
 </rss>

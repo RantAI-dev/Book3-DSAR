@@ -2,95 +2,95 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on Modern Data Structures and Algorithms in Rust</title>
-    <link>http://localhost:1030/docs/</link>
+    <link>http://localhost:1313/docs/</link>
     <description>Recent content in Docs on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Aug 2024 23:50:58 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1030/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modern Data Structures and Algorithms in Rust</title>
-      <link>http://localhost:1030/docs/dsar/</link>
+      <link>http://localhost:1313/docs/dsar/</link>
       <pubDate>Sat, 24 Aug 2024 21:49:21 +0700</pubDate>
-      <guid>http://localhost:1030/docs/dsar/</guid>
+      <guid>http://localhost:1313/docs/dsar/</guid>
       <description>📘 Welcome to &amp;ldquo;Modern Data Structures and Algorithms in Rust&amp;rdquo; link&#xD;📘 About this Book link&#xD;📘&#xA;&#34;Modern Data Structures and Algorithms in Rust&#34; (DSAR) is a groundbreaking text that merges the time-honored concepts of data structures and algorithms with the modern, powerful features of the Rust programming language. Designed for both students and professionals, this book provides a deep dive into the fundamental (F), conceptual (C), and practical (P) implementation of algorithms, all while leveraging Rust’s unique capabilities for memory safety, concurrency, and performance.</description>
     </item>
     <item>
       <title>Table of Contents</title>
-      <link>http://localhost:1030/docs/table-of-contents/</link>
+      <link>http://localhost:1313/docs/table-of-contents/</link>
       <pubDate>Sat, 24 Aug 2024 23:24:06 +0700</pubDate>
-      <guid>http://localhost:1030/docs/table-of-contents/</guid>
+      <guid>http://localhost:1313/docs/table-of-contents/</guid>
       <description>📘&#xA;DSAR&amp;rsquo;s Table of Contents linkExplore the chapters below to dive deep into the advanced programming data structures and algorithms using Rust.&#xA;Main Sections link Preface Modern Data Structures and Algorithms in Rust Foreword-1 Foreword-2 Part I - Fundamentals of Algorithms in Rust link Chapter 1: The Role of Algorithms in Modern Software Chapter 2: Introduction to Data Structures and Algorithms in Rust Chapter 3: Fundamentals of Rust Programming for Algorithms Chapter 4: Design of Algorithms and Running Times Part II - Sorting and Searching Algorithms link Chapter 5: Divide and Conquer Chapter 6: Basic Sorting Algorithms Chapter 7: Advanced Sorting Algorithms Chapter 8: Median and Order Statistics Part III - Complex Data Structures link Chapter 9: Fundamental Data Structures in Rust Chapter 10: Elementary Data Structures Chapter 11: Hashing and Hash Tables Chapter 12: Trees and Balanced Trees Chapter 13: Heaps and Priority Queues Chapter 14: Disjoint Sets Part IV - Graph Algorithms link Chapter 15: Graphs and Graph Representations Chapter 16: Algorithm Design Techniques Chapter 17: Complexity Analysis Chapter 18: Algorithm Optimization Chapter 19: Amortized Algorithms Chapter 20: Elementary Graph Theory for Algorithms Chapter 21: Graph Traversal Algorithms Chapter 22: Single-Source Shortest Paths Chapter 23: All-Pairs Shortest Paths Chapter 24: Minimum Spanning Trees Chapter 25: Network Flow Algorithms Chapter 26: Matchings in Bipartite Graphs Part V - Specialized Techniques and Applications link Chapter 27: Advanced Recursive Algorithms Chapter 28: Vector, Matrix, and Tensor Operations Chapter 29: Parallel and Distributed Algorithms Chapter 30: Cryptographic Foundations Algorithms Chapter 31: Blockchain Data Structures and Algorithms Chapter 32: Linear Programming Chapter 33: Polynomial and FFT Chapter 34: String Matching Algorithms Chapter 35: Approximate Algorithms Chapter 36: Probabilistic and Randomized Algorithms ℹ️</description>
     </item>
     <item>
       <title>Preface</title>
-      <link>http://localhost:1030/docs/preface/</link>
+      <link>http://localhost:1313/docs/preface/</link>
       <pubDate>Sat, 24 Aug 2024 23:23:20 +0700</pubDate>
-      <guid>http://localhost:1030/docs/preface/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/preface/</guid>
+      <description>💡&#xA;&amp;quot;The best way to learn is to teach.&amp;quot; — Richard Feynman&#xA;📘&#xA;Welcome to Modern Data Structures and Algorithms in Rust (aka. DSAR), a journey crafted with the vision of redefining how we learn and apply fundamental concepts in the ever-evolving field of computer science. As the founders of RantAI, we embarked on this project with a deep-seated desire to unlearn, relearn, and master data structures and algorithms through the lens of modern technology and methodologies.</description>
     </item>
     <item>
       <title>Foreword</title>
-      <link>http://localhost:1030/docs/foreword/</link>
+      <link>http://localhost:1313/docs/foreword/</link>
       <pubDate>Sat, 24 Aug 2024 23:23:28 +0700</pubDate>
-      <guid>http://localhost:1030/docs/foreword/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/foreword/</guid>
+      <description>💡&#xA;&amp;quot;Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.&amp;quot; — Albert Einstein&#xA;📘&#xA;It is with immense pride and enthusiasm that I introduce Modern Data Structures and Algorithms in Rust (DSAR), a groundbreaking work born out of the vision and determination of my sons and their dedicated team at RantAI. Their journey from inspiring ideas to creating a tech company at the cutting edge of digital twin technology and quantum computing has been nothing short of extraordinary.</description>
     </item>
     <item>
       <title>Foreword-2</title>
-      <link>http://localhost:1030/docs/foreword-2/</link>
+      <link>http://localhost:1313/docs/foreword-2/</link>
       <pubDate>Sat, 24 Aug 2024 23:23:41 +0700</pubDate>
-      <guid>http://localhost:1030/docs/foreword-2/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/foreword-2/</guid>
+      <description>💡&#xA;&amp;quot;The best way to learn is to do; the only way to learn mathematics is to do mathematics.&amp;quot; — Richard Feynman&#xA;📘&#xA;As the Head of the Computer Engineering Faculty at Telkom University, it is with great enthusiasm that I introduce Modern Data Structures and Algorithms in Rust (DSAR). This pioneering text exemplifies the fusion of time-honored principles of data structures and algorithms with the modern capabilities of the Rust programming language.</description>
     </item>
     <item>
       <title>How to Use DSAR</title>
-      <link>http://localhost:1030/docs/how-to-use-dsar/</link>
+      <link>http://localhost:1313/docs/how-to-use-dsar/</link>
       <pubDate>Sat, 24 Aug 2024 23:46:41 +0700</pubDate>
-      <guid>http://localhost:1030/docs/how-to-use-dsar/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/how-to-use-dsar/</guid>
+      <description>📘 Chapter : Guide for Students and Lecturers link&#xD;💡&#xA;&amp;quot;The more you know about something, the more you realize how much you don’t know. The more you learn, the more you understand, and the more you realize how much more there is to learn.&amp;quot; — Richard Feynman&#xA;🎓&#xA;For Students: link&#xD;Modern Data Structures and Algorithms in Rust (DSAR) is an open-source web book available for free at http://dsar.</description>
     </item>
     <item>
       <title>Part I - Fundamentals of Algorithms in Rust</title>
-      <link>http://localhost:1030/docs/part-i-fundamentals-of-algorithms-in-rust/</link>
+      <link>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</link>
       <pubDate>Sat, 24 Aug 2024 23:37:35 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-i-fundamentals-of-algorithms-in-rust/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</guid>
+      <description>📘 Part I: Introduction link&#xD;💡&#xA;&#34;The Nobel Prize is the highest accolade that the world can offer a man, but no man is ever worthy of it.&#34; – Albert Einstein&#xD;📘&#xA;Part I - Introduction provides a comprehensive foundation on the intersection of algorithms and modern software development, with a focus on Rust programming. It begins by exploring the evolution and significance of algorithms in contemporary software, emphasizing how they integrate with data structures to address complex problems and the ethical implications involved in their design.</description>
     </item>
     <item>
       <title>Part II - Sorting and Searching Algorithms</title>
-      <link>http://localhost:1030/docs/part-ii-sorting-and-searching-algorithms/</link>
+      <link>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:01 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-ii-sorting-and-searching-algorithms/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</guid>
+      <description>📘 Part II: Sorting and Order Statistics link&#xD;💡&#xA;&amp;quot;The whole of science is nothing more than a refinement of everyday thinking.&amp;quot; — Albert Einstein&#xA;📘&#xA;Part II of &#34;Modern Data Structures and Algorithms in Rust&#34; delves into the essential algorithms that form the backbone of efficient data handling in software development: sorting and order statistics. It begins with an exploration of basic sorting algorithms, such as Insertion Sort, Selection Sort, and Bubble Sort, offering readers a thorough understanding of their principles, implementations in Rust, and performance characteristics.</description>
     </item>
     <item>
       <title>Part III - Complex Data Structures</title>
-      <link>http://localhost:1030/docs/part-iii-complex-data-structures/</link>
+      <link>http://localhost:1313/docs/part-iii-complex-data-structures/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:01 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-iii-complex-data-structures/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-iii-complex-data-structures/</guid>
+      <description>📘 Part III: Data Structures link&#xD;💡&#xA;&amp;quot;The greatest danger in science is not being wrong, but being trivial.&amp;quot; — Stephen Hawking&#xA;📘&#xA;Part III - Data Structures provides an extensive overview of essential and advanced data structures implemented in Rust, offering a thorough examination of how to manage and manipulate data efficiently. It starts with fundamental data structures, introducing arrays, slices, and linked lists while explaining Rust’s memory model and standard collections.</description>
     </item>
     <item>
       <title>Part IV - Graph Algorithms</title>
-      <link>http://localhost:1030/docs/part-iv-graph-algorithms/</link>
+      <link>http://localhost:1313/docs/part-iv-graph-algorithms/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:02 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-iv-graph-algorithms/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-iv-graph-algorithms/</guid>
+      <description>📘 Part IV: Design and Analysis link&#xD;💡&#xA;&amp;quot;Intelligence is the ability to adapt to change.&amp;quot; — Stephen Hawking&#xA;📘&#xA;Part IV - Design and Analysis provides a deep exploration into the methodologies for crafting and evaluating algorithms. It begins with a thorough overview of algorithm design techniques, covering foundational strategies such as divide and conquer, dynamic programming, greedy algorithms, and backtracking, as well as problem reduction and transformations. The focus then shifts to complexity analysis, detailing methods for evaluating both time and space complexity, understanding asymptotic bounds, and exploring advanced complexity topics.</description>
     </item>
     <item>
       <title>Part V - Specialized Techniques and Applications</title>
-      <link>http://localhost:1030/docs/part-v-specialized-techniques-and-applications/</link>
+      <link>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:03 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-v-specialized-techniques-and-applications/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</guid>
+      <description>📘 Part V: Graph Algorithms link&#xD;&amp;ldquo;Success in creating AI would be the biggest event in human history. Unfortunately, it might also be the last, unless we learn how to avoid the risks.&amp;rdquo; – Stephen Hawking&#xA;📘&#xA;Part V - Graph Algorithms offers a thorough exploration of fundamental and advanced graph algorithms essential for solving complex problems in graph theory. It begins with a foundational overview of elementary graph theory, covering core concepts such as graph properties, invariants, and theorems, and practical graph construction techniques in Rust.</description>
     </item>
     <item>
       <title>Closing Remark</title>
-      <link>http://localhost:1030/docs/closing-remark/</link>
+      <link>http://localhost:1313/docs/closing-remark/</link>
       <pubDate>Sat, 24 Aug 2024 23:50:58 +0700</pubDate>
-      <guid>http://localhost:1030/docs/closing-remark/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/closing-remark/</guid>
+      <description>💡&#xA;&amp;quot;The first principle is that you must not fool yourself — and you are the easiest person to fool.&amp;quot; — Richard Feynman&#xA;🚪&#xA;In the dynamic realm of software engineering, the mastery of data structures and algorithms often defines the line between average and exceptional performance. While proficiency in programming languages and object-oriented design provides a solid foundation, it is the depth of understanding and skill in implementing algorithms that truly distinguishes top-tier software engineers.</description>
     </item>
   </channel>
 </rss>

@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Part III on Modern Data Structures and Algorithms in Rust</title>
-    <link>http://localhost:1030/docs/part-iii/</link>
+    <link>http://localhost:1313/docs/part-iii/</link>
     <description>Recent content in Part III on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Aug 2024 23:42:21 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1030/docs/part-iii/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/part-iii/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 9</title>
-      <link>http://localhost:1030/docs/part-iii/chapter-9/</link>
+      <link>http://localhost:1313/docs/part-iii/chapter-9/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:09 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-iii/chapter-9/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-iii/chapter-9/</guid>
+      <description>center&amp;gt;&#xA;📘 Chapter 9: Fundamental Data Structures in Rust link&#xD;💡&#xA;&amp;quot;A program is only as good as its data structures.&amp;quot; — Fred Brooks&#xA;📘&#xA;Chapter 9 of DSAR delves into the core principles and practical implementations of essential data structures within the context of Rust&amp;rsquo;s unique memory model. Beginning with a comprehensive introduction to data structures, this chapter emphasizes the pivotal role they play in algorithmic design, while also exploring Rust&amp;rsquo;s ownership, borrowing, and lifetime rules that ensure memory safety and concurrency without a garbage collector.</description>
     </item>
     <item>
       <title>Chapter 10</title>
-      <link>http://localhost:1030/docs/part-iii/chapter-10/</link>
+      <link>http://localhost:1313/docs/part-iii/chapter-10/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:09 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-iii/chapter-10/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-iii/chapter-10/</guid>
+      <description>📘 Chapter 10: Elementary Data Structures link&#xD;💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Hal Abelson&#xA;📘&#xA;Chapter 10 of DSAR delves into the foundational elements of data structure design and manipulation, providing a comprehensive exploration of elementary data structures, including stacks, queues, deques, strings, and bitwise data structures. The chapter begins with an in-depth analysis of stacks and queues, highlighting their core principles, such as LIFO and FIFO, and their critical role in algorithms like function call management and task scheduling.</description>
     </item>
     <item>
       <title>Chapter 11</title>
-      <link>http://localhost:1030/docs/part-iii/chapter-11/</link>
+      <link>http://localhost:1313/docs/part-iii/chapter-11/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:10 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-iii/chapter-11/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-iii/chapter-11/</guid>
+      <description>📘 Chapter 11: Hashing and Hash Tables link&#xD;💡&#xA;&amp;quot;Hashing is a powerful tool for creating efficient data structures. It provides an elegant solution to the problem of data retrieval, but its real power comes from understanding how to design hash functions and manage collisions effectively.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 11 of the DSAR book delves into the intricacies of hashing and hash tables, offering a comprehensive examination of their fundamental principles, implementations, and advanced techniques.</description>
     </item>
     <item>
       <title>Chapter 12</title>
-      <link>http://localhost:1030/docs/part-iii/chapter-12/</link>
+      <link>http://localhost:1313/docs/part-iii/chapter-12/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:11 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-iii/chapter-12/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-iii/chapter-12/</guid>
+      <description>📘 Chapter 12: Trees and Balanced Trees link&#xD;💡&#xA;&amp;quot;Algorithms are the tools we use to solve problems and create software. The real challenge is not in the algorithms themselves, but in applying them effectively.&amp;quot; — Donald D. Knuth&#xA;📘&#xA;Chapter 12 of DSAR delves into the intricacies of trees and balanced trees, exploring their fundamental concepts, implementation strategies, and practical applications. The chapter begins with an introduction to tree structures, defining key terms such as nodes, roots, leaves, and subtrees, and covering essential properties and types of tree traversals.</description>
     </item>
     <item>
       <title>Chapter 13</title>
-      <link>http://localhost:1030/docs/part-iii/chapter-13/</link>
+      <link>http://localhost:1313/docs/part-iii/chapter-13/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:12 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-iii/chapter-13/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-iii/chapter-13/</guid>
+      <description>📘 Chapter 13: Heaps and Priority Queues link&#xD;💡&#xA;&amp;quot;Complexity is your friend; it ensures that your system can handle the complexity of the real world.&amp;quot; — Martin Fowler&#xA;📘&#xA;Chapter 13 of DSAR provides an in-depth exploration of heaps and priority queues, essential data structures for efficient data management. The chapter begins with an introduction to heaps, detailing their structure as complete binary trees and their properties, such as the max-heap and min-heap properties that dictate their use in various algorithms.</description>
     </item>
     <item>
       <title>Chapter 14</title>
-      <link>http://localhost:1030/docs/part-iii/chapter-14/</link>
+      <link>http://localhost:1313/docs/part-iii/chapter-14/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:21 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-iii/chapter-14/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-iii/chapter-14/</guid>
+      <description>📘 Chapter 14: Disjoint Sets link&#xD;💡&#xA;&amp;quot;Data structures and algorithms are the building blocks of software engineering, and understanding them deeply is crucial to solving complex problems efficiently.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 14 of DSAR delves into the essential data structure known as Disjoint Sets or Union-Find, a critical component for managing collections of non-overlapping sets. This chapter begins with an introduction to the fundamental operations of Disjoint Sets, including find and union, highlighting their importance in efficiently handling dynamic connectivity problems.</description>
     </item>
   </channel>
 </rss>

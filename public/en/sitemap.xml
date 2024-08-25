@@ -2,218 +2,218 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1030/docs/dsar/</loc>
+    <loc>http://localhost:1313/docs/dsar/</loc>
     <lastmod>2024-08-24T21:49:21+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/table-of-contents/</loc>
+    <loc>http://localhost:1313/docs/table-of-contents/</loc>
     <lastmod>2024-08-24T23:24:06+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/preface/</loc>
+    <loc>http://localhost:1313/docs/preface/</loc>
     <lastmod>2024-08-24T23:23:20+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/foreword/</loc>
+    <loc>http://localhost:1313/docs/foreword/</loc>
     <lastmod>2024-08-24T23:23:28+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/foreword-2/</loc>
+    <loc>http://localhost:1313/docs/foreword-2/</loc>
     <lastmod>2024-08-24T23:23:41+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/how-to-use-dsar/</loc>
+    <loc>http://localhost:1313/docs/how-to-use-dsar/</loc>
     <lastmod>2024-08-24T23:46:41+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-i-fundamentals-of-algorithms-in-rust/</loc>
+    <loc>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</loc>
     <lastmod>2024-08-24T23:37:35+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-i/</loc>
+    <loc>http://localhost:1313/docs/part-i/</loc>
     <lastmod>2024-08-24T23:44:47+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-i/chapter-1/</loc>
+    <loc>http://localhost:1313/docs/part-i/chapter-1/</loc>
     <lastmod>2024-08-24T23:41:35+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-i/chapter-2/</loc>
+    <loc>http://localhost:1313/docs/part-i/chapter-2/</loc>
     <lastmod>2024-08-24T23:41:35+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-i/chapter-3/</loc>
+    <loc>http://localhost:1313/docs/part-i/chapter-3/</loc>
     <lastmod>2024-08-24T23:41:36+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-i/chapter-4/</loc>
+    <loc>http://localhost:1313/docs/part-i/chapter-4/</loc>
     <lastmod>2024-08-24T23:41:47+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-ii-sorting-and-searching-algorithms/</loc>
+    <loc>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</loc>
     <lastmod>2024-08-24T23:41:01+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-ii/</loc>
+    <loc>http://localhost:1313/docs/part-ii/</loc>
     <lastmod>2024-08-24T23:44:52+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-ii/chapter-5/</loc>
+    <loc>http://localhost:1313/docs/part-ii/chapter-5/</loc>
     <lastmod>2024-08-24T23:41:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-ii/chapter-6/</loc>
+    <loc>http://localhost:1313/docs/part-ii/chapter-6/</loc>
     <lastmod>2024-08-24T23:41:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-ii/chapter-7/</loc>
+    <loc>http://localhost:1313/docs/part-ii/chapter-7/</loc>
     <lastmod>2024-08-24T23:41:52+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-ii/chapter-8/</loc>
+    <loc>http://localhost:1313/docs/part-ii/chapter-8/</loc>
     <lastmod>2024-08-24T23:41:53+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iii-complex-data-structures/</loc>
+    <loc>http://localhost:1313/docs/part-iii-complex-data-structures/</loc>
     <lastmod>2024-08-24T23:41:01+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iii/</loc>
+    <loc>http://localhost:1313/docs/part-iii/</loc>
     <lastmod>2024-08-24T23:44:57+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iii/chapter-9/</loc>
+    <loc>http://localhost:1313/docs/part-iii/chapter-9/</loc>
     <lastmod>2024-08-24T23:42:09+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iii/chapter-10/</loc>
+    <loc>http://localhost:1313/docs/part-iii/chapter-10/</loc>
     <lastmod>2024-08-24T23:42:09+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iii/chapter-11/</loc>
+    <loc>http://localhost:1313/docs/part-iii/chapter-11/</loc>
     <lastmod>2024-08-24T23:42:10+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iii/chapter-12/</loc>
+    <loc>http://localhost:1313/docs/part-iii/chapter-12/</loc>
     <lastmod>2024-08-24T23:42:11+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iii/chapter-13/</loc>
+    <loc>http://localhost:1313/docs/part-iii/chapter-13/</loc>
     <lastmod>2024-08-24T23:42:12+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iii/chapter-14/</loc>
+    <loc>http://localhost:1313/docs/part-iii/chapter-14/</loc>
     <lastmod>2024-08-24T23:42:21+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv-graph-algorithms/</loc>
+    <loc>http://localhost:1313/docs/part-iv-graph-algorithms/</loc>
     <lastmod>2024-08-24T23:41:02+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/</loc>
+    <loc>http://localhost:1313/docs/part-iv/</loc>
     <lastmod>2024-08-24T23:45:07+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-15/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-15/</loc>
     <lastmod>2024-08-24T23:42:24+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-16/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-16/</loc>
     <lastmod>2024-08-24T23:42:24+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-17/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-17/</loc>
     <lastmod>2024-08-24T23:42:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-18/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-18/</loc>
     <lastmod>2024-08-24T23:42:26+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-19/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-19/</loc>
     <lastmod>2024-08-24T23:42:26+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-20/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-20/</loc>
     <lastmod>2024-08-24T23:42:27+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-21/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-21/</loc>
     <lastmod>2024-08-24T23:42:28+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-22/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-22/</loc>
     <lastmod>2024-08-24T23:42:28+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-23/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-23/</loc>
     <lastmod>2024-08-24T23:42:29+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-24/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-24/</loc>
     <lastmod>2024-08-24T23:42:30+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-25/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-25/</loc>
     <lastmod>2024-08-24T23:42:30+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-iv/chapter-26/</loc>
+    <loc>http://localhost:1313/docs/part-iv/chapter-26/</loc>
     <lastmod>2024-08-24T23:42:32+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v-specialized-techniques-and-applications/</loc>
+    <loc>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</loc>
     <lastmod>2024-08-24T23:41:03+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/</loc>
+    <loc>http://localhost:1313/docs/part-v/</loc>
     <lastmod>2024-08-24T23:45:11+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-27/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-27/</loc>
     <lastmod>2024-08-24T23:42:45+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-28/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-28/</loc>
     <lastmod>2024-08-24T23:42:45+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-29/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-29/</loc>
     <lastmod>2024-08-24T23:42:46+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-30/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-30/</loc>
     <lastmod>2024-08-24T23:42:47+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-31/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-31/</loc>
     <lastmod>2024-08-24T23:42:48+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-32/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-32/</loc>
     <lastmod>2024-08-24T23:42:49+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-33/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-33/</loc>
     <lastmod>2024-08-24T23:42:49+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-34/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-34/</loc>
     <lastmod>2024-08-24T23:42:50+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-35/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-35/</loc>
     <lastmod>2024-08-24T23:42:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/closing-remark/</loc>
+    <loc>http://localhost:1313/docs/closing-remark/</loc>
     <lastmod>2024-08-24T23:50:58+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/part-v/chapter-36/</loc>
+    <loc>http://localhost:1313/docs/part-v/chapter-36/</loc>
     <lastmod>2024-08-24T23:42:52+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/docs/</loc>
+    <loc>http://localhost:1313/docs/</loc>
     <lastmod>2024-08-24T23:50:58+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1030/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-08-24T23:50:58+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1030/zh/"
+                href="http://localhost:1313/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="http://localhost:1030/id/"
+                href="http://localhost:1313/id/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1030/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1030/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1030/zh/categories/"
+                href="http://localhost:1313/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="http://localhost:1030/id/categories/"
+                href="http://localhost:1313/id/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1030/categories/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1030/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1030/zh/tags/"
+                href="http://localhost:1313/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="http://localhost:1030/id/tags/"
+                href="http://localhost:1313/id/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1030/tags/"
+                href="http://localhost:1313/tags/"
                 />
   </url>
 </urlset>

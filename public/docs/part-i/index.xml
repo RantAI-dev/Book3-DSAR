@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Part I on Modern Data Structures and Algorithms in Rust</title>
-    <link>http://localhost:1030/docs/part-i/</link>
+    <link>http://localhost:1313/docs/part-i/</link>
     <description>Recent content in Part I on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Aug 2024 23:41:47 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1030/docs/part-i/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/part-i/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 1</title>
-      <link>http://localhost:1030/docs/part-i/chapter-1/</link>
+      <link>http://localhost:1313/docs/part-i/chapter-1/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:35 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-i/chapter-1/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-i/chapter-1/</guid>
+      <description>📘 Chapter 1: The Role of Algorithms in Modern Software link&#xD;💡&#xA;&amp;quot;An algorithm must be seen to be believed.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 1 of DSAR delves into the foundational and evolving role of algorithms in contemporary software development, offering a comprehensive exploration of their historical evolution, technical significance, and ethical implications. The chapter begins by tracing the origins of algorithms from ancient mathematical techniques to the sophisticated computational models of today, highlighting key advancements such as asymptotic analysis and the emergence of specialized algorithmic paradigms.</description>
     </item>
     <item>
       <title>Chapter 2</title>
-      <link>http://localhost:1030/docs/part-i/chapter-2/</link>
+      <link>http://localhost:1313/docs/part-i/chapter-2/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:35 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-i/chapter-2/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-i/chapter-2/</guid>
+      <description>📘 Chapter 2: Introduction to Data Structures and Algorithms in Rust link&#xD;💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 2 of DSAR provides a comprehensive exploration of why Rust is uniquely suited for implementing data structures and algorithms, focusing on its strengths in memory safety, performance, and concurrency. It begins by detailing Rust’s distinctive features, such as its ownership model that ensures memory safety without a garbage collector, its performance characteristics that rival low-level languages, and its advanced concurrency model that prevents data races.</description>
     </item>
     <item>
       <title>Chapter 3</title>
-      <link>http://localhost:1030/docs/part-i/chapter-3/</link>
+      <link>http://localhost:1313/docs/part-i/chapter-3/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:36 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-i/chapter-3/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-i/chapter-3/</guid>
+      <description>📘 Chapter 3: Fundamentals of Rust Programming for Algorithms link&#xD;💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 3 of the DSAR book delves into the foundational aspects of Rust programming essential for crafting efficient algorithms. It begins with an exploration of Rust&#39;s ownership model, emphasizing how ownership, borrowing, and lifetimes enforce memory safety and prevent data races, which is crucial for designing robust algorithms.</description>
     </item>
     <item>
       <title>Chapter 4</title>
-      <link>http://localhost:1030/docs/part-i/chapter-4/</link>
+      <link>http://localhost:1313/docs/part-i/chapter-4/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:47 +0700</pubDate>
-      <guid>http://localhost:1030/docs/part-i/chapter-4/</guid>
-      <description></description>
+      <guid>http://localhost:1313/docs/part-i/chapter-4/</guid>
+      <description>📘 Chapter 4: Design of Algorithms and Running Times link&#xD;💡&#xA;&amp;quot;The art of programming is the skill of controlling complexity.&amp;quot; — Marijn Haverbeke&#xA;📘&#xA;Chapter 4 of DSAR delves into the intricate relationship between algorithm design and performance, providing a comprehensive exploration of how algorithmic complexity, design techniques, and data structures shape the efficiency of computational processes. The chapter begins by unpacking the foundational concepts of algorithmic complexity, including Big-O notation and various time and space complexities, to establish a rigorous framework for evaluating the efficiency of algorithms.</description>
     </item>
   </channel>
 </rss>
