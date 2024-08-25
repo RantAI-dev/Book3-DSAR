@@ -29,7 +29,7 @@ hero:
   image:
     path: "images" # path to image under configured assets directory. default 'images'
     filename: "cover.png" # filename of your hero image (including file extension)
-    alt: "TRPL Cover" # Optional but recommended
+    alt: "DSAR Cover" # Optional but recommended
     boxShadow: true # default 'false' (excludes .svg images)
     rounded: false # round the image corners? default 'false' (excludes .svg images)
 
