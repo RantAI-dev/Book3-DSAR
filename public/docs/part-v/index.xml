@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Part V on Modern Data Structures and Algorithms in Rust</title>
-    <link>http://localhost:1313/docs/part-v/</link>
+    <link>http://localhost:1030/docs/part-v/</link>
     <description>Recent content in Part V on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Aug 2024 23:42:52 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/part-v/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1030/docs/part-v/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 27</title>
-      <link>http://localhost:1313/docs/part-v/chapter-27/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-27/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:45 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-27/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-27/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 28</title>
-      <link>http://localhost:1313/docs/part-v/chapter-28/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-28/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:45 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-28/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-28/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 29</title>
-      <link>http://localhost:1313/docs/part-v/chapter-29/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-29/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:46 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-29/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-29/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 30</title>
-      <link>http://localhost:1313/docs/part-v/chapter-30/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-30/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:47 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-30/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-30/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 31</title>
-      <link>http://localhost:1313/docs/part-v/chapter-31/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-31/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:48 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-31/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-31/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 32</title>
-      <link>http://localhost:1313/docs/part-v/chapter-32/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-32/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:49 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-32/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-32/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 33</title>
-      <link>http://localhost:1313/docs/part-v/chapter-33/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-33/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:49 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-33/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-33/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 34</title>
-      <link>http://localhost:1313/docs/part-v/chapter-34/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-34/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:50 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-34/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-34/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 35</title>
-      <link>http://localhost:1313/docs/part-v/chapter-35/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-35/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:51 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-35/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-35/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 36</title>
-      <link>http://localhost:1313/docs/part-v/chapter-36/</link>
+      <link>http://localhost:1030/docs/part-v/chapter-36/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:52 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v/chapter-36/</guid>
+      <guid>http://localhost:1030/docs/part-v/chapter-36/</guid>
       <description></description>
     </item>
   </channel>

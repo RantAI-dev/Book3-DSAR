@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Part I on Modern Data Structures and Algorithms in Rust</title>
-    <link>http://localhost:1313/docs/part-i/</link>
+    <link>http://localhost:1030/docs/part-i/</link>
     <description>Recent content in Part I on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Aug 2024 23:41:47 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/part-i/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1030/docs/part-i/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 1</title>
-      <link>http://localhost:1313/docs/part-i/chapter-1/</link>
+      <link>http://localhost:1030/docs/part-i/chapter-1/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:35 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-i/chapter-1/</guid>
+      <guid>http://localhost:1030/docs/part-i/chapter-1/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 2</title>
-      <link>http://localhost:1313/docs/part-i/chapter-2/</link>
+      <link>http://localhost:1030/docs/part-i/chapter-2/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:35 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-i/chapter-2/</guid>
+      <guid>http://localhost:1030/docs/part-i/chapter-2/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 3</title>
-      <link>http://localhost:1313/docs/part-i/chapter-3/</link>
+      <link>http://localhost:1030/docs/part-i/chapter-3/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:36 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-i/chapter-3/</guid>
+      <guid>http://localhost:1030/docs/part-i/chapter-3/</guid>
       <description></description>
     </item>
     <item>
       <title>Chapter 4</title>
-      <link>http://localhost:1313/docs/part-i/chapter-4/</link>
+      <link>http://localhost:1030/docs/part-i/chapter-4/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:47 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-i/chapter-4/</guid>
+      <guid>http://localhost:1030/docs/part-i/chapter-4/</guid>
       <description></description>
     </item>
   </channel>
