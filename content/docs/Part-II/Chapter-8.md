@@ -7,6 +7,7 @@ date: "2024-08-24T23:41:53+07:00"
 lastmod: "2024-08-24T23:41:53+07:00"
 draft: false
 toc: true
+katex: true
 ---
 <center>
 
@@ -706,8 +707,8 @@ In this implementation, the <code>Node</code> struct holds five fields:
 </p>
 
 - <p style="text-align: justify;"><code>value</code>: The value stored in the node.</p>
-- <p style="text-align: justify;"><code>left</code>: An <code>Option<Box<Node<T>>></code> pointing to the left child.</p>
-- <p style="text-align: justify;"><code>right</code>: An <code>Option<Box<Node<T>>></code> pointing to the right child.</p>
+- <p style="text-align: justify;"><code>left</code>: An <codeOption&lt;Box&lt;Node&lt;T&gt;&gt;&gt;</code> pointing to the left child.</p>
+- <p style="text-align: justify;"><code>right</code>: An <code>Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;</code> pointing to the right child.</p>
 - <p style="text-align: justify;"><code>height</code>: The height of the node, crucial for balancing the AVL tree.</p>
 - <p style="text-align: justify;"><code>size</code>: The size of the subtree rooted at this node, used for efficient order statistic operations.</p>
 <p style="text-align: justify;">

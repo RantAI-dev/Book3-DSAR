@@ -6,7 +6,7 @@
     <description>Recent content in Part III on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Aug 2024 23:42:21 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2024 23:42:24 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/docs/part-iii/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 9</title>
@@ -49,6 +49,13 @@
       <pubDate>Sat, 24 Aug 2024 23:42:21 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii/chapter-14/</guid>
       <description>📘 Chapter 14: Disjoint Sets link&#xD;💡&#xA;&amp;quot;Data structures and algorithms are the building blocks of software engineering, and understanding them deeply is crucial to solving complex problems efficiently.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 14 of DSAR delves into the essential data structure known as Disjoint Sets or Union-Find, a critical component for managing collections of non-overlapping sets. This chapter begins with an introduction to the fundamental operations of Disjoint Sets, including find and union, highlighting their importance in efficiently handling dynamic connectivity problems.</description>
+    </item>
+    <item>
+      <title>Chapter 15</title>
+      <link>http://localhost:1313/docs/part-iii/chapter-15/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:24 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-iii/chapter-15/</guid>
+      <description>📘 Chapter 15: Graphs and Graph Representations link&#xD;💡&#xA;&amp;quot;A graph is a data structure that mirrors life itself. Complex relationships, dependencies, and networks are all captured within its vertices and edges. To master graphs is to master the very structure of thought.&amp;quot; — Edsger W. Dijkstra&#xA;📘&#xA;Chapter 15 of DSAR delves into the intricate world of graph theory, exploring both fundamental concepts and advanced techniques with a focus on practical implementation in Rust.</description>
     </item>
   </channel>
 </rss>

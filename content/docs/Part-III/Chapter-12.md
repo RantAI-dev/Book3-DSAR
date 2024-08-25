@@ -7,6 +7,7 @@ date: "2024-08-24T23:42:11+07:00"
 lastmod: "2024-08-24T23:42:11+07:00"
 draft: false
 toc: true
+katex: true
 ---
 <center>
 
@@ -578,7 +579,7 @@ Here, we augment the <code>TreeNode</code> structure with a <code>sum</code> fie
 </p>
 
 <p style="text-align: justify;">
-The <code>range_sum</code> method efficiently computes the sum of all values within a given range \[low, high\]. It recursively traverses the tree, adding the values that fall within the range while ignoring the subtrees that do not contribute to the sum. This allows for quick calculation of range sums without needing to iterate over all elements.
+The <code>range_sum</code> method efficiently computes the sum of all values within a given range $[low, high]$. It recursively traverses the tree, adding the values that fall within the range while ignoring the subtrees that do not contribute to the sum. This allows for quick calculation of range sums without needing to iterate over all elements.
 </p>
 
 <p style="text-align: justify;">

@@ -7,6 +7,7 @@ date: "2024-08-24T23:42:09+07:00"
 lastmod: "2024-08-24T23:42:09+07:00"
 draft: false
 toc: true
+katex: true
 ---
 <center>
 
@@ -196,8 +197,8 @@ Queues are fundamental in scenarios where order must be preserved, such as task 
 Both stacks and queues, as implemented using Rust's <code>Vec<T></code> and <code>VecDeque<T></code>, offer O(1) time complexity for their primary operations—<code>push</code>, <code>pop</code>, <code>enqueue</code>, and <code>dequeue</code>. This efficiency is due to these operations working on the ends of the data structures, where adding or removing elements does not require shifting the remaining elements. The use of Rust’s ownership and borrowing system also ensures that these operations are memory safe, preventing common issues such as memory leaks or dangling pointers, which can occur in languages without such strong guarantees.
 </p>
 
-# \
-10. <p style="text-align: justify;">2. Deques and Double-Ended Queues</p>
+
+## 10.2. Deques and Double-Ended Queues
 ### 10.2.1. Generalization of Stacks and Queues
 <p style="text-align: justify;">
 A deque, or double-ended queue, is a generalized data structure that extends the functionality of both stacks and queues. Unlike stacks, which restrict operations to one end, and queues, which restrict them to two specific ends (front and rear), deques allow insertion and removal of elements from both ends. This flexibility makes deques a versatile data structure suitable for various applications where access to both ends of the structure is necessary.

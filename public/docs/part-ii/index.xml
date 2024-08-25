@@ -9,13 +9,6 @@
     <lastBuildDate>Sat, 24 Aug 2024 23:41:53 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/docs/part-ii/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chapter 5</title>
-      <link>http://localhost:1313/docs/part-ii/chapter-5/</link>
-      <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-ii/chapter-5/</guid>
-      <description>📘 Chapter 5: Divide and Conquer link&#xD;💡&#xA;&amp;quot;A recursive method is often the most natural way to solve a problem that can be broken down into smaller problems of the same type.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 5 of DSAR delves deeply into the divide and conquer paradigm, a powerful algorithmic strategy that breaks complex problems into simpler subproblems, solves each recursively, and then combines the results. The chapter begins by laying a strong theoretical foundation, exploring how divide and conquer optimizes algorithmic efficiency through recurrence relations and compares it with other paradigms like dynamic programming and greedy algorithms.</description>
-    </item>
-    <item>
       <title>Chapter 6</title>
       <link>http://localhost:1313/docs/part-ii/chapter-6/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>

@@ -7,6 +7,7 @@ date: "2024-08-24T23:42:24+07:00"
 lastmod: "2024-08-24T23:42:24+07:00"
 draft: false
 toc: true
+katex: true
 ---
 
 <center>
@@ -225,7 +226,7 @@ In this implementation, the <code>fibonacci_memoization</code> function represen
 </p>
 
 <p style="text-align: justify;">
-The <code>fibonacci_bottom_up</code> function, on the other hand, demonstrates the bottom-up approach. It iteratively calculates the Fibonacci numbers by storing each result in a vector as it progresses from the base cases (fib\[0\] and fib\[1\]) to the final result. This approach avoids the overhead of recursive calls and is typically more space-efficient than the top-down approach with memoization, particularly when the entire state space is small enough to fit in memory.
+The <code>fibonacci_bottom_up</code> function, on the other hand, demonstrates the bottom-up approach. It iteratively calculates the Fibonacci numbers by storing each result in a vector as it progresses from the base cases $(fib[0] and fib[1])$ to the final result. This approach avoids the overhead of recursive calls and is typically more space-efficient than the top-down approach with memoization, particularly when the entire state space is small enough to fit in memory.
 </p>
 
 <p style="text-align: justify;">
@@ -294,7 +295,7 @@ In the <code>knapsack_recursive</code> function, a recursive solution with memoi
 </p>
 
 <p style="text-align: justify;">
-The trade-off between time complexity and space complexity is evident in dynamic programming. While dynamic programming often improves time complexity compared to naïve recursive solutions, it typically requires more space to store intermediate results. For example, the bottom-up approach in the Knapsack problem uses a table of size <code>O(nW)</code>, where <code>n</code> is the number of items and <code>W</code> is the maximum weight. In contrast, the recursive approach with memoization uses a similar amount of space but can sometimes be more intuitive to implement, especially for problems with a clear recursive structure.
+The trade-off between time complexity and space complexity is evident in dynamic programming. While dynamic programming often improves time complexity compared to naïve recursive solutions, it typically requires more space to store intermediate results. For example, the bottom-up approach in the Knapsack problem uses a table of size $O(nW)$, where $n$ is the number of items and $W$ is the maximum weight. In contrast, the recursive approach with memoization uses a similar amount of space but can sometimes be more intuitive to implement, especially for problems with a clear recursive structure.
 </p>
 
 <p style="text-align: justify;">

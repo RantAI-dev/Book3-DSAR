@@ -6,6 +6,7 @@ icon: "article"
 date: "2024-08-24T23:41:47+07:00"
 lastmod: "2024-08-24T23:41:47+07:00"
 draft: false
+katex: true
 toc: true
 ---
 
@@ -31,7 +32,7 @@ Algorithmic complexity is a fundamental concept in computer science that provide
 </p>
 
 <p style="text-align: justify;">
-For example, if an algorithm takes $3n^2 + 5n + 2$ steps to complete, where n is the size of the input, Big-O notation simplifies this to $O(n^2)$. This simplification is crucial because, as n becomes large, the $n^2$ term overwhelmingly dominates the behavior of the function, making the other terms relatively insignificant. Big-O notation helps us express this relationship succinctly, indicating that the algorithm's running time grows quadratically with the size of the input.
+For example, if an algorithm takes $ 3n^2 + 5n + 2 $ steps to complete, where n is the size of the input, Big-O notation simplifies this to $O(n^2)$. This simplification is crucial because, as n becomes large, the $n^2$ term overwhelmingly dominates the behavior of the function, making the other terms relatively insignificant. Big-O notation helps us express this relationship succinctly, indicating that the algorithm's running time grows quadratically with the size of the input.
 </p>
 
 <p style="text-align: justify;">

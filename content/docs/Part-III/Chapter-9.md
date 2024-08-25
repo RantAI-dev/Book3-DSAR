@@ -7,6 +7,7 @@ date: "2024-08-24T23:42:09+07:00"
 lastmod: "2024-08-24T23:42:09+07:00"
 draft: false
 toc: true
+katex: true
 ---
 
 center>
@@ -345,7 +346,7 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In this implementation, <code>Node</code> represents a single element of the list, containing a value of generic type <code>T</code> and an <code>Option<Box<Node<T>>></code> for the next node. The <code>Box</code> type is used to allocate the nodes on the heap, while <code>Option</code> provides a way to handle the absence of a node (i.e., the end of the list). The <code>SinglyLinkedList</code> struct manages the list with a <code>head</code> that points to the first node. The <code>push</code> method adds a new node to the front of the list, while the <code>pop</code> method removes and returns the node at the front.
+In this implementation, <code>Node</code> represents a single element of the list, containing a value of generic type <code>T</code> and an <code>Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;</code> for the next node. The <code>Box</code> type is used to allocate the nodes on the heap, while <code>Option</code> provides a way to handle the absence of a node (i.e., the end of the list). The <code>SinglyLinkedList</code> struct manages the list with a <code>head</code> that points to the first node. The <code>push</code> method adds a new node to the front of the list, while the <code>pop</code> method removes and returns the node at the front.
 </p>
 
 <p style="text-align: justify;">

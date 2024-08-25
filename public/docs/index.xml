@@ -6,7 +6,7 @@
     <description>Recent content in Docs on Modern Data Structures and Algorithms in Rust</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Aug 2024 23:50:58 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 25 Aug 2024 20:56:06 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modern Data Structures and Algorithms in Rust</title>
@@ -72,18 +72,25 @@
       <description>📘 Part III: Data Structures link&#xD;💡&#xA;&amp;quot;The greatest danger in science is not being wrong, but being trivial.&amp;quot; — Stephen Hawking&#xA;📘&#xA;Part III - Data Structures provides an extensive overview of essential and advanced data structures implemented in Rust, offering a thorough examination of how to manage and manipulate data efficiently. It starts with fundamental data structures, introducing arrays, slices, and linked lists while explaining Rust’s memory model and standard collections.</description>
     </item>
     <item>
-      <title>Part IV - Graph Algorithms</title>
-      <link>http://localhost:1313/docs/part-iv-graph-algorithms/</link>
+      <title>Part IV - Design and Analysis</title>
+      <link>http://localhost:1313/docs/part-iv-design-and-analysis/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:02 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-iv-graph-algorithms/</guid>
+      <guid>http://localhost:1313/docs/part-iv-design-and-analysis/</guid>
       <description>📘 Part IV: Design and Analysis link&#xD;💡&#xA;&amp;quot;Intelligence is the ability to adapt to change.&amp;quot; — Stephen Hawking&#xA;📘&#xA;Part IV - Design and Analysis provides a deep exploration into the methodologies for crafting and evaluating algorithms. It begins with a thorough overview of algorithm design techniques, covering foundational strategies such as divide and conquer, dynamic programming, greedy algorithms, and backtracking, as well as problem reduction and transformations. The focus then shifts to complexity analysis, detailing methods for evaluating both time and space complexity, understanding asymptotic bounds, and exploring advanced complexity topics.</description>
     </item>
     <item>
-      <title>Part V - Specialized Techniques and Applications</title>
-      <link>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</link>
+      <title>Part V - Graph Algorithms</title>
+      <link>http://localhost:1313/docs/part-v-graph-algorithms/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:03 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-v-specialized-techniques-and-applications/</guid>
-      <description>📘 Part V: Graph Algorithms link&#xD;&amp;ldquo;Success in creating AI would be the biggest event in human history. Unfortunately, it might also be the last, unless we learn how to avoid the risks.&amp;rdquo; – Stephen Hawking&#xA;📘&#xA;Part V - Graph Algorithms offers a thorough exploration of fundamental and advanced graph algorithms essential for solving complex problems in graph theory. It begins with a foundational overview of elementary graph theory, covering core concepts such as graph properties, invariants, and theorems, and practical graph construction techniques in Rust.</description>
+      <guid>http://localhost:1313/docs/part-v-graph-algorithms/</guid>
+      <description>📘 Part V: Graph Algorithms link&#xD;💡&#xA;&amp;ldquo;Success in creating AI would be the biggest event in human history. Unfortunately, it might also be the last, unless we learn how to avoid the risks.&amp;rdquo; – Stephen Hawking&#xA;📘&#xA;Part V - Graph Algorithms offers a thorough exploration of fundamental and advanced graph algorithms essential for solving complex problems in graph theory. It begins with a foundational overview of elementary graph theory, covering core concepts such as graph properties, invariants, and theorems, and practical graph construction techniques in Rust.</description>
+    </item>
+    <item>
+      <title>Part VI Selected Topics</title>
+      <link>http://localhost:1313/docs/part-vi-selected-topics/</link>
+      <pubDate>Sun, 25 Aug 2024 20:56:06 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-vi-selected-topics/</guid>
+      <description>📘 Part VI: Selected Topics link&#xD;💡&#xA;&amp;ldquo;Algorithms are the foundation of our digital world. They provide the means to transform ideas into action, shaping the future in ways we are only beginning to understand.&amp;rdquo; — John Nash&#xA;📘&#xA;Part VI - Selected Topics offers an in-depth exploration of specialized algorithmic techniques and their applications in modern computing. It begins with advanced recursive algorithms, covering recursion fundamentals in Rust, divide and conquer strategies, recursive data structures, memoization, dynamic programming, and more sophisticated recursive approaches.</description>
     </item>
     <item>
       <title>Closing Remark</title>

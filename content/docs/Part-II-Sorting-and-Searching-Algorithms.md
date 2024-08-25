@@ -1,8 +1,8 @@
 ---
-weight: 1150
+weight: 1250
 title: "Part II - Sorting and Searching Algorithms"
 description: ""
-icon: "article"
+icon: "sort"
 date: "2024-08-24T23:41:01+07:00"
 lastmod: "2024-08-24T23:41:01+07:00"
 draft: false
