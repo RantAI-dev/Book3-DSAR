@@ -30,7 +30,7 @@ Explore the chapters below to dive deep into the advanced programming data struc
 - [**Chapter 2: Introduction to Data Structures and Algorithms in Rust**](/docs/part-i/chapter-2/)
 - [**Chapter 3: Fundamentals of Rust Programming for Algorithms**](/docs/part-i/chapter-3/)
 - [**Chapter 4: Design of Algorithms and Running Times**](/docs/part-i/chapter-4/)
-- [**Chapter 5: Divide and Conquer**](/docs/part-ii/chapter-5/)
+- [**Chapter 5: Divide and Conquer**](/docs/part-i/chapter-5/)
 
 ---
 
