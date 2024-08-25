@@ -22,7 +22,7 @@ toc: true
 {{% alert icon="🎓" context="danger" %}}
 #### For Students:
 <p style="text-align: justify;">
-Modern Data Structures and Algorithms in Rust (DSAR) is an open-source web book available for free at <a href="http://dsar.rantai.dev">http://dsar.rantai.dev</a>. We encourage you to dive deeply into this resource and actively contribute to its development. Designed to be read sequentially from Chapter 1 through to the end, DSAR ensures a cohesive learning experience as each chapter builds on the previous one. It is crucial to follow this structure and avoid skipping chapters to fully grasp the foundational concepts and achieve a comprehensive understanding before moving forward.
+Modern Data Structures and Algorithms in Rust (DSAR) is an open-source web book available for free at <a href="https://dsar.rantai.dev">https://dsar.rantai.dev</a>. We encourage you to dive deeply into this resource and actively contribute to its development. Designed to be read sequentially from Chapter 1 through to the end, DSAR ensures a cohesive learning experience as each chapter builds on the previous one. It is crucial to follow this structure and avoid skipping chapters to fully grasp the foundational concepts and achieve a comprehensive understanding before moving forward.
 </p>
 
 <p style="text-align: justify;">
@@ -45,7 +45,7 @@ RantAI offers the FCP Companion Book as a supplementary guide to support your te
 </p>
 
 - <p style="text-align: justify;"><strong></strong>Availability and Contribution:<strong></strong> The DSAR FCP Companion Book will be available for purchase in online stores. We invite lecturers to contribute as authors for future editions of DSAR, sharing your insights to enrich the resource. Your contributions will help maintain the book’s relevance and value.</p>
-- <p style="text-align: justify;"><strong></strong>Open-Source Contribution:<strong></strong> DSAR will remain an open-source resource, accessible at <a href="http://dsar.rantai.dev">http://dsar.rantai.dev</a>. We welcome your involvement in its development. Your feedback and contributions will help enhance the book, making it a more valuable tool for students and educators.</p>
+- <p style="text-align: justify;"><strong></strong>Open-Source Contribution:<strong></strong> DSAR will remain an open-source resource, accessible at <a href="https://dsar.rantai.dev">https://dsar.rantai.dev</a>. We welcome your involvement in its development. Your feedback and contributions will help enhance the book, making it a more valuable tool for students and educators.</p>
 <p style="text-align: justify;">
 Whether you are a student aiming to master data structures and algorithms or a lecturer guiding others, DSAR is designed to be a dynamic and comprehensive tool for learning and teaching. Engage deeply with the material, contribute to its development, and advance your knowledge and skills in the field. May this guide inspire you to explore, learn, and push the boundaries of knowledge in data structures and algorithms, continually expanding your understanding and application.
 </p>
