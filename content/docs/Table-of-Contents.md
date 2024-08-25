@@ -17,8 +17,8 @@ Explore the chapters below to dive deep into the advanced programming data struc
 
 ### **Main Sections**
 
-- [**Preface**](/docs/preface/)
 - [**Modern Data Structures and Algorithms in Rust**](/docs/dsar/)
+- [**Preface**](/docs/preface/)
 - [**Foreword-1**](/docs/foreword/)
 - [**Foreword-2**](/docs/foreword-2/)
 
