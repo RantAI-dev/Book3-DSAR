@@ -53,13 +53,18 @@ Explore the chapters below to dive deep into the advanced programming data struc
 
 ---
 
-### **Part IV - Graph Algorithms**
+### **Part IV - Design and Analysis**
 
 - [**Chapter 15: Graphs and Graph Representations**](/docs/chapter-15/)
 - [**Chapter 16: Algorithm Design Techniques**](/docs/chapter-16/)
 - [**Chapter 17: Complexity Analysis**](/docs/chapter-17/)
 - [**Chapter 18: Algorithm Optimization**](/docs/chapter-18/)
 - [**Chapter 19: Amortized Algorithms**](/docs/chapter-19/)
+
+---
+
+### **Part V - Graph Algorithms**
+
 - [**Chapter 20: Elementary Graph Theory for Algorithms**](/docs/chapter-20/)
 - [**Chapter 21: Graph Traversal Algorithms**](/docs/chapter-21/)
 - [**Chapter 22: Single-Source Shortest Paths**](/docs/chapter-22/)
@@ -70,7 +75,7 @@ Explore the chapters below to dive deep into the advanced programming data struc
 
 ---
 
-### **Part V - Specialized Techniques and Applications**
+### **Part VI - Selected Topics**
 
 - [**Chapter 27: Advanced Recursive Algorithms**](/docs/chapter-27/)
 - [**Chapter 28: Vector, Matrix, and Tensor Operations**](/docs/chapter-28/)
