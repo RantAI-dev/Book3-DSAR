@@ -761,4 +761,14 @@ Each prompt is an opportunity to expand your knowledge, refine your coding techn
         </div>
         <div class="card-body">
             <p><strong>Task:</strong></p>
-            <p class="text-justify">Design a novel hybrid string matching algorithm that intelligently combines the strengths of multiple existing algorithms (e.g., combining the efficiency of Boyer-Moore's heuristics with the robustness of KMP's preprocessing and the scalability of Suffix Trees). Implement this hybrid algorithm in Rust, focusing on optimizing both time and space complexity. Ensure the implementation can handle extremely large datasets, such as entire books or DNA sequences, and is capable of performing in near real-time. Develop a suite of comprehensive tests that assess the hybrid algorithm’s 
+            <p class="text-justify">Design a novel hybrid string matching algorithm that intelligently combines the strengths of multiple existing algorithms (e.g., combining the efficiency of Boyer-Moore's heuristics with the robustness of KMP's preprocessing and the scalability of Suffix Trees). Implement this hybrid algorithm in Rust, focusing on optimizing both time and space complexity. Ensure the implementation can handle extremely large datasets, such as entire books or DNA sequences, and is capable of performing in near real-time. Develop a suite of comprehensive tests that assess the hybrid algorithm’s performance across various scenarios, including different text and pattern sizes, varying levels of pattern complexity, and real-world data with noise or errors. Create a research-oriented technical paper that provides a thorough explanation of your hybrid algorithm, including its design rationale, implementation details, and performance benchmarks. The paper should also discuss potential future improvements and applications of the hybrid algorithm in fields like bioinformatics, data mining, or large-scale text analytics.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Design, implement, and evaluate a custom hybrid string matching algorithm in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code, performance benchmarks, and a research paper discussing the design, implementation, and potential applications of the hybrid algorithm.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Let your curiosity and determination drive you to excel, and remember that the more you challenge yourself, the more proficient you'll become.
+    </p>
+</section>

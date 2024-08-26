@@ -1,7 +1,7 @@
 ---
 weight: 3500
 title: "Chapter 24"
-description: ""
+description: "Minimum Spanning Trees"
 icon: "article"
 date: "2024-08-24T23:42:30+07:00"
 lastmod: "2024-08-24T23:42:30+07:00"

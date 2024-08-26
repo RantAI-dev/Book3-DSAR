@@ -714,7 +714,7 @@ By dedicating time to these exercises, you will develop a strong foundation in b
         </div>
         <div class="card-body">
             <p><strong>Task:</strong></p>
-            <p class="text-justify">Write a Rust function to compute the FFT of a sequence using the Cooley-Tukey algorithm. Implement the algorithm in a recursive and iterative manner, and compare their performance. Create sample input data and verify the output of your FFT implementation. Analyze and document the time complexity and space complexity of your implementation.</p>
+            <p class="text-justify">Write a Rust function to compute the FFT of a sequence using the Cooley-Tukey algorithm. Implement the algorithm in both recursive and iterative manners, and compare their performance. Create sample input data and verify the output of your FFT implementation. Analyze and document the time complexity and space complexity of your implementation.</p>
             <p><strong>Objective:</strong></p>
             <p class="text-justify">Implement the Cooley-Tukey FFT algorithm and understand its efficiency.</p>
             <p><strong>Deliverables:</strong></p>
@@ -750,4 +750,14 @@ By dedicating time to these exercises, you will develop a strong foundation in b
         </div>
         <div class="card-body">
             <p><strong>Task:</strong></p>
-            <p class="tex
+            <p class="text-justify">Write a Rust function for computing Real FFT, explaining how it improves efficiency for real-valued input data. Implement a 2D FFT algorithm for image processing, including functions for transforming and manipulating image data. Test the Real FFT and multi-dimensional FFT implementations with real-world data and evaluate their performance and accuracy.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement Real FFT and multi-dimensional FFT in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for Real FFT and 2D FFT implementations, along with test results and performance evaluations.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Completing these assignments will provide a robust understanding of the algorithms and their applications, preparing you for more advanced computational challenges.
+    </p>
+</section>
