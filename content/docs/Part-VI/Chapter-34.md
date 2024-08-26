@@ -703,50 +703,62 @@ Each prompt is an opportunity to expand your knowledge, refine your coding techn
 </p>
 
 ### 34.4.3. Self-Exercises
-<p style="text-align: justify;">
-Embrace the following exercises as opportunities to explore the cutting-edge of computer science and Rust development, and take pride in the insights and expertise you'll gain along the way.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 34.1:<strong></strong> Deep Dive into KMP with Optimizations
-</p>
-
-- <p style="text-align: justify;">Implement the Knuth-Morris-Pratt (KMP) algorithm in Rust, ensuring a thorough understanding of the preprocessing phase (prefix function). Extend the basic implementation by optimizing it to handle very large text and pattern inputs efficiently, minimizing memory usage.</p>
-- <p style="text-align: justify;">Explore alternative methods for constructing the prefix table, and implement at least one variant that reduces computational overhead in specific scenarios, such as patterns with repetitive characters.</p>
-- <p style="text-align: justify;">Conduct an extensive analysis comparing your optimized KMP implementation against the standard KMP and other string matching algorithms in terms of time complexity, space complexity, and real-world performance on large datasets.</p>
-- <p style="text-align: justify;">Prepare a comprehensive technical report that details the algorithmic improvements, includes a comparison of different approaches, and provides a discussion on the trade-offs involved. The report should also include performance graphs and code snippets to illustrate key points.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 34.2:<strong></strong> Suffix Trees and Enhanced Suffix Arrays
-</p>
-
-- <p style="text-align: justify;">Implement a fully functional Suffix Tree in Rust, ensuring it can handle large datasets efficiently. Extend this implementation to support dynamic updates, allowing for the insertion and deletion of patterns after the tree has been constructed.</p>
-- <p style="text-align: justify;">In addition to the Suffix Tree, implement a Suffix Array for the same dataset and compare the two data structures in terms of construction time, memory usage, and query performance for various pattern matching tasks.</p>
-- <p style="text-align: justify;">Integrate both the Suffix Tree and Suffix Array with additional algorithms, such as Longest Common Substring (LCS) or Longest Repeated Substring (LRS), and demonstrate their applications in text compression or DNA sequence analysis.</p>
-- <p style="text-align: justify;">Submit a detailed research paper that compares the Suffix Tree and Suffix Array implementations, discusses their relative advantages, and provides insights into the practical applications of these structures in large-scale data processing.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 34.3:<strong></strong> Comparative Analysis of Advanced String Matching Algorithms
-</p>
-
-- <p style="text-align: justify;">Implement four string matching algorithms in Rust: Naive, Boyer-Moore, Rabin-Karp, and Aho-Corasick. Ensure that each implementation is optimized for high performance and capable of handling large input sizes.</p>
-- <p style="text-align: justify;">Develop a comprehensive benchmarking suite that tests these algorithms on a variety of text datasets, ranging from small strings to massive text corpora, and includes different types of patterns, such as overlapping, nested, and random patterns.</p>
-- <p style="text-align: justify;">Perform an in-depth comparative analysis of these algorithms, focusing on their time complexity, space complexity, and practical performance. Explore edge cases and worst-case scenarios for each algorithm, and discuss how each one handles these challenges.</p>
-- <p style="text-align: justify;">Produce a research-grade report that not only presents the benchmark results but also includes a critical evaluation of the algorithms in terms of their suitability for different types of applications, such as text search engines, genome sequencing, or cybersecurity.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 34.4:<strong></strong> Advanced Multi-pattern Matching with Aho-Corasick and Beyond
-</p>
-
-- <p style="text-align: justify;">Implement the Aho-Corasick algorithm in Rust, with a focus on building a highly efficient finite state machine (FSM) that supports complex pattern sets, including those with overlapping substrings and shared prefixes.</p>
-- <p style="text-align: justify;">Extend the Aho-Corasick algorithm to support approximate matching (e.g., allowing for a certain number of mismatches or edit distances) and evaluate its performance on large text corpora with multiple patterns.</p>
-- <p style="text-align: justify;">Design and implement a hybrid algorithm that combines Aho-Corasick with other string matching techniques (such as Rabin-Karp for hashing or Suffix Arrays for indexing) to enhance its efficiency in specific scenarios, such as real-time search or streaming data.</p>
-- <p style="text-align: justify;">Write an in-depth technical paper that covers the algorithmic design, implementation challenges, and performance evaluations of both the standard and extended Aho-Corasick algorithms. The paper should include detailed comparisons with other multi-pattern matching algorithms and provide practical use cases where these algorithms excel.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 34.5:<strong></strong> Building and Optimizing a Custom Hybrid String Matching Algorithm
-</p>
-
-- <p style="text-align: justify;">Design a novel hybrid string matching algorithm that intelligently combines the strengths of multiple existing algorithms (e.g., combining the efficiency of Boyer-Moore's heuristics with the robustness of KMP's preprocessing and the scalability of Suffix Trees).</p>
-- <p style="text-align: justify;">Implement this hybrid algorithm in Rust, focusing on optimizing both time and space complexity. Ensure the implementation can handle extremely large datasets, such as entire books or DNA sequences, and is capable of performing in near real-time.</p>
-- <p style="text-align: justify;">Develop a suite of comprehensive tests that assess the hybrid algorithm’s performance across various scenarios, including different text and pattern sizes, varying levels of pattern complexity, and real-world data with noise or errors.</p>
-- <p style="text-align: justify;">Create a research-oriented technical paper that provides a thorough explanation of your hybrid algorithm, including its design rationale, implementation details, and performance benchmarks. The paper should also discuss potential future improvements and applications of the hybrid algorithm in fields like bioinformatics, data mining, or large-scale text analytics.</p>
-<p style="text-align: justify;">
-Let your curiosity and determination drive you to excel, and remember that the more you challenge yourself, the more proficient you'll become.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Embrace the following exercises as opportunities to explore the cutting-edge of computer science and Rust development, and take pride in the insights and expertise you'll gain along the way.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 34.1: Deep Dive into KMP with Optimizations
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the Knuth-Morris-Pratt (KMP) algorithm in Rust, ensuring a thorough understanding of the preprocessing phase (prefix function). Extend the basic implementation by optimizing it to handle very large text and pattern inputs efficiently, minimizing memory usage. Explore alternative methods for constructing the prefix table, and implement at least one variant that reduces computational overhead in specific scenarios, such as patterns with repetitive characters. Conduct an extensive analysis comparing your optimized KMP implementation against the standard KMP and other string matching algorithms in terms of time complexity, space complexity, and real-world performance on large datasets. Prepare a comprehensive technical report that details the algorithmic improvements, includes a comparison of different approaches, and provides a discussion on the trade-offs involved. The report should also include performance graphs and code snippets to illustrate key points.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Enhance your understanding and implementation of the KMP algorithm in Rust by focusing on optimization techniques and comparative analysis.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code, performance analysis, and a technical report detailing the optimizations and comparative study.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 34.2: Suffix Trees and Enhanced Suffix Arrays
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a fully functional Suffix Tree in Rust, ensuring it can handle large datasets efficiently. Extend this implementation to support dynamic updates, allowing for the insertion and deletion of patterns after the tree has been constructed. In addition to the Suffix Tree, implement a Suffix Array for the same dataset and compare the two data structures in terms of construction time, memory usage, and query performance for various pattern matching tasks. Integrate both the Suffix Tree and Suffix Array with additional algorithms, such as Longest Common Substring (LCS) or Longest Repeated Substring (LRS), and demonstrate their applications in text compression or DNA sequence analysis. Submit a detailed research paper that compares the Suffix Tree and Suffix Array implementations, discusses their relative advantages, and provides insights into the practical applications of these structures in large-scale data processing.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore and compare the efficiency and application of Suffix Trees and Suffix Arrays in Rust, focusing on large-scale data processing.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code, performance benchmarks, and a research paper detailing the comparative study of Suffix Trees and Suffix Arrays.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 34.3: Comparative Analysis of Advanced String Matching Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement four string matching algorithms in Rust: Naive, Boyer-Moore, Rabin-Karp, and Aho-Corasick. Ensure that each implementation is optimized for high performance and capable of handling large input sizes. Develop a comprehensive benchmarking suite that tests these algorithms on a variety of text datasets, ranging from small strings to massive text corpora, and includes different types of patterns, such as overlapping, nested, and random patterns. Perform an in-depth comparative analysis of these algorithms, focusing on their time complexity, space complexity, and practical performance. Explore edge cases and worst-case scenarios for each algorithm, and discuss how each one handles these challenges. Produce a research-grade report that not only presents the benchmark results but also includes a critical evaluation of the algorithms in terms of their suitability for different types of applications, such as text search engines, genome sequencing, or cybersecurity.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and analyze the performance of multiple string matching algorithms in Rust, focusing on practical application and comparative study.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code, benchmarking suite, and a research report that details the comparative analysis and practical applications of the algorithms.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 34.4: Advanced Multi-pattern Matching with Aho-Corasick and Beyond
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the Aho-Corasick algorithm in Rust, with a focus on building a highly efficient finite state machine (FSM) that supports complex pattern sets, including those with overlapping substrings and shared prefixes. Extend the Aho-Corasick algorithm to support approximate matching (e.g., allowing for a certain number of mismatches or edit distances) and evaluate its performance on large text corpora with multiple patterns. Design and implement a hybrid algorithm that combines Aho-Corasick with other string matching techniques (such as Rabin-Karp for hashing or Suffix Arrays for indexing) to enhance its efficiency in specific scenarios, such as real-time search or streaming data. Write an in-depth technical paper that covers the algorithmic design, implementation challenges, and performance evaluations of both the standard and extended Aho-Corasick algorithms. The paper should include detailed comparisons with other multi-pattern matching algorithms and provide practical use cases where these algorithms excel.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Enhance the Aho-Corasick algorithm with advanced features and compare its efficiency with other multi-pattern matching algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code, performance analysis, and a detailed technical paper covering the algorithmic design and evaluation.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 34.5: Building and Optimizing a Custom Hybrid String Matching Algorithm
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design a novel hybrid string matching algorithm that intelligently combines the strengths of multiple existing algorithms (e.g., combining the efficiency of Boyer-Moore's heuristics with the robustness of KMP's preprocessing and the scalability of Suffix Trees). Implement this hybrid algorithm in Rust, focusing on optimizing both time and space complexity. Ensure the implementation can handle extremely large datasets, such as entire books or DNA sequences, and is capable of performing in near real-time. Develop a suite of comprehensive tests that assess the hybrid algorithm’s 

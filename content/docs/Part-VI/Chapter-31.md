@@ -568,63 +568,74 @@ They will help you explore complex topics, including advanced data structures, s
 <p style="text-align: justify;">
 Diving into these advanced prompts will significantly deepen your understanding of blockchain technology and its implementation using Rust. By tackling these complex topics and writing sophisticated Rust code, you will gain a profound grasp of both theoretical concepts and practical applications. Embrace the challenge of exploring advanced blockchain mechanisms and developing innovative solutions with Rust. This journey will not only enhance your technical skills but also position you at the forefront of blockchain technology. Let your curiosity and ambition drive you to explore these prompts, and let each response inspire you to push the boundaries of what is possible in the blockchain realm.
 </p>
-
 ### 31.6.3. Self-Exercises
-<p style="text-align: justify;">
-These exercises are designed to deepen your practical understanding of blockchain technology and its implementation using Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 31.1:<strong></strong> Implement a Blockchain System in Rust
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Create a complete blockchain system from scratch using Rust. Your implementation should include advanced features such as transaction validation, dynamic difficulty adjustment, and block tampering detection.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Define the structure of a block, including a timestamp, previous block hash, and transaction data.</p>
-- <p style="text-align: justify;">Implement a blockchain class that manages the chain and performs validation.</p>
-- <p style="text-align: justify;">Include a mechanism for adjusting the mining difficulty dynamically.</p>
-- <p style="text-align: justify;">Provide detailed documentation and comments within your code to explain each component.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit the Rust code files along with a brief report describing your implementation choices and any challenges faced.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 31.2:<strong></strong> Build and Test a Merkle Tree in Rust
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Develop a Merkle tree to efficiently handle and verify transactions within your blockchain implementation.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Implement the Merkle tree structure, including nodes and the ability to compute the root hash.</p>
-- <p style="text-align: justify;">Write functions to add transactions to the tree and generate Merkle proofs.</p>
-- <p style="text-align: justify;">Create test cases to verify that your implementation correctly handles various transaction scenarios and proof verifications.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit the Rust code for the Merkle tree implementation, test cases, and a report explaining the Merkle tree structure and its role in blockchain.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 31.3:<strong></strong> Simulate Consensus Algorithms in Rust
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement and compare different consensus algorithms, including Proof of Work (PoW), Proof of Stake (PoS), and Delegated Proof of Stake (DPoS) using Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Develop separate Rust modules for PoW and PoS, including mining and staking mechanisms, respectively.</p>
-- <p style="text-align: justify;">Simulate the impact of these algorithms on network performance and security.</p>
-- <p style="text-align: justify;">Analyze and document the trade-offs between PoW and PoS in terms of energy efficiency, security, and decentralization.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit the Rust code for each consensus algorithm along with a comparative analysis report discussing performance metrics and algorithmic trade-offs.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 31.4:<strong></strong> Develop a Smart Contract Using Rust and Ink!
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Write a sophisticated smart contract using the Ink! framework for the Polkadot ecosystem.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Implement a smart contract with advanced features such as dynamic state management, access control, and interaction with other contracts.</p>
-- <p style="text-align: justify;">Provide detailed comments and explanations in your Rust code to illustrate how the contract functions and how Rust’s features enhance its security.</p>
-- <p style="text-align: justify;">Deploy the smart contract to a test network and demonstrate its functionality.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit the Rust code for the smart contract, deployment instructions, and a report explaining the contract’s design, functionality, and how Rust contributes to its security.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 31.5:<strong></strong> Analyze Blockchain Scalability Solutions
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Explore and implement advanced blockchain scalability solutions such as sharding or layer-2 rollups using Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Develop a Rust-based simulation of a blockchain with either sharding or rollups integrated.</p>
-- <p style="text-align: justify;">Analyze the performance and scalability improvements provided by these solutions compared to a traditional blockchain setup.</p>
-- <p style="text-align: justify;">Discuss the technical challenges and benefits associated with each scalability technique in your report.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit the Rust code for the scalability simulation, performance analysis results, and a comprehensive report on the scalability techniques and their impact on blockchain performance.</p>
-<p style="text-align: justify;">
-Completing these assignments will provide hands-on experience with advanced blockchain concepts and help solidify your knowledge in this cutting-edge field.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These exercises are designed to deepen your practical understanding of blockchain technology and its implementation using Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 31.1: Implement a Blockchain System in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a complete blockchain system from scratch using Rust. Your implementation should include advanced features such as transaction validation, dynamic difficulty adjustment, and block tampering detection.</p>
+            <p class="text-justify">Define the structure of a block, including a timestamp, previous block hash, and transaction data. Implement a blockchain class that manages the chain and performs validation. Include a mechanism for adjusting the mining difficulty dynamically. Provide detailed documentation and comments within your code to explain each component.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement a comprehensive blockchain system in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code files along with a brief report describing your implementation choices and any challenges faced.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 31.2: Build and Test a Merkle Tree in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Merkle tree to efficiently handle and verify transactions within your blockchain implementation. Implement the Merkle tree structure, including nodes and the ability to compute the root hash. Write functions to add transactions to the tree and generate Merkle proofs. Create test cases to verify that your implementation correctly handles various transaction scenarios and proof verifications.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Build a Merkle tree in Rust to manage and verify blockchain transactions.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the Merkle tree implementation, test cases, and a report explaining the Merkle tree structure and its role in blockchain.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 31.3: Simulate Consensus Algorithms in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement and compare different consensus algorithms, including Proof of Work (PoW), Proof of Stake (PoS), and Delegated Proof of Stake (DPoS) using Rust. Develop separate Rust modules for PoW and PoS, including mining and staking mechanisms, respectively. Simulate the impact of these algorithms on network performance and security. Analyze and document the trade-offs between PoW and PoS in terms of energy efficiency, security, and decentralization.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore different blockchain consensus algorithms by simulating them in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for each consensus algorithm along with a comparative analysis report discussing performance metrics and algorithmic trade-offs.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 31.4: Develop a Smart Contract Using Rust and Ink!
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a sophisticated smart contract using the Ink! framework for the Polkadot ecosystem. Implement a smart contract with advanced features such as dynamic state management, access control, and interaction with other contracts. Provide detailed comments and explanations in your Rust code to illustrate how the contract functions and how Rust’s features enhance its security. Deploy the smart contract to a test network and demonstrate its functionality.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Develop a smart contract using Rust and Ink! for the Polkadot ecosystem.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the smart contract, deployment instructions, and a report explaining the contract’s design, functionality, and how Rust contributes to its security.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 31.5: Analyze Blockchain Scalability Solutions
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Explore and implement advanced blockchain scalability solutions such as sharding or layer-2 rollups using Rust. Develop a Rust-based simulation of a blockchain with either sharding or rollups integrated. Analyze the performance and scalability improvements provided by these solutions compared to a traditional blockchain setup. Discuss the technical challenges and benefits associated with each scalability technique in your report.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and evaluate blockchain scalability solutions in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the scalability simulation, performance analysis results, and a comprehensive report on the scalability techniques and their impact on blockchain performance.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Completing these assignments will provide hands-on experience with advanced blockchain concepts and help solidify your knowledge in this cutting-edge field.
+    </p>
+</section>

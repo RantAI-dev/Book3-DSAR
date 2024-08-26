@@ -277,20 +277,80 @@ Engaging with these prompts will immerse you in the intricacies of algorithm des
 </p>
 
 ### 4.5.3. Self-Exercises
-<p style="text-align: justify;">
-These assignments will reinforce theoretical understanding and practical implementation in Rust, encouraging students to apply the concepts they've learned.
+<p class="text-justify">
+    These assignments will reinforce theoretical understanding and practical implementation in Rust, encouraging students to apply the concepts they've learned.
 </p>
 
-- <p style="text-align: justify;"><strong></strong>Exercise 4.1:<strong></strong> Implementing and Analyzing Time Complexities</p>
-- <p style="text-align: justify;">Write a Rust program that implements three different algorithms: a linear search (O(n)), binary search ($O(\log n)$), and bubble sort ($O(n^2)$). Measure and compare their time complexities with varying input sizes using Rust’s benchmarking tools. Provide a detailed report on how the actual runtime corresponds to the theoretical time complexity.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 4.2:<strong></strong> Exploring Divide and Conquer with Merge Sort</p>
-- <p style="text-align: justify;">Implement the Merge Sort algorithm in Rust using the divide and conquer strategy. Visualize the process by printing the sub-arrays at each level of recursion. Explain how the recursive division of the problem affects the overall time complexity. Submit your code along with an explanation of how the algorithm’s $O(n \log n)$ complexity is derived.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 4.3:<strong></strong> Dynamic Programming and Memory Optimization</p>
-- <p style="text-align: justify;">Implement the Knapsack problem using dynamic programming in Rust. After completing the implementation, optimize the solution to reduce memory usage by using a one-dimensional array instead of a two-dimensional one. Discuss the trade-offs between time and space complexity in your solution. Submit your code along with a detailed explanation of your optimization process.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 4.4:<strong></strong> Profiling and Optimizing a Rust Program</p>
-- <p style="text-align: justify;">Choose a Rust program you’ve previously written (or write a new one) that involves intensive computation. Use Rust’s profiling tools to identify bottlenecks in your code. Apply optimization techniques such as loop unrolling or inlining functions to improve performance. Document your profiling process, the optimizations applied, and their impact on the program’s performance.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 4.5:<strong></strong> Advanced Data Structures and Algorithm Efficiency</p>
-- <p style="text-align: justify;">Implement a Trie data structure in Rust and use it to solve a prefix-based searching problem (e.g., autocomplete suggestions). Compare its performance with a hash table-based solution for the same problem in terms of time and space complexity. Submit your code, along with a comparison of the efficiency of each approach, discussing which scenarios favor one data structure over the other.</p>
-<p style="text-align: justify;">
-These exercises are designed to challenge you to not only understand the concepts covered in this Chapter but also to apply them in practical scenarios. By completing these assignments, you’ll gain a deeper insight into algorithm design, complexity analysis, and efficient coding practices in Rust.
-</p>
+---
+
+<section class="mt-5">
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 4.1: Implementing and Analyzing Time Complexities
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust program that implements three different algorithms: a linear search (<em>O(n)</em>), binary search (<em>O(log n)</em>), and bubble sort (<em>O(n^2)</em>). Measure and compare their time complexities with varying input sizes using Rust’s benchmarking tools.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand how different algorithms behave in terms of time complexity and how to analyze their efficiency through benchmarking.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide a Rust program implementing the three algorithms, along with a detailed report on how the actual runtime corresponds to the theoretical time complexity.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 4.2: Exploring Divide and Conquer with Merge Sort
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the Merge Sort algorithm in Rust using the divide and conquer strategy. Visualize the process by printing the sub-arrays at each level of recursion.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Gain an understanding of how the divide and conquer strategy optimizes the sorting process and why Merge Sort operates with <em>O(n \log n)</em> complexity.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code along with an explanation of how the algorithm’s <em>O(n \log n)</em> complexity is derived.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 4.3: Dynamic Programming and Memory Optimization
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the Knapsack problem using dynamic programming in Rust. Optimize the solution to reduce memory usage by using a one-dimensional array instead of a two-dimensional one.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Learn how to apply dynamic programming techniques and optimize memory usage in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code with both the original and optimized implementations, along with a detailed explanation of your optimization process.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 4.4: Profiling and Optimizing a Rust Program
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Choose a Rust program you’ve previously written (or write a new one) that involves intensive computation. Use Rust’s profiling tools to identify bottlenecks in your code.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand how to optimize Rust code by identifying and addressing performance bottlenecks.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Document your profiling process, the optimizations applied, and their impact on the program’s performance. Include the original and optimized code.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 4.5: Advanced Data Structures and Algorithm Efficiency
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a Trie data structure in Rust and use it to solve a prefix-based searching problem (e.g., autocomplete suggestions). Compare its performance with a hash table-based solution for the same problem.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Gain experience with advanced data structures and compare their efficiencies in solving specific problems.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code, along with a comparison of the efficiency of each approach, discussing which scenarios favor one data structure over the other.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to challenge you to not only understand the concepts covered in this chapter but also to apply them in practical scenarios. By completing these assignments, you’ll gain a deeper insight into algorithm design, complexity analysis, and efficient coding practices in Rust.
+    </p>
+</section>
+

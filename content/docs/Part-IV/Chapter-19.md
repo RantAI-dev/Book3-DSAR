@@ -477,7 +477,7 @@ In this Rust implementation, the <code>FibonacciHeap</code> struct manages a Fib
 </p>
 
 <p style="text-align: justify;">
-The van Emde Boas (vEB) trees are advanced data structures that support a variety of operations on a dynamic set of integers in sub-logarithmic time, specifically in $O(\log \log u)$, where uuu is the universe size. This efficiency is achieved by recursively dividing the universe into smaller blocks, allowing for fast operations like minimum, maximum, insertion, and deletion.
+The van Emde Boas (vEB) trees are advanced data structures that support a variety of operations on a dynamic set of integers in sub-logarithmic time, specifically in $O(\log \log u)$, where $u$ is the universe size. This efficiency is achieved by recursively dividing the universe into smaller blocks, allowing for fast operations like minimum, maximum, insertion, and deletion.
 </p>
 
 ##### Pseudo Code
@@ -635,60 +635,90 @@ By implementing and analyzing various data structures, you’ll gain valuable in
 </p>
 
 ## 19.6.3. Self-Exercises
-<p style="text-align: justify;">
-Here are five in-depth and comprehensive exercises designed to deepen students' understanding of amortized algorithms as covered in Chapter 19. Each exercise includes detailed requirements and objectives to ensure robust learning and practical application.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 19.1:<strong></strong> Implement and Analyze a Dynamic Array with Detailed Performance Metrics
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a dynamic array in Rust, similar to <code>Vec</code>, including methods for insertion, deletion, and resizing. Ensure that the resizing operation involves doubling the capacity to manage growth.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Perform aggregate analysis to calculate the amortized cost of the insertion operation. Implement functionality to track and log the number of operations performed and the frequency of resizing. Analyze how the resizing impacts the performance of the dynamic array.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the complete Rust code for the dynamic array, including methods for insertion and resizing. Provide a detailed report that includes:</p>
-- <p style="text-align: justify;">Theoretical amortized cost calculations and their alignment with your implementation.</p>
-- <p style="text-align: justify;">Performance benchmarks showing the impact of resizing.</p>
-- <p style="text-align: justify;">A discussion of how the aggregate analysis applies to the resizing operations and its practical implications.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 19.2:<strong></strong> Design and Benchmark a Custom Hash Table with Collision Handling and Rehashing
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Develop a custom hash table in Rust using open addressing or separate chaining for collision handling. Implement methods for insertion, deletion, and searching, and include dynamic rehashing to manage load factors and ensure efficiency.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Use amortized analysis to evaluate the cost of hash table operations, focusing on rehashing. Implement a system to track the frequency of rehashing and its impact on performance.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Provide the Rust code for the hash table with detailed implementations of collision handling and rehashing. Submit a comprehensive report that includes:</p>
-- <p style="text-align: justify;">Analysis of the amortized cost of operations with and without rehashing.</p>
-- <p style="text-align: justify;">Performance benchmarks using <code>cargo bench</code> that illustrate how rehashing affects the hash table's efficiency.</p>
-- <p style="text-align: justify;">A discussion on how different collision handling strategies impact amortized cost and overall performance.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 19.3:<strong></strong> Develop and Analyze a Self-Balancing Tree (AVL or Red-Black Tree)
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement an AVL tree or red-black tree in Rust, ensuring that your implementation handles insertion, deletion, and tree balancing. Include methods for rotations and balancing to maintain tree properties.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Apply the potential method of amortized analysis to evaluate the cost of operations. Analyze how tree balancing (rotations) affects the amortized cost of insertions and deletions.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the Rust code for the self-balancing tree, including methods for balancing and rotations. Provide a detailed report that includes:</p>
-- <p style="text-align: justify;">An explanation of the potential function used and how it applies to amortized analysis.</p>
-- <p style="text-align: justify;">Performance benchmarks showing the cost of balancing operations.</p>
-- <p style="text-align: justify;">A discussion on the impact of tree balancing on the amortized cost and overall efficiency of the data structure.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 19.4:<strong></strong> Implement a Priority Queue with a Binary Heap and Perform Amortized Cost Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Create a priority queue in Rust using a binary heap. Implement insertion, extraction of the minimum (or maximum), and heapification operations.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Analyze the amortized cost of priority queue operations, with a focus on insertion and extraction. Compare the performance of your implementation with theoretical amortized costs and provide insights into how the binary heap maintains efficiency.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the Rust code for the priority queue, including detailed implementations of insertion and extraction. Provide a comprehensive report that includes:</p>
-- <p style="text-align: justify;">Theoretical amortized cost calculations and performance benchmarks.</p>
-- <p style="text-align: justify;">A comparison of theoretical and practical results.</p>
-- <p style="text-align: justify;">Insights into how the binary heap's structure influences the amortized cost of operations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 19.5:<strong></strong> Comparative Study of Amortized Analysis Techniques Using a Common Data Structure
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a basic data structure (such as a stack or queue) in Rust. Apply aggregate, accounting, and potential methods of amortized analysis to evaluate the cost of operations.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Compare and contrast the results from each amortized analysis technique. Discuss the applicability and limitations of each technique in the context of your data structure.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the Rust code for the data structure along with implementations of amortized analysis using aggregate, accounting, and potential methods. Provide a detailed comparative report that includes:</p>
-- <p style="text-align: justify;">Theoretical analysis and practical results for each technique.</p>
-- <p style="text-align: justify;">Performance data and insights into the strengths and weaknesses of each analysis method.</p>
-- <p style="text-align: justify;">A discussion on which technique provides the most meaningful insights for different types of data structures and operations.</p>
-<p style="text-align: justify;">
-These exercises are designed to provide a thorough understanding of amortized algorithms through hands-on implementation and in-depth analysis. By completing these assignments, students will gain practical experience and a deep appreciation for the nuances of amortized analysis in algorithm design.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Here are five in-depth and comprehensive exercises designed to deepen students' understanding of amortized algorithms as covered in Chapter 19. Each exercise includes detailed requirements and objectives to ensure robust learning and practical application.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 19.1: Implement and Analyze a Dynamic Array with Detailed Performance Metrics
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a dynamic array in Rust, similar to <code>Vec</code>, including methods for insertion, deletion, and resizing. Ensure that the resizing operation involves doubling the capacity to manage growth.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Perform aggregate analysis to calculate the amortized cost of the insertion operation. Implement functionality to track and log the number of operations performed and the frequency of resizing. Analyze how the resizing impacts the performance of the dynamic array.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the complete Rust code for the dynamic array, including methods for insertion and resizing. Provide a detailed report that includes:</p>
+            <p class="text-justify">- Theoretical amortized cost calculations and their alignment with your implementation.</p>
+            <p class="text-justify">- Performance benchmarks showing the impact of resizing.</p>
+            <p class="text-justify">- A discussion of how the aggregate analysis applies to the resizing operations and its practical implications.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 19.2: Design and Benchmark a Custom Hash Table with Collision Handling and Rehashing
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a custom hash table in Rust using open addressing or separate chaining for collision handling. Implement methods for insertion, deletion, and searching, and include dynamic rehashing to manage load factors and ensure efficiency.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Use amortized analysis to evaluate the cost of hash table operations, focusing on rehashing. Implement a system to track the frequency of rehashing and its impact on performance.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide the Rust code for the hash table with detailed implementations of collision handling and rehashing. Submit a comprehensive report that includes:</p>
+            <p class="text-justify">- Analysis of the amortized cost of operations with and without rehashing.</p>
+            <p class="text-justify">- Performance benchmarks using <code>cargo bench</code> that illustrate how rehashing affects the hash table's efficiency.</p>
+            <p class="text-justify">- A discussion on how different collision handling strategies impact amortized cost and overall performance.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 19.3: Develop and Analyze a Self-Balancing Tree (AVL or Red-Black Tree)
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement an AVL tree or red-black tree in Rust, ensuring that your implementation handles insertion, deletion, and tree balancing. Include methods for rotations and balancing to maintain tree properties.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Apply the potential method of amortized analysis to evaluate the cost of operations. Analyze how tree balancing (rotations) affects the amortized cost of insertions and deletions.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the self-balancing tree, including methods for balancing and rotations. Provide a detailed report that includes:</p>
+            <p class="text-justify">- An explanation of the potential function used and how it applies to amortized analysis.</p>
+            <p class="text-justify">- Performance benchmarks showing the cost of balancing operations.</p>
+            <p class="text-justify">- A discussion on the impact of tree balancing on the amortized cost and overall efficiency of the data structure.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 19.4: Implement a Priority Queue with a Binary Heap and Perform Amortized Cost Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a priority queue in Rust using a binary heap. Implement insertion, extraction of the minimum (or maximum), and heapification operations.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Analyze the amortized cost of priority queue operations, with a focus on insertion and extraction. Compare the performance of your implementation with theoretical amortized costs and provide insights into how the binary heap maintains efficiency.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the priority queue, including detailed implementations of insertion and extraction. Provide a comprehensive report that includes:</p>
+            <p class="text-justify">- Theoretical amortized cost calculations and performance benchmarks.</p>
+            <p class="text-justify">- A comparison of theoretical and practical results.</p>
+            <p class="text-justify">- Insights into how the binary heap's structure influences the amortized cost of operations.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 19.5: Comparative Study of Amortized Analysis Techniques Using a Common Data Structure
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a basic data structure (such as a stack or queue) in Rust. Apply aggregate, accounting, and potential methods of amortized analysis to evaluate the cost of operations.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Compare and contrast the results from each amortized analysis technique. Discuss the applicability and limitations of each technique in the context of your data structure.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the data structure along with implementations of amortized analysis using aggregate, accounting, and potential methods. Provide a detailed comparative report that includes:</p>
+            <p class="text-justify">- Theoretical analysis and practical results for each technique.</p>
+            <p class="text-justify">- Performance data and insights into the strengths and weaknesses of each analysis method.</p>
+            <p class="text-justify">- A discussion on which technique provides the most meaningful insights for different types of data structures and operations.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to provide a thorough understanding of amortized algorithms through hands-on implementation and in-depth analysis. By completing these assignments, students will gain practical experience and a deep appreciation for the nuances of amortized analysis in algorithm design.
+    </p

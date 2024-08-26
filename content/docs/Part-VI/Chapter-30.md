@@ -419,65 +419,77 @@ Embrace the opportunity to explore these concepts deeply, experiment with Rust c
 </p>
 
 ### 30.6.3. Self-Exercises
-<p style="text-align: justify;">
-These exercises are designed to reinforce theoretical knowledge and provide practical experience with cryptographic algorithms in Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 30.1:<strong></strong> Implement AES Encryption and Decryption
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement the AES encryption and decryption algorithms using the <code>aes</code> crate in Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-1. <p style="text-align: justify;">Write a Rust program that performs AES encryption and decryption in ECB mode.</p>
-2. <p style="text-align: justify;">Modify your implementation to use CBC mode, and compare the results with ECB mode.</p>
-3. <p style="text-align: justify;">Investigate and implement a secure padding scheme for block ciphers (e.g., PKCS7).</p>
-4. <p style="text-align: justify;">Test your implementation with various input data and keys, and analyze the effects of different modes on security and performance.</p>
-5. <p style="text-align: justify;">Document your code and explain the differences between the modes of operation and their implications for security.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 30.2:<strong></strong> RSA Key Generation and Encryption/Decryption
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Create a Rust application that uses the <code>rsa</code> crate to perform RSA key generation, encryption, and decryption.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-1. <p style="text-align: justify;">Implement RSA key pair generation and save the keys to files.</p>
-2. <p style="text-align: justify;">Write functions to encrypt and decrypt messages using the RSA algorithm.</p>
-3. <p style="text-align: justify;">Ensure that your implementation handles large messages correctly by using appropriate padding schemes.</p>
-4. <p style="text-align: justify;">Test the encryption and decryption processes with different message sizes and keys.</p>
-5. <p style="text-align: justify;">Explain the RSA algorithm's mathematical principles and describe how your implementation adheres to these principles.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 30.3:<strong></strong> ECC Key Exchange and Digital Signatures
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Use the <code>ring</code> crate to implement Elliptic Curve Cryptography (ECC) for key exchange and digital signatures.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-1. <p style="text-align: justify;">Implement ECC key pair generation and key exchange using the <code>ring</code> crate.</p>
-2. <p style="text-align: justify;">Develop functionality to sign and verify messages using ECDSA (Elliptic Curve Digital Signature Algorithm).</p>
-3. <p style="text-align: justify;">Write a Rust program that demonstrates secure key exchange and digital signatures in a simple application (e.g., a messaging app).</p>
-4. <p style="text-align: justify;">Test your implementation with various inputs and analyze the security benefits of ECC compared to RSA.</p>
-5. <p style="text-align: justify;">Document the code and provide an explanation of how ECC works and its advantages over traditional cryptographic methods.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 30.4:<strong></strong> Hash Functions and Digital Signatures
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Explore hash functions and digital signatures using the <code>sha2</code> and <code>ed25519-dalek</code> crates.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-1. <p style="text-align: justify;">Implement SHA-256 hashing for various inputs using the <code>sha2</code> crate. Include functionality to compare hash outputs and ensure collision resistance.</p>
-2. <p style="text-align: justify;">Develop a Rust program to generate and verify digital signatures using the <code>ed25519-dalek</code> crate.</p>
-3. <p style="text-align: justify;">Create a scenario where hash functions and digital signatures are used together (e.g., securing a file's integrity and authenticity).</p>
-4. <p style="text-align: justify;">Analyze the performance and security of your implementations, and discuss how they can be applied in real-world systems.</p>
-5. <p style="text-align: justify;">Write a detailed explanation of the role of hash functions and digital signatures in cryptographic systems.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 30.5:<strong></strong> Diffie-Hellman Key Exchange Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement the Diffie-Hellman key exchange algorithm in Rust and analyze its security properties.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-1. <p style="text-align: justify;">Write a Rust program that performs Diffie-Hellman key exchange using the <code>rand</code> crate for random number generation.</p>
-2. <p style="text-align: justify;">Implement both the basic and extended versions of the Diffie-Hellman algorithm, and compare their security features.</p>
-3. <p style="text-align: justify;">Test your implementation in a simulated environment where two parties exchange keys securely.</p>
-4. <p style="text-align: justify;">Discuss the strengths and limitations of the Diffie-Hellman key exchange in terms of security and practical applications.</p>
-5. <p style="text-align: justify;">Document your code and provide a thorough explanation of the algorithm's mathematical basis and its role in modern cryptographic protocols.</p>
-<p style="text-align: justify;">
-Completing them will help you gain a deeper understanding of cryptographic principles and their applications in real-world scenarios.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These exercises are designed to reinforce theoretical knowledge and provide practical experience with cryptographic algorithms in Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 30.1: Implement AES Encryption and Decryption
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust program that performs AES encryption and decryption in ECB mode. Modify your implementation to use CBC mode, and compare the results with ECB mode. Investigate and implement a secure padding scheme for block ciphers (e.g., PKCS7). Test your implementation with various input data and keys, and analyze the effects of different modes on security and performance.</p>
+            <p class="text-justify">Document your code and explain the differences between the modes of operation and their implications for security.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement the AES encryption and decryption algorithms using the <code>aes</code> crate in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code along with a document explaining your design choices and the results of your test cases.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 30.2: RSA Key Generation and Encryption/Decryption
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement RSA key pair generation and save the keys to files. Write functions to encrypt and decrypt messages using the RSA algorithm. Ensure that your implementation handles large messages correctly by using appropriate padding schemes. Test the encryption and decryption processes with different message sizes and keys.</p>
+            <p class="text-justify">Explain the RSA algorithm's mathematical principles and describe how your implementation adheres to these principles.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Create a Rust application that uses the <code>rsa</code> crate to perform RSA key generation, encryption, and decryption.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code and a report detailing your implementation process, test cases, and an explanation of the RSA algorithm's principles.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 30.3: ECC Key Exchange and Digital Signatures
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement ECC key pair generation and key exchange using the <code>ring</code> crate. Develop functionality to sign and verify messages using ECDSA (Elliptic Curve Digital Signature Algorithm). Write a Rust program that demonstrates secure key exchange and digital signatures in a simple application (e.g., a messaging app). Test your implementation with various inputs and analyze the security benefits of ECC compared to RSA.</p>
+            <p class="text-justify">Document the code and provide an explanation of how ECC works and its advantages over traditional cryptographic methods.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Use the <code>ring</code> crate to implement Elliptic Curve Cryptography (ECC) for key exchange and digital signatures.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for your ECC implementation, a summary report, and a discussion on the advantages of ECC over RSA.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 30.4: Hash Functions and Digital Signatures
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement SHA-256 hashing for various inputs using the <code>sha2</code> crate. Develop a Rust program to generate and verify digital signatures using the <code>ed25519-dalek</code> crate. Create a scenario where hash functions and digital signatures are used together (e.g., securing a file's integrity and authenticity). Analyze the performance and security of your implementations, and discuss how they can be applied in real-world systems.</p>
+            <p class="text-justify">Write a detailed explanation of the role of hash functions and digital signatures in cryptographic systems.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore hash functions and digital signatures using the <code>sha2</code> and <code>ed25519-dalek</code> crates.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code, performance analysis, and a comprehensive explanation of hash functions and digital signatures in cryptographic systems.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 30.5: Diffie-Hellman Key Exchange Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust program that performs Diffie-Hellman key exchange using the <code>rand</code> crate for random number generation. Implement both the basic and extended versions of the Diffie-Hellman algorithm, and compare their security features. Test your implementation in a simulated environment where two parties exchange keys securely.</p>
+            <p class="text-justify">Discuss the strengths and limitations of the Diffie-Hellman key exchange in terms of security and practical applications. Document your code and provide a thorough explanation of the algorithm's mathematical basis and its role in modern cryptographic protocols.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement the Diffie-Hellman key exchange algorithm in Rust and analyze its security properties.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code, a detailed report on the algorithm’s security properties, and an analysis of its applications.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Completing them will help you gain a deeper understanding of cryptographic principles and their applications in real-world scenarios.
+    </p>
+</section>

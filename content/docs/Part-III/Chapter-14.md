@@ -590,23 +590,76 @@ By working through these detailed questions and writing robust Rust code, you'll
 </p>
 
 ### 14.6.3. Self-Exercises
-<p style="text-align: justify;">
-Here are five comprehensive exercises with clear objectives and tasks to help you master Chapter 14 on Disjoint Sets and their implementation in Rust:
-</p>
-
-<strong>Exercise 14.1:</strong> Full Implementation and Performance Analysis of Disjoint Sets </p>
-<p style="text-align: justify;"><strong>Objective:</strong> Develop a complete implementation of the Disjoint Sets data structure with performance analysis.</p>
-<p style="text-align: justify;"><strong>Tasks:</strong></p> - <p style="text-align: justify;">Implement Basic Operations: Create a Rust struct for the Disjoint Sets data structure. Implement the <code>find</code> operation with path compression and the <code>union</code> operation with union by rank.</p> - <p style="text-align: justify;">Performance Testing: Write benchmark tests to evaluate the performance of <code>find</code> and <code>union</code> operations with various sizes of input data. Use Rust profiling tools (e.g., <code>cargo bench</code>, <code>criterion</code>) to measure execution time and memory usage.</p> - <p style="text-align: justify;">Documentation and Analysis: Document your implementation, including explanations of design decisions and optimizations. Compare the empirical performance results with theoretical time complexity, and write a report discussing the efficiency and scalability of your implementation.</p>
-<p style="text-align: justify;"> <strong>Exercise 14.2:</strong> Advanced Optimization and Comparative Study </p>
-<p style="text-align: justify;"><strong>Objective:</strong> Implement and compare advanced optimization techniques for Disjoint Sets.</p>
-<p style="text-align: justify;"><strong>Tasks:</strong></p> - <p style="text-align: justify;">Implement Optimizations: Enhance your Disjoint Sets implementation to include both path compression and path splitting. Ensure that both techniques are correctly integrated into the <code>find</code> operation.</p> - <p style="text-align: justify;">Benchmark and Compare: Design and execute benchmark tests to compare the performance of path compression, path splitting, and their combination. Measure and record the time complexity for each optimization technique.</p> - <p style="text-align: justify;">Analysis and Reporting: Write a detailed report that includes Rust code samples for each optimization. Discuss the trade-offs, performance benefits, and scenarios where each technique is most effective, supported by theoretical explanations and practical observations from your benchmarks.</p>
-<p style="text-align: justify;"> <strong>Exercise 14.3:</strong> Integrating Disjoint Sets with Kruskal’s Algorithm </p>
-<p style="text-align: justify;"><strong>Objective:</strong> Apply Disjoint Sets in Kruskal’s algorithm to find the Minimum Spanning Tree (MST) of a graph.</p>
-<p style="text-align: justify;"><strong>Tasks:</strong></p> - <p style="text-align: justify;">Graph Implementation: Create a Rust implementation for a weighted graph with edge insertion and retrieval functions. Develop a function to generate a sample graph with random weights.</p> - <p style="text-align: justify;">Kruskal’s Algorithm: Implement Kruskal’s algorithm using your Disjoint Sets data structure to find the MST. Ensure that the <code>find</code> and <code>union</code> operations are utilized to manage connected components.</p> - <p style="text-align: justify;">Testing and Documentation: Write test cases to verify the correctness of the MST computation. Provide a complete Rust code example, including graph creation, MST computation, and result display. Document the implementation and analyze the correctness and efficiency of your solution.</p>
-<p style="text-align: justify;"> <strong>Exercise 14.4:</strong> Concurrency Handling and Thread Safety </p>
-<p style="text-align: justify;"><strong>Objective:</strong> Implement a thread-safe version of Disjoint Sets to handle concurrent modifications.</p>
-<p style="text-align: justify;"><strong>Tasks:</strong></p> - <p style="text-align: justify;">Concurrency Primitives: Modify your Disjoint Sets implementation to support concurrent operations using Rust’s concurrency primitives (e.g., <code>Mutex</code>, <code>RwLock</code>). Ensure that <code>find</code> and <code>union</code> operations are safe for concurrent access.</p> - <p style="text-align: justify;">Multi-Threaded Testing: Create a multi-threaded Rust program where multiple threads perform <code>find</code> and <code>union</code> operations on the Disjoint Sets data structure simultaneously. Implement synchronization mechanisms to handle concurrent modifications.</p> - <p style="text-align: justify;">Performance and Reporting: Measure and record the performance of your thread-safe implementation under different loads. Write a comprehensive report discussing concurrency issues, solutions, and the impact on performance, including Rust code samples and analysis.</p>
-<p style="text-align: justify;"> <strong>Exercise 14.5:</strong> Practical Application in Image Processing </p>
-<p style="text-align: justify;"><strong>Objective:</strong> Use Disjoint Sets to solve an image processing problem such as image segmentation.</p>
-<p style="text-align: justify;"><strong>Tasks:</strong></p> - <p style="text-align: justify;">Image Processing Implementation: Develop a Rust program to load an image and convert it into a binary format for segmentation. Implement Disjoint Sets to group contiguous pixels into distinct components based on connectivity.</p> - <p style="text-align: justify;">Segmentation and Visualization: Apply the Disjoint Sets data structure to segment the image and label different regions. Implement functionality to visualize the segmented regions and compare them with expected results.</p> - <p style="text-align: justify;">Documentation and Analysis: Provide a complete Rust code example, including image processing and segmentation logic. Analyze the effectiveness of your approach, discuss any challenges encountered, and write a report on the segmentation results and potential improvements to your implementation.</p>
-<p style="text-align: justify;"> Engaging deeply with these tasks will enhance your Rust programming skills and your understanding of data structures and algorithms. Embrace the challenge, and let these exercises guide you towards becoming proficient in working with heaps and priority queues. </p>
+<section class="mt-5">
+    <p class="text-justify">
+        Here are five comprehensive exercises with clear objectives and tasks to help you master Chapter 14 on Disjoint Sets and their implementation in Rust:
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 14.1: Full Implementation and Performance Analysis of Disjoint Sets
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement Basic Operations: Create a Rust struct for the Disjoint Sets data structure. Implement the <code>find</code> operation with path compression and the <code>union</code> operation with union by rank.</p>
+            <p class="text-justify">Performance Testing: Write benchmark tests to evaluate the performance of <code>find</code> and <code>union</code> operations with various sizes of input data. Use Rust profiling tools (e.g., <code>cargo bench</code>, <code>criterion</code>) to measure execution time and memory usage.</p>
+            <p class="text-justify">Documentation and Analysis: Document your implementation, including explanations of design decisions and optimizations. Compare the empirical performance results with theoretical time complexity, and write a report discussing the efficiency and scalability of your implementation.</p>
+            <p><strong>Objective:</strong> Develop a complete implementation of the Disjoint Sets data structure with performance analysis.</p>
+            <p><strong>Deliverables:</strong> Source code for the Disjoint Sets implementation, performance benchmarks, and a detailed report on the analysis.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 14.2: Advanced Optimization and Comparative Study
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement Optimizations: Enhance your Disjoint Sets implementation to include both path compression and path splitting. Ensure that both techniques are correctly integrated into the <code>find</code> operation.</p>
+            <p class="text-justify">Benchmark and Compare: Design and execute benchmark tests to compare the performance of path compression, path splitting, and their combination. Measure and record the time complexity for each optimization technique.</p>
+            <p class="text-justify">Analysis and Reporting: Write a detailed report that includes Rust code samples for each optimization. Discuss the trade-offs, performance benefits, and scenarios where each technique is most effective, supported by theoretical explanations and practical observations from your benchmarks.</p>
+            <p><strong>Objective:</strong> Implement and compare advanced optimization techniques for Disjoint Sets.</p>
+            <p><strong>Deliverables:</strong> Source code for optimized Disjoint Sets, performance benchmarks, and a detailed comparative report.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 14.3: Integrating Disjoint Sets with Kruskal’s Algorithm
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Graph Implementation: Create a Rust implementation for a weighted graph with edge insertion and retrieval functions. Develop a function to generate a sample graph with random weights.</p>
+            <p class="text-justify">Kruskal’s Algorithm: Implement Kruskal’s algorithm using your Disjoint Sets data structure to find the MST. Ensure that the <code>find</code> and <code>union</code> operations are utilized to manage connected components.</p>
+            <p class="text-justify">Testing and Documentation: Write test cases to verify the correctness of the MST computation. Provide a complete Rust code example, including graph creation, MST computation, and result display. Document the implementation and analyze the correctness and efficiency of your solution.</p>
+            <p><strong>Objective:</strong> Apply Disjoint Sets in Kruskal’s algorithm to find the Minimum Spanning Tree (MST) of a graph.</p>
+            <p><strong>Deliverables:</strong> Source code for Kruskal’s algorithm, test cases, and a detailed report on the correctness and efficiency of the solution.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 14.4: Concurrency Handling and Thread Safety
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Concurrency Primitives: Modify your Disjoint Sets implementation to support concurrent operations using Rust’s concurrency primitives (e.g., <code>Mutex</code>, <code>RwLock</code>). Ensure that <code>find</code> and <code>union</code> operations are safe for concurrent access.</p>
+            <p class="text-justify">Multi-Threaded Testing: Create a multi-threaded Rust program where multiple threads perform <code>find</code> and <code>union</code> operations on the Disjoint Sets data structure simultaneously. Implement synchronization mechanisms to handle concurrent modifications.</p>
+            <p class="text-justify">Performance and Reporting: Measure and record the performance of your thread-safe implementation under different loads. Write a comprehensive report discussing concurrency issues, solutions, and the impact on performance, including Rust code samples and analysis.</p>
+            <p><strong>Objective:</strong> Implement a thread-safe version of Disjoint Sets to handle concurrent modifications.</p>
+            <p><strong>Deliverables:</strong> Source code for the thread-safe Disjoint Sets implementation, performance benchmarks, and a report on concurrency handling.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 14.5: Practical Application in Image Processing
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Image Processing Implementation: Develop a Rust program to load an image and convert it into a binary format for segmentation. Implement Disjoint Sets to group contiguous pixels into distinct components based on connectivity.</p>
+            <p class="text-justify">Segmentation and Visualization: Apply the Disjoint Sets data structure to segment the image and label different regions. Implement functionality to visualize the segmented regions and compare them with expected results.</p>
+            <p class="text-justify">Documentation and Analysis: Provide a complete Rust code example, including image processing and segmentation logic. Analyze the effectiveness of your approach, discuss any challenges encountered, and write a report on the segmentation results and potential improvements to your implementation.</p>
+            <p><strong>Objective:</strong> Use Disjoint Sets to solve an image processing problem such as image segmentation.</p>
+            <p><strong>Deliverables:</strong> Source code for image processing and segmentation, visualization outputs, and a report on the effectiveness and challenges of the approach.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Engaging deeply with these tasks will enhance your Rust programming skills and your understanding of data structures and algorithms. Embrace the challenge, and let these exercises guide you towards mastering Disjoint Sets in Rust.
+    </p>
+</section>

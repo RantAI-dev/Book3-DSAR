@@ -57,7 +57,7 @@ In Rust, implementing a binary heap is both an exercise in understanding the und
 </p>
 
 <p style="text-align: justify;">
-The array representation of a binary heap is quite elegant. Each node in the heap corresponds to an index in the array. For a node at index <code>i</code>, its left child is located at index <code>2i + 1</code>, and its right child is at index <code>2i + 2</code>. Conversely, the parent of a node at index <code>i</code> can be found at <code>(i - 1) / 2</code>. This indexing scheme allows for efficient traversal and manipulation of the heap using simple arithmetic operations.
+The array representation of a binary heap is quite elegant. Each node in the heap corresponds to an index in the array. For a node at index $i$, its left child is located at index $2i + 1$, and its right child is at index $2i + 2$. Conversely, the parent of a node at index $i$ can be found at $(i - 1) / 2$. This indexing scheme allows for efficient traversal and manipulation of the heap using simple arithmetic operations.
 </p>
 
 <p style="text-align: justify;">
@@ -709,60 +709,80 @@ Embracing these prompts will allow you to explore heaps and priority queues from
 </p>
 
 ### 13.6.3. Self-Exercises
-<p style="text-align: justify;">
-Each exercise incorporates theoretical concepts, practical implementation, and performance analysis to provide a thorough learning experience.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 13.1:<strong></strong> Implement and Benchmark Binary Heaps
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement a binary heap data structure in Rust, and benchmark its performance.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Create a Rust struct <code>BinaryHeap</code> that supports both max-heap and min-heap functionalities. Implement core operations: <code>insert</code>, <code>delete</code>, <code>heapify</code>, and <code>peek</code>.</p>
-- <p style="text-align: justify;">Write unit tests to verify that your heap operations maintain the heap property and handle edge cases (e.g., insertion into an empty heap, deleting the root in a single-element heap).</p>
-- <p style="text-align: justify;">Implement performance benchmarks for operations like insertion, deletion, and heapification. Compare your binary heap’s performance with other sorting algorithms such as quicksort and mergesort using Rust’s benchmarking tools.</p>
-- <p style="text-align: justify;">Include detailed documentation of your code and performance results. Discuss the time complexity of each operation and any observed performance characteristics.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 13.2:<strong></strong> Priority Queue Implementation with Generics
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Design a generic priority queue using the binary heap implemented in Exercise 1.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement a <code>PriorityQueue</code> struct that uses the binary heap internally. Ensure the priority queue supports operations such as <code>push</code>, <code>pop</code>, and <code>peek</code>.</p>
-- <p style="text-align: justify;">Use Rust’s generics to handle various data types and priority comparisons. Implement appropriate traits for priority comparison.</p>
-- <p style="text-align: justify;">Write comprehensive tests to validate the priority queue’s behavior with different data types and priorities. Test scenarios with duplicate priorities, priority changes, and edge cases.</p>
-- <p style="text-align: justify;">Provide examples of real-world applications where your priority queue can be applied, such as task scheduling or event simulation.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 13.3:<strong></strong> Explore and Implement Advanced Heap Structures
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement and compare advanced heap structures, including Fibonacci heaps and binomial heaps.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Create a basic version of a Fibonacci heap in Rust. Implement core operations such as <code>insert</code>, <code>union</code>, and <code>decrease-key</code>. Focus on understanding amortized time complexities.</p>
-- <p style="text-align: justify;">Implement a binomial heap, including operations like <code>merge</code>, <code>insert</code>, and <code>extract-min</code>.</p>
-- <p style="text-align: justify;">Benchmark and compare the performance of Fibonacci heaps, binomial heaps, and binary heaps for various operations. Analyze their strengths and weaknesses in different scenarios.</p>
-- <p style="text-align: justify;">Write a detailed report discussing the implementation details, performance comparisons, and practical use cases for each heap structure.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 13.4:<strong></strong> Concurrency and Thread Safety in Heaps
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Extend your heap or priority queue implementation to support concurrent access.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Modify your binary heap or priority queue to ensure thread safety using Rust’s synchronization primitives like <code>Mutex</code> or <code>RwLock</code>. Implement a thread-safe version of your heap.</p>
-- <p style="text-align: justify;">Write tests to verify the correctness of concurrent operations. Simulate concurrent inserts, deletions, and priority updates.</p>
-- <p style="text-align: justify;">Benchmark the performance of concurrent operations versus non-concurrent operations. Analyze the impact of synchronization on performance and responsiveness.</p>
-- <p style="text-align: justify;">Document your concurrency implementation, including code examples, performance results, and any challenges faced during development.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 13.5:<strong></strong> Handling Large Data Sets with External Memory
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Develop a Rust application to handle large heaps or priority queues efficiently using external memory techniques.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement a heap or priority queue that uses disk-based storage or memory-mapped files to manage large data sets. Explore libraries or techniques for external memory management in Rust.</p>
-- <p style="text-align: justify;">Test your implementation with large data sets and measure performance. Evaluate how well it handles data that exceeds available RAM.</p>
-- <p style="text-align: justify;">Explore and implement strategies to optimize performance, such as minimizing disk I/O or optimizing data access patterns.</p>
-- <p style="text-align: justify;">Provide a comprehensive report on the implementation, performance metrics, optimization strategies, and real-world applications of handling large heaps or priority queues.</p>
-<p style="text-align: justify;">
-Engaging deeply with these tasks will enhance your Rust programming skills and your understanding of data structures and algorithms. Embrace the challenge, and let these exercises guide you towards becoming proficient in working with heaps and priority queues.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Each exercise incorporates theoretical concepts, practical implementation, and performance analysis to provide a thorough learning experience.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 13.1: Implement and Benchmark Binary Heaps
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust struct <code>BinaryHeap</code> that supports both max-heap and min-heap functionalities. Implement core operations: <code>insert</code>, <code>delete</code>, <code>heapify</code>, and <code>peek</code>.</p>
+            <p class="text-justify">Write unit tests to verify that your heap operations maintain the heap property and handle edge cases (e.g., insertion into an empty heap, deleting the root in a single-element heap).</p>
+            <p class="text-justify">Implement performance benchmarks for operations like insertion, deletion, and heapification. Compare your binary heap’s performance with other sorting algorithms such as quicksort and mergesort using Rust’s benchmarking tools.</p>
+            <p class="text-justify">Include detailed documentation of your code and performance results. Discuss the time complexity of each operation and any observed performance characteristics.</p>
+            <p><strong>Objective:</strong> Implement a binary heap data structure in Rust, and benchmark its performance.</p>
+            <p><strong>Deliverables:</strong> Source code for the binary heap, performance benchmarks, and a detailed report on time complexity and observed performance.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 13.2: Priority Queue Implementation with Generics
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a <code>PriorityQueue</code> struct that uses the binary heap internally. Ensure the priority queue supports operations such as <code>push</code>, <code>pop</code>, and <code>peek</code>. Use Rust’s generics to handle various data types and priority comparisons. Implement appropriate traits for priority comparison.</p>
+            <p class="text-justify">Write comprehensive tests to validate the priority queue’s behavior with different data types and priorities. Test scenarios with duplicate priorities, priority changes, and edge cases.</p>
+            <p class="text-justify">Provide examples of real-world applications where your priority queue can be applied, such as task scheduling or event simulation.</p>
+            <p><strong>Objective:</strong> Design a generic priority queue using the binary heap implemented in Exercise 13.1.</p>
+            <p><strong>Deliverables:</strong> Source code for the priority queue, test cases, and real-world application examples.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 13.3: Explore and Implement Advanced Heap Structures
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a basic version of a Fibonacci heap in Rust. Implement core operations such as <code>insert</code>, <code>union</code>, and <code>decrease-key</code>. Focus on understanding amortized time complexities.</p>
+            <p class="text-justify">Implement a binomial heap, including operations like <code>merge</code>, <code>insert</code>, and <code>extract-min</code>.</p>
+            <p class="text-justify">Benchmark and compare the performance of Fibonacci heaps, binomial heaps, and binary heaps for various operations. Analyze their strengths and weaknesses in different scenarios.</p>
+            <p class="text-justify">Write a detailed report discussing the implementation details, performance comparisons, and practical use cases for each heap structure.</p>
+            <p><strong>Objective:</strong> Implement and compare advanced heap structures, including Fibonacci heaps and binomial heaps.</p>
+            <p><strong>Deliverables:</strong> Source code for the heap structures, performance benchmarks, and a detailed report on their practical use cases.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 13.4: Concurrency and Thread Safety in Heaps
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Modify your binary heap or priority queue to ensure thread safety using Rust’s synchronization primitives like <code>Mutex</code> or <code>RwLock</code>. Implement a thread-safe version of your heap.</p>
+            <p class="text-justify">Write tests to verify the correctness of concurrent operations. Simulate concurrent inserts, deletions, and priority updates.</p>
+            <p class="text-justify">Benchmark the performance of concurrent operations versus non-concurrent operations. Analyze the impact of synchronization on performance and responsiveness.</p>
+            <p class="text-justify">Document your concurrency implementation, including code examples, performance results, and any challenges faced during development.</p>
+            <p><strong>Objective:</strong> Extend your heap or priority queue implementation to support concurrent access.</p>
+            <p><strong>Deliverables:</strong> Thread-safe heap implementation, performance benchmarks, and a report on the challenges and solutions for concurrency.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 13.5: Handling Large Data Sets with External Memory
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a heap or priority queue that uses disk-based storage or memory-mapped files to manage large data sets. Explore libraries or techniques for external memory management in Rust.</p>
+            <p class="text-justify">Test your implementation with large data sets and measure performance. Evaluate how well it handles data that exceeds available RAM.</p>
+            <p class="text-justify">Explore and implement strategies to optimize performance, such as minimizing disk I/O or optimizing data access patterns.</p>
+            <p class="text-justify">Provide a comprehensive report on the implementation, performance metrics, optimization strategies, and real-world applications of handling large heaps or priority queues.</p>
+            <p><strong>Objective:</strong> Develop a Rust application to handle large heaps or priority queues efficiently using external memory techniques.</p>
+            <p><strong>Deliverables:</strong> Source code for the heap with external memory handling, performance metrics, and a detailed report on optimization strategies.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Engaging deeply with these tasks will enhance your Rust programming skills and your understanding of data structures and algorithms. Embrace the challenge, and let these exercises guide you towards becoming proficient in working with heaps and priority queues.
+    </p>
+</section>

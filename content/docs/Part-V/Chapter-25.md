@@ -200,7 +200,7 @@ The Edmonds-Karp algorithm is a refinement of the Ford-Fulkerson method designed
 </p>
 
 <p style="text-align: justify;">
-The Edmonds-Karp algorithm builds on the core principles of the Ford-Fulkerson method but optimizes the search for augmenting paths by employing BFS instead of Depth-First Search (DFS). BFS is particularly effective in this context because it explores all possible paths of length <code>k</code> before moving on to paths of length <code>k+1</code>. This approach guarantees that the shortest augmenting path is found in each iteration, which significantly improves the algorithm's performance.
+The Edmonds-Karp algorithm builds on the core principles of the Ford-Fulkerson method but optimizes the search for augmenting paths by employing BFS instead of Depth-First Search (DFS). BFS is particularly effective in this context because it explores all possible paths of length $k$ before moving on to paths of length $k+1$. This approach guarantees that the shortest augmenting path is found in each iteration, which significantly improves the algorithm's performance.
 </p>
 
 <p style="text-align: justify;">
@@ -951,62 +951,72 @@ By exploring these prompts, you will not only enhance your theoretical understan
 </p>
 
 ### 25.7.3. Self-Exercises
-<p style="text-align: justify;">
-Here are five detailed exercises to help you explore and master the concepts of Network Flow Algorithms.These exercises are designed to help you apply theoretical concepts to practical problems, enhance your Rust programming skills, and gain a deeper understanding of network flow algorithms.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 25.1:<strong></strong> Implement the Ford-Fulkerson Method
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Develop a comprehensive Rust implementation of the Ford-Fulkerson algorithm to find the maximum flow in a network.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Design and implement Rust data structures to represent a flow network, including nodes and edges with capacities.</p>
-- <p style="text-align: justify;">Write a function to perform Depth-First Search (DFS) to find augmenting paths.</p>
-- <p style="text-align: justify;">Implement the Ford-Fulkerson method to update flows and residual capacities iteratively.</p>
-- <p style="text-align: justify;">Test your implementation with various network configurations and edge cases.</p>
-- <p style="text-align: justify;">Submit your code along with a document explaining your design choices and the results of your test cases.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 25.2:<strong></strong> Implement the Edmonds-Karp Algorithm
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Extend your understanding by implementing the Edmonds-Karp algorithm in Rust, which uses Breadth-First Search (BFS) to find augmenting paths.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Modify your existing flow network representation to support BFS.</p>
-- <p style="text-align: justify;">Implement the BFS function to find the shortest augmenting paths in the residual graph.</p>
-- <p style="text-align: justify;">Integrate BFS with the Ford-Fulkerson method to complete the Edmonds-Karp algorithm.</p>
-- <p style="text-align: justify;">Compare the performance of your Edmonds-Karp implementation with the Ford-Fulkerson algorithm on different network sizes.</p>
-- <p style="text-align: justify;">Provide a report detailing the implementation process, performance comparisons, and any observations or insights.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 25.3:<strong></strong> Implement Dinic’s Algorithm
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Gain insights into Dinic’s algorithm by implementing it in Rust, focusing on level graphs and blocking flows.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Create Rust functions to build level graphs and manage blocking flows.</p>
-- <p style="text-align: justify;">Implement the core steps of Dinic’s algorithm, including constructing level graphs and performing blocking flow searches.</p>
-- <p style="text-align: justify;">Test your implementation on various graphs, including dense and sparse configurations, to evaluate its efficiency.</p>
-- <p style="text-align: justify;">Write a summary explaining the algorithm’s advantages over Ford-Fulkerson and Edmonds-Karp, supported by your test results.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 25.4:<strong></strong> Apply Minimum-Cost Flow Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement a minimum-cost flow algorithm, such as the successive shortest path or cycle-canceling algorithm, in Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Design a Rust program to model a network with costs on edges and implement the chosen minimum-cost flow algorithm.</p>
-- <p style="text-align: justify;">Ensure your implementation correctly minimizes the cost while satisfying flow constraints.</p>
-- <p style="text-align: justify;">Solve a practical problem involving minimum-cost flow, such as optimizing transportation or resource allocation.</p>
-- <p style="text-align: justify;">Document your implementation, including the algorithm's handling of cost constraints, and provide test results demonstrating its effectiveness.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 25.5:<strong></strong> Optimize Network Flow Algorithms with Concurrency
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Enhance the performance of network flow algorithms by leveraging Rust’s concurrency features.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Choose one of your existing network flow algorithms (e.g., Ford-Fulkerson or Dinic’s) and refactor it to use Rust’s concurrency mechanisms for parallel processing.</p>
-- <p style="text-align: justify;">Implement parallel versions of the algorithm to improve performance on large graphs.</p>
-- <p style="text-align: justify;">Evaluate and compare the performance of your parallel implementation with the sequential version, analyzing the benefits and any challenges encountered.</p>
-- <p style="text-align: justify;">Submit your code and a performance report that includes insights into how concurrency improved efficiency and any difficulties faced during the parallelization process.</p>
-<p style="text-align: justify;">
-By completing these tasks, you'll build a strong foundation in both algorithm implementation and optimization, preparing you for advanced applications in network analysis.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Here are five detailed exercises to help you explore and master the concepts of Network Flow Algorithms. These exercises are designed to help you apply theoretical concepts to practical problems, enhance your Rust programming skills, and gain a deeper understanding of network flow algorithms.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 25.1: Implement the Ford-Fulkerson Method
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design and implement Rust data structures to represent a flow network, including nodes and edges with capacities. Write a function to perform Depth-First Search (DFS) to find augmenting paths. Implement the Ford-Fulkerson method to update flows and residual capacities iteratively. Test your implementation with various network configurations and edge cases.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Develop a comprehensive Rust implementation of the Ford-Fulkerson algorithm to find the maximum flow in a network.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code along with a document explaining your design choices and the results of your test cases.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 25.2: Implement the Edmonds-Karp Algorithm
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Modify your existing flow network representation to support BFS. Implement the BFS function to find the shortest augmenting paths in the residual graph. Integrate BFS with the Ford-Fulkerson method to complete the Edmonds-Karp algorithm. Compare the performance of your Edmonds-Karp implementation with the Ford-Fulkerson algorithm on different network sizes.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Extend your understanding by implementing the Edmonds-Karp algorithm in Rust, which uses Breadth-First Search (BFS) to find augmenting paths.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide a report detailing the implementation process, performance comparisons, and any observations or insights.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 25.3: Implement Dinic’s Algorithm
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create Rust functions to build level graphs and manage blocking flows. Implement the core steps of Dinic’s algorithm, including constructing level graphs and performing blocking flow searches. Test your implementation on various graphs, including dense and sparse configurations, to evaluate its efficiency.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Gain insights into Dinic’s algorithm by implementing it in Rust, focusing on level graphs and blocking flows.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Write a summary explaining the algorithm’s advantages over Ford-Fulkerson and Edmonds-Karp, supported by your test results.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 25.4: Apply Minimum-Cost Flow Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design a Rust program to model a network with costs on edges and implement the chosen minimum-cost flow algorithm. Ensure your implementation correctly minimizes the cost while satisfying flow constraints. Solve a practical problem involving minimum-cost flow, such as optimizing transportation or resource allocation.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement a minimum-cost flow algorithm, such as the successive shortest path or cycle-canceling algorithm, in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Document your implementation, including the algorithm's handling of cost constraints, and provide test results demonstrating its effectiveness.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 25.5: Optimize Network Flow Algorithms with Concurrency
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Choose one of your existing network flow algorithms (e.g., Ford-Fulkerson or Dinic’s) and refactor it to use Rust’s concurrency mechanisms for parallel processing. Implement parallel versions of the algorithm to improve performance on large graphs. Evaluate and compare the performance of your parallel implementation with the sequential version, analyzing the benefits and any challenges encountered.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Enhance the performance of network flow algorithms by leveraging Rust’s concurrency features.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your code and a performance report that includes insights into how concurrency improved efficiency and any difficulties faced during the parallelization process.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        By completing these tasks, you'll build a strong foundation in both algorithm implementation and optimization, preparing you for advanced applications in network analysis.
+    </p>
+</section>

@@ -666,46 +666,66 @@ Each prompt is crafted to challenge you and enhance your expertise, offering opp
 </p>
 
 ### 11.6.3. Self-Exercises
-<p style="text-align: justify;">
-These assignments are crafted to activate learning through hands-on practice and exploration of the concepts covered in this Chapter.
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Exercise 11.1:<strong></strong> Implement and Optimize a Custom Hash Table</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Develop a custom hash table in Rust from scratch. Implement basic operations such as insertion, deletion, and search. Use both chaining and open addressing methods to handle collisions.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Define a hash function and integrate it with your hash table.</p>
-- <p style="text-align: justify;">Implement chaining by using linked lists or vectors for collision resolution.</p>
-- <p style="text-align: justify;">Implement open addressing with linear probing or quadratic probing.</p>
-- <p style="text-align: justify;">Compare the performance of both collision handling techniques using benchmark tests.</p>
-- <p style="text-align: justify;">Document your code and analyze the trade-offs between chaining and open addressing.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 11.2:<strong></strong> Cryptographic Hashing and Security Analysis</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Explore cryptographic hashing by implementing and using cryptographic hash functions in Rust. Analyze their security properties and practical applications.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Use Rust libraries such as <code>ring</code> or <code>sha2</code> to implement SHA-256 and SHA-3 hash functions.</p>
-- <p style="text-align: justify;">Implement functions to hash passwords and verify their integrity using hashing techniques.</p>
-- <p style="text-align: justify;">Write a report detailing the properties of cryptographic hash functions, including collision resistance and pre-image resistance.</p>
-- <p style="text-align: justify;">Discuss real-world applications and best practices for using cryptographic hashing in securing data.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 11.3:<strong></strong> Advanced Hashing Techniques Implementation</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement advanced hashing techniques to understand their benefits and challenges. Focus on perfect hashing and cuckoo hashing.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Design and implement a perfect hashing scheme for a fixed set of keys. Ensure no collisions occur for the given keys.</p>
-- <p style="text-align: justify;">Implement cuckoo hashing, including the mechanism for relocating elements and resolving collisions.</p>
-- <p style="text-align: justify;">Compare the performance of perfect hashing and cuckoo hashing in terms of insertion time, search time, and space efficiency.</p>
-- <p style="text-align: justify;">Write a detailed analysis of the advantages and limitations of each technique.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 11.4:<strong></strong> Dynamic Resizing and Performance Optimization</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Create a dynamically resizing hash table and explore performance optimization techniques.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement a hash table that automatically resizes when the load factor exceeds a certain threshold.</p>
-- <p style="text-align: justify;">Optimize the resizing strategy to ensure efficient memory usage and minimize performance degradation during resizing.</p>
-- <p style="text-align: justify;">Perform benchmarking to evaluate the performance of your hash table under different load factors and resizing strategies.</p>
-- <p style="text-align: justify;">Provide a comprehensive analysis of how resizing impacts performance and suggest improvements.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise11. 5:<strong></strong> Practical Applications of Hashing in Rust</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Apply hashing techniques to solve practical problems, such as caching and data deduplication.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement a caching mechanism using hash tables to improve performance in a sample application.</p>
-- <p style="text-align: justify;">Create a data deduplication tool that uses hashing to identify and remove duplicate data efficiently.</p>
-- <p style="text-align: justify;">Use Rust’s standard library types (e.g., <code>HashMap</code>, <code>HashSet</code>) and custom hash functions in your implementations.</p>
-- <p style="text-align: justify;">Document your solutions and evaluate their effectiveness in terms of performance and correctness.</p>
-<p style="text-align: justify;">
-These exercises will challenge you to apply theoretical knowledge to practical scenarios, enhancing your understanding of hashing and hash tables while honing your Rust programming skills.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These assignments are crafted to activate learning through hands-on practice and exploration of the concepts covered in this Chapter.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 11.1: Implement and Optimize a Custom Hash Table
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a custom hash table in Rust from scratch. Implement basic operations such as insertion, deletion, and search. Use both chaining and open addressing methods to handle collisions. Define a hash function and integrate it with your hash table. Implement chaining by using linked lists or vectors for collision resolution. Implement open addressing with linear probing or quadratic probing. Compare the performance of both collision handling techniques using benchmark tests. Document your code and analyze the trade-offs between chaining and open addressing.</p>
+            <p><strong>Objective:</strong> Understand the design and implementation of hash tables and collision resolution strategies.</p>
+            <p><strong>Deliverables:</strong> Source code for the hash table implementations, performance benchmarks, and a report discussing the trade-offs between chaining and open addressing.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 11.2: Cryptographic Hashing and Security Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Explore cryptographic hashing by implementing and using cryptographic hash functions in Rust. Use Rust libraries such as <code>ring</code> or <code>sha2</code> to implement SHA-256 and SHA-3 hash functions. Implement functions to hash passwords and verify their integrity using hashing techniques. Write a report detailing the properties of cryptographic hash functions, including collision resistance and pre-image resistance. Discuss real-world applications and best practices for using cryptographic hashing in securing data.</p>
+            <p><strong>Objective:</strong> Explore cryptographic hashing by implementing and using cryptographic hash functions in Rust. Analyze their security properties and practical applications.</p>
+            <p><strong>Deliverables:</strong> Rust code implementing SHA-256 and SHA-3, along with a detailed report on cryptographic hash functions and their real-world applications.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 11.3: Advanced Hashing Techniques Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement advanced hashing techniques to understand their benefits and challenges. Focus on perfect hashing and cuckoo hashing. Design and implement a perfect hashing scheme for a fixed set of keys. Ensure no collisions occur for the given keys. Implement cuckoo hashing, including the mechanism for relocating elements and resolving collisions. Compare the performance of perfect hashing and cuckoo hashing in terms of insertion time, search time, and space efficiency. Write a detailed analysis of the advantages and limitations of each technique.</p>
+            <p><strong>Objective:</strong> Implement advanced hashing techniques to understand their benefits and challenges. Focus on perfect hashing and cuckoo hashing.</p>
+            <p><strong>Deliverables:</strong> Source code for perfect and cuckoo hashing implementations, performance benchmarks, and a comparative analysis report.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 11.4: Dynamic Resizing and Performance Optimization
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a dynamically resizing hash table and explore performance optimization techniques. Implement a hash table that automatically resizes when the load factor exceeds a certain threshold. Optimize the resizing strategy to ensure efficient memory usage and minimize performance degradation during resizing. Perform benchmarking to evaluate the performance of your hash table under different load factors and resizing strategies. Provide a comprehensive analysis of how resizing impacts performance and suggest improvements.</p>
+            <p><strong>Objective:</strong> Understand and implement dynamic resizing in hash tables, focusing on performance optimization.</p>
+            <p><strong>Deliverables:</strong> Source code for the dynamically resizing hash table, performance benchmarks, and a report analyzing the effects of resizing on performance.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 11.5: Practical Applications of Hashing in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Apply hashing techniques to solve practical problems, such as caching and data deduplication. Implement a caching mechanism using hash tables to improve performance in a sample application. Create a data deduplication tool that uses hashing to identify and remove duplicate data efficiently. Use Rust’s standard library types (e.g., <code>HashMap</code>, <code>HashSet</code>) and custom hash functions in your implementations. Document your solutions and evaluate their effectiveness in terms of performance and correctness.</p>
+            <p><strong>Objective:</strong> Apply hashing techniques to solve practical problems, such as caching and data deduplication.</p>
+            <p><strong>Deliverables:</strong> Source code for the caching mechanism and data deduplication tool, along with a report discussing their effectiveness and performance.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises will challenge you to apply theoretical knowledge to practical scenarios, enhancing your understanding of hashing and hash tables while honing your Rust programming skills.
+    </p>
+</section>

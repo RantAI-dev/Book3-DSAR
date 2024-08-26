@@ -147,11 +147,11 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-The <code>hungarian_algorithm</code> function starts by initializing the cost matrix and the potential arrays <code>u</code> and <code>v</code>, which store the dual variables for the rows and columns, respectively. The algorithm iterates through each row, performing reductions and finding the optimal assignment by adjusting the matrix based on uncovered and doubly-covered values.
+The <code>hungarian_algorithm</code> function starts by initializing the cost matrix and the potential arrays $u$ and $v$, which store the dual variables for the rows and columns, respectively. The algorithm iterates through each row, performing reductions and finding the optimal assignment by adjusting the matrix based on uncovered and doubly-covered values.
 </p>
 
 <p style="text-align: justify;">
-The time complexity of the Hungarian Algorithm is $O(n^3)$, where nnn is the number of vertices in each partition of the bipartite graph. This cubic complexity arises from the iterative process of row and column reductions, covering zeros, and adjusting the matrix.
+The time complexity of the Hungarian Algorithm is $O(n^3)$, where $n$ is the number of vertices in each partition of the bipartite graph. This cubic complexity arises from the iterative process of row and column reductions, covering zeros, and adjusting the matrix.
 </p>
 
 <p style="text-align: justify;">
@@ -659,45 +659,72 @@ Embarking on these prompts will empower you to gain a profound understanding of 
 </p>
 
 ### 26.6.3. Self-Exercises
-<p style="text-align: justify;">
-These advanced exercises are designed to push the boundaries of your understanding of bipartite graph matchings and challenge your Rust programming skills.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 26.1:<strong></strong> Optimize Bipartite Graph Representations for Large Datasets
-</p>
-
-- <p style="text-align: justify;">Implement and benchmark various graph representations for large-scale bipartite graphs in Rust. Compare the performance of adjacency lists (<code>Vec<HashSet<usize>></code>), adjacency matrices (<code>Vec<Vec<i32>></code>), and compressed sparse row (CSR) format.</p>
-- <p style="text-align: justify;">Develop efficient algorithms for graph traversal and matching operations, considering memory usage and execution time.</p>
-- <p style="text-align: justify;">Analyze the trade-offs in terms of complexity and efficiency for each representation. Provide performance metrics and discuss the suitability of each representation for different types of large-scale problems.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 26.2:<strong></strong> Enhance and Compare Hungarian Algorithm Variants
-</p>
-
-- <p style="text-align: justify;">Extend your implementation of the Hungarian Algorithm by incorporating advanced optimizations such as the Kuhn-Munkres algorithm for improved efficiency.</p>
-- <p style="text-align: justify;">Implement a parallel version of the Hungarian Algorithm using Rust's concurrency features (<code>std::thread</code> or <code>async/await</code>) to handle large cost matrices.</p>
-- <p style="text-align: justify;">Compare the performance of your optimized and parallelized versions with the original implementation. Provide detailed benchmarks and discuss the impact of optimizations on runtime and accuracy.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 26.3:<strong></strong> Advanced Hopcroft-Karp Algorithm Implementation
-</p>
-
-- <p style="text-align: justify;">Develop a full implementation of the Hopcroft-Karp Algorithm with additional optimizations, such as bidirectional BFS and improved handling of level graphs.</p>
-- <p style="text-align: justify;">Integrate advanced data structures such as <code>RoaringBitmap</code> or <code>BitSet</code> for efficient storage and manipulation of levels and matched vertices.</p>
-- <p style="text-align: justify;">Benchmark your implementation on various large-scale bipartite graphs and compare its performance with the standard version. Discuss improvements in time complexity and practical benefits.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 26.4:<strong></strong> Job Assignment Problem with Constraints
-</p>
-
-- <p style="text-align: justify;">Design and implement a Rust solution for a job assignment problem with additional constraints, such as constraints on the number of jobs each worker can perform or specific compatibility requirements.</p>
-- <p style="text-align: justify;">Extend the Hungarian Algorithm or employ alternative approaches like Constraint Programming or Integer Linear Programming (ILP) to handle these constraints.</p>
-- <p style="text-align: justify;">Provide a detailed explanation of how constraints affect the solution process and performance. Validate your solution with complex test cases and evaluate its effectiveness in handling realistic scenarios.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 26.5:<strong></strong> Interactive Visualization and Analysis Tool for Bipartite Graphs
-</p>
-
-- <p style="text-align: justify;">Create an advanced Rust application that not only visualizes bipartite graphs and matchings but also includes interactive features for analyzing algorithm performance.</p>
-- <p style="text-align: justify;">Implement functionality for users to dynamically adjust graph parameters, such as edge weights and constraints, and observe the effects on matchings and algorithm performance.</p>
-- <p style="text-align: justify;">Incorporate advanced visualization techniques, such as animated augmenting paths and real-time performance metrics. Evaluate the tool’s effectiveness in understanding complex algorithms and provide user feedback based on real-world usage.</p>
-<p style="text-align: justify;">
-Tackling these assignments will deepen your knowledge of algorithmic optimizations, advanced data structures, and real-world applications. By engaging with these complex problems, you will enhance your ability to solve intricate graph-related challenges and develop sophisticated solutions. Embrace these rigorous tasks with determination, and you’ll emerge with a profound mastery of bipartite matchings and a robust command of advanced Rust programming techniques.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These advanced exercises are designed to push the boundaries of your understanding of bipartite graph matchings and challenge your Rust programming skills.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 26.1: Optimize Bipartite Graph Representations for Large Datasets
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement and benchmark various graph representations for large-scale bipartite graphs in Rust. Compare the performance of adjacency lists (<code>Vec<HashSet<usize>></code>), adjacency matrices (<code>Vec<Vec<i32>></code>), and compressed sparse row (CSR) format. Develop efficient algorithms for graph traversal and matching operations, considering memory usage and execution time. Analyze the trade-offs in terms of complexity and efficiency for each representation.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Optimize graph representations to efficiently handle large-scale bipartite graphs, focusing on performance and memory usage.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code implementations, performance metrics, and a detailed discussion on the suitability of each representation for different types of large-scale problems.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 26.2: Enhance and Compare Hungarian Algorithm Variants
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Extend your implementation of the Hungarian Algorithm by incorporating advanced optimizations such as the Kuhn-Munkres algorithm for improved efficiency. Implement a parallel version of the Hungarian Algorithm using Rust's concurrency features (<code>std::thread</code> or <code>async/await</code>) to handle large cost matrices.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Enhance the Hungarian Algorithm with advanced optimizations and parallelization to improve performance on large datasets.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide detailed benchmarks, Rust code for optimized and parallelized versions, and a report discussing the impact of optimizations on runtime and accuracy.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 26.3: Advanced Hopcroft-Karp Algorithm Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a full implementation of the Hopcroft-Karp Algorithm with additional optimizations, such as bidirectional BFS and improved handling of level graphs. Integrate advanced data structures such as <code>RoaringBitmap</code> or <code>BitSet</code> for efficient storage and manipulation of levels and matched vertices. Benchmark your implementation on various large-scale bipartite graphs and compare its performance with the standard version.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement an optimized version of the Hopcroft-Karp Algorithm, focusing on improving performance with large-scale bipartite graphs.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for the optimized algorithm, along with performance benchmarks and an analysis of the improvements in time complexity.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 26.4: Job Assignment Problem with Constraints
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design and implement a Rust solution for a job assignment problem with additional constraints, such as constraints on the number of jobs each worker can perform or specific compatibility requirements. Extend the Hungarian Algorithm or employ alternative approaches like Constraint Programming or Integer Linear Programming (ILP) to handle these constraints.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Solve a complex job assignment problem using Rust, focusing on handling additional constraints with advanced algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for your solution, along with test cases, and provide an evaluation of its effectiveness in handling realistic scenarios.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 26.5: Interactive Visualization and Analysis Tool for Bipartite Graphs
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create an advanced Rust application that not only visualizes bipartite graphs and matchings but also includes interactive features for analyzing algorithm performance. Implement functionality for users to dynamically adjust graph parameters, such as edge weights and constraints, and observe the effects on matchings and algorithm performance. Incorporate advanced visualization techniques, such as animated augmenting paths and real-time performance metrics.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Develop an interactive tool in Rust for visualizing and analyzing bipartite graphs, with a focus on enhancing understanding of complex algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide a functional Rust application with documentation, and include user feedback on its effectiveness in understanding algorithmic performance.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Tackling these assignments will deepen your knowledge of algorithmic optimizations, advanced data structures, and real-world applications. By engaging with these complex problems, you will enhance your ability to solve intricate graph-related challenges and develop sophisticated solutions. Embrace these rigorous tasks with determination, and you’ll emerge with a profound mastery of bipartite matchings and a robust command of advanced Rust programming techniques.
+    </p>
+</section>

@@ -36,7 +36,7 @@ Graphs come in various forms, each suited to different types of problems. One of
 </p>
 
 <p style="text-align: justify;">
-In contrast, a <strong>directed graph</strong> or <strong>digraph</strong> includes edges that have a specific direction, represented as ordered pairs of vertices. In a digraph, an edge from vertex $u$ to vertex $v$ does not imply an edge from V to uuu. This directionality is crucial for modeling processes like web page linking, where one page may link to another without reciprocation, or task scheduling, where certain tasks must precede others.
+In contrast, a <strong>directed graph</strong> or <strong>digraph</strong> includes edges that have a specific direction, represented as ordered pairs of vertices. In a digraph, an edge from vertex $u$ to vertex $v$ does not imply an edge from $V$ to $u$. This directionality is crucial for modeling processes like web page linking, where one page may link to another without reciprocation, or task scheduling, where certain tasks must precede others.
 </p>
 
 <p style="text-align: justify;">
@@ -78,7 +78,7 @@ When implementing graph representations in Rust, choosing the right structure de
 
 ### 15.2.1. Adjacency List
 <p style="text-align: justify;">
-The Adjacency List is a graph representation where each vertex is associated with a list of its adjacent vertices. This structure is particularly efficient for sparse graphs, where the number of edges is relatively small compared to the number of vertices. The Adjacency List can be implemented using either <code>Vec&lt;Vec&lt;usize&gt;&gt;</code> or <code>HashMap&lt;usize, Vec&lt;usize&gt;&gt;</code>, depending on whether the graph has a dense or sparse vertex index.
+The Adjacency List is a graph representation where each vertex is associated with a list of its adjacent vertices. This structure is particularly efficient for sparse graphs, where the number of edges is relatively small compared to the number of vertices. The Adjacency List can be implemented using either <code>Vec&lt;Vec&lt;usize&gt;&gt;</code> or <code>HashMap&lt;usize&gt;, Vec&lt;usize&gt;</code>, depending on whether the graph has a dense or sparse vertex index.
 </p>
 
 <p style="text-align: justify;">
@@ -149,7 +149,7 @@ In this implementation, the graph is represented by a vector of vectors (<code>V
 
 ### 15.2.2. Adjacency Matrix
 <p style="text-align: justify;">
-The Adjacency Matrix is a 2D matrix where each element at position <code>(i, j)</code> indicates the presence or absence of an edge between vertices <code>i</code> and <code>j</code>. In the case of weighted graphs, the matrix can store the weight of the edge instead of a simple boolean value. This representation is particularly useful for dense graphs, where the number of edges is close to the square of the number of vertices.
+The Adjacency Matrix is a 2D matrix where each element at position $(i, j)$ indicates the presence or absence of an edge between vertices $i$ and $j$. In the case of weighted graphs, the matrix can store the weight of the edge instead of a simple boolean value. This representation is particularly useful for dense graphs, where the number of edges is close to the square of the number of vertices.
 </p>
 
 <p style="text-align: justify;">
@@ -222,7 +222,7 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-This implementation uses a vector of vectors (<code>Vec&lt;Vec&lt;Option&lt;usize&gt;&gt;&gt;</code>) to represent the adjacency matrix. For each pair of vertices <code>(u, v)</code>, the matrix stores the weight of the edge if it exists, or <code>None</code> if there is no edge. The Adjacency Matrix allows for fast edge existence checks and weight lookups because these operations are constant time, <code>O(1)</code>. However, it is memory-intensive, especially for large, sparse graphs, because it allocates space for all possible edges, even those that don't exist.
+This implementation uses a vector of vectors (<code>Vec&lt;Vec&lt;Option&lt;usize&gt;&gt;&gt;</code>) to represent the adjacency matrix. For each pair of vertices $(u, v)$, the matrix stores the weight of the edge if it exists, or $None$ if there is no edge. The Adjacency Matrix allows for fast edge existence checks and weight lookups because these operations are constant time, $O(1)$. However, it is memory-intensive, especially for large, sparse graphs, because it allocates space for all possible edges, even those that don't exist.
 </p>
 
 <p style="text-align: justify;">
@@ -548,7 +548,7 @@ BFS explores all vertices at the current level before moving on to vertices at t
 
 ### 15.3.3. Topological Sorting
 <p style="text-align: justify;">
-Topological Sorting is an algorithm that produces a linear ordering of vertices in a Directed Acyclic Graph (DAG) such that for every directed edge $u \rightarrow v$ vertex uuu appears before V in the ordering. Topological sorting can be accomplished using DFS, where vertices are added to the ordering after all their dependencies have been visited, or using Kahn’s algorithm, which iteratively removes vertices with no incoming edges.
+Topological Sorting is an algorithm that produces a linear ordering of vertices in a Directed Acyclic Graph (DAG) such that for every directed edge $u \rightarrow v$ vertex uuu appears before $V$ in the ordering. Topological sorting can be accomplished using DFS, where vertices are added to the ordering after all their dependencies have been visited, or using Kahn’s algorithm, which iteratively removes vertices with no incoming edges.
 </p>
 
 <p style="text-align: justify;">
@@ -2134,47 +2134,66 @@ By engaging with these prompts, you will gain the ability to implement complex g
 </p>
 
 ### 15.6.3. Self-Exercises
-<p style="text-align: justify;">
-These advanced exercises are designed to push your understanding of graph theory and Rust programming to the next level. They are meant to challenge your problem-solving abilities, your proficiency with Rust’s features, and your capacity to think critically about algorithmic performance and optimizations. Each exercise requires deep engagement with the material, thorough analysis, and robust implementation.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 15.1:<strong></strong> Comprehensive Graph Representation Framework in Rust
-</p>
-
-- <p style="text-align: justify;">Design and implement a comprehensive Rust library that supports multiple graph representations: adjacency list, adjacency matrix, edge list, and compressed sparse row (CSR) format. The library should be generic, allowing for different types of graph edges and vertices (e.g., weighted, unweighted, directed, undirected). Include features for dynamic graph modifications (adding/removing nodes and edges) and provide efficient serialization and deserialization methods for each representation. Benchmark the performance of your library across different graph sizes and structures, and compare the results with existing Rust graph libraries like <code>Petgraph</code>. Submit your library with full documentation, unit tests, and a detailed report analyzing the trade-offs between different representations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 15.2:<strong></strong> Advanced DFS and BFS with Complex Constraints
-</p>
-
-- <p style="text-align: justify;">Extend the basic DFS and BFS algorithms in Rust to handle complex constraints, such as:</p>
-- <p style="text-align: justify;">Detecting and handling back edges in directed graphs to identify cycles.</p>
-- <p style="text-align: justify;">Implementing path constraints that filter paths based on specific criteria (e.g., paths with total weights within a certain range).</p>
-- <p style="text-align: justify;">Handling dynamic graph changes, where nodes and edges can be added or removed during traversal. Apply your advanced DFS and BFS implementations to a variety of challenging graphs, including those with highly irregular structures and complex edge weight distributions. Submit your code along with a comprehensive analysis of the algorithms' behavior under these constraints, highlighting any challenges encountered and how you overcame them.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 15.3:<strong></strong> Optimized and Extended Dijkstra’s Algorithm with Multiple Variants
-</p>
-
-- <p style="text-align: justify;">Implement an optimized version of Dijkstra’s algorithm in Rust using a priority queue (binary heap) to efficiently find the shortest path in a graph. Then, extend your implementation to handle:</p>
-- <p style="text-align: justify;">Multi-source shortest paths, where the algorithm computes the shortest paths from multiple sources simultaneously.</p>
-- <p style="text-align: justify;">Bidirectional Dijkstra, where the search is conducted from both the source and destination nodes to meet in the middle, reducing search space.</p>
-- <p style="text-align: justify;">Implementation with Fibonacci heaps for theoretical performance gains in dense graphs, and analyze whether the performance improvement is realized in practice. Test your implementations on large, complex graphs, such as those representing transportation networks or web link structures. Provide detailed performance benchmarks, a comparison of the different variants, and an in-depth discussion of the practical utility of these optimizations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 15.4:<strong></strong> Comparative Analysis of MST Algorithms in Challenging Environments
-</p>
-
-- <p style="text-align: justify;">Implement both Kruskal’s and Prim’s algorithms in Rust to compute the Minimum Spanning Tree (MST) for graphs with:</p>
-- <p style="text-align: justify;">Mixed weights (positive, negative, and zero).</p>
-- <p style="text-align: justify;">Disconnected components where you must adapt the algorithms to handle multiple MSTs.</p>
-- <p style="text-align: justify;">Large-scale graphs with millions of nodes and edges, requiring efficient memory management and parallel processing. Extend your implementations to use a disjoint-set (union-find) data structure for Kruskal’s algorithm and a priority queue (binary heap) for Prim’s algorithm. Perform a comparative analysis of the algorithms under these challenging conditions, focusing on memory consumption, execution time, and scalability. Submit your Rust code along with a detailed report that includes graphs, tables, and critical reflections on the algorithms' efficiency in different scenarios.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 15.5:<strong></strong> Parallelization of Complex Graph Algorithms in Rust with Advanced Optimizations
-</p>
-
-- <p style="text-align: justify;">Choose one of the following graph algorithms: Dijkstra’s, A\* search, or Bellman-Ford, and implement it in Rust with parallel processing capabilities. Utilize Rust's concurrency primitives (threads, channels, <code>rayon</code>) to optimize the algorithm for execution on multi-core processors. Then, extend your implementation to:</p>
-- <p style="text-align: justify;">Handle dynamic graph updates in parallel without locking the entire graph structure, ensuring thread safety and avoiding race conditions.</p>
-- <p style="text-align: justify;">Implement a hybrid parallel approach that dynamically switches between parallel and sequential execution based on graph structure and size (e.g., switching to sequential for small subgraphs).</p>
-- <p style="text-align: justify;">Analyze the performance impact of different parallelization strategies on various types of graphs, including sparse and dense graphs, and graphs with highly irregular structures. Submit your parallelized algorithm, along with an in-depth performance analysis, discussing the challenges of parallelization in Rust, the strategies you employed to overcome them, and potential areas for further optimization.</p>
-<p style="text-align: justify;">
-These exercises are designed to be challenging, pushing the boundaries of your understanding and your ability to apply Rust to complex graph problems. By completing these tasks, you will not only gain a deeper understanding of graph algorithms and their implementations but also develop the skills necessary to tackle large-scale, real-world problems in a highly efficient and performant manner. Approach these exercises with dedication, and take the time to explore the nuances of Rust’s powerful features. Remember, the effort you put into mastering these concepts will pay off, not just in your understanding of graph theory but in your overall proficiency as a Rust programmer. Take on these challenges, and you'll emerge with a robust skill set that will serve you well in both academic and professional pursuits.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These advanced exercises are designed to push your understanding of graph theory and Rust programming to the next level. They are meant to challenge your problem-solving abilities, your proficiency with Rust’s features, and your capacity to think critically about algorithmic performance and optimizations. Each exercise requires deep engagement with the material, thorough analysis, and robust implementation.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 15.1: Comprehensive Graph Representation Framework in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design and implement a comprehensive Rust library that supports multiple graph representations: adjacency list, adjacency matrix, edge list, and compressed sparse row (CSR) format. The library should be generic, allowing for different types of graph edges and vertices (e.g., weighted, unweighted, directed, undirected). Include features for dynamic graph modifications (adding/removing nodes and edges) and provide efficient serialization and deserialization methods for each representation. Benchmark the performance of your library across different graph sizes and structures, and compare the results with existing Rust graph libraries like <code>Petgraph</code>. Submit your library with full documentation, unit tests, and a detailed report analyzing the trade-offs between different representations.</p>
+            <p><strong>Objective:</strong> Develop a versatile and efficient graph representation library in Rust.</p>
+            <p><strong>Deliverables:</strong> The graph library, unit tests, performance benchmarks, and a comprehensive report on the trade-offs between different graph representations.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 15.2: Advanced DFS and BFS with Complex Constraints
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Extend the basic DFS and BFS algorithms in Rust to handle complex constraints, such as detecting and handling back edges in directed graphs to identify cycles, implementing path constraints that filter paths based on specific criteria (e.g., paths with total weights within a certain range), and handling dynamic graph changes, where nodes and edges can be added or removed during traversal. Apply your advanced DFS and BFS implementations to a variety of challenging graphs, including those with highly irregular structures and complex edge weight distributions.</p>
+            <p><strong>Objective:</strong> Enhance DFS and BFS to support complex constraints and dynamic graph modifications.</p>
+            <p><strong>Deliverables:</strong> Source code for advanced DFS and BFS, test cases, and an analytical report on the behavior of these algorithms under complex constraints.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 15.3: Optimized and Extended Dijkstra’s Algorithm with Multiple Variants
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement an optimized version of Dijkstra’s algorithm in Rust using a priority queue (binary heap) to efficiently find the shortest path in a graph. Then, extend your implementation to handle multi-source shortest paths, bidirectional Dijkstra, and implementation with Fibonacci heaps for theoretical performance gains in dense graphs. Test your implementations on large, complex graphs, such as those representing transportation networks or web link structures. Provide detailed performance benchmarks, a comparison of the different variants, and an in-depth discussion of the practical utility of these optimizations.</p>
+            <p><strong>Objective:</strong> Implement and extend Dijkstra’s algorithm with optimizations and variants.</p>
+            <p><strong>Deliverables:</strong> Source code for Dijkstra’s algorithm variants, performance benchmarks, and a detailed comparative analysis report.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 15.4: Comparative Analysis of MST Algorithms in Challenging Environments
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement both Kruskal’s and Prim’s algorithms in Rust to compute the Minimum Spanning Tree (MST) for graphs with mixed weights (positive, negative, and zero), disconnected components where you must adapt the algorithms to handle multiple MSTs, and large-scale graphs with millions of nodes and edges, requiring efficient memory management and parallel processing. Extend your implementations to use a disjoint-set (union-find) data structure for Kruskal’s algorithm and a priority queue (binary heap) for Prim’s algorithm. Perform a comparative analysis of the algorithms under these challenging conditions, focusing on memory consumption, execution time, and scalability.</p>
+            <p><strong>Objective:</strong> Analyze and compare MST algorithms in complex and large-scale environments.</p>
+            <p><strong>Deliverables:</strong> Source code for MST algorithms, performance benchmarks, and a comprehensive report on the comparative analysis of Kruskal’s and Prim’s algorithms.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 15.5: Parallelization of Complex Graph Algorithms in Rust with Advanced Optimizations
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Choose one of the following graph algorithms: Dijkstra’s, A* search, or Bellman-Ford, and implement it in Rust with parallel processing capabilities. Utilize Rust's concurrency primitives (threads, channels, <code>rayon</code>) to optimize the algorithm for execution on multi-core processors. Then, extend your implementation to handle dynamic graph updates in parallel without locking the entire graph structure, ensuring thread safety and avoiding race conditions. Implement a hybrid parallel approach that dynamically switches between parallel and sequential execution based on graph structure and size (e.g., switching to sequential for small subgraphs). Analyze the performance impact of different parallelization strategies on various types of graphs, including sparse and dense graphs, and graphs with highly irregular structures.</p>
+            <p><strong>Objective:</strong> Implement and optimize parallel graph algorithms in Rust.</p>
+            <p><strong>Deliverables:</strong> Source code for the parallelized algorithm, performance benchmarks, and a detailed report on the challenges and optimizations of parallel graph processing.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to be challenging, pushing the boundaries of your understanding and your ability to apply Rust to complex graph problems. By completing these tasks, you will not only gain a deeper understanding of graph algorithms and their implementations but also develop the skills necessary to tackle large-scale, real-world problems in a highly efficient and performant manner. Approach these exercises with dedication, and take the time to explore the nuances of Rust’s powerful features. Remember, the effort you put into mastering these concepts will pay off, not just in your understanding of graph theory but in your overall proficiency as a Rust programmer. Take on these challenges, and you'll emerge with a robust skill set that will serve you well in both academic and professional pursuits.
+    </p>
+</section>

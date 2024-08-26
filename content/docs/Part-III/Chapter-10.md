@@ -100,7 +100,7 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-The <code>Vec<T></code> structure is used here because it provides efficient O(1) time complexity for both <code>push</code> and <code>pop</code> operations, given that elements are added or removed from the end of the vector.
+The <code>Vec<T></code> structure is used here because it provides efficient $O(1)$ time complexity for both <code>push</code> and <code>pop</code> operations, given that elements are added or removed from the end of the vector.
 </p>
 
 <p style="text-align: justify;">
@@ -308,7 +308,7 @@ Deques are widely used in various applications, thanks to their ability to effic
 </p>
 
 <p style="text-align: justify;">
-The operations provided by <code>VecDeque<T></code>—such as <code>push_front</code>, <code>push_back</code>, <code>pop_front</code>, and <code>pop_back</code>—all run in constant time, $O(1)$, due to the efficient handling of elements at both ends of the internal buffer. This performance advantage makes <code>VecDeque<T></code> preferable in scenarios requiring frequent insertions and deletions from both ends. Additionally, the <code>peek_front</code> and <code>peek_back</code> operations are also O(1), providing fast access to the front and back elements without modifying the deque.
+The operations provided by <code>VecDeque<T></code>—such as <code>push_front</code>, <code>push_back</code>, <code>pop_front</code>, and <code>pop_back</code>—all run in constant time, $O(1)$, due to the efficient handling of elements at both ends of the internal buffer. This performance advantage makes <code>VecDeque<T></code> preferable in scenarios requiring frequent insertions and deletions from both ends. Additionally, the <code>peek_front</code> and <code>peek_back</code> operations are also $O(1)$, providing fast access to the front and back elements without modifying the deque.
 </p>
 
 <p style="text-align: justify;">
@@ -1198,60 +1198,66 @@ Engaging with these prompts will deepen your understanding of elementary data st
 </p>
 
 ### 10.6.3. Self-Exercises
-<p style="text-align: justify;">
-This set of exercises aims to deepen your understanding of fundamental data structures in Rust by providing hands-on experience with stacks, queues, deques, strings, bitwise data structures, and concurrency strategies. Each exercise includes implementation, performance analysis, and practical application.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 10.1:<strong></strong> Implement and Benchmark Stacks and Queues
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Develop comprehensive Rust implementations of stacks and queues, analyze their performance, and understand their use cases.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement a stack using <code>Vec<T></code> and a custom linked list structure. Include methods for <code>push</code>, <code>pop</code>, and <code>peek</code>. Similarly, implement a queue using <code>VecDeque<T></code> and a custom linked list structure, including methods for <code>enqueue</code>, <code>dequeue</code>, and <code>peek</code>.</p>
-- <p style="text-align: justify;">Write test cases to verify correctness, including edge cases such as operations on empty structures.</p>
-- <p style="text-align: justify;">Benchmark the performance of each implementation in terms of time complexity and memory usage, and compare the results. Include scenarios with varying sizes and types of data.</p>
-- <p style="text-align: justify;">Discuss the advantages and trade-offs of using <code>Vec<T></code> versus <code>VecDeque<T></code> for stack and queue implementations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 10.2:<strong></strong> Build and Analyze a Deque-Based Task Scheduler
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement a task scheduler using <code>VecDeque<T></code> and analyze its performance in managing tasks.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Develop a task scheduler that supports adding tasks to both ends of the deque and removing tasks from both ends. Implement methods such as <code>add_task_front</code>, <code>add_task_back</code>, <code>remove_task_front</code>, and <code>remove_task_back</code>.</p>
-- <p style="text-align: justify;">Design scenarios that simulate task scheduling and processing, such as task prioritization and round-robin scheduling.</p>
-- <p style="text-align: justify;">Benchmark the performance of the scheduler under different workloads and data sizes. Compare <code>VecDeque<T></code> to alternative data structures in terms of efficiency and suitability for task management.</p>
-- <p style="text-align: justify;">Discuss the impact of deque operations on performance and memory management, and provide recommendations for scenarios where a deque is particularly beneficial.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 10.3:<strong></strong> String Manipulation and Processing in Rust
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Explore and analyze Rust’s string handling capabilities for efficient text processing and manipulation.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Create a Rust program to perform various string operations including concatenation, substring extraction, replacement, and trimming. Use both immutable <code>&str</code> and mutable <code>String</code> types.</p>
-- <p style="text-align: justify;">Implement functionality to handle UTF-8 encoded characters and grapheme clusters. Explore how Rust manages non-ASCII characters and special symbols.</p>
-- <p style="text-align: justify;">Develop a string buffer using <code>String</code> and <code>Vec<u8></code> for efficient string building and manipulation. Analyze resizing and reallocation strategies.</p>
-- <p style="text-align: justify;">Compare the performance of different string operations and buffer strategies, discussing scenarios where each approach is most effective.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 10.4:<strong></strong> Advanced Bitwise Data Structures Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement and analyze advanced bitwise data structures for efficient data representation and manipulation.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Build and manipulate bit arrays using the <code>bit-set</code> and <code>bit-vec</code> crates. Implement operations such as bitwise AND, OR, XOR, and shifts.</p>
-- <p style="text-align: justify;">Create a Bloom filter using multiple hash functions and analyze its performance for membership testing.</p>
-- <p style="text-align: justify;">Design test cases to validate the functionality and performance of bitwise data structures in terms of memory efficiency and operation speed.</p>
-- <p style="text-align: justify;">Discuss the use cases and benefits of bitwise data structures compared to traditional data structures, including their role in applications like cryptography and search algorithms.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 10.5:<strong></strong> Concurrency and Error Handling for Data Structures
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement concurrent access and robust error handling for stacks, queues, and deques in Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Develop Rust programs that use <code>Mutex</code> or <code>RwLock</code> to manage concurrent access to stacks, queues, and deques. Implement safe methods for accessing and modifying these structures from multiple threads.</p>
-- <p style="text-align: justify;">Implement error handling mechanisms to manage underflow and overflow conditions. Use Rust’s <code>Result</code> and <code>Option</code> types to handle errors gracefully.</p>
-- <p style="text-align: justify;">Create test scenarios to demonstrate the effectiveness of concurrency control and error handling strategies in real-world applications.</p>
-- <p style="text-align: justify;">Analyze the impact of different synchronization primitives and error handling techniques on performance and reliability. Discuss best practices for ensuring safe and efficient concurrent access.</p>
-<p style="text-align: justify;">
-Tackle these exercises with determination and curiosity, as they will provide you with invaluable hands-on experience in implementing and optimizing fundamental data structures in Rust. Each task is designed to challenge you and deepen your understanding of both theoretical concepts and practical applications. Embrace the opportunity to refine your skills and gain insights that will serve you well in advanced programming and system design.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        This set of exercises aims to deepen your understanding of fundamental data structures in Rust by providing hands-on experience with stacks, queues, deques, strings, bitwise data structures, and concurrency strategies. Each exercise includes implementation, performance analysis, and practical application.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 10.1: Implement and Benchmark Stacks and Queues
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a stack using <code>Vec&lt;T&gt;</code> and a custom linked list structure. Include methods for <code>push</code>, <code>pop</code>, and <code>peek</code>. Similarly, implement a queue using <code>VecDeque&lt;T&gt;</code> and a custom linked list structure, including methods for <code>enqueue</code>, <code>dequeue</code>, and <code>peek</code>. Write test cases to verify correctness, including edge cases such as operations on empty structures. Benchmark the performance of each implementation in terms of time complexity and memory usage, and compare the results. Include scenarios with varying sizes and types of data.</p>
+            <p><strong>Objective:</strong> Develop comprehensive Rust implementations of stacks and queues, analyze their performance, and understand their use cases.</p>
+            <p><strong>Deliverables:</strong> Source code for the stack and queue implementations, performance benchmarks, and a report discussing the trade-offs between using <code>Vec&lt;T&gt;</code> versus <code>VecDeque&lt;T&gt;</code> for these data structures.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 10.2: Build and Analyze a Deque-Based Task Scheduler
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a task scheduler that supports adding tasks to both ends of the deque and removing tasks from both ends. Implement methods such as <code>add_task_front</code>, <code>add_task_back</code>, <code>remove_task_front</code>, and <code>remove_task_back</code>. Design scenarios that simulate task scheduling and processing, such as task prioritization and round-robin scheduling. Benchmark the performance of the scheduler under different workloads and data sizes. Compare <code>VecDeque&lt;T&gt;</code> to alternative data structures in terms of efficiency and suitability for task management.</p>
+            <p><strong>Objective:</strong> Implement a task scheduler using <code>VecDeque&lt;T&gt;</code> and analyze its performance in managing tasks.</p>
+            <p><strong>Deliverables:</strong> Source code for the task scheduler, performance benchmarks, and a report discussing the impact of deque operations on performance and memory management, with recommendations for specific scenarios.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 10.3: String Manipulation and Processing in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust program to perform various string operations including concatenation, substring extraction, replacement, and trimming. Use both immutable <code>&str</code> and mutable <code>String</code> types. Implement functionality to handle UTF-8 encoded characters and grapheme clusters. Explore how Rust manages non-ASCII characters and special symbols. Develop a string buffer using <code>String</code> and <code>Vec&lt;u8&gt;</code> for efficient string building and manipulation. Analyze resizing and reallocation strategies. Compare the performance of different string operations and buffer strategies, discussing scenarios where each approach is most effective.</p>
+            <p><strong>Objective:</strong> Explore and analyze Rust’s string handling capabilities for efficient text processing and manipulation.</p>
+            <p><strong>Deliverables:</strong> Source code for the string manipulation program, performance benchmarks, and a report discussing the efficiency of different string handling strategies in Rust.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 10.4: Advanced Bitwise Data Structures Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Build and manipulate bit arrays using the <code>bit-set</code> and <code>bit-vec</code> crates. Implement operations such as bitwise AND, OR, XOR, and shifts. Create a Bloom filter using multiple hash functions and analyze its performance for membership testing. Design test cases to validate the functionality and performance of bitwise data structures in terms of memory efficiency and operation speed.</p>
+            <p><strong>Objective:</strong> Implement and analyze advanced bitwise data structures for efficient data representation and manipulation.</p>
+            <p><strong>Deliverables:</strong> Source code for the bitwise data structures and Bloom filter, performance benchmarks, and a report discussing the use cases and benefits of bitwise data structures compared to traditional data structures, including their role in applications like cryptography and search algorithms.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 10.5: Concurrency and Error Handling for Data Structures
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop Rust programs that use <code>Mutex</code> or <code>RwLock</code> to manage concurrent access to stacks, queues, and deques. Implement safe methods for accessing and modifying these structures from multiple threads. Implement error handling mechanisms to manage underflow and overflow conditions. Use Rust’s <code>Result</code> and <code>Option</code> types to handle errors gracefully. Create test scenarios to demonstrate the effectiveness of concurrency control and error handling strategies in real-world applications.</p>
+            <p><strong>Objective:</strong> Implement concurrent access and robust error handling for stacks, queues, and deques in Rust.</p>
+            <p><strong>Deliverables:</strong> Source code for the concurrent data structures with error handling, performance benchmarks, and a report analyzing the impact of different synchronization primitives and error handling techniques on performance and reliability.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Tackle these exercises with determination and curiosity, as they will provide you with invaluable hands-on experience in implementing and optimizing fundamental data structures in Rust. Each task is designed to challenge you and deepen your understanding of both theoretical concepts and practical applications. Embrace the opportunity to refine your skills and gain insights that will serve you well in advanced programming and system design.
+    </p>
+</section>

@@ -197,20 +197,78 @@ As you delve into these prompts, you will not only gain a deeper understanding o
 </p>
 
 ### 1.5.3. Self-Exercises
-<p style="text-align: justify;">
-The following exercises are intended to push reader to not only understand the concepts covered in this chapter, but also to apply them in practical scenarios. Through implementation, analysis, and reflection, you will deepen their understanding of algorithmic design, efficiency, and ethical considerations.
-</p>
+ <p class="text-justify">
+        The following exercises are designed to deepen your understanding of the concepts covered in this chapter and to apply them in practical scenarios. By implementing, analyzing, and reflecting, you will gain a stronger grasp of algorithmic design, efficiency, and ethical considerations.
+  </p>
 
-- <p style="text-align: justify;"><strong></strong>Exercise 1.1:<strong></strong> Comparative Analysis of Historical Algorithms</p>
-- <p style="text-align: justify;">Research and implement Euclid's algorithm and another historical algorithm (e.g., the Sieve of Eratosthenes) in Rust. Compare their time and space complexities using Big O notation. Write a report discussing how these algorithms influenced modern algorithm design and how their efficiency would be evaluated in contemporary computing environments.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 1.2:<strong></strong> Turing Machines and Modern Algorithm Design</p>
-- <p style="text-align: justify;">Implement a basic Turing machine in Rust, simulating a simple computational task (e.g., binary addition). Then, compare this implementation with a modern algorithm that accomplishes the same task using current programming paradigms. Submit your code and a reflection paper discussing the evolution of algorithmic thinking from Turing machines to present-day algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 1.3:<strong></strong> Exploring the Impact of Data Structures on Algorithms</p>
-- <p style="text-align: justify;">Choose two different data structures (e.g., linked list and binary search tree) and implement them in Rust. Then, develop an algorithm (e.g., search or sort) and apply it to both data structures. Analyze and document the differences in performance, focusing on time and space complexities, and discuss which data structure is more efficient for the chosen algorithm.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 1.4:<strong></strong> Ethical Implications of Algorithmic Bias</p>
-- <p style="text-align: justify;">Research an instance where an algorithm caused a significant ethical issue due to bias (e.g., in hiring, credit scoring, or law enforcement). Write a Rust program that simulates a simplified version of the problematic algorithm. Then, modify the algorithm to mitigate the bias. Submit both the original and modified code along with a report discussing the ethical considerations and the steps taken to address the bias.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 1.5:<strong></strong> Implementing and Analyzing Parallel Algorithms</p>
-- <p style="text-align: justify;">Implement a parallel version of a common algorithm (e.g., quicksort or matrix multiplication) in Rust, using Rust’s concurrency features. Compare its performance with a sequential version of the same algorithm by running tests on different hardware (e.g., single-core vs. multi-core processors). Submit your code along with a detailed analysis of the performance differences and a discussion on the challenges of parallel algorithm design.</p>
-<p style="text-align: justify;">
-By working through these exercises, you will gain practical experience and insights into Rust’s unique features and how they can be leveraged in real-world applications.
-</p>
+---
+<section class="mt-5">
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 1.1: Comparative Analysis of Historical Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Research and implement Euclid's algorithm and another historical algorithm (e.g., the Sieve of Eratosthenes) in Rust. Compare their time and space complexities using Big O notation.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand the foundations of algorithm design and analyze the efficiency of different algorithms in terms of time and space complexity.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for both algorithms and a report on their historical significance, Big O notation analysis, and modern applicability.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 1.2: Turing Machines and Modern Algorithm Design
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a basic Turing machine in Rust that simulates a simple computational task (e.g., binary addition). Compare this implementation with a modern algorithm that accomplishes the same task using current programming paradigms.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore the evolution of algorithmic thinking from Turing machines to modern programming practices.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for both the Turing machine and the modern algorithm, and a reflection on their differences and evolution.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 1.3: Exploring the Impact of Data Structures on Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Choose two different data structures (e.g., linked list and binary search tree) and implement them in Rust. Develop an algorithm (e.g., search or sort) and apply it to both data structures.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand how different data structures impact the performance of algorithms in terms of time and space complexities.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for both data structures and the algorithm, and a performance analysis report comparing their efficiencies.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 1.4: Ethical Implications of Algorithmic Bias
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Research an instance where an algorithm caused a significant ethical issue due to bias (e.g., in hiring, credit scoring, or law enforcement). Write a Rust program that simulates a simplified version of the problematic algorithm and modify it to mitigate the bias.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Learn about ethical considerations in algorithm design and how to address bias in algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Original and modified Rust code, and a report discussing the ethical issue, the modifications made, and their impact.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 1.5: Implementing and Analyzing Parallel Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a parallel version of a common algorithm (e.g., quicksort or matrix multiplication) in Rust, using Rust’s concurrency features. Compare its performance with a sequential version of the same algorithm by running tests on different hardware.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand the challenges and benefits of parallel algorithm design and how Rust’s concurrency features can enhance performance.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for both the parallel and sequential versions of the algorithm, and a performance analysis report discussing the differences and challenges encountered.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        By working through these exercises, you will gain practical experience and insights into Rust’s unique features and how they can be leveraged in real-world applications.
+    </p>
+</section>

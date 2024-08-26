@@ -48,7 +48,7 @@ Another important distinction lies between <strong>weighted</strong> and <strong
 </p>
 
 <p style="text-align: justify;">
-Understanding how to represent a graph in a computer system is critical for algorithm implementation. One common method is the <strong>adjacency matrix,</strong> a two-dimensional array where the element at row <code>i</code> and column <code>j</code> indicates whether there is an edge between vertex <code>i</code> and vertex <code>j</code>. In the case of a weighted graph, this element would hold the weight of the edge. The adjacency matrix is straightforward and allows for quick lookups to check if a connection exists between any two vertices. However, it can be inefficient in terms of space, especially for sparse graphs where the number of edges is much smaller than the number of possible vertex pairs.
+Understanding how to represent a graph in a computer system is critical for algorithm implementation. One common method is the <strong>adjacency matrix,</strong> a two-dimensional array where the element at row $i$ and column $j$ indicates whether there is an edge between vertex $i$ and vertex $j$. In the case of a weighted graph, this element would hold the weight of the edge. The adjacency matrix is straightforward and allows for quick lookups to check if a connection exists between any two vertices. However, it can be inefficient in terms of space, especially for sparse graphs where the number of edges is much smaller than the number of possible vertex pairs.
 </p>
 
 <p style="text-align: justify;">
@@ -147,7 +147,7 @@ In the world of Rust, graph construction and manipulation are made both powerful
 </p>
 
 <p style="text-align: justify;">
-When implementing a graph in Rust, one of the fundamental approaches is using an <strong>adjacency matrix.</strong> An adjacency matrix is a 2D vector where each element <code>(i, j)</code> indicates the presence or absence of an edge between vertex <code>i</code> and vertex <code>j</code>. This representation is particularly efficient for dense graphs, where most of the possible edges between vertices exist. The following pseudo code illustrates the basic structure of an adjacency matrix:
+When implementing a graph in Rust, one of the fundamental approaches is using an <strong>adjacency matrix.</strong> An adjacency matrix is a 2D vector where each element $(i, j)$ indicates the presence or absence of an edge between vertex $i$ and vertex $j$. This representation is particularly efficient for dense graphs, where most of the possible edges between vertices exist. The following pseudo code illustrates the basic structure of an adjacency matrix:
 </p>
 
 {{< prism lang="text" line-numbers="true">}}
@@ -172,7 +172,7 @@ fn add_edge(matrix: &mut Vec<Vec<u8>>, i: usize, j: usize) {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-This code creates an adjacency matrix for a graph with <code>n</code> vertices and provides a function to add an edge between two vertices. The <code>create_adjacency_matrix</code> function initializes a 2D vector, and the <code>add_edge</code> function sets the corresponding element to <code>1</code>, indicating the presence of an edge.
+This code creates an adjacency matrix for a graph with $n$ vertices and provides a function to add an edge between two vertices. The <code>create_adjacency_matrix</code> function initializes a 2D vector, and the <code>add_edge</code> function sets the corresponding element to $1$, indicating the presence of an edge.
 </p>
 
 <p style="text-align: justify;">
@@ -201,7 +201,7 @@ fn add_edge(list: &mut Vec<Vec<usize>>, i: usize, j: usize) {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-Here, <code>create_adjacency_list</code> initializes a vector of empty vectors, and <code>add_edge</code> appends the neighboring vertex to the list of vertex <code>i</code>. This structure is more space-efficient for graphs with fewer edges.
+Here, <code>create_adjacency_list</code> initializes a vector of empty vectors, and <code>add_edge</code> appends the neighboring vertex to the list of vertex $i$. This structure is more space-efficient for graphs with fewer edges.
 </p>
 
 <p style="text-align: justify;">
@@ -285,7 +285,7 @@ fn add_weighted_edge(list: &mut Vec<Vec<(usize, u32)>>, i: usize, j: usize, weig
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-This function adds a weighted edge between vertices <code>i</code> and <code>j</code> with the specified weight.
+This function adds a weighted edge between vertices $i$ and $j$ with the specified weight.
 </p>
 
 <p style="text-align: justify;">
@@ -379,40 +379,76 @@ Each prompt is designed to challenge you to explore theoretical principles, impl
 </p>
 
 ### 20.5.3. Self-Exercises
-<p style="text-align: justify;">
-The following exercises are designed to provide a deep and thorough exploration of graph theory and its practical implementation using Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 20.1:<strong></strong> Advanced Graph Representation and Performance Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement and critically analyze different graph representations in Rust, including performance implications.</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Develop a Rust program that creates graphs using both adjacency matrices and adjacency lists with Petgraph. Include functionality to add and remove vertices and edges dynamically. Implement and benchmark performance metrics such as insertion, deletion, and query times for both representations. Analyze how these metrics vary with different graph densities (e.g., sparse vs. dense). Write a detailed report comparing the trade-offs of each representation, including their impact on algorithmic performance and memory usage.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 20.2:<strong></strong> Comprehensive Graph Traversal and Shortest Path Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement and evaluate advanced graph traversal and shortest path algorithms, including their variations and performance.</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Write Rust code to implement Depth-First Search (DFS) and Breadth-First Search (BFS) using Petgraph. Extend these algorithms to handle weighted graphs and perform a topological sort for Directed Acyclic Graphs (DAGs). Implement Dijkstra's algorithm for finding the shortest path and compare it with the Bellman-Ford algorithm in terms of time complexity and suitability for different types of graphs. Create test cases with varied graph structures (e.g., sparse, dense, cyclic) and analyze the performance and correctness of each algorithm. Include a discussion of how these algorithms handle different scenarios, such as negative weights or large graph sizes.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 20.3:<strong></strong> In-Depth Cycle Detection and Graph Properties Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Detect cycles and analyze various graph properties, including their implications for algorithmic design.</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Develop a Rust application to detect simple cycles, including finding all unique cycles in a graph. Implement algorithms to check for Eulerian paths and circuits as well as Hamiltonian paths and circuits, and test them on a variety of graphs. Analyze how different cycle detection approaches impact algorithmic efficiency and correctness. Write a detailed explanation of how these graph properties affect problem-solving strategies in real-world applications and how cycle detection can be used in optimizing algorithms.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 20.4:<strong></strong> Graph Coloring, Planarity, and Theoretical Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement graph coloring and planarity checks, and explore their theoretical underpinnings.</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Create a Rust program to perform graph coloring using greedy algorithms and the backtracking approach. Compute the chromatic number and verify the correctness of your coloring solution. Implement a planarity check based on Kuratowski’s theorem or an alternative method, and discuss its computational complexity. Test these algorithms on various graphs and analyze their performance. Provide a theoretical overview of graph coloring and planarity, including their applications in scheduling, map coloring, and network design, and discuss the practical challenges of applying these concepts.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 20.5:<strong></strong> Dynamic Graph Operations and Visualization Integration
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement dynamic graph operations, optimize performance, and integrate graph visualization.</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Develop a Rust application to handle dynamic operations such as adding and removing vertices and edges. Implement optimizations to handle these operations efficiently and compare their impact on graph algorithms and overall performance. Integrate your Rust code with a graph visualization tool, such as Graphviz, to create visual representations of graph structures and algorithm results. Explore different visualization techniques and discuss how they help in understanding complex graph problems and solutions. Write a comprehensive analysis of how dynamic operations and visualization contribute to effective graph analysis and problem-solving.</p>
-<p style="text-align: justify;">
-They will help you gain a comprehensive understanding of fundamental concepts, advanced algorithms, performance optimization, and visualization, equipping you with the skills to tackle complex graph problems effectively.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        The following exercises are designed to provide a deep and thorough exploration of graph theory and its practical implementation using Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 20.1: Advanced Graph Representation and Performance Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and critically analyze different graph representations in Rust, including performance implications.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust program that creates graphs using both adjacency matrices and adjacency lists with Petgraph. Include functionality to add and remove vertices and edges dynamically. Implement and benchmark performance metrics such as insertion, deletion, and query times for both representations. Analyze how these metrics vary with different graph densities (e.g., sparse vs. dense). Write a detailed report comparing the trade-offs of each representation, including their impact on algorithmic performance and memory usage.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for graph representations, including methods for dynamic operations and performance benchmarks. Provide a comprehensive report discussing the performance metrics, trade-offs, and practical implications of each graph representation.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 20.2: Comprehensive Graph Traversal and Shortest Path Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and evaluate advanced graph traversal and shortest path algorithms, including their variations and performance.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write Rust code to implement Depth-First Search (DFS) and Breadth-First Search (BFS) using Petgraph. Extend these algorithms to handle weighted graphs and perform a topological sort for Directed Acyclic Graphs (DAGs). Implement Dijkstra's algorithm for finding the shortest path and compare it with the Bellman-Ford algorithm in terms of time complexity and suitability for different types of graphs. Create test cases with varied graph structures (e.g., sparse, dense, cyclic) and analyze the performance and correctness of each algorithm. Include a discussion of how these algorithms handle different scenarios, such as negative weights or large graph sizes.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code implementations for DFS, BFS, Dijkstra's, and Bellman-Ford algorithms. Provide performance benchmarks, test cases, and a detailed analysis comparing the algorithms' effectiveness and efficiency.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 20.3: In-Depth Cycle Detection and Graph Properties Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Detect cycles and analyze various graph properties, including their implications for algorithmic design.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust application to detect simple cycles, including finding all unique cycles in a graph. Implement algorithms to check for Eulerian paths and circuits as well as Hamiltonian paths and circuits, and test them on a variety of graphs. Analyze how different cycle detection approaches impact algorithmic efficiency and correctness. Write a detailed explanation of how these graph properties affect problem-solving strategies in real-world applications and how cycle detection can be used in optimizing algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for cycle detection and path analysis, along with a comprehensive report that includes test cases, performance analysis, and a discussion on the implications of these graph properties in algorithm design.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 20.4: Graph Coloring, Planarity, and Theoretical Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement graph coloring and planarity checks, and explore their theoretical underpinnings.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust program to perform graph coloring using greedy algorithms and the backtracking approach. Compute the chromatic number and verify the correctness of your coloring solution. Implement a planarity check based on Kuratowski’s theorem or an alternative method, and discuss its computational complexity. Test these algorithms on various graphs and analyze their performance. Provide a theoretical overview of graph coloring and planarity, including their applications in scheduling, map coloring, and network design, and discuss the practical challenges of applying these concepts.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for graph coloring and planarity checks, including performance benchmarks and a theoretical report discussing the applications and challenges of these concepts.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 20.5: Dynamic Graph Operations and Visualization Integration
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement dynamic graph operations, optimize performance, and integrate graph visualization.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust application to handle dynamic operations such as adding and removing vertices and edges. Implement optimizations to handle these operations efficiently and compare their impact on graph algorithms and overall performance. Integrate your Rust code with a graph visualization tool, such as Graphviz, to create visual representations of graph structures and algorithm results. Explore different visualization techniques and discuss how they help in understanding complex graph problems and solutions. Write a comprehensive analysis of how dynamic operations and visualization contribute to effective graph analysis and problem-solving.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for dynamic graph operations and visualization integration. Provide performance metrics and visual representations, along with a detailed analysis of the benefits of dynamic graph handling and visualization.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises will help you gain a comprehensive understanding of fundamental concepts, advanced algorithms, performance optimization, and visualization, equipping you with the skills to tackle complex graph problems effectively.
+    </p>
+</section>

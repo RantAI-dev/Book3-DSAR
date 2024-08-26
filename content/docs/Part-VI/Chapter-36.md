@@ -15,8 +15,9 @@ katex: true
 # 📘 Chapter 36: Probabilistic and Randomized Algorithms
 
 </center>
-
-> "To me, a good algorithm is a beautiful thing, but its beauty is often in its simplicity. The most complex algorithms are those that use randomization effectively to simplify otherwise complex problems." – Donald E. Knuth
+{{% alert icon="💡" context="info" %}}
+<strong>"<em>To me, a good algorithm is a beautiful thing, but its beauty is often in its simplicity. The most complex algorithms are those that use randomization effectively to simplify otherwise complex problems.</em>" — Donald E. Knuth</strong>
+{{% /alert %}}
 
 {{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
@@ -228,7 +229,7 @@ fn mod_exp(mut base: u64, mut exp: u64, modulus: u64) -> u64 {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In the Miller-Rabin test, the <code>decompose</code> function splits <code>n-1</code> into 2r×d2^r \\times d2r×d, and the <code>miller_rabin_witness</code> function tests whether a random base <code>a</code> is a witness to <code>n</code> being composite. The <code>miller_rabin_test</code> function runs the test <code>k</code> times, reducing the probability of error with each iteration.
+In the Miller-Rabin test, the <code>decompose</code> function splits $n-1$ into $2r×d2^r\times d2r×d$, and the <code>miller_rabin_witness</code> function tests whether a random base <code>a</code> is a witness to <code>n</code> being composite. The <code>miller_rabin_test</code> function runs the test <code>k</code> times, reducing the probability of error with each iteration.
 </p>
 
 <p style="text-align: justify;">
@@ -328,7 +329,7 @@ impl<T: Ord + Default> SkipList<T> {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In this Rust implementation, the <code>SkipList</code> manages the insertion of elements in a probabilistic manner, ensuring that operations are efficient on average, with an expected time complexity of O(log⁡n)O(\\log n)O(logn).
+In this Rust implementation, the <code>SkipList</code> manages the insertion of elements in a probabilistic manner, ensuring that operations are efficient on average, with an expected time complexity of $O(\log⁡ n)$.
 </p>
 
 ### 36.3.2. Graph Algorithms: Karger’s Minimum Cut
@@ -625,40 +626,62 @@ Each prompt is designed to build your expertise incrementally, fostering a compr
 </p>
 
 ### 36.5.3. Self-Exercises
-<p style="text-align: justify;">
-The following exercises will help you apply theoretical concepts to practical coding tasks and performance analysis using Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 36.1:<strong></strong> Implement and Analyze a Probabilistic Algorithm
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a Rust program that uses Bayesian inference to update probabilities based on observed data. Create a probabilistic algorithm that performs Bayesian updating on a dataset of your choice (e.g., email spam classification).</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the Rust code along with a detailed explanation of the Bayesian inference process, the choice of dataset, and how the algorithm updates probabilities. Include a performance analysis that measures the algorithm's accuracy and efficiency using appropriate Rust benchmarking tools.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 36.2:<strong></strong> Compare Las Vegas and Monte Carlo Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Develop two Rust programs: one implementing a Las Vegas algorithm (e.g., a randomized algorithm for exact approximate counting) and another implementing a Monte Carlo algorithm (e.g., Monte Carlo simulation for estimating π). Compare and contrast the performance, correctness guarantees, and error probabilities of these algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the Rust code for both algorithms along with a comparative analysis. Discuss how each algorithm handles correctness and error probability, and include performance benchmarks using Rust's <code>criterion</code> crate.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 36.3:<strong></strong> Advanced Data Structures with Randomization
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a Rust version of a skip list with probabilistic balancing. Compare its performance with a traditional balanced tree structure (e.g., AVL tree) in terms of insertion, deletion, and search operations.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Provide the Rust code for both the skip list and the balanced tree implementation. Include a performance comparison report that discusses the advantages of randomization in the skip list and evaluates its efficiency compared to the AVL tree.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 36.4:<strong></strong> Randomized Graph Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement Karger’s algorithm for finding a minimum cut in a graph using Rust. Provide an explanation of the algorithm's randomization techniques and their impact on the performance and accuracy of the minimum cut results.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the Rust code for Karger’s algorithm along with a detailed explanation of the randomization techniques used. Include test cases with graphs of varying sizes and a performance analysis of the algorithm, highlighting its effectiveness and accuracy.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 36.5:<strong></strong> Real-World Application of Probabilistic Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Explore a real-world application of probabilistic algorithms, such as gene prediction using a Hidden Markov Model (HMM). Implement a Rust version of a probabilistic algorithm relevant to the chosen application. Analyze how the algorithm performs in practice and discuss its real-world implications.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the Rust code for the chosen probabilistic algorithm and include a detailed explanation of the algorithm's application. Provide insights into how the algorithm addresses real-world problems, along with performance metrics and a discussion on the effectiveness of the approach.</p>
-<p style="text-align: justify;">
-These exercises are designed to activate your learning by integrating theoretical knowledge with practical coding experience, encouraging in-depth analysis and application of advanced concepts in probabilistic and randomized algorithms.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        The following exercises will help you apply theoretical concepts to practical coding tasks and performance analysis using Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 36.1: Implement and Analyze a Probabilistic Algorithm
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a Rust program that uses Bayesian inference to update probabilities based on observed data. Create a probabilistic algorithm that performs Bayesian updating on a dataset of your choice (e.g., email spam classification).</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code along with a detailed explanation of the Bayesian inference process, the choice of dataset, and how the algorithm updates probabilities. Include a performance analysis that measures the algorithm's accuracy and efficiency using appropriate Rust benchmarking tools.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 36.2: Compare Las Vegas and Monte Carlo Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop two Rust programs: one implementing a Las Vegas algorithm (e.g., a randomized algorithm for exact approximate counting) and another implementing a Monte Carlo algorithm (e.g., Monte Carlo simulation for estimating π). Compare and contrast the performance, correctness guarantees, and error probabilities of these algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for both algorithms along with a comparative analysis. Discuss how each algorithm handles correctness and error probability, and include performance benchmarks using Rust's <code>criterion</code> crate.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 36.3: Advanced Data Structures with Randomization
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a Rust version of a skip list with probabilistic balancing. Compare its performance with a traditional balanced tree structure (e.g., AVL tree) in terms of insertion, deletion, and search operations.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide the Rust code for both the skip list and the balanced tree implementation. Include a performance comparison report that discusses the advantages of randomization in the skip list and evaluates its efficiency compared to the AVL tree.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 36.4: Randomized Graph Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement Karger’s algorithm for finding a minimum cut in a graph using Rust. Provide an explanation of the algorithm's randomization techniques and their impact on the performance and accuracy of the minimum cut results.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for Karger’s algorithm along with a detailed explanation of the randomization techniques used. Include test cases with graphs of varying sizes and a performance analysis of the algorithm, highlighting its effectiveness and accuracy.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 36.5: Real-World Application of Probabilistic Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Explore a real-world application of probabilistic algorithms, such as gene prediction using a Hidden Markov Model (HMM). Implement a Rust version of a probabilistic algorithm relevant to the chosen application. Analyze how the algorithm performs in practice and discuss its real-world implications.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the chosen probabilistic algorithm and include a detailed explanation of the algorithm's application. Provide insights into how the algorithm addresses real-world problems, along with performance metrics and a discussion on the effectiveness of the approach.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to activate your learning by integrating theoretical knowledge with practical coding experience, encouraging in-depth analysis and application of advanced concepts in probabilistic and randomized algorithms.
+    </p>
+</section>

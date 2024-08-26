@@ -643,56 +643,77 @@ The following prompts cover fundamental principles, deep conceptual insights, an
 By engaging with these detailed prompts, you will delve deeply into the technical aspects of single-source shortest paths and their implementation in Rust. Each prompt is designed to challenge you and enhance your understanding, offering a comprehensive exploration of both theoretical concepts and practical coding techniques. Embrace these opportunities to refine your skills, explore advanced features, and gain insights into optimizing algorithms in Rust. Your commitment to tackling these prompts will not only solidify your grasp of shortest path algorithms but also elevate your proficiency in Rust programming. Dive into the complexities, experiment with the provided code samples, and unlock the full potential of your algorithmic knowledge and coding capabilities.
 </p>
 
-### 22.6.3. Self-Exercises
-<p style="text-align: justify;">
-The following self-exercises are designed to deepen your understanding of single-source shortest paths and enhance your practical skills in implementing and optimizing algorithms in Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 22.1:<strong></strong> Implement and Analyze Dijkstra's Algorithm
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Develop a complete Rust implementation of Dijkstra's algorithm for finding the shortest path in a graph with non-negative weights. Use <code>BinaryHeap</code> for the priority queue and manage the distance updates and vertex processing.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement the algorithm, ensuring to handle graph initialization and priority queue operations correctly.</p>
-- <p style="text-align: justify;">Test your implementation on various graph structures, including dense and sparse graphs.</p>
-- <p style="text-align: justify;">Analyze the performance of your implementation in terms of time and space complexity. Compare it with theoretical expectations and optimize where possible.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 22.2:<strong></strong> Bellman-Ford Algorithm with Negative Weights
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Write a Rust program to implement the Bellman-Ford algorithm, capable of handling graphs with negative edge weights and detecting negative weight cycles.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement the algorithm, including edge relaxation and negative cycle detection.</p>
-- <p style="text-align: justify;">Provide sample code and test it with graphs containing both positive and negative weights, ensuring that negative weight cycles are correctly detected.</p>
-- <p style="text-align: justify;">Discuss how Rust’s type system and memory management features assist in implementing this algorithm.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 22.3:<strong></strong> Comparative Analysis of Shortest Path Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Perform a comparative analysis of Dijkstra’s and Bellman-Ford algorithms in terms of their efficiency and suitability for different types of graphs.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Write a detailed report comparing the two algorithms based on their time and space complexities.</p>
-- <p style="text-align: justify;">Create and test both algorithms on a variety of graph instances, such as graphs with large numbers of vertices and edges, graphs with negative weights, and graphs with dense connections.</p>
-- <p style="text-align: justify;">Discuss the scenarios where each algorithm is preferable and any trade-offs involved in their use.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 22.4:<strong></strong> Concurrency in Shortest Path Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Explore how Rust’s concurrency features can be applied to optimize the performance of Dijkstra’s or Bellman-Ford algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement a parallel version of either Dijkstra’s or Bellman-Ford algorithm using Rust’s concurrency features, such as threads or asynchronous tasks.</p>
-- <p style="text-align: justify;">Test your parallel implementation on large-scale graphs and measure its performance improvements compared to the sequential version.</p>
-- <p style="text-align: justify;">Provide an analysis of the challenges faced during parallelization and how you addressed them.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 22.5:<strong></strong> Using Rust Libraries for Graph Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Utilize Rust libraries like <code>petgraph</code> to implement shortest path algorithms and compare their performance with your custom implementations.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement both Dijkstra’s and Bellman-Ford algorithms using the <code>petgraph</code> library.</p>
-- <p style="text-align: justify;">Compare the performance and functionality of these library-based implementations with your own versions.</p>
-- <p style="text-align: justify;">Discuss the advantages and limitations of using external libraries versus custom implementations, including aspects of performance, code complexity, and ease of use.</p>
-<p style="text-align: justify;">
-Those exercises will provide a robust framework for applying theoretical concepts to real-world problems, fostering both analytical and coding proficiency.
-</p>
+## 22.6.3. Self-Exercises
+<section class="mt-5">
+    <p class="text-justify">
+        The following self-exercises are designed to deepen your understanding of single-source shortest paths and enhance your practical skills in implementing and optimizing algorithms in Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 22.1: Implement and Analyze Dijkstra's Algorithm
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Develop a complete Rust implementation of Dijkstra's algorithm for finding the shortest path in a graph with non-negative weights.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Use <code>BinaryHeap</code> for the priority queue and manage the distance updates and vertex processing. Implement the algorithm, ensuring to handle graph initialization and priority queue operations correctly. Test your implementation on various graph structures, including dense and sparse graphs. Analyze the performance of your implementation in terms of time and space complexity. Compare it with theoretical expectations and optimize where possible.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for the Dijkstra's algorithm implementation, performance benchmarks, and a detailed analysis report of your findings.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 22.2: Bellman-Ford Algorithm with Negative Weights
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement the Bellman-Ford algorithm in Rust, capable of handling graphs with negative edge weights and detecting negative weight cycles.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the algorithm, including edge relaxation and negative cycle detection. Provide sample code and test it with graphs containing both positive and negative weights, ensuring that negative weight cycles are correctly detected. Discuss how Rust’s type system and memory management features assist in implementing this algorithm.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for the Bellman-Ford algorithm, including test cases and a report discussing the implementation and any challenges encountered.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 22.3: Comparative Analysis of Shortest Path Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Perform a comparative analysis of Dijkstra’s and Bellman-Ford algorithms in terms of their efficiency and suitability for different types of graphs.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a detailed report comparing the two algorithms based on their time and space complexities. Create and test both algorithms on a variety of graph instances, such as graphs with large numbers of vertices and edges, graphs with negative weights, and graphs with dense connections. Discuss the scenarios where each algorithm is preferable and any trade-offs involved in their use.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit a comparative analysis report, including Rust code for both algorithms and the results of the performance tests.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 22.4: Concurrency in Shortest Path Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore how Rust’s concurrency features can be applied to optimize the performance of Dijkstra’s or Bellman-Ford algorithms.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a parallel version of either Dijkstra’s or Bellman-Ford algorithm using Rust’s concurrency features, such as threads or asynchronous tasks. Test your parallel implementation on large-scale graphs and measure its performance improvements compared to the sequential version. Provide an analysis of the challenges faced during parallelization and how you addressed them.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for the parallel implementation, along with performance benchmarks and an analysis of the results.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 22.5: Using Rust Libraries for Graph Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Utilize Rust libraries like <code>petgraph</code> to implement shortest path algorithms and compare their performance with your custom implementations.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement both Dijkstra’s and Bellman-Ford algorithms using the <code>petgraph</code> library. Compare the performance and functionality of these library-based implementations with your own versions. Discuss the advantages and limitations of using external libraries versus custom implementations, including aspects of performance, code complexity, and ease of use.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for both library-based and custom implementations, along with a comparative report discussing performance and other relevant factors.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises will provide a robust framework for applying theoretical concepts to real-world problems, fostering both analytical and coding proficiency.
+    </p>
+</section>

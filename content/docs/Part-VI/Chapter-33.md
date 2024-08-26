@@ -25,9 +25,6 @@ katex: true
 <strong>Chapter 33 of the DSAR book delves into the intricacies of polynomials and the Fast Fourier Transform (FFT), focusing on both their theoretical foundations and practical applications. It begins with a detailed examination of polynomials, covering their basic properties, operations (addition, subtraction, multiplication, and division), and evaluation techniques, particularly Horner’s method. The chapter then transitions to the Fast Fourier Transform, explaining its mathematical basis and the efficiency gains it offers over direct computation of the Discrete Fourier Transform (DFT). It explores the Cooley-Tukey algorithm, Radix-2 FFT, and the Decimation in Time and Frequency methods, highlighting their implementation considerations and performance optimizations. Applications of FFT and polynomials are discussed extensively, including signal processing, image enhancement, polynomial multiplication, and solving differential equations. Finally, the chapter addresses optimization strategies for FFT algorithms, such as in-place computation, memory management, and parallelization, while also touching on specialized variants like Real FFT and multi-dimensional FFT. The integration of these concepts in practical scenarios underscores the chapter’s emphasis on both theoretical depth and practical efficiency in computational tasks.</strong>
 </p>
 {{% /alert %}}
-<p style="text-align: justify;">
-<strong>Chapter 33 of the DSAR book delves into the intricacies of polynomials and the Fast Fourier Transform (FFT), focusing on both their theoretical foundations and practical applications. It begins with a detailed examination of polynomials, covering their basic properties, operations (addition, subtraction, multiplication, and division), and evaluation techniques, particularly Horner’s method. The chapter then transitions to the Fast Fourier Transform, explaining its mathematical basis and the efficiency gains it offers over direct computation of the Discrete Fourier Transform (DFT). It explores the Cooley-Tukey algorithm, Radix-2 FFT, and the Decimation in Time and Frequency methods, highlighting their implementation considerations and performance optimizations. Applications of FFT and polynomials are discussed extensively, including signal processing, image enhancement, polynomial multiplication, and solving differential equations. Finally, the chapter addresses optimization strategies for FFT algorithms, such as in-place computation, memory management, and parallelization, while also touching on specialized variants like Real FFT and multi-dimensional FFT. The integration of these concepts in practical scenarios underscores the chapter’s emphasis on both theoretical depth and practical efficiency in computational tasks.</strong>
-</p>
 
 # 33.1. Introduction to Polynomials
 <p style="text-align: justify;">
@@ -694,63 +691,63 @@ These prompts are designed to extract deep technical insights and provide sample
 By dedicating time to these exercises, you will develop a strong foundation in both the theory and practice of these critical computational techniques. Dive into the prompts with curiosity and determination, and let your exploration lead to a deeper mastery of algorithmic problem-solving and software development.
 </p>
 
-## 33.5.3. Self-Exercises
-<p style="text-align: justify;">
-These exercises are designed to reinforce both theoretical knowledge and practical skills in working with polynomials and FFT in Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 33.1:<strong></strong> Polynomial Operations and Evaluation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement a <code>Polynomial</code> struct in Rust to represent polynomials and perform various operations.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Define a <code>Polynomial</code> struct with coefficients stored in a vector.</p>
-- <p style="text-align: justify;">Implement methods for polynomial addition, subtraction, multiplication, and division.</p>
-- <p style="text-align: justify;">Implement Horner’s method for evaluating the polynomial at a given point.</p>
-- <p style="text-align: justify;">Write unit tests to validate the correctness of each method.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit Rust code with implementations for polynomial operations and evaluation, along with corresponding unit tests.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 33.2:<strong></strong> FFT Algorithm Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement the Cooley-Tukey FFT algorithm and understand its efficiency.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Write a Rust function to compute the FFT of a sequence using the Cooley-Tukey algorithm.</p>
-- <p style="text-align: justify;">Implement the algorithm in a recursive and iterative manner, and compare their performance.</p>
-- <p style="text-align: justify;">Create sample input data and verify the output of your FFT implementation.</p>
-- <p style="text-align: justify;">Analyze and document the time complexity and space complexity of your implementation.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit Rust code for both recursive and iterative FFT implementations, performance analysis, and documentation.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 33.3:<strong></strong> Polynomial Multiplication Using FFT
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Use FFT to perform efficient polynomial multiplication.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement a Rust function that multiplies two polynomials using FFT.</p>
-- <p style="text-align: justify;">Write functions to transform polynomials to the frequency domain, perform pointwise multiplication, and transform back to the time domain.</p>
-- <p style="text-align: justify;">Test your implementation with various polynomial pairs and validate the results against naive multiplication methods.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit Rust code for polynomial multiplication using FFT, including functions for transformation and validation.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 33.4:<strong></strong> Optimizing FFT Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Optimize FFT implementations for performance and memory usage.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Explore and implement optimization strategies such as in-place FFT computation and parallel processing using Rust’s concurrency features.</p>
-- <p style="text-align: justify;">Compare the performance of your optimized implementation with the basic FFT algorithm.</p>
-- <p style="text-align: justify;">Document the impact of each optimization technique on runtime and memory consumption.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit Rust code demonstrating optimizations for FFT, along with performance benchmarks and a detailed report on the optimizations applied.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 33.5:<strong></strong> Real FFT and Multi-Dimensional FFT
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement Real FFT and multi-dimensional FFT in Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Write a Rust function for computing Real FFT, explaining how it improves efficiency for real-valued input data.</p>
-- <p style="text-align: justify;">Implement a 2D FFT algorithm for image processing, including functions for transforming and manipulating image data.</p>
-- <p style="text-align: justify;">Test the Real FFT and multi-dimensional FFT implementations with real-world data and evaluate their performance and accuracy.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Submit Rust code for Real FFT and 2D FFT implementations, along with test results and performance evaluations.</p>
-<p style="text-align: justify;">
-Completing these assignments will provide a robust understanding of the algorithms and their applications, preparing students for more advanced computational challenges.
-</p>
+### 33.5.3. Self-Exercises
+<section class="mt-5">
+    <p class="text-justify">
+        These exercises are designed to reinforce both theoretical knowledge and practical skills in working with polynomials and FFT in Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 33.1: Polynomial Operations and Evaluation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Define a <code>Polynomial</code> struct with coefficients stored in a vector. Implement methods for polynomial addition, subtraction, multiplication, and division. Implement Horner’s method for evaluating the polynomial at a given point. Write unit tests to validate the correctness of each method.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement a <code>Polynomial</code> struct in Rust to represent polynomials and perform various operations.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code with implementations for polynomial operations and evaluation, along with corresponding unit tests.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 33.2: FFT Algorithm Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust function to compute the FFT of a sequence using the Cooley-Tukey algorithm. Implement the algorithm in a recursive and iterative manner, and compare their performance. Create sample input data and verify the output of your FFT implementation. Analyze and document the time complexity and space complexity of your implementation.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement the Cooley-Tukey FFT algorithm and understand its efficiency.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for both recursive and iterative FFT implementations, performance analysis, and documentation.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 33.3: Polynomial Multiplication Using FFT
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a Rust function that multiplies two polynomials using FFT. Write functions to transform polynomials to the frequency domain, perform pointwise multiplication, and transform back to the time domain. Test your implementation with various polynomial pairs and validate the results against naive multiplication methods.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Use FFT to perform efficient polynomial multiplication.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for polynomial multiplication using FFT, including functions for transformation and validation.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 33.4: Optimizing FFT Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Explore and implement optimization strategies such as in-place FFT computation and parallel processing using Rust’s concurrency features. Compare the performance of your optimized implementation with the basic FFT algorithm. Document the impact of each optimization technique on runtime and memory consumption.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Optimize FFT implementations for performance and memory usage.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code demonstrating optimizations for FFT, along with performance benchmarks and a detailed report on the optimizations applied.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 33.5: Real FFT and Multi-Dimensional FFT
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="tex

@@ -501,55 +501,62 @@ As you work through each prompt, you'll uncover the nuances of algorithm design,
 </p>
 
 ### 35.5.3. Self-Exercises
-<p style="text-align: justify;">
-Each exercise combines theoretical understanding with practical coding challenges, pushing you to explore the concepts thoroughly and apply them in meaningful ways. The assignments are designed to be robust, comprehensive, and intellectually stimulating, requiring thoughtful problem-solving and detailed analysis.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 35.1:<strong></strong> Advanced Greedy Approximation for the Set Cover Problem
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a greedy algorithm for the Set Cover problem in Rust, where the goal is to select the smallest number of sets that cover all elements. Begin by researching the theoretical background of greedy approximation algorithms for this problem, including proofs of their approximation ratios. Implement the basic greedy algorithm, then extend it by exploring different heuristic modifications that might improve the algorithm’s performance.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>:</p>
-- <p style="text-align: justify;">Rust code for the basic and modified greedy algorithms.</p>
-- <p style="text-align: justify;">A detailed report comparing the performance of the standard greedy approach with your heuristic modifications, including approximation ratios, computational complexity, and empirical performance on various datasets.</p>
-- <p style="text-align: justify;">A theoretical analysis discussing why certain modifications might improve or degrade performance.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 35.2:<strong></strong> Randomized Approximation for MAX-CUT with Deep Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a randomized algorithm for the MAX-CUT problem in Rust. This problem involves dividing the vertices of a graph into two subsets to maximize the number of edges between the subsets. First, study the expected approximation ratio for randomized algorithms applied to MAX-CUT. Implement the algorithm, then run extensive simulations on different types of graphs (e.g., sparse, dense, random, and structured) to analyze the performance variability.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>:</p>
-- <p style="text-align: justify;">Rust code for the randomized MAX-CUT algorithm.</p>
-- <p style="text-align: justify;">A comprehensive report detailing the experimental setup, the performance of the algorithm across different graph types, and statistical analysis of the results.</p>
-- <p style="text-align: justify;">An in-depth discussion of the theoretical foundations, including why randomization works well for MAX-CUT and how the expected approximation ratio holds across different scenarios.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 35.3:<strong></strong> Linear Programming Relaxation with Multi-faceted Rounding Techniques
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a linear programming (LP) relaxation approach for the knapsack problem in Rust, using a suitable Rust LP library like <code>good_lp</code>. After solving the relaxed LP problem, explore and implement multiple rounding techniques (e.g., simple rounding, randomized rounding, and deterministic rounding based on thresholding). Compare the quality of the integer solutions obtained from each rounding technique.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>:</p>
-- <p style="text-align: justify;">Rust code for the LP relaxation and various rounding techniques.</p>
-- <p style="text-align: justify;">A detailed comparison report discussing the advantages and limitations of each rounding method, supported by both theoretical arguments and empirical results on a range of test cases.</p>
-- <p style="text-align: justify;">An exploration of how different problem instances (e.g., different item distributions) impact the performance of each rounding technique.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 35.4:<strong></strong> Parallelization and Optimization of Genetic Algorithms for TSP
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Design and implement a genetic algorithm to solve the Traveling Salesman Problem (TSP) in Rust. Begin by creating a basic genetic algorithm with components like selection, crossover, mutation, and fitness evaluation. Then, optimize the performance by parallelizing the evaluation of the population using Rust’s concurrency features (<code>rayon</code>, channels, etc.). Experiment with different parallelization strategies to see which provides the best trade-off between complexity and performance.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>:</p>
-- <p style="text-align: justify;">Rust code for both the basic and parallelized genetic algorithm.</p>
-- <p style="text-align: justify;">A performance evaluation report that includes a detailed analysis of the speedup achieved through parallelization, the impact on solution quality, and the scalability of your approach across multiple cores.</p>
-- <p style="text-align: justify;">A discussion of the challenges encountered in parallelizing the genetic algorithm and the strategies you used to overcome them, including any issues related to data consistency and synchronization.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 35.5:<strong></strong> Comprehensive Case Study: Approximation in Real-World Applications
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Select a complex real-world problem such as vehicle routing, resource allocation in cloud computing, or scheduling in manufacturing, and design an approximate algorithm to solve it using Rust. This exercise requires you to not only implement an algorithm but also carefully choose the most appropriate approximation technique (e.g., LP relaxation, greedy heuristics, or a combination). Your implementation should be robust and efficient, capable of handling large-scale datasets.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>:</p>
-- <p style="text-align: justify;">Complete Rust code for the approximate algorithm applied to your chosen real-world problem, including necessary documentation.</p>
-- <p style="text-align: justify;">A full report detailing the problem context, why approximation is necessary, the choice of algorithm, and a thorough analysis of the algorithm's performance on realistic datasets.</p>
-- <p style="text-align: justify;">A reflective discussion on the practical implications of using approximation algorithms in real-world scenarios, including considerations of scalability, accuracy, and computational resource requirements.</p>
-<p style="text-align: justify;">
-These assignments will prepare you to tackle complex challenges in both academic and professional settings, leveraging the power of Rust for efficient and reliable algorithm implementations.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Each exercise combines theoretical understanding with practical coding challenges, pushing you to explore the concepts thoroughly and apply them in meaningful ways. The assignments are designed to be robust, comprehensive, and intellectually stimulating, requiring thoughtful problem-solving and detailed analysis.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 35.1: Advanced Greedy Approximation for the Set Cover Problem
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a greedy algorithm for the Set Cover problem in Rust, where the goal is to select the smallest number of sets that cover all elements. Begin by researching the theoretical background of greedy approximation algorithms for this problem, including proofs of their approximation ratios. Implement the basic greedy algorithm, then extend it by exploring different heuristic modifications that might improve the algorithm’s performance.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for the basic and modified greedy algorithms. A detailed report comparing the performance of the standard greedy approach with your heuristic modifications, including approximation ratios, computational complexity, and empirical performance on various datasets. A theoretical analysis discussing why certain modifications might improve or degrade performance.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 35.2: Randomized Approximation for MAX-CUT with Deep Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a randomized algorithm for the MAX-CUT problem in Rust. This problem involves dividing the vertices of a graph into two subsets to maximize the number of edges between the subsets. First, study the expected approximation ratio for randomized algorithms applied to MAX-CUT. Implement the algorithm, then run extensive simulations on different types of graphs (e.g., sparse, dense, random, and structured) to analyze the performance variability.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for the randomized MAX-CUT algorithm. A comprehensive report detailing the experimental setup, the performance of the algorithm across different graph types, and statistical analysis of the results. An in-depth discussion of the theoretical foundations, including why randomization works well for MAX-CUT and how the expected approximation ratio holds across different scenarios.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 35.3: Linear Programming Relaxation with Multi-faceted Rounding Techniques
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a linear programming (LP) relaxation approach for the knapsack problem in Rust, using a suitable Rust LP library like <code>good_lp</code>. After solving the relaxed LP problem, explore and implement multiple rounding techniques (e.g., simple rounding, randomized rounding, and deterministic rounding based on thresholding). Compare the quality of the integer solutions obtained from each rounding technique.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for the LP relaxation and various rounding techniques. A detailed comparison report discussing the advantages and limitations of each rounding method, supported by both theoretical arguments and empirical results on a range of test cases. An exploration of how different problem instances (e.g., different item distributions) impact the performance of each rounding technique.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 35.4: Parallelization and Optimization of Genetic Algorithms for TSP
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design and implement a genetic algorithm to solve the Traveling Salesman Problem (TSP) in Rust. Begin by creating a basic genetic algorithm with components like selection, crossover, mutation, and fitness evaluation. Then, optimize the performance by parallelizing the evaluation of the population using Rust’s concurrency features (<code>rayon</code>, channels, etc.). Experiment with different parallelization strategies to see which provides the best trade-off between complexity and performance.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for both the basic and parallelized genetic algorithm. A performance evaluation report that includes a detailed analysis of the speedup achieved through parallelization, the impact on solution quality, and the scalability of your approach across multiple cores. A discussion of the challenges encountered in parallelizing the genetic algorithm and the strategies you used to overcome them, including any issues related to data consistency and synchronization.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 35.5: Comprehensive Case Study: Approximation in Real-World Applications
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Select a complex real-world problem such as vehicle routing, resource allocation in cloud computing, or scheduling in manufacturing, and design an approximate algorithm to solve it using Rust. This exercise requires you to not only implement an algorithm but also carefully choose the most appropriate approximation technique (e.g., LP relaxation, greedy heuristics, or a combination). Your implementation should be robust and efficient, capable of handling large-scale datasets.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Complete Rust code for the approximate algorithm applied to your chosen real-world problem, including necessary documentation. A full report detailing the problem context, why approximation is necessary, the choice of algorithm, and a thorough analysis of the algorithm's performance on realistic datasets. A reflective discussion on the practical implications of using approximation algorithms in real-world scenarios, including considerations of scalability, accuracy, and computational resource requirements.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These assignments will prepare you to tackle complex challenges in both academic and professional settings, leveraging the power of Rust for efficient and reliable algorithm implementations.
+    </p>
+</section>

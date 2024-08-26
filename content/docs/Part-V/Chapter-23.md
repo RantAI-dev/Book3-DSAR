@@ -26,7 +26,7 @@ katex: true
 {{% /alert %}}
 
 
-# 23.1. Introduction to All-Pairs Shortest Path Problem
+## 23.1. Introduction to All-Pairs Shortest Path Problem
 <p style="text-align: justify;">
 The all-pairs shortest path problem is a fundamental issue in graph theory and computer science, where the goal is to determine the shortest paths between every pair of vertices in a weighted graph. This problem is pivotal in various applications where knowledge of the shortest paths between all possible pairs of nodes is essential, such as in network routing, transportation planning, and optimization problems.
 </p>
@@ -51,7 +51,7 @@ The all-pairs shortest path problem is crucial in various real-world application
 In summary, the all-pairs shortest path problem is a key concept in graph theory with significant implications for practical applications. Its resolution involves careful consideration of graph representation, algorithm complexity, and specific use cases, highlighting its importance in efficiently managing and analyzing networked systems.
 </p>
 
-# 23.2. Floyd-Warshall Algorithm
+## 23.2. Floyd-Warshall Algorithm
 <p style="text-align: justify;">
 The Floyd-Warshall algorithm is a well-known dynamic programming approach used to compute the shortest paths between all pairs of vertices in a weighted graph. This algorithm is particularly useful in scenarios where you need to know the shortest paths between every pair of nodes and is suitable for graphs with relatively small vertex sets and dense connectivity.
 </p>
@@ -167,7 +167,7 @@ In this Rust implementation, the <code>floyd_warshall</code> function initialize
 This approach is practical for dense graphs or graphs where all-pairs shortest path information is necessary and manageable within the computational constraints of the algorithm.
 </p>
 
-# 23.3. Johnson’s Algorithm
+## 23.3. Johnson’s Algorithm
 <p style="text-align: justify;">
 Johnson’s Algorithm is a sophisticated method designed for finding the shortest paths between all pairs of vertices in a graph, accommodating graphs with potentially negative edge weights, provided there are no negative weight cycles. This algorithm combines techniques from reweighting edges and applying Dijkstra’s algorithm, offering a practical alternative to Floyd-Warshall, especially for sparse graphs.
 </p>
@@ -360,7 +360,7 @@ In the Rust implementation, the <code>bellman_ford</code> function computes shor
 This implementation efficiently handles sparse graphs and negative edge weights, making Johnson’s Algorithm a valuable tool for various applications requiring all-pairs shortest path computations.
 </p>
 
-# 23.4. Practical Use Cases and Optimizations
+## 23.4. Practical Use Cases and Optimizations
 <p style="text-align: justify;">
 In practical applications, algorithms for finding shortest paths between all pairs of vertices are crucial for various domains, including network optimization, geographic information systems (GIS), and operations research. The Floyd-Warshall and Johnson’s algorithms provide foundational solutions, but their efficiency can be significantly improved through optimization techniques tailored to specific use cases and the nature of the data.
 </p>
@@ -368,7 +368,7 @@ In practical applications, algorithms for finding shortest paths between all pai
 - <p style="text-align: justify;">Network Optimization: In network optimization, such as routing and network flow analysis, finding the shortest paths between all pairs of nodes can help in optimizing data traffic and ensuring efficient utilization of network resources. For instance, network routing algorithms can leverage shortest path calculations to determine the most efficient routes for data packets, reducing latency and maximizing throughput. Network flow analysis also benefits from all-pairs shortest path algorithms by improving the allocation of resources and managing network congestion.</p>
 - <p style="text-align: justify;">Geographic Information Systems (GIS): In GIS, shortest path algorithms are used for pathfinding and route planning. Applications such as GPS navigation and urban traffic management rely on efficiently computing the shortest paths between various locations. By integrating these algorithms, GIS systems can provide optimal routing solutions for transportation, logistics, and urban planning, enhancing overall operational efficiency and user experience.</p>
 - <p style="text-align: justify;">Operations Research: Operations research employs all-pairs shortest path algorithms for scheduling and resource allocation. For example, in job scheduling, algorithms can determine the most efficient sequence of tasks to minimize completion time. Similarly, in resource allocation, these algorithms help in optimizing the use of resources across multiple tasks or projects, ensuring that resources are allocated effectively and efficiently.</p>
-## 23.4.1. Optimizations
+### 23.4.1. Optimizations
 <p style="text-align: justify;">
 Floyd-Warshall: The Floyd-Warshall algorithm, though straightforward, can be optimized to handle large graphs more efficiently. One approach is to use bitwise operations to speed up matrix updates. For example, in some implementations, bitwise operations can be used to parallelize the update of matrix entries, thus reducing the time complexity. Additionally, exploiting sparsity in the graph can lead to fewer updates by only processing non-zero entries in the adjacency matrix. This sparse matrix approach reduces unnecessary computations, making the algorithm more efficient in practice.
 </p>
@@ -385,7 +385,7 @@ For extremely large graphs, several strategies can be employed to manage and pro
 When exact solutions are computationally infeasible, approximation algorithms or heuristics can be used. These methods provide near-optimal solutions with reduced computational effort. For instance, heuristic-based algorithms like A\* can be used for pathfinding in large graphs, offering good approximations while avoiding the computational complexity of exact algorithms.
 </p>
 
-## 23.4.2. Real-World Considerations
+### 23.4.2. Real-World Considerations
 <p style="text-align: justify;">
 In real-world applications, algorithms often need to be adapted to handle dynamic updates and large-scale graphs. Efficient implementation requires careful selection of data structures and computational resources. Dynamic updates, such as changes in edge weights or graph structure, necessitate algorithms that can efficiently accommodate these changes without complete recomputation. For large-scale graphs, optimizing memory usage and computation through advanced data structures and parallel processing techniques is essential to achieve practical performance.
 </p>
@@ -625,12 +625,12 @@ fn main() {
 The Floyd-Warshall and Johnson’s algorithms are essential tools for solving all-pairs shortest path problems. By optimizing these algorithms through bitwise operations, sparse matrix handling, and efficient data structures like priority queues, one can significantly enhance performance. Handling large graphs requires innovative approaches such as graph partitioning and approximation algorithms. Real-world considerations necessitate adaptations for dynamic and large-scale data, emphasizing the importance of efficient implementation and thoughtful resource management.
 </p>
 
-# 23.5. Conclusion
+## 23.5. Conclusion
 <p style="text-align: justify;">
 To master "All-Pairs Shortest Paths" using Rust, you should adopt a methodical approach that intertwines theoretical understanding with practical Rust programming techniques. It's essential to explore both the theoretical aspects and practical implementations of the Floyd-Warshall and Johnson’s algorithms.
 </p>
 
-## 23.5.1. Advices
+### 23.5.1. Advices
 <p style="text-align: justify;">
 Begin by thoroughly understanding the fundamental problem of finding shortest paths between all pairs of vertices in a weighted graph. This conceptual clarity will serve as the foundation for implementing the algorithms effectively in Rust.
 </p>
@@ -659,7 +659,7 @@ Apply these algorithms to practical scenarios such as network routing, where you
 By combining theoretical knowledge with Rust’s powerful programming features, students can develop a profound grasp of all-pairs shortest paths algorithms. Rust’s emphasis on safety and efficiency will not only aid in implementing these algorithms effectively but also prepare you for tackling complex, real-world problems with confidence.
 </p>
 
-## 23.5.2. Further Learning with GenAI
+### 23.5.2. Further Learning with GenAI
 <p style="text-align: justify;">
 The prompts below are crafted to cover a wide range of topics, including the fundamental principles, detailed algorithmic steps, optimizations, and real-world applications. They are designed to extract the most in-depth and technical insights from GenAI, helping you build a comprehensive understanding of these algorithms and their implementation in Rust. Each prompt encourages exploration of core concepts, algorithmic efficiency, edge cases, and practical coding techniques.
 </p>
@@ -682,61 +682,77 @@ The prompts below are crafted to cover a wide range of topics, including the fun
 Exploring these prompts will provide you with a comprehensive understanding of all-pairs shortest paths algorithms, both from a theoretical perspective and through practical Rust implementations. By tackling each prompt, you will not only grasp the nuances of the Floyd-Warshall and Johnson’s algorithms but also gain hands-on experience with Rust’s powerful features for handling complex graph problems. Embrace the challenge of implementing and optimizing these algorithms, as it will significantly enhance your problem-solving skills and prepare you for tackling real-world scenarios. Dive into these prompts, experiment with Rust code, and let your curiosity drive you toward mastery of these fundamental algorithms.
 </p>
 
-## 23.5.3. Self-Exercises
-<p style="text-align: justify;">
-Here are five comprehensive exercises designed to deepen your understanding of "All-Pairs Shortest Paths". These exercises combine theoretical analysis, practical implementation, and performance optimization to provide a well-rounded learning experience.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 23.1:<strong></strong> Implement and Compare Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Implement both the Floyd-Warshall and Johnson’s algorithms in Rust. Ensure your implementation includes initialization, distance matrix updates for Floyd-Warshall, and edge reweighting and shortest path calculations for Johnson’s algorithm.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Provide a detailed explanation of your code, including comments on how each part of the algorithm works.</p>
-- <p style="text-align: justify;">Compare the performance of both algorithms on different types of graphs (e.g., dense, sparse, with negative weights).</p>
-- <p style="text-align: justify;">Include a set of test cases to validate correctness, including graphs with negative weight cycles for Johnson’s algorithm.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> Submit your Rust code along with a report detailing the performance comparisons and results from your test cases.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 23.2:<strong></strong> Optimization and Performance Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Explore and implement optimization techniques for both algorithms. For Floyd-Warshall, investigate matrix sparsity optimizations. For Johnson’s algorithm, apply advanced data structures or techniques to improve efficiency.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Implement at least one optimization technique for each algorithm.</p>
-- <p style="text-align: justify;">Measure and report the performance improvements with respect to time and space complexity.</p>
-- <p style="text-align: justify;">Provide a detailed explanation of how the optimizations impact the performance.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> Submit the optimized Rust code along with a performance analysis report that includes benchmarks and observations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 23.3:<strong></strong> Concurrency and Large Graphs
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Implement concurrent versions of both the Floyd-Warshall and Johnson’s algorithms in Rust to handle large graphs. Utilize Rust’s concurrency features, such as threads or async functions, to parallelize parts of the algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Provide a description of how you used Rust’s concurrency features to enhance performance.</p>
-- <p style="text-align: justify;">Test your concurrent implementations on large-scale graphs and compare the execution time with non-concurrent versions.</p>
-- <p style="text-align: justify;">Include code samples and a discussion on the challenges and benefits of using concurrency for these algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> Submit the concurrent Rust code along with a report detailing the concurrency implementation and performance results.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 23.4:<strong></strong> Real-World Application Simulation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Create a simulation of a real-world application that uses the all-pairs shortest paths algorithms. For example, simulate network routing for a set of routers or a GIS application for road networks.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Develop a scenario that highlights the practical use of the algorithms.</p>
-- <p style="text-align: justify;">Implement the simulation using Rust and demonstrate how the algorithms are applied to solve the problem.</p>
-- <p style="text-align: justify;">Provide a discussion on how the results from the algorithms influence the application.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> Submit the Rust code for the simulation along with a report describing the application scenario, algorithm usage, and results.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 23.5:<strong></strong> Negative Weight Cycles Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Design and implement a Rust program to detect and handle negative weight cycles in graphs using the Floyd-Warshall and Johnson’s algorithms. Develop methods for cycle detection and assess how each algorithm deals with these cycles.</p>
-- <p style="text-align: justify;"><strong></strong>Requirements:<strong></strong></p>
-- <p style="text-align: justify;">Implement cycle detection in both algorithms and handle negative weight cycles appropriately.</p>
-- <p style="text-align: justify;">Test the implementation with graphs containing negative weight cycles and provide a detailed analysis of how each algorithm addresses these cycles.</p>
-- <p style="text-align: justify;">Include explanations of the cycle detection methods and their impact on the algorithm’s results.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> Submit the Rust code for detecting and handling negative weight cycles, along with a report detailing your methods, test cases, and analysis of the algorithms’ handling of these cycles.</p>
-<p style="text-align: justify;">
-These exercises are designed to challenge students and encourage deep exploration of all-pairs shortest paths algorithms, combining theoretical knowledge with practical Rust programming skills.
-</p>
+### 23.5.3. Self-Exercises
+<section class="mt-5">
+    <p class="text-justify">
+        Here are five comprehensive exercises designed to deepen your understanding of "All-Pairs Shortest Paths". These exercises combine theoretical analysis, practical implementation, and performance optimization to provide a well-rounded learning experience.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 23.1: Implement and Compare Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement both algorithms, including initialization, distance matrix updates for Floyd-Warshall, and edge reweighting and shortest path calculations for Johnson’s algorithm. Provide a detailed explanation of your code, including comments on how each part of the algorithm works. Compare the performance of both algorithms on different types of graphs (e.g., dense, sparse, with negative weights). Include a set of test cases to validate correctness, especially for graphs with negative weight cycles in Johnson’s algorithm.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and compare the Floyd-Warshall and Johnson’s algorithms in Rust to understand their differences in handling all-pairs shortest paths problems.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your Rust code along with a report detailing the performance comparisons and results from your test cases.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 23.2: Optimization and Performance Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">For Floyd-Warshall, investigate matrix sparsity optimizations. For Johnson’s algorithm, apply advanced data structures or techniques to enhance performance. Implement at least one optimization technique for each algorithm. Measure and report the performance improvements with respect to time and space complexity. Provide a detailed explanation of how the optimizations impact the performance.</p>
+                        <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore and implement optimization techniques to improve the efficiency of Floyd-Warshall and Johnson’s algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the optimized Rust code along with a performance analysis report that includes benchmarks and observations.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 23.3: Concurrency and Large Graphs
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Utilize Rust’s concurrency features, such as threads or async functions, to parallelize parts of the algorithms. Provide a description of how you used Rust’s concurrency features to enhance performance. Test your concurrent implementations on large-scale graphs and compare the execution time with non-concurrent versions. Include code samples and a discussion on the challenges and benefits of using concurrency for these algorithms.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement concurrent versions of Floyd-Warshall and Johnson’s algorithms to handle large graphs more efficiently.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the concurrent Rust code along with a report detailing the concurrency implementation and performance results.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 23.4: Real-World Application Simulation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a scenario that highlights the practical use of the algorithms, such as network routing for a set of routers or a GIS application for road networks. Implement the simulation using Rust and demonstrate how the algorithms are applied to solve the problem. Provide a discussion on how the results from the algorithms influence the application.</p>
+                        <p><strong>Objective:</strong></p>
+            <p class="text-justify">Create a simulation of a real-world application that utilizes all-pairs shortest paths algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the simulation along with a report describing the application scenario, algorithm usage, and results.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 23.5: Negative Weight Cycles Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement cycle detection in both algorithms and handle negative weight cycles appropriately. Test the implementation with graphs containing negative weight cycles and provide a detailed analysis of how each algorithm addresses these cycles. Include explanations of the cycle detection methods and their impact on the algorithm’s results.</p>
+                        <p><strong>Objective:</strong></p>
+            <p class="text-justify">Design and implement methods for detecting and handling negative weight cycles in graphs using Floyd-Warshall and Johnson’s algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for detecting and handling negative weight cycles, along with a report detailing your methods, test cases, and analysis of the algorithms’ handling of these cycles.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to challenge students and encourage deep exploration of all-pairs shortest paths algorithms, combining theoretical knowledge with practical Rust programming skills.
+    </p>
+</section>

@@ -897,40 +897,66 @@ Embrace these prompts as an opportunity to not only solidify your grasp of algor
 </p>
 
 ### 16.7.3. Self-Exercises
-<p style="text-align: justify;">
-These exercises are designed to challenge you and deepen your understanding of advanced algorithmic techniques while leveraging Rust’s powerful capabilities.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 16.1:<strong></strong> Advanced Divide and Conquer Algorithm Implementation and Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Implement the Merge Sort algorithm in Rust, ensuring to handle edge cases such as empty or single-element arrays. Extend your implementation to include optimizations such as in-place merging if applicable. Provide a comprehensive performance analysis by measuring runtime and memory usage for different input sizes and types (e.g., sorted, reverse-sorted, random). Discuss how Rust’s ownership and borrowing rules influence the memory management and efficiency of the algorithm. Additionally, compare Merge Sort with other sorting algorithms like Quick Sort and Heap Sort, emphasizing their performance differences and suitability for various scenarios.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Rust code for Merge Sort, performance benchmarks with varying input sizes and types, detailed analysis of memory usage and runtime, and a comparative study of sorting algorithms.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 16.2:<strong></strong> Dynamic Programming Techniques with Rust
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Implement solutions for the Longest Common Subsequence (LCS) problem using both top-down (memoization) and bottom-up (tabulation) approaches in Rust. Ensure your implementation is optimized for time and space efficiency. Create comprehensive performance benchmarks to compare both methods with different sizes of input sequences. Analyze how Rust’s features, such as its type system and ownership model, impact the implementation and efficiency of Dynamic Programming solutions. Document any challenges you encountered and how Rust helped in overcoming them.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Rust code for both LCS approaches, performance benchmarks with detailed results, analysis of Rust’s impact on implementation, and a discussion of challenges and solutions.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 16.3:<strong></strong> In-Depth Greedy Algorithm Analysis and Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Implement Kruskal’s algorithm for finding the Minimum Spanning Tree (MST) in Rust, incorporating Rust’s standard library features such as priority queues and efficient data structures. Provide a detailed walkthrough of the algorithm’s steps, including how you handle edge cases and ensure correctness. Extend your analysis to cover the performance of Kruskal’s algorithm in large graphs, and compare it with Prim’s algorithm for MST. Additionally, identify a problem where the Greedy algorithm fails to produce an optimal solution, such as the Coin Change problem with arbitrary denominations, and discuss alternative strategies. Provide a Rust implementation to illustrate these cases.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Rust code for Kruskal’s algorithm, explanation of the algorithm and handling of edge cases, performance analysis and comparison with Prim’s algorithm, and a case study of a failed greedy approach with an alternative solution.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 16.4:<strong></strong> Comprehensive Backtracking Solution with Rust
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Develop a Rust solution for the N-Queens problem using a backtracking approach. Ensure that your solution includes advanced optimizations such as constraint propagation and heuristic-based pruning to enhance efficiency. Explore how Rust’s features such as pattern matching and recursion contribute to the implementation. Create a suite of tests for various board sizes and evaluate the performance of your implementation. Document the strengths and limitations of Rust’s features in solving combinatorial problems and discuss how you handled potential pitfalls such as stack overflows or excessive recursion.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Rust code for the N-Queens problem with optimizations, performance tests for various board sizes, documentation on the role of Rust’s features, and a discussion of implementation challenges and solutions.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 16.5:<strong></strong> Branch-and-Bound and Problem Reduction with Rust
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Implement a Branch-and-Bound algorithm for the Traveling Salesman Problem (TSP) in Rust, incorporating techniques for bounding and pruning to optimize the search process. Provide a detailed explanation of your bounding strategies and how they reduce the search space. Additionally, perform a problem reduction by translating an NP-complete problem (such as the Knapsack problem) to a simpler problem that your Branch-and-Bound algorithm can solve. Explore how Rust’s concurrency features, such as threads or async/await, can be utilized to parallelize the search and improve performance. Document your approach, including how Rust’s concurrency tools enhance efficiency and scalability.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Rust code for the TSP solution with Branch-and-Bound, explanation of bounding and pruning techniques, problem reduction example, and an analysis of how Rust’s concurrency features impact performance and scalability.</p>
-<p style="text-align: justify;">
-Approach each exercise with a mindset of curiosity and problem-solving, and use the insights gained to enhance your proficiency in both algorithm design and Rust programming. Your dedication to these exercises will pave the way for mastering intricate algorithmic concepts and leveraging Rust’s strengths to tackle real-world problems effectively.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These exercises are designed to challenge you and deepen your understanding of advanced algorithmic techniques while leveraging Rust’s powerful capabilities.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 16.1: Advanced Divide and Conquer Algorithm Implementation and Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the Merge Sort algorithm in Rust, ensuring to handle edge cases such as empty or single-element arrays. Extend your implementation to include optimizations such as in-place merging if applicable. Provide a comprehensive performance analysis by measuring runtime and memory usage for different input sizes and types (e.g., sorted, reverse-sorted, random). Discuss how Rust’s ownership and borrowing rules influence the memory management and efficiency of the algorithm. Additionally, compare Merge Sort with other sorting algorithms like Quick Sort and Heap Sort, emphasizing their performance differences and suitability for various scenarios.</p>
+            <p><strong>Objective:</strong> Master the implementation and optimization of Merge Sort and compare it with other sorting algorithms.</p>
+            <p><strong>Deliverables:</strong> Rust code for Merge Sort, performance benchmarks with varying input sizes and types, detailed analysis of memory usage and runtime, and a comparative study of sorting algorithms.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 16.2: Dynamic Programming Techniques with Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement solutions for the Longest Common Subsequence (LCS) problem using both top-down (memoization) and bottom-up (tabulation) approaches in Rust. Ensure your implementation is optimized for time and space efficiency. Create comprehensive performance benchmarks to compare both methods with different sizes of input sequences. Analyze how Rust’s features, such as its type system and ownership model, impact the implementation and efficiency of Dynamic Programming solutions. Document any challenges you encountered and how Rust helped in overcoming them.</p>
+            <p><strong>Objective:</strong> Develop and analyze dynamic programming solutions for the LCS problem in Rust.</p>
+            <p><strong>Deliverables:</strong> Rust code for both LCS approaches, performance benchmarks with detailed results, analysis of Rust’s impact on implementation, and a discussion of challenges and solutions.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 16.3: In-Depth Greedy Algorithm Analysis and Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement Kruskal’s algorithm for finding the Minimum Spanning Tree (MST) in Rust, incorporating Rust’s standard library features such as priority queues and efficient data structures. Provide a detailed walkthrough of the algorithm’s steps, including how you handle edge cases and ensure correctness. Extend your analysis to cover the performance of Kruskal’s algorithm in large graphs, and compare it with Prim’s algorithm for MST. Additionally, identify a problem where the Greedy algorithm fails to produce an optimal solution, such as the Coin Change problem with arbitrary denominations, and discuss alternative strategies. Provide a Rust implementation to illustrate these cases.</p>
+            <p><strong>Objective:</strong> Implement and analyze Kruskal’s algorithm and explore cases where the Greedy approach fails.</p>
+            <p><strong>Deliverables:</strong> Rust code for Kruskal’s algorithm, explanation of the algorithm and handling of edge cases, performance analysis and comparison with Prim’s algorithm, and a case study of a failed greedy approach with an alternative solution.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 16.4: Comprehensive Backtracking Solution with Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust solution for the N-Queens problem using a backtracking approach. Ensure that your solution includes advanced optimizations such as constraint propagation and heuristic-based pruning to enhance efficiency. Explore how Rust’s features such as pattern matching and recursion contribute to the implementation. Create a suite of tests for various board sizes and evaluate the performance of your implementation. Document the strengths and limitations of Rust’s features in solving combinatorial problems and discuss how you handled potential pitfalls such as stack overflows or excessive recursion.</p>
+            <p><strong>Objective:</strong> Solve the N-Queens problem using backtracking with Rust, including advanced optimizations.</p>
+            <p><strong>Deliverables:</strong> Rust code for the N-Queens problem with optimizations, performance tests for various board sizes, documentation on the role of Rust’s features, and a discussion of implementation challenges and solutions.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 16.5: Branch-and-Bound and Problem Reduction with Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a Branch-and-Bound algorithm for the Traveling Salesman Problem (TSP) in Rust, incorporating techniques for bounding and pruning to optimize the search process. Provide a detailed explanation of your bounding strategies and how they reduce the search space. Additionally, perform a problem reduction by translating an NP-complete problem (such as the Knapsack problem) to a simpler problem that your Branch-and-Bound algorithm can solve. Explore how Rust’s concurrency features, such as threads or async/await, can be utilized to parallelize the search and improve performance. Document your approach, including how Rust’s concurrency tools enhance efficiency and scalability.</p>
+            <p><strong>Objective:</strong> Apply Branch-and-Bound techniques to the TSP and explore problem reduction strategies.</p>
+            <p><strong>Deliverables:</strong> Rust code for the TSP solution with Branch-and-Bound, explanation of bounding and pruning techniques, problem reduction example, and an analysis of how Rust’s concurrency features impact performance and scalability.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Approach each exercise with a mindset of curiosity and problem-solving, and use the insights gained to enhance your proficiency in both algorithm design and Rust programming. Your dedication to these exercises will pave the way for mastering intricate algorithmic concepts and leveraging Rust’s strengths to tackle real-world problems effectively.
+    </p>
+</section>

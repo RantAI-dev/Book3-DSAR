@@ -698,25 +698,66 @@ Embarking on the journey to master tree data structures and their implementation
 </p>
 
 ### 12.6.3. Self-Exercises
-<p style="text-align: justify;">
-These assignments encourage hands-on practice, critical thinking, and application of the concepts covered.
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Exercise 12.1:<strong></strong> Implement a Binary Tree in Rust</p>
-- <p style="text-align: justify;">Create a binary tree data structure in Rust using enums and structs. Implement basic operations including node insertion, deletion, and searching. Ensure that your implementation handles cases with zero, one, or two children during deletion.</p>
-- <p style="text-align: justify;">Write test cases to validate the correctness of your implementation, including edge cases such as deleting a node with no children or a node with two children.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 12.2:<strong></strong> Develop Tree Traversal Algorithms</p>
-- <p style="text-align: justify;">Implement the four primary tree traversal methods (pre-order, in-order, post-order, and level-order) for your binary tree structure. Provide both recursive and iterative solutions for these traversals.</p>
-- <p style="text-align: justify;">Compare the performance of recursive and iterative traversal methods by measuring execution time for different tree sizes.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 12.3:<strong></strong> Implement and Compare Self-Balancing Trees</p>
-- <p style="text-align: justify;">Implement AVL and Red-Black trees in Rust. For each type, focus on implementing insertion and balancing operations, including necessary rotations.</p>
-- <p style="text-align: justify;">Compare the performance of AVL and Red-Black trees by performing a series of operations (insertions, deletions, and searches) and analyzing their time complexity and balancing efficiency.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 12.4:<strong></strong> Augment a Tree with Additional Data</p>
-- <p style="text-align: justify;">Extend your binary tree implementation to support data augmentation. Add features such as subtree sizes or sum of subtree values to support advanced operations like rank queries and range queries.</p>
-- <p style="text-align: justify;">Create a set of operations that utilize the augmented data, such as finding the k-th smallest element or computing the sum of values in a given range. Test these functionalities with various datasets to ensure correctness and efficiency.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 12.5:<strong></strong> Performance Evaluation and Optimization</p>
-- <p style="text-align: justify;">Analyze the performance of different tree types (binary, AVL, Red-Black) in terms of time and space complexity. Use Rust's benchmarking tools to measure the execution time of operations like insertion, deletion, and search for each tree type.</p>
-- <p style="text-align: justify;">Identify and address performance bottlenecks in your implementations. Optimize memory usage and efficiency, and document your findings and improvements.</p>
-<p style="text-align: justify;">
-These exercises are designed to activate your learning process by applying theoretical concepts to practical scenarios, enhancing both your understanding and coding skills related to trees and balanced trees in Rust.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These assignments encourage hands-on practice, critical thinking, and application of the concepts covered.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 12.1: Implement a Binary Tree in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a binary tree data structure in Rust using enums and structs. Implement basic operations including node insertion, deletion, and searching. Ensure that your implementation handles cases with zero, one, or two children during deletion.</p>
+            <p><strong>Objective:</strong> Understand the construction and manipulation of binary trees in Rust.</p>
+            <p><strong>Deliverables:</strong> Source code for the binary tree implementation with test cases covering edge cases like deleting nodes with various child configurations.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 12.2: Develop Tree Traversal Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the four primary tree traversal methods (pre-order, in-order, post-order, and level-order) for your binary tree structure. Provide both recursive and iterative solutions for these traversals. Compare the performance of recursive and iterative traversal methods by measuring execution time for different tree sizes.</p>
+            <p><strong>Objective:</strong> Master tree traversal techniques and understand their recursive and iterative implementations.</p>
+            <p><strong>Deliverables:</strong> Source code for all traversal methods, along with performance benchmarks comparing recursive and iterative approaches.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 12.3: Implement and Compare Self-Balancing Trees
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement AVL and Red-Black trees in Rust. For each type, focus on implementing insertion and balancing operations, including necessary rotations. Compare the performance of AVL and Red-Black trees by performing a series of operations (insertions, deletions, and searches) and analyzing their time complexity and balancing efficiency.</p>
+            <p><strong>Objective:</strong> Explore the mechanisms of self-balancing trees and their impact on performance.</p>
+            <p><strong>Deliverables:</strong> Rust implementations of AVL and Red-Black trees, with a detailed report comparing their performance and efficiency.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 12.4: Augment a Tree with Additional Data
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Extend your binary tree implementation to support data augmentation. Add features such as subtree sizes or sum of subtree values to support advanced operations like rank queries and range queries. Create a set of operations that utilize the augmented data, such as finding the k-th smallest element or computing the sum of values in a given range. Test these functionalities with various datasets to ensure correctness and efficiency.</p>
+            <p><strong>Objective:</strong> Learn how to augment binary trees with additional data to enable advanced operations.</p>
+            <p><strong>Deliverables:</strong> Augmented binary tree implementation with test cases and performance analysis.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 12.5: Performance Evaluation and Optimization
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Analyze the performance of different tree types (binary, AVL, Red-Black) in terms of time and space complexity. Use Rust's benchmarking tools to measure the execution time of operations like insertion, deletion, and search for each tree type. Identify and address performance bottlenecks in your implementations. Optimize memory usage and efficiency, and document your findings and improvements.</p>
+            <p><strong>Objective:</strong> Evaluate and optimize the performance of various tree implementations.</p>
+            <p><strong>Deliverables:</strong> Performance benchmarks and a report on optimization strategies for tree data structures.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to activate your learning process by applying theoretical concepts to practical scenarios, enhancing both your understanding and coding skills related to trees and balanced trees in Rust.
+    </p>
+</section>

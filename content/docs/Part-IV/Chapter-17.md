@@ -85,9 +85,9 @@ Several common time complexities frequently appear in algorithm analysis, each r
 To express these time complexities, computer scientists use asymptotic notation, which provides a formal way to describe the growth rate of an algorithm's runtime.
 </p>
 
-- <p style="text-align: justify;">Big O Notation (O) represents the upper bound of an algorithm's time complexity. It describes the worst-case scenario in which the algorithm will take the maximum possible time to complete relative to the input size. Big O notation is widely used because it gives a clear picture of how an algorithm's runtime scales as the input size increases, focusing on the most significant factors that affect performance.</p>
-- <p style="text-align: justify;">Big Ω Notation (Ω), on the other hand, represents the lower bound of an algorithm's time complexity. It describes the best-case scenario, indicating the minimum time an algorithm will take to complete. While less commonly used in everyday analysis, Big Ω is important for understanding the least amount of time an algorithm can be expected to run.</p>
-- <p style="text-align: justify;">Big Θ Notation (Θ) provides an exact asymptotic bound, representing both the upper and lower bounds of an algorithm's time complexity. When an algorithm is said to have a time complexity of Θ(f(n)), it means that its runtime grows at the same rate as f(n) in both the best and worst cases. This notation is valuable when the algorithm's runtime does not vary significantly with different input scenarios, providing a precise measure of its efficiency.</p>
+- <p style="text-align: justify;">Big O Notation ($O$) represents the upper bound of an algorithm's time complexity. It describes the worst-case scenario in which the algorithm will take the maximum possible time to complete relative to the input size. Big O notation is widely used because it gives a clear picture of how an algorithm's runtime scales as the input size increases, focusing on the most significant factors that affect performance.</p>
+- <p style="text-align: justify;">Big Ω Notation ($Ω$), on the other hand, represents the lower bound of an algorithm's time complexity. It describes the best-case scenario, indicating the minimum time an algorithm will take to complete. While less commonly used in everyday analysis, Big $Ω$ is important for understanding the least amount of time an algorithm can be expected to run.</p>
+- <p style="text-align: justify;">Big Θ Notation ($Θ$) provides an exact asymptotic bound, representing both the upper and lower bounds of an algorithm's time complexity. When an algorithm is said to have a time complexity of $Θ(f(n))$, it means that its runtime grows at the same rate as $f(n)$ in both the best and worst cases. This notation is valuable when the algorithm's runtime does not vary significantly with different input scenarios, providing a precise measure of its efficiency.</p>
 <p style="text-align: justify;">
 To illustrate the importance of time complexity analysis, consider two classic algorithmic problems: linear search and binary search. Linear search has a time complexity of $O(n)$, meaning that in the worst case, the algorithm must check each element in the array before finding the target or concluding that it is not present. Binary search, however, has a time complexity of $O(\log n)$, as it repeatedly halves the search space, drastically reducing the number of comparisons needed. This difference in time complexity demonstrates why binary search is vastly more efficient than linear search for large datasets.
 </p>
@@ -317,35 +317,66 @@ Exploring these prompts will offer you a deep and practical understanding of com
 </p>
 
 ### 17.6.3. Self-Exercises
-<p style="text-align: justify;">
-Each exercise is designed to push the boundaries of your knowledge, allowing you to connect theory with practice and build robust, efficient solutions. Approach these tasks with curiosity and dedication, as mastering these concepts will elevate your problem-solving capabilities and prepare you for real-world computational challenges.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 17.1:<strong></strong> Implement and Analyze Basic Algorithms
-</p>
-
-- <p style="text-align: justify;">Write Rust implementations for various basic algorithms, including constant time ($O(1)$), logarithmic time ($O(\log n)$), linear time ($O(n)$), and quadratic time ($O(n^2)$) operations. For each algorithm, analyze its time complexity theoretically and empirically. Use Rust’s <code>std::time::Instant</code> to measure the execution time of each algorithm with different input sizes and compare your results to the theoretical complexities.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 17.2:<strong></strong> Recursive Algorithms and Space Complexity
-</p>
-
-- <p style="text-align: justify;">Implement a recursive algorithm in Rust, such as the Fibonacci sequence or factorial calculation. Analyze its space complexity, paying attention to how recursion depth affects memory usage. Discuss how Rust’s stack management impacts the performance of recursive algorithms. Create a comparative analysis between iterative and recursive versions of the algorithm in terms of both time and space complexity.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 17.3:<strong></strong> Advanced Complexity Analysis
-</p>
-
-- <p style="text-align: justify;">Explore advanced complexity topics by implementing a dynamic data structure, such as a dynamic array or hash map, in Rust. Perform amortized analysis to determine the average time complexity of operations such as insertion and deletion. Use Rust’s benchmarking tools to empirically measure the performance and verify your theoretical analysis. Additionally, implement a randomized algorithm and analyze its expected time complexity using probabilistic methods.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 17.4:<strong></strong> Complexity Classes and Parameterized Complexity
-</p>
-
-- <p style="text-align: justify;">Develop Rust implementations for problems known to belong to different complexity classes, such as P, NP, NP-Complete, and NP-Hard problems. Analyze and discuss their computational complexity. Additionally, create a Rust function that demonstrates parameterized complexity by varying one or more parameters and observe how performance changes. Document your findings on the relevance of these complexity classes and parameterized complexity in practical applications.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 17.5:<strong></strong> Time vs. Space Trade-offs
-</p>
-
-- <p style="text-align: justify;">Design and implement two different algorithms in Rust that solve the same problem but with different time and space complexity characteristics. For example, compare an algorithm that uses additional memory for faster execution with one that is memory-efficient but slower. Analyze and discuss the trade-offs between time and space complexities for each algorithm. Use Rust’s profiling tools to provide empirical evidence for your analysis and write a report on when to favor one approach over the other based on the problem constraints.</p>
-<p style="text-align: justify;">
-By diving into the implementation and analysis of various algorithms, you'll not only grasp fundamental concepts but also develop essential skills for optimizing and evaluating algorithmic performance. Embrace the challenge of experimenting with Rust’s powerful features and exploring advanced topics like amortized and probabilistic analysis. Remember, the journey through these exercises is not just about solving problems but also about gaining a profound appreciation for the elegance and complexity of algorithms. Dive in, stay motivated, and let your passion for learning drive you towards excellence in complexity analysis and algorithm design.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Each exercise is designed to push the boundaries of your knowledge, allowing you to connect theory with practice and build robust, efficient solutions. Approach these tasks with curiosity and dedication, as mastering these concepts will elevate your problem-solving capabilities and prepare you for real-world computational challenges.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 17.1: Implement and Analyze Basic Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write Rust implementations for various basic algorithms, including constant time ($O(1)$), logarithmic time ($O(\log n)$), linear time ($O(n)$), and quadratic time ($O(n^2)$) operations. For each algorithm, analyze its time complexity theoretically and empirically. Use Rust’s <code>std::time::Instant</code> to measure the execution time of each algorithm with different input sizes and compare your results to the theoretical complexities.</p>
+            <p><strong>Objective:</strong> Gain hands-on experience in implementing and analyzing the time complexity of basic algorithms.</p>
+            <p><strong>Deliverables:</strong> Rust code for each algorithm, performance benchmarks, and a detailed analysis comparing empirical results with theoretical expectations.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 17.2: Recursive Algorithms and Space Complexity
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a recursive algorithm in Rust, such as the Fibonacci sequence or factorial calculation. Analyze its space complexity, paying attention to how recursion depth affects memory usage. Discuss how Rust’s stack management impacts the performance of recursive algorithms. Create a comparative analysis between iterative and recursive versions of the algorithm in terms of both time and space complexity.</p>
+            <p><strong>Objective:</strong> Understand the impact of recursion on space complexity and compare it with iterative approaches.</p>
+            <p><strong>Deliverables:</strong> Rust code for both recursive and iterative algorithms, performance analysis, and a comparative study of time and space complexities.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 17.3: Advanced Complexity Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Explore advanced complexity topics by implementing a dynamic data structure, such as a dynamic array or hash map, in Rust. Perform amortized analysis to determine the average time complexity of operations such as insertion and deletion. Use Rust’s benchmarking tools to empirically measure the performance and verify your theoretical analysis. Additionally, implement a randomized algorithm and analyze its expected time complexity using probabilistic methods.</p>
+            <p><strong>Objective:</strong> Delve into advanced complexity analysis techniques, including amortized and probabilistic analysis.</p>
+            <p><strong>Deliverables:</strong> Rust code for dynamic data structures and a randomized algorithm, empirical performance benchmarks, and a detailed analysis of time complexity.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 17.4: Complexity Classes and Parameterized Complexity
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop Rust implementations for problems known to belong to different complexity classes, such as P, NP, NP-Complete, and NP-Hard problems. Analyze and discuss their computational complexity. Additionally, create a Rust function that demonstrates parameterized complexity by varying one or more parameters and observe how performance changes. Document your findings on the relevance of these complexity classes and parameterized complexity in practical applications.</p>
+            <p><strong>Objective:</strong> Explore the complexity classes and understand the role of parameterized complexity in algorithm analysis.</p>
+            <p><strong>Deliverables:</strong> Rust code for various complexity class problems, analysis of computational complexity, and a study on parameterized complexity.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 17.5: Time vs. Space Trade-offs
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design and implement two different algorithms in Rust that solve the same problem but with different time and space complexity characteristics. For example, compare an algorithm that uses additional memory for faster execution with one that is memory-efficient but slower. Analyze and discuss the trade-offs between time and space complexities for each algorithm. Use Rust’s profiling tools to provide empirical evidence for your analysis and write a report on when to favor one approach over the other based on the problem constraints.</p>
+            <p><strong>Objective:</strong> Understand and analyze the trade-offs between time and space complexities in algorithm design.</p>
+            <p><strong>Deliverables:</strong> Rust code for both algorithms, performance benchmarks, and a report analyzing the trade-offs between time and space complexity.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        By diving into the implementation and analysis of various algorithms, you'll not only grasp fundamental concepts but also develop essential skills for optimizing and evaluating algorithmic performance. Embrace the challenge of experimenting with Rust’s powerful features and exploring advanced topics like amortized and probabilistic analysis. Remember, the journey through these exercises is not just about solving problems but also about gaining a profound appreciation for the elegance and complexity of algorithms. Dive in, stay motivated, and let your passion for learning drive you towards excellence in complexity analysis and algorithm design.
+    </p>
+</section>

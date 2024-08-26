@@ -745,25 +745,61 @@ Embarking on these prompts will take you on a deep dive into the technical core 
 </p>
 
 ### 9.6.3. Self-Exercises
-<p style="text-align: justify;">
-Each exercise encourages exploration of key concepts through practical implementation in Rust. The assignments are crafted to be robust and comprehensive, ensuring that students gain hands-on experience while mastering the theoretical foundations.
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Exercise 9.1:<strong></strong> Implementing Custom Data Structures</p>
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a custom stack data structure in Rust using a vector (<code>Vec<T></code>) as the underlying storage. Ensure that the stack supports the basic operations: <code>push</code>, <code>pop</code>, and <code>peek</code>. Pay special attention to Rust’s ownership and borrowing rules to prevent any memory safety issues.</p>
-- <p style="text-align: justify;"><strong></strong>Goal<strong></strong>: Demonstrate an understanding of Rust’s ownership model, memory safety, and how they influence data structure implementation. Compare the performance of your custom stack with Rust’s built-in <code>Vec<T></code> when used as a stack.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 9.2:<strong></strong> Memory Management in Linked Lists</p>
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Create a singly linked list in Rust where each node contains an integer value and a reference to the next node. Use Rust’s <code>Option</code> type to manage node references and ensure that the linked list adheres to Rust’s memory safety rules. Extend the implementation to support <code>insert</code> and <code>delete</code> operations at arbitrary positions.</p>
-- <p style="text-align: justify;"><strong></strong>Goal<strong></strong>: Develop a deep understanding of how Rust’s memory model (ownership, borrowing, and lifetimes) applies to linked lists. Analyze the performance implications of using linked lists compared to other data structures like vectors.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 9.3:<strong></strong> Exploring Rust’s Standard Collections</p>
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Write a Rust program that uses the <code>HashMap<K, V></code> and <code>BTreeMap<K, V></code> collections to store and manage student records (e.g., ID, name, grade). Implement functions to add, update, and retrieve records. Compare the performance of <code>HashMap</code> and <code>BTreeMap</code> when performing lookups, inserts, and deletions.</p>
-- <p style="text-align: justify;"><strong></strong>Goal<strong></strong>: Gain practical experience in choosing the appropriate collection type based on the use-case. Understand the trade-offs between <code>HashMap</code> and <code>BTreeMap</code> in terms of memory usage, access times, and sorting capabilities.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 9.4:<strong></strong> Advanced Array and Slice Manipulation</p>
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a Rust program that reads a list of integers from the user, stores them in an array, and then creates multiple slices from this array to perform different operations (e.g., sorting, filtering even numbers, calculating the sum of elements). Utilize Rust’s iterator methods to perform these tasks efficiently.</p>
-- <p style="text-align: justify;"><strong></strong>Goal<strong></strong>: Enhance your understanding of how arrays and slices work in Rust, focusing on their memory layout, safety features, and the use of iterators for efficient data manipulation.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 9.5:<strong></strong> Comparative Analysis of Data Structures</p>
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Choose three different data structures from Rust’s standard library (e.g., <code>Vec<T></code>, <code>LinkedList<T></code>, <code>HashMap<K, V></code>) and implement a benchmark in Rust that compares their performance in various operations (e.g., insertions, deletions, lookups). Write a report analyzing the results and discussing when each data structure would be most appropriate to use.</p>
-- <p style="text-align: justify;"><strong></strong>Goal<strong></strong>: Develop a comprehensive understanding of the performance characteristics of different data structures in Rust. Gain insight into making informed decisions about which data structure to use based on specific requirements and constraints.</p>
-<p style="text-align: justify;">
-These exercises are designed to challenge you and reinforce your understanding of the topics covered in this Chapter. By completing these assignments, you'll not only solidify your knowledge of Rust’s data structures and memory management but also build confidence in applying these concepts to solve real-world problems. Dive in, experiment with the code, and take this opportunity to push the boundaries of your learning!
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Each exercise encourages exploration of key concepts through practical implementation in Rust. The assignments are crafted to be robust and comprehensive, ensuring that students gain hands-on experience while mastering the theoretical foundations.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 9.1: Implementing Custom Data Structures
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong> Implement a custom stack data structure in Rust using a vector (<code>Vec&lt;T&gt;</code>) as the underlying storage. Ensure that the stack supports the basic operations: <code>push</code>, <code>pop</code>, and <code>peek</code>. Pay special attention to Rust’s ownership and borrowing rules to prevent any memory safety issues.</p>
+            <p><strong>Objective:</strong> Demonstrate an understanding of Rust’s ownership model, memory safety, and how they influence data structure implementation. Compare the performance of your custom stack with Rust’s built-in <code>Vec&lt;T&gt;</code> when used as a stack.</p>
+            <p><strong>Deliverables:</strong> Source code for the custom stack implementation, a comparison report between the custom stack and the built-in <code>Vec&lt;T&gt;</code> used as a stack, and a discussion on memory safety and ownership.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 9.2: Memory Management in Linked Lists
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong> Create a singly linked list in Rust where each node contains an integer value and a reference to the next node. Use Rust’s <code>Option</code> type to manage node references and ensure that the linked list adheres to Rust’s memory safety rules. Extend the implementation to support <code>insert</code> and <code>delete</code> operations at arbitrary positions.</p>
+            <p><strong>Objective:</strong> Develop a deep understanding of how Rust’s memory model (ownership, borrowing, and lifetimes) applies to linked lists. Analyze the performance implications of using linked lists compared to other data structures like vectors.</p>
+            <p><strong>Deliverables:</strong> Source code for the linked list implementation, including insert and delete operations, and a performance analysis report comparing linked lists to vectors in Rust.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 9.3: Exploring Rust’s Standard Collections
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong> Write a Rust program that uses the <code>HashMap&lt;K, V&gt;</code> and <code>BTreeMap&lt;K, V&gt;</code> collections to store and manage student records (e.g., ID, name, grade). Implement functions to add, update, and retrieve records. Compare the performance of <code>HashMap</code> and <code>BTreeMap</code> when performing lookups, inserts, and deletions.</p>
+            <p><strong>Objective:</strong> Gain practical experience in choosing the appropriate collection type based on the use-case. Understand the trade-offs between <code>HashMap</code> and <code>BTreeMap</code> in terms of memory usage, access times, and sorting capabilities.</p>
+            <p><strong>Deliverables:</strong> Source code for the student records management program, performance benchmarks comparing <code>HashMap</code> and <code>BTreeMap</code>, and a report discussing the trade-offs between these collections.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 9.4: Advanced Array and Slice Manipulation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong> Implement a Rust program that reads a list of integers from the user, stores them in an array, and then creates multiple slices from this array to perform different operations (e.g., sorting, filtering even numbers, calculating the sum of elements). Utilize Rust’s iterator methods to perform these tasks efficiently.</p>
+            <p><strong>Objective:</strong> Enhance your understanding of how arrays and slices work in Rust, focusing on their memory layout, safety features, and the use of iterators for efficient data manipulation.</p>
+            <p><strong>Deliverables:</strong> Source code for the array and slice manipulation program, including comments explaining the use of iterators and memory safety in Rust.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 9.5: Comparative Analysis of Data Structures
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong> Choose three different data structures from Rust’s standard library (e.g., <code>Vec&lt;T&gt;</code>, <code>LinkedList&lt;T&gt;</code>, <code>HashMap&lt;K, V&gt;</code>) and implement a benchmark in Rust that compares their performance in various operations (e.g., insertions, deletions, lookups). Write a report analyzing the results and discussing when each data structure would be most appropriate to use.</p>
+            <p><strong>Objective:</strong> Develop a comprehensive understanding of the performance characteristics of different data structures in Rust. Gain insight into making informed decisions about which data structure to use based on specific requirements and constraints.</p>
+            <p><strong>Deliverables:</strong> Benchmarking code for the selected data structures, performance analysis results, and a report discussing the trade-offs and appropriate use cases for each data structure.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to challenge you and reinforce your understanding of the topics covered in this Chapter. By completing these assignments, you'll not only solidify your knowledge of Rust’s data structures and memory management but also build confidence in applying these concepts to solve real-world problems. Dive in, experiment with the code, and take this opportunity to push the boundaries of your learning!
+    </p>
+</section>

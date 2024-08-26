@@ -200,11 +200,11 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In this code, we define two $3 \times 3 \times 3$ tensors <code>a</code> and <code>b</code> using <code>ndarray::Array</code>, a versatile structure that can handle n-dimensional data. The tensors are initialized with values ranging from 0 to 53. Element-wise addition and multiplication are performed using the <code>+</code> and <code>*</code> operators, and the results are printed. The tensor contraction operation, demonstrated here by multiplying slices of the tensors along a specified axis, effectively reduces the dimensionality by performing a dot product of the slices.
+In this code, we define two $3 \times 3 \times 3$ tensors <code>a</code> and <code>b</code> using <code>ndarray::Array</code>, a versatile structure that can handle n-dimensional data. The tensors are initialized with values ranging from 0 to 53. Element-wise addition and multiplication are performed using the $+$ and $*$ operators, and the results are printed. The tensor contraction operation, demonstrated here by multiplying slices of the tensors along a specified axis, effectively reduces the dimensionality by performing a dot product of the slices.
 </p>
 
 <p style="text-align: justify;">
-The rank of a tensor refers to the number of dimensions it possesses, while its shape describes the size of each dimension. For instance, a $3 \times 3 \times 3$ tensor has a rank of 3 and a shape of <code>(3, 3, 3)</code>. Understanding rank and shape is essential when working with tensors, as many operations require tensors of specific shapes and ranks to be compatible. Rust's <code>ndarray</code> crate makes it easy to inspect and manipulate these properties, allowing for flexible and efficient tensor computations.
+The rank of a tensor refers to the number of dimensions it possesses, while its shape describes the size of each dimension. For instance, a $3 \times 3 \times 3$ tensor has a rank of 3 and a shape of $(3, 3, 3)$. Understanding rank and shape is essential when working with tensors, as many operations require tensors of specific shapes and ranks to be compatible. Rust's <code>ndarray</code> crate makes it easy to inspect and manipulate these properties, allowing for flexible and efficient tensor computations.
 </p>
 
 <p style="text-align: justify;">
@@ -492,45 +492,72 @@ Each prompt encourages exploration of fundamental principles, practical implemen
 </p>
 
 ### 28.5.3. Self-Exercises
-<p style="text-align: justify;">
-These assignments will help you apply theoretical concepts and practical skills related to vector, matrix, and tensor operations using Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 28.1:<strong></strong> Vector Operations Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement basic vector operations from scratch in Rust, focusing on efficiency and correctness.</p>
-- <p style="text-align: justify;"><strong></strong>Instructions:<strong></strong> Write a Rust program to perform vector addition, subtraction, scalar multiplication, and dot product. Use the <code>std::vec::Vec</code> type for your implementation. Include functions for calculating the Euclidean norm, L1 norm, and infinity norm. Test your implementation with various vector sizes and discuss the computational complexity of each operation.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Source code with comments explaining each function, a README file with instructions on how to run the code, and a brief report analyzing the performance of your implementation.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 28.2:<strong></strong> Matrix Operations and Linear Algebra
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement matrix operations and perform linear algebra computations using the <code>nalgebra</code> crate.</p>
-- <p style="text-align: justify;"><strong></strong>Instructions:<strong></strong> Develop a Rust application that performs matrix addition, multiplication, and transpose. Implement functions to compute the matrix inverse and determinant. Test these functions with sample matrices, including identity matrices and singular matrices. Provide a detailed explanation of how these operations are applied in solving systems of linear equations.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Rust code for matrix operations with comments, example matrices used for testing, and a report explaining the matrix computations and their real-world applications.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 28.3:<strong></strong> Tensor Operations with <code>ndarray</code>
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Explore tensor operations and multidimensional data handling using the <code>ndarray</code> crate.</p>
-- <p style="text-align: justify;"><strong></strong>Instructions:<strong></strong> Write a Rust program to create and manipulate tensors (multidimensional arrays) using the <code>ndarray</code> crate. Implement tensor addition, element-wise multiplication, and tensor contraction. Include sample code for tensor decomposition techniques such as Singular Value Decomposition (SVD). Discuss the applications of these tensor operations in data science and machine learning.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Source code with examples of tensor operations, a README file with instructions, and a report on tensor applications and decomposition techniques.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 28.4:<strong></strong> Optimization Techniques for Matrix Operations
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Optimize matrix operations by implementing efficient algorithms and leveraging Rust’s concurrency features.</p>
-- <p style="text-align: justify;"><strong></strong>Instructions:<strong></strong> Implement and compare the performance of standard matrix multiplication and Strassen’s algorithm in Rust. Use parallel processing to accelerate matrix computations, and integrate Rust’s concurrency features such as threads or the Rayon crate for parallel execution. Provide benchmarks comparing the performance of different algorithms and optimizations.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Rust code demonstrating both matrix multiplication algorithms, performance benchmarks, and a report analyzing the results and optimizations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 28.5:<strong></strong> Advanced Tensor Computations and Hardware Acceleration
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Apply advanced optimization techniques and hardware acceleration to tensor computations.</p>
-- <p style="text-align: justify;"><strong></strong>Instructions:<strong></strong> Develop a Rust application that utilizes GPU acceleration for tensor operations using a library like <code>wgpu</code> or <code>rust-cuda</code>. Implement tensor computations such as addition, multiplication, and contraction on the GPU. Include performance comparisons between CPU and GPU implementations, and discuss the benefits of hardware acceleration for large-scale tensor operations.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Rust code with GPU-accelerated tensor operations, performance comparison results, and a detailed report on the advantages of hardware acceleration.</p>
-<p style="text-align: justify;">
-These exercises are designed to challenge you and deepen their understanding of vector, matrix, and tensor operations in Rust, while also honing their skills in optimization and performance analysis.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These assignments will help you apply theoretical concepts and practical skills related to vector, matrix, and tensor operations using Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 28.1: Vector Operations Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust program to perform vector addition, subtraction, scalar multiplication, and dot product. Use the <code>std::vec::Vec</code> type for your implementation. Include functions for calculating the Euclidean norm, L1 norm, and infinity norm. Test your implementation with various vector sizes and discuss the computational complexity of each operation.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement basic vector operations from scratch in Rust, focusing on efficiency and correctness.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Source code with comments explaining each function, a README file with instructions on how to run the code, and a brief report analyzing the performance of your implementation.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 28.2: Matrix Operations and Linear Algebra
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust application that performs matrix addition, multiplication, and transpose. Implement functions to compute the matrix inverse and determinant. Test these functions with sample matrices, including identity matrices and singular matrices.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement matrix operations and perform linear algebra computations using the <code>nalgebra</code> crate.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for matrix operations with comments, example matrices used for testing, and a report explaining the matrix computations and their real-world applications.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 28.3: Tensor Operations with <code>ndarray</code>
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust program to create and manipulate tensors (multidimensional arrays) using the <code>ndarray</code> crate. Implement tensor addition, element-wise multiplication, and tensor contraction. Include sample code for tensor decomposition techniques such as Singular Value Decomposition (SVD).</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore tensor operations and multidimensional data handling using the <code>ndarray</code> crate.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Source code with examples of tensor operations, a README file with instructions, and a report on tensor applications and decomposition techniques.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 28.4: Optimization Techniques for Matrix Operations
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement and compare the performance of standard matrix multiplication and Strassen’s algorithm in Rust. Use parallel processing to accelerate matrix computations, and integrate Rust’s concurrency features such as threads or the Rayon crate for parallel execution.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Optimize matrix operations by implementing efficient algorithms and leveraging Rust’s concurrency features.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code demonstrating both matrix multiplication algorithms, performance benchmarks, and a report analyzing the results and optimizations.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 28.5: Advanced Tensor Computations and Hardware Acceleration
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust application that utilizes GPU acceleration for tensor operations using a library like <code>wgpu</code> or <code>rust-cuda</code>. Implement tensor computations such as addition, multiplication, and contraction on the GPU.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Apply advanced optimization techniques and hardware acceleration to tensor computations.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code with GPU-accelerated tensor operations, performance comparison results, and a detailed report on the advantages of hardware acceleration.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to challenge you and deepen their understanding of vector, matrix, and tensor operations in Rust, while also honing their skills in optimization and performance analysis.
+    </p>
+</section>

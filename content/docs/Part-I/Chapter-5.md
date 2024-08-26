@@ -536,25 +536,81 @@ Embarking on the exploration of divide and conquer algorithms using Rust is both
 </p>
 
 ### 5.5.3. Self-Exercises
-<p style="text-align: justify;">
-Here are five comprehensive self-exercises designed to deepen your understanding of divide and conquer algorithms and their implementation in Rust. Each exercise combines theoretical learning with practical coding tasks to reinforce key concepts from this Chapter.
+<p class="text-justify">
+    Here are five comprehensive self-exercises designed to deepen your understanding of divide and conquer algorithms and their implementation in Rust. Each exercise combines theoretical learning with practical coding tasks to reinforce key concepts from this Chapter.
 </p>
 
-- <p style="text-align: justify;"><strong></strong>Exercise 5.1:<strong></strong> Analyze and Implement Merge Sort</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Understand the merge sort algorithm and its divide and conquer approach.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Write a Rust program to implement merge sort. Your implementation should include functions to divide the array, recursively sort the subarrays, and merge the sorted halves. Use <code>Vec<T></code> and iterators to handle the array efficiently. Additionally, analyze the time complexity of your implementation using recurrence relations and compare it with theoretical expectations.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 5.2:<strong></strong> Optimize and Compare Quick Sort</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement and optimize the quicksort algorithm.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Implement the quicksort algorithm in Rust. Focus on selecting a pivot element, partitioning the array around the pivot, and recursively sorting the partitions. Optimize your implementation for performance by minimizing unnecessary allocations and considering iterative approaches where appropriate. Compare the performance of your optimized quicksort implementation with the standard version using different array sizes and pivot strategies.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 5.3:<strong></strong> Implement Binary Search with Pattern Matching</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Apply divide and conquer principles to binary search and utilize Rust’s pattern matching.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Implement binary search in Rust using a recursive approach. Use Rust’s pattern matching and the <code>Option</code> type to handle the search results. Ensure that your implementation is both efficient and safe. Write test cases to verify the correctness of your binary search algorithm and analyze its performance.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 5.4:<strong></strong> Explore Parallel Merge Sort with Rayon</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Learn how to parallelize divide and conquer algorithms using Rust’s Rayon library.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Modify your merge sort implementation to use the Rayon library for parallelism. Implement parallel sorting and merging using <code>par_iter</code> to handle the array in parallel. Evaluate the performance improvements and discuss how parallelism impacts memory usage and execution time. Provide code samples and performance metrics to support your findings.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 5.5:<strong></strong> Implement and Analyze Strassen’s Algorithm for Matrix Multiplication</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Understand and apply Strassen’s algorithm using Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Implement Strassen’s algorithm for matrix multiplication in Rust. Focus on efficient matrix representation and memory management. Analyze the time complexity of your implementation and compare it with the traditional matrix multiplication approach. Provide performance comparisons and discuss the advantages of Strassen’s algorithm in terms of efficiency.</p>
-<p style="text-align: justify;">
-These exercises are designed to challenge you to apply the concepts from this Chapter in practical scenarios, enhancing both your theoretical knowledge and programming skills in Rust.
-</p>
+---
+
+<section class="mt-5">
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 5.1: Analyze and Implement Merge Sort
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust program to implement merge sort. Your implementation should include functions to divide the array, recursively sort the subarrays, and merge the sorted halves. Use <code>Vec&lt;T&gt;</code> and iterators to handle the array efficiently.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand the merge sort algorithm and its divide and conquer approach.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your Rust implementation along with an analysis of the time complexity using recurrence relations, comparing it with theoretical expectations.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 5.2: Optimize and Compare Quick Sort
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the quicksort algorithm in Rust, focusing on selecting a pivot element, partitioning the array around the pivot, and recursively sorting the partitions. Optimize your implementation for performance by minimizing unnecessary allocations and considering iterative approaches where appropriate.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and optimize the quicksort algorithm.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide your optimized quicksort implementation, along with performance comparisons using different array sizes and pivot strategies.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 5.3: Implement Binary Search with Pattern Matching
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement binary search in Rust using a recursive approach. Use Rust’s pattern matching and the <code>Option</code> type to handle the search results. Write test cases to verify the correctness of your binary search algorithm.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Apply divide and conquer principles to binary search and utilize Rust’s pattern matching.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your Rust implementation and test cases, along with a performance analysis of your binary search algorithm.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 5.4: Explore Parallel Merge Sort with Rayon
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Modify your merge sort implementation to use the Rayon library for parallelism. Implement parallel sorting and merging using <code>par_iter</code> to handle the array in parallel.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Learn how to parallelize divide and conquer algorithms using Rust’s Rayon library.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide code samples with the parallel merge sort implementation, along with performance metrics and an analysis of how parallelism impacts memory usage and execution time.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 5.5: Implement and Analyze Strassen’s Algorithm for Matrix Multiplication
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement Strassen’s algorithm for matrix multiplication in Rust, focusing on efficient matrix representation and memory management.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand and apply Strassen’s algorithm using Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit your implementation with performance comparisons to traditional matrix multiplication, along with an analysis of the time complexity and the advantages of Strassen’s algorithm.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to challenge you to apply the concepts from this Chapter in practical scenarios, enhancing both your theoretical knowledge and programming skills in Rust.
+    </p>
+</section>
+
+

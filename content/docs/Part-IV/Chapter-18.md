@@ -137,7 +137,7 @@ This Rust implementation demonstrates how merge sort reduces the time complexity
 </p>
 
 <p style="text-align: justify;">
-Another crucial aspect of algorithmic improvement is selecting appropriate data structures. For example, using hash tables can speed up operations that involve frequent lookups, reducing the time complexity from O(n) for a list search to O(1) for a hash table.
+Another crucial aspect of algorithmic improvement is selecting appropriate data structures. For example, using hash tables can speed up operations that involve frequent lookups, reducing the time complexity from $O(n)$ for a list search to $O(1)$ for a hash table.
 </p>
 
 <p style="text-align: justify;">
@@ -877,7 +877,7 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In this example, the factorial function is implemented iteratively to avoid deep recursion, which could otherwise lead to a stack overflow for large values of <code>n</code>.
+In this example, the factorial function is implemented iteratively to avoid deep recursion, which could otherwise lead to a stack overflow for large values of $n$.
 </p>
 
 <p style="text-align: justify;">
@@ -1274,60 +1274,91 @@ Dive deep into each prompt, experiment with the provided sample codes, and apply
 </p>
 
 ### 18.7.3. Self-Exercises
-<p style="text-align: justify;">
-Each exercise includes detailed tasks, objectives, and deliverables to ensure thorough learning and application of the concepts.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 18.1:<strong></strong> Implement and Analyze Sorting Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Develop robust implementations of QuickSort and MergeSort in Rust. Ensure your code includes detailed comments and explanations for each algorithm step. Also, implement additional variations or optimizations for each algorithm, such as different pivot selection strategies for QuickSort or hybrid approaches combining MergeSort with InsertionSort.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Use Rust’s <code>criterion</code> crate to benchmark and analyze the performance of your implementations. Compare the time complexity of both algorithms under various data conditions (e.g., random, sorted, and reversed data). Analyze the impact of different optimizations and document how these variations affect performance.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit a Rust project containing:</p>
-- <p style="text-align: justify;">Complete implementations of QuickSort and MergeSort with comments.</p>
-- <p style="text-align: justify;">Benchmarking code and results for various data sets.</p>
-- <p style="text-align: justify;">A comprehensive report discussing the performance analysis, including time complexity and optimization impacts.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 18.2:<strong></strong> Advanced Recursive Algorithm Optimization
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a recursive algorithm to solve a problem like the "Traveling Salesman Problem" or "Knapsack Problem" in Rust. First, create a plain recursive solution and then optimize it using memoization and dynamic programming techniques. Implement both a top-down (with memoization) and bottom-up (tabulation) approach.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Compare the performance and space efficiency of the plain recursive algorithm versus the optimized versions. Utilize Rust’s <code>HashMap</code> for memoization and a dynamic programming table for the tabulated approach.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Provide:</p>
-- <p style="text-align: justify;">Rust code for the plain recursive algorithm and the optimized versions.</p>
-- <p style="text-align: justify;">Performance benchmarks and memory usage analysis for each approach.</p>
-- <p style="text-align: justify;">A detailed explanation of the optimization techniques used and their impact on performance.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 18.3:<strong></strong> Parallel Processing with Rayon and Concurrency with Tokio
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Design a Rust application that processes a large dataset using both the <code>Rayon</code> crate for parallel processing and the <code>Tokio</code> crate for asynchronous tasks. Implement a data processing pipeline where data is read, processed in parallel, and then aggregated. Ensure that you handle potential concurrency issues using synchronization primitives like <code>Mutex</code> or <code>RwLock</code>.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Evaluate the benefits of parallel and asynchronous processing in terms of performance improvement. Compare these techniques with a sequential processing approach to highlight the efficiency gains and synchronization challenges.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit:</p>
-- <p style="text-align: justify;">Rust code implementing both parallel processing with <code>Rayon</code> and asynchronous processing with <code>Tokio</code>.</p>
-- <p style="text-align: justify;">Performance and concurrency analysis, including how synchronization affects overall performance.</p>
-- <p style="text-align: justify;">A detailed report explaining the concurrency model, synchronization mechanisms, and the impact on performance.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 18.4:<strong></strong> Space Optimization Techniques and Memory Profiling
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement solutions using various space-efficient data structures and techniques in Rust. Focus on examples like sparse arrays, compressed data structures, and custom memory management strategies. Use Rust’s memory profiling tools to analyze the memory footprint and efficiency of your implementations.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Demonstrate how different data structures and memory management techniques impact space complexity. Provide insights into how these strategies can be applied to real-world problems involving large datasets or limited memory environments.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Provide:</p>
-- <p style="text-align: justify;">Rust code showcasing various space-efficient data structures and memory management techniques.</p>
-- <p style="text-align: justify;">Memory profiling results using tools like <code>perf</code> or <code>valgrind</code>, including a comparative analysis of memory usage.</p>
-- <p style="text-align: justify;">A detailed explanation of the space optimization strategies used and their implications for performance.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 18.5:<strong></strong> Profiling, Benchmarking, and Optimization Trade-offs
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Create a Rust application that performs a computationally intensive task, such as matrix multiplication or graph traversal. Use profiling and benchmarking tools to analyze the performance of different optimization strategies, such as algorithmic improvements, data structure changes, and code-level optimizations.</p>
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Understand the trade-offs between different optimization approaches and how they affect overall performance. Use the results to make informed decisions about which strategies provide the best balance between time and space complexity.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit:</p>
-- <p style="text-align: justify;">Rust code implementing the computationally intensive task with various optimization strategies.</p>
-- <p style="text-align: justify;">Profiling and benchmarking reports detailing the performance impacts of each strategy.</p>
-- <p style="text-align: justify;">A comprehensive analysis of the trade-offs between different optimization approaches and recommendations for best practices.</p>
-<p style="text-align: justify;">
-These exercises are designed to challenge you and deepen your understanding of algorithm optimization in Rust. By tackling these assignments, you will not only enhance your technical skills but also gain practical experience in applying complex optimization techniques. Approach each exercise with a focus on detail and thorough analysis to fully grasp the nuances of algorithm efficiency and performance. Embrace the opportunity to experiment with Rust's powerful features, and let these exercises guide you towards mastery in optimizing algorithms. Your efforts in completing these tasks will significantly contribute to your expertise and readiness for real-world programming challenges.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Each exercise includes detailed tasks, objectives, and deliverables to ensure thorough learning and application of the concepts.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 18.1: Implement and Analyze Sorting Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop robust implementations of QuickSort and MergeSort in Rust. Ensure your code includes detailed comments and explanations for each algorithm step. Also, implement additional variations or optimizations for each algorithm, such as different pivot selection strategies for QuickSort or hybrid approaches combining MergeSort with InsertionSort.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Use Rust’s <code>criterion</code> crate to benchmark and analyze the performance of your implementations. Compare the time complexity of both algorithms under various data conditions (e.g., random, sorted, and reversed data). Analyze the impact of different optimizations and document how these variations affect performance.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit a Rust project containing:</p>
+            <p class="text-justify">- Complete implementations of QuickSort and MergeSort with comments.</p>
+            <p class="text-justify">- Benchmarking code and results for various data sets.</p>
+            <p class="text-justify">- A comprehensive report discussing the performance analysis, including time complexity and optimization impacts.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 18.2: Advanced Recursive Algorithm Optimization
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a recursive algorithm to solve a problem like the "Traveling Salesman Problem" or "Knapsack Problem" in Rust. First, create a plain recursive solution and then optimize it using memoization and dynamic programming techniques. Implement both a top-down (with memoization) and bottom-up (tabulation) approach.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Compare the performance and space efficiency of the plain recursive algorithm versus the optimized versions. Utilize Rust’s <code>HashMap</code> for memoization and a dynamic programming table for the tabulated approach.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide:</p>
+            <p class="text-justify">- Rust code for the plain recursive algorithm and the optimized versions.</p>
+            <p class="text-justify">- Performance benchmarks and memory usage analysis for each approach.</p>
+            <p class="text-justify">- A detailed explanation of the optimization techniques used and their impact on performance.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 18.3: Parallel Processing with Rayon and Concurrency with Tokio
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design a Rust application that processes a large dataset using both the <code>Rayon</code> crate for parallel processing and the <code>Tokio</code> crate for asynchronous tasks. Implement a data processing pipeline where data is read, processed in parallel, and then aggregated. Ensure that you handle potential concurrency issues using synchronization primitives like <code>Mutex</code> or <code>RwLock</code>.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Evaluate the benefits of parallel and asynchronous processing in terms of performance improvement. Compare these techniques with a sequential processing approach to highlight the efficiency gains and synchronization challenges.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit:</p>
+            <p class="text-justify">- Rust code implementing both parallel processing with <code>Rayon</code> and asynchronous processing with <code>Tokio</code>.</p>
+            <p class="text-justify">- Performance and concurrency analysis, including how synchronization affects overall performance.</p>
+            <p class="text-justify">- A detailed report explaining the concurrency model, synchronization mechanisms, and the impact on performance.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 18.4: Space Optimization Techniques and Memory Profiling
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement solutions using various space-efficient data structures and techniques in Rust. Focus on examples like sparse arrays, compressed data structures, and custom memory management strategies. Use Rust’s memory profiling tools to analyze the memory footprint and efficiency of your implementations.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Demonstrate how different data structures and memory management techniques impact space complexity. Provide insights into how these strategies can be applied to real-world problems involving large datasets or limited memory environments.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Provide:</p>
+            <p class="text-justify">- Rust code showcasing various space-efficient data structures and memory management techniques.</p>
+            <p class="text-justify">- Memory profiling results using tools like <code>perf</code> or <code>valgrind</code>, including a comparative analysis of memory usage.</p>
+            <p class="text-justify">- A detailed explanation of the space optimization strategies used and their implications for performance.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 18.5: Profiling, Benchmarking, and Optimization Trade-offs
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust application that performs a computationally intensive task, such as matrix multiplication or graph traversal. Use profiling and benchmarking tools to analyze the performance of different optimization strategies, such as algorithmic improvements, data structure changes, and code-level optimizations.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand the trade-offs between different optimization approaches and how they affect overall performance. Use the results to make informed decisions about which strategies provide the best balance between time and space complexity.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit:</p>
+            <p class="text-justify">- Rust code implementing the computationally intensive task with various optimization strategies.</p>
+            <p class="text-justify">- Profiling and benchmarking reports detailing the performance impacts of each strategy.</p>
+            <p class="text-justify">- A comprehensive analysis of the trade-offs between different optimization approaches and recommendations for best practices.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to challenge you and deepen your understanding of algorithm optimization in Rust. By tackling these assignments, you will not only enhance your technical skills but also gain practical experience in applying complex optimization techniques. Approach each exercise with a focus on detail and thorough analysis to fully grasp the nuances of algorithm efficiency and performance. Embrace the opportunity to experiment with Rust's powerful features, and let these exercises guide you towards mastery in optimizing algorithms. Your efforts in completing these tasks will significantly contribute to your expertise and readiness for real-world programming challenges.
+    </p>
+</section>

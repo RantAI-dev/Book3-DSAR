@@ -187,30 +187,78 @@ Each prompt is crafted to challenge and deepen your comprehension, providing pra
 </p>
 
 ### 2.5.2. Self-Exercises
-<p style="text-align: justify;">
-The following assignments will help you explore Rust’s capabilities in implementing data structures and algorithms, as well as its unique features for performance, safety, and concurrency.
-</p>
+ <p class="text-justify">
+        The following assignments will help you explore Rust’s capabilities in implementing data structures and algorithms, as well as its unique features for performance, safety, and concurrency.
+  </p>
 
-- <p style="text-align: justify;"><strong></strong>Exercise 2.1:<strong></strong> Implement and Analyze Rust’s Ownership Model</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Create a Rust project that demonstrates the concepts of ownership and borrowing by implementing a set of data structures (e.g., a stack and a queue) with various ownership and borrowing scenarios.</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Write Rust code to show how ownership and borrowing affect the data structures' functionality. Include examples of mutable and immutable borrowing, and discuss how Rust’s ownership model prevents common memory management issues.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Source code with comments explaining ownership and borrowing, a brief report summarizing the impact of these features on data structure implementation, and a discussion of any challenges faced.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 2.2:<strong></strong> Performance Comparison of Arrays and Vectors</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Implement a performance comparison between arrays and vectors in Rust. Create two separate programs—one using arrays and one using vectors—to perform similar tasks (e.g., sorting a large dataset and performing lookups).</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Measure and compare the execution time and memory usage of the two implementations. Analyze the trade-offs between fixed-size arrays and dynamically sized vectors.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Source code for both implementations, performance benchmarks, and a comparative analysis report discussing the strengths and weaknesses of arrays versus vectors in different scenarios.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 2.3:<strong></strong> Implement a Hash Map and Test Collision Handling</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Develop a custom hash map implementation in Rust. Include functionality for inserting, retrieving, and deleting key-value pairs. Implement collision handling using techniques such as chaining or open addressing.</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Write code to demonstrate how hash maps work internally and how collisions are managed. Include test cases to verify the correctness and performance of your implementation.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Source code with implemented hash map and collision handling, test cases with results, and a report explaining the design choices and how they affect performance.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 2.4:<strong></strong> Solve a Dynamic Programming Problem</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Implement a classic dynamic programming algorithm in Rust, such as the knapsack problem or matrix chain multiplication. Focus on using Rust’s ownership and borrowing features to manage intermediate results and state.</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Write and optimize the dynamic programming solution, demonstrating how Rust can effectively handle state management in complex algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Source code for the dynamic programming solution, a performance analysis report, and an explanation of how Rust’s features facilitated the implementation of the algorithm.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 2.5:<strong></strong> Implement and Test a Concurrency Example</p>
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Create a Rust program that demonstrates safe concurrent programming by implementing a concurrent data structure (e.g., a concurrent queue or a thread-safe counter). Use Rust’s concurrency features such as the <code>Send</code> and <code>Sync</code> traits.</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Develop a concurrent data structure, write tests to validate its functionality, and analyze how Rust’s concurrency model ensures safety and prevents data races.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables:<strong></strong> Source code for the concurrent data structure, test results, and a report discussing how Rust’s concurrency model supports safe multi-threaded execution and the implications for data structure implementation.</p>
-<p style="text-align: justify;">
-By working through these tasks, you will gain practical experience and insights into Rust’s unique features and how they can be leveraged in real-world applications.
-</p>
+---
+<section class="mt-5">
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 2.1: Implement and Analyze Rust’s Ownership Model
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust project that demonstrates the concepts of ownership and borrowing by implementing a set of data structures (e.g., a stack and a queue) with various ownership and borrowing scenarios. Write Rust code to show how ownership and borrowing affect the data structures' functionality. Include examples of mutable and immutable borrowing, and discuss how Rust’s ownership model prevents common memory management issues.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand how Rust’s ownership and borrowing principles influence data structure implementation and memory management.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Source code with comments explaining ownership and borrowing, a brief report summarizing the impact of these features on data structure implementation, and a discussion of any challenges faced.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 2.2: Performance Comparison of Arrays and Vectors
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a performance comparison between arrays and vectors in Rust. Create two separate programs—one using arrays and one using vectors—to perform similar tasks (e.g., sorting a large dataset and performing lookups). Measure and compare the execution time and memory usage of the two implementations, and analyze the trade-offs between fixed-size arrays and dynamically sized vectors.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Evaluate the performance differences between arrays and vectors, and understand the implications of fixed-size versus dynamically sized collections.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Source code for both implementations, performance benchmarks, and a comparative analysis report discussing the strengths and weaknesses of arrays versus vectors in different scenarios.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 2.3: Implement a Hash Map and Test Collision Handling
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a custom hash map implementation in Rust. Include functionality for inserting, retrieving, and deleting key-value pairs. Implement collision handling using techniques such as chaining or open addressing. Write code to demonstrate how hash maps work internally and how collisions are managed. Include test cases to verify the correctness and performance of your implementation.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand the implementation details of hash maps, including collision handling techniques and their impact on performance.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Source code with implemented hash map and collision handling, test cases with results, and a report explaining the design choices and how they affect performance.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 2.4: Solve a Dynamic Programming Problem
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a classic dynamic programming algorithm in Rust, such as the knapsack problem or matrix chain multiplication. Focus on using Rust’s ownership and borrowing features to manage intermediate results and state. Write and optimize the dynamic programming solution, demonstrating how Rust can effectively handle state management in complex algorithms.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Apply dynamic programming techniques in Rust, and utilize Rust’s features for managing state in complex algorithms.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Source code for the dynamic programming solution, a performance analysis report, and an explanation of how Rust’s features facilitated the implementation of the algorithm.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 2.5: Implement and Test a Concurrency Example
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust program that demonstrates safe concurrent programming by implementing a concurrent data structure (e.g., a concurrent queue or a thread-safe counter). Use Rust’s concurrency features such as the <code>Send</code> and <code>Sync</code> traits. Develop a concurrent data structure, write tests to validate its functionality, and analyze how Rust’s concurrency model ensures safety and prevents data races.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Demonstrate safe concurrent programming in Rust, and understand how Rust’s concurrency model supports multi-threaded execution and prevents data races.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Source code for the concurrent data structure, test results, and a report discussing how Rust’s concurrency model supports safe multi-threaded execution and the implications for data structure implementation.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        By working through these tasks, you will gain practical experience and insights into Rust’s unique features and how they can be leveraged in real-world applications.
+    </p>
+</section>

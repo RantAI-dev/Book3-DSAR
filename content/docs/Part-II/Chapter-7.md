@@ -432,7 +432,7 @@ Hybrid sorting algorithms are designed to harness the advantages of multiple sor
           array[j + 1] = key
 {{< /prism >}}
 - <p style="text-align: justify;">Merge Runs Function:</p>
-{{< prism lang="">}}
+{{< prism lang="text" line-numbers="true">}}
   function mergeRuns(array):
       # Merge adjacent runs using merge operation
 {{< /prism >}}
@@ -681,35 +681,79 @@ These prompts are designed to challenge your understanding and implementation sk
 </p>
 
 ### 7.6.3. Self-Exercises
-<p style="text-align: justify;">
-Here are seven comprehensive exercises designed to deepen your understanding of advanced sorting algorithms and their implementation in Rust, based on the insights from the previous prompts:
+<p class="text-justify">
+    Here are seven comprehensive exercises designed to deepen your understanding of advanced sorting algorithms and their implementation in Rust, based on the insights from the previous prompts:
 </p>
 
-<p style="text-align: justify;">
-<strong></strong>Exercise 7.1: Analyze Sorting Algorithms' Complexity<strong></strong>
-</p>
+---
 
-- <p style="text-align: justify;">Write a detailed report comparing the time and space complexities of Merge Sort, Quick Sort, and Heap Sort. Include theoretical explanations, best, average, and worst-case scenarios for each algorithm. Illustrate these complexities with sample Rust code implementations and performance benchmarks using various input sizes.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 7.2: Implement and Optimize Merge Sort in Rust<strong></strong>
-</p>
-
-- <p style="text-align: justify;">Implement Merge Sort in Rust, ensuring you handle Rust’s ownership and borrowing model effectively. Optimize your implementation to minimize memory overhead and improve performance. Test your implementation with diverse datasets and analyze how different sizes and types of data affect performance. Document your optimization strategies and results.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 7.3: Experiment with Quick Sort Pivot Selection<strong></strong>
-</p>
-
-- <p style="text-align: justify;">Implement Quick Sort in Rust with different pivot selection strategies: random pivot, median-of-three, and the first element. Evaluate and compare the performance of these strategies on various datasets. Include Rust code for each pivot selection method and discuss how each strategy influences average-case and worst-case performance.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 7.4: Build and Test Heap Sort<strong></strong>
-</p>
-
-- <p style="text-align: justify;">Develop a Rust implementation of Heap Sort. Focus on building a max-heap and performing efficient heap extraction. Optimize your code to reduce overhead and enhance performance. Test your implementation with a variety of datasets and analyze the efficiency of heap construction and extraction processes.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 7.5: Develop a Hybrid Sorting Algorithm<strong></strong>
-</p>
-
-- <p style="text-align: justify;">Create a Rust implementation of a hybrid sorting algorithm, such as Timsort or Introsort. Explain how your implementation combines different sorting techniques and why this hybrid approach is beneficial. Test your hybrid algorithm on various datasets, and provide a comparative analysis of its performance against pure sorting algorithms.</p>
-<p style="text-align: justify;">
-These exercises are designed to not only reinforce your understanding of advanced sorting algorithms but also to provide hands-on experience with Rust programming. Approach each exercise with a focus on both theoretical insights and practical implementations to gain a comprehensive mastery of the topics covered this Chapter.
-</p>
+<section class="mt-5">
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 7.1: Analyze Sorting Algorithms' Complexity
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a detailed report comparing the time and space complexities of Merge Sort, Quick Sort, and Heap Sort. Include theoretical explanations, best, average, and worst-case scenarios for each algorithm. Illustrate these complexities with sample Rust code implementations and performance benchmarks using various input sizes.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Gain a deeper understanding of the complexities involved in advanced sorting algorithms, and apply this knowledge to practical implementations in Rust.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">A comprehensive report, including Rust code implementations, performance benchmarks, and detailed comparisons of the algorithms' time and space complexities.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 7.2: Implement and Optimize Merge Sort in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement Merge Sort in Rust, ensuring you handle Rust’s ownership and borrowing model effectively. Optimize your implementation to minimize memory overhead and improve performance. Test your implementation with diverse datasets and analyze how different sizes and types of data affect performance. Document your optimization strategies and results.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Master the implementation of Merge Sort in Rust while optimizing it for performance and understanding the impact of different data scenarios.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Optimized Rust code for Merge Sort, performance analysis, and a report on optimization strategies and results.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 7.3: Experiment with Quick Sort Pivot Selection
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement Quick Sort in Rust with different pivot selection strategies: random pivot, median-of-three, and the first element. Evaluate and compare the performance of these strategies on various datasets. Include Rust code for each pivot selection method and discuss how each strategy influences average-case and worst-case performance.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand the impact of pivot selection in Quick Sort and how different strategies affect performance across various scenarios.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust implementations of Quick Sort with different pivot strategies, along with a performance comparison and analysis report.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 7.4: Build and Test Heap Sort
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust implementation of Heap Sort. Focus on building a max-heap and performing efficient heap extraction. Optimize your code to reduce overhead and enhance performance. Test your implementation with a variety of datasets and analyze the efficiency of heap construction and extraction processes.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Learn the implementation and optimization of Heap Sort in Rust, focusing on efficient memory use and performance.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust implementation of Heap Sort, optimization results, and a report analyzing the performance of heap construction and extraction.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 7.5: Develop a Hybrid Sorting Algorithm
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust implementation of a hybrid sorting algorithm, such as Timsort or Introsort. Explain how your implementation combines different sorting techniques and why this hybrid approach is beneficial. Test your hybrid algorithm on various datasets, and provide a comparative analysis of its performance against pure sorting algorithms.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore the benefits and challenges of hybrid sorting algorithms by implementing one in Rust and comparing it to traditional sorting methods.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code for the hybrid sorting algorithm, performance comparisons, and an analysis report on the effectiveness of the hybrid approach.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to not only reinforce your understanding of advanced sorting algorithms but also to provide hands-on experience with Rust programming. Approach each exercise with a focus on both theoretical insights and practical implementations to gain a comprehensive mastery of the topics covered in this Chapter.
+    </p>
+</section>

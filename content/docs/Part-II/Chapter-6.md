@@ -32,7 +32,7 @@ Sorting is the process of arranging elements in a specific order, typically in a
 </p>
 
 <p style="text-align: justify;">
-Sorting is pivotal in the realm of algorithms because it serves as a foundational step in many computational procedures. One of the most significant advantages of sorted data is its role in binary search algorithms. Binary search relies on the assumption that data is sorted, allowing it to locate elements in logarithmic time, O(log n), compared to linear search's $O(n)$. Additionally, many advanced algorithms, such as merge sort and quicksort, employ sorting as a subroutine. These algorithms leverage the ordered nature of data to perform more complex operations efficiently. For instance, merge sort divides the dataset into smaller chunks, sorts these chunks, and then merges them back together, leveraging the sorted property to maintain overall order.
+Sorting is pivotal in the realm of algorithms because it serves as a foundational step in many computational procedures. One of the most significant advantages of sorted data is its role in binary search algorithms. Binary search relies on the assumption that data is sorted, allowing it to locate elements in logarithmic time, $O(\log n)$, compared to linear search's $O(n)$. Additionally, many advanced algorithms, such as merge sort and quicksort, employ sorting as a subroutine. These algorithms leverage the ordered nature of data to perform more complex operations efficiently. For instance, merge sort divides the dataset into smaller chunks, sorts these chunks, and then merges them back together, leveraging the sorted property to maintain overall order.
 </p>
 
 <p style="text-align: justify;">
@@ -219,7 +219,7 @@ In this implementation, the outer <code>for</code> loop iterates over the array 
 </p>
 
 <p style="text-align: justify;">
-The inner <code>for</code> loop performs the actual comparisons and swaps adjacent elements if they are out of order. The range of the inner loop decreases with each pass, as indicated by <code>len - 1 - i</code>, reducing the number of comparisons needed as the largest elements are placed in their final positions.
+The inner <code>for</code> loop performs the actual comparisons and swaps adjacent elements if they are out of order. The range of the inner loop decreases with each pass, as indicated by $len - 1 - i$, reducing the number of comparisons needed as the largest elements are placed in their final positions.
 </p>
 
 <p style="text-align: justify;">
@@ -334,35 +334,79 @@ Engaging with these prompts will not only deepen your understanding of sorting a
 </p>
 
 ### 6.5.3. Self-Exercises
-<p style="text-align: justify;">
-These assignments will help you apply their knowledge of sorting algorithms and Rust programming to both theoretical and practical aspects of the subject.
+<p class="text-justify">
+    These assignments will help you apply your knowledge of sorting algorithms and Rust programming to both theoretical and practical aspects of the subject.
 </p>
 
-<p style="text-align: justify;">
-<strong></strong>Exercise 6.1:<strong></strong> Implement and Optimize Sorting Algorithms in Rust
-</p>
+---
 
-- <p style="text-align: justify;">Implement Insertion Sort, Selection Sort, and Bubble Sort in Rust. After implementing each algorithm, profile its performance using different sizes and types of datasets. Optimize the Bubble Sort implementation to include an early exit condition when no swaps are made during a pass. Document the performance improvements and compare the results with the non-optimized versions.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 6.2:<strong></strong> Real-World Application of Sorting Algorithms
-</p>
-
-- <p style="text-align: justify;">Create a Rust application that simulates a real-world use case of sorting algorithms. For example, implement a system that sorts user records by different attributes (e.g., names, ages) and analyze how the choice of sorting algorithm impacts the application's performance. Provide Rust code that includes data input, sorting logic, and output display, along with an explanation of the results.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 6.3:<strong></strong> Visualizing Sorting Algorithms
-</p>
-
-- <p style="text-align: justify;">Develop a Rust program that visually represents the sorting process of Insertion Sort, Selection Sort, and Bubble Sort. Use simple graphical output (e.g., terminal-based visualization or plotting) to show how elements are moved and compared during the sorting process. Explain the visualizations and discuss how they help in understanding the algorithms' mechanics.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 6.4:<strong></strong> Comparative Analysis of Basic and Advanced Sorting Algorithms
-</p>
-
-- <p style="text-align: justify;">Implement an advanced sorting algorithm (e.g., Quick Sort or Merge Sort) in Rust and compare its performance with Insertion Sort, Selection Sort, and Bubble Sort on various datasets. Write a detailed report discussing the advantages and disadvantages of basic versus advanced algorithms in terms of time complexity, space efficiency, and practical use cases. Include Rust code samples and performance analysis.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 6.5:<strong></strong> Debugging and Error Handling in Rust Sorting Implementations
-</p>
-
-- <p style="text-align: justify;">Review and debug the Rust implementations of Insertion Sort, Selection Sort, and Bubble Sort. Identify potential issues such as index errors, performance bottlenecks, or unsafe operations. Provide solutions to these issues, demonstrating Rust's error handling and safety features. Document the debugging process and the improvements made to ensure robust and efficient code.</p>
-<p style="text-align: justify;">
-By tackling these assignments, you'll not only solidify your theoretical knowledge but also gain hands-on experience in implementing, optimizing, and analyzing sorting algorithms. Embrace the challenge of integrating algorithmic theory with practical coding skills, and you'll find that these exercises will equip you with valuable insights and capabilities for more advanced programming tasks. Dive into your homework with enthusiasm and curiosity, and let your exploration of sorting algorithms pave the way for mastering more complex concepts in computer science and Rust programming.
-</p>
+<section class="mt-5">
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 6.1: Implement and Optimize Sorting Algorithms in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement Insertion Sort, Selection Sort, and Bubble Sort in Rust. After implementing each algorithm, profile its performance using different sizes and types of datasets. Optimize the Bubble Sort implementation to include an early exit condition when no swaps are made during a pass. Document the performance improvements and compare the results with the non-optimized versions.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand and optimize basic sorting algorithms in Rust, and analyze their performance across different scenarios.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust implementations of the three sorting algorithms, performance profiles, and a report comparing optimized and non-optimized versions.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 6.2: Real-World Application of Sorting Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust application that simulates a real-world use case of sorting algorithms. For example, implement a system that sorts user records by different attributes (e.g., names, ages) and analyze how the choice of sorting algorithm impacts the application's performance. Provide Rust code that includes data input, sorting logic, and output display, along with an explanation of the results.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Apply sorting algorithms in a practical Rust application and understand their impact on real-world performance.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">A Rust application that demonstrates sorting algorithms in action, with a report analyzing the results and performance implications.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 6.3: Visualizing Sorting Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust program that visually represents the sorting process of Insertion Sort, Selection Sort, and Bubble Sort. Use simple graphical output (e.g., terminal-based visualization or plotting) to show how elements are moved and compared during the sorting process. Explain the visualizations and discuss how they help in understanding the algorithms' mechanics.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Visualize sorting algorithms to better understand their internal workings and the process of sorting.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code for the visual representation of sorting algorithms, along with explanations of the visualizations and their educational value.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 6.4: Comparative Analysis of Basic and Advanced Sorting Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement an advanced sorting algorithm (e.g., Quick Sort or Merge Sort) in Rust and compare its performance with Insertion Sort, Selection Sort, and Bubble Sort on various datasets. Write a detailed report discussing the advantages and disadvantages of basic versus advanced algorithms in terms of time complexity, space efficiency, and practical use cases. Include Rust code samples and performance analysis.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Compare basic and advanced sorting algorithms to understand their strengths, weaknesses, and appropriate use cases.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust implementations of both basic and advanced sorting algorithms, performance comparisons, and a comprehensive analysis report.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 6.5: Debugging and Error Handling in Rust Sorting Implementations
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Review and debug the Rust implementations of Insertion Sort, Selection Sort, and Bubble Sort. Identify potential issues such as index errors, performance bottlenecks, or unsafe operations. Provide solutions to these issues, demonstrating Rust's error handling and safety features. Document the debugging process and the improvements made to ensure robust and efficient code.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Enhance your debugging skills and deepen your understanding of Rust's safety features by working with sorting algorithm implementations.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Improved Rust implementations of the sorting algorithms, along with a report documenting the debugging process and solutions applied.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        By tackling these assignments, you'll not only solidify your theoretical knowledge but also gain hands-on experience in implementing, optimizing, and analyzing sorting algorithms. Embrace the challenge of integrating algorithmic theory with practical coding skills, and you'll find that these exercises will equip you with valuable insights and capabilities for more advanced programming tasks. Dive into your homework with enthusiasm and curiosity, and let your exploration of sorting algorithms pave the way for mastering more complex concepts in computer science and Rust programming.
+    </p>
+</section>

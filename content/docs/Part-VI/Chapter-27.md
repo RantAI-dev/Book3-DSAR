@@ -67,7 +67,7 @@ Finally, understanding and mitigating stack overflows is critical when working w
 In conclusion, recursion in Rust combines fundamental programming concepts with the language’s unique features. By understanding the definition of recursion, managing stack frames, adhering to Rust’s type system and borrowing rules, and addressing tail recursion limitations, developers can effectively implement and debug recursive functions while ensuring safety and performance in their Rust applications.
 </p>
 
-# 27.2. Divide and Conquer Strategies
+## 27.2. Divide and Conquer Strategies
 <p style="text-align: justify;">
 Divide and conquer is a strategic approach to problem-solving that involves breaking a complex problem into smaller, more manageable sub-problems. The essence of this strategy lies in its ability to simplify and solve each sub-problem independently before combining their results to address the original problem. This technique is especially powerful for algorithms that can be naturally divided into similar, smaller tasks, such as sorting, searching, or matrix operations.
 </p>
@@ -108,7 +108,7 @@ Optimizing memory usage and execution time in recursive divide and conquer strat
 In summary, divide and conquer strategies in Rust leverage the language’s strengths, including its strong type system, ownership model, and concurrency features. By understanding and applying fundamental concepts such as recurrence relations and the Master Theorem, and by implementing practical algorithms and optimizations, developers can effectively utilize divide and conquer techniques to solve complex problems efficiently in Rust.
 </p>
 
-# 27.3. Recursive Data Structures
+## 27.3. Recursive Data Structures
 <p style="text-align: justify;">
 Recursive data structures are fundamental in computer science, characterized by their definition in terms of themselves. Common examples include linked lists, trees, and graphs. These structures are inherently recursive because their definition relies on smaller instances of the same structure. In Rust, defining and managing recursive data structures involves leveraging the language’s type system, memory safety features, and smart pointers to ensure both efficiency and correctness.
 </p>
@@ -279,7 +279,7 @@ This iterator iterates over the nodes of a linked list, providing a reference to
 In summary, recursive data structures in Rust leverage the language’s type system and smart pointers to ensure safety and efficiency. By understanding and implementing these structures with Rust’s features, including <code>Box<T></code>, <code>Rc<T></code>, and custom iterators, developers can build robust and performant applications that handle complex data relationships effectively.
 </p>
 
-# 27.4. Memoization and Dynamic Programming
+## 27.4. Memoization and Dynamic Programming
 <p style="text-align: justify;">
 Memoization and dynamic programming are powerful techniques for optimizing algorithms by avoiding redundant calculations. These methods are especially useful for solving problems where the same sub-problems are encountered multiple times. In Rust, implementing these techniques involves leveraging the language’s robust type system and efficient data structures.
 </p>
@@ -468,7 +468,7 @@ This <code>knapsack</code> function uses a 2D vector to store intermediate resul
 In conclusion, memoization and dynamic programming are powerful techniques for optimizing algorithms by avoiding redundant calculations. In Rust, these techniques are implemented using efficient data structures and adhering to the language's memory safety rules. By understanding and applying these concepts, developers can solve complex problems efficiently and effectively.
 </p>
 
-# 27.5. Advanced Recursive Algorithms
+## 27.5. Advanced Recursive Algorithms
 <p style="text-align: justify;">
 Advanced recursive algorithms often involve complex patterns and scenarios that require a deep understanding of recursion, backtracking, and combinatorial techniques. Rust, with its unique ownership and type system, presents specific challenges and opportunities for implementing these algorithms effectively.
 </p>
@@ -759,12 +759,12 @@ This implementation solves a Sudoku puzzle using recursive backtracking. The <co
 In conclusion, advanced recursive algorithms in Rust involve understanding complex recursion patterns, implementing recursive backtracking, and solving combinatorial problems. Rust’s ownership and lifetime rules present unique challenges that must be addressed, while hybrid and asynchronous recursive algorithms can enhance performance and handle complex tasks efficiently. By applying these techniques, one can tackle a wide range of problems effectively.
 </p>
 
-# 27.6. Conclusion
+## 27.6. Conclusion
 <p style="text-align: justify;">
 To effectively learn and master on "Advanced Recursive Algorithms" in DSAR, you should approach the material with both theoretical understanding and practical implementation in mind. The following prompts and self-exercises cover the fundamental, conceptual, and practical aspects of recursion in Rust, ensuring that learners gain a deep understanding of both the theory and application of recursive algorithms.
 </p>
 
-## 27.6.1. Advices
+### 27.6.1. Advices
 <p style="text-align: justify;">
 Begin by thoroughly grasping the fundamentals of recursion in Rust, especially the concepts of base cases, recursive cases, and how Rust’s ownership and borrowing model impacts recursive function design. Recognize that Rust enforces strict rules around memory safety, which makes understanding how to manage stack frames and avoid stack overflows essential when dealing with deep or complex recursive calls. Focus on writing simple recursive functions and debugging them to solidify your understanding of how Rust manages function calls and memory on the stack.
 </p>
@@ -789,7 +789,7 @@ Finally, in the advanced sections, where complex recursive patterns, backtrackin
 By engaging deeply with both the theory and practical exercises presented in this chapter, and by leveraging Rust’s unique features to address the challenges of recursive algorithms, students will not only master the material but also gain a profound understanding of how to apply these concepts in solving complex computational problems efficiently.
 </p>
 
-## 27.6.2. Further Learning with GenAI
+### 27.6.2. Further Learning with GenAI
 <p style="text-align: justify;">
 By working through the following prompts, you will not only reinforce their grasp of recursion but also become proficient in applying Rust's unique features to solve complex problems efficiently.
 </p>
@@ -813,36 +813,73 @@ By working through the following prompts, you will not only reinforce their gras
 Each prompt is designed to challenge your thinking and push the boundaries of your problem-solving skills, allowing you to see firsthand how Rust’s powerful features can be harnessed to implement efficient and safe recursive solutions. Don’t just read the material—immerse yourself in it by experimenting with the sample code, analyzing the performance of different approaches, and applying what you’ve learned to new challenges. The insights you gain from these exercises will not only solidify your understanding of recursion but also prepare you to tackle complex computational problems with confidence and expertise. Embrace the challenge, and let the journey through recursion in Rust enrich your programming skills and broaden your technical horizons.
 </p>
 
-## 27.6.3. Self-Exercises
-<p style="text-align: justify;">
-Completing these exercises will help solidify your knowledge and prepare you to apply recursive strategies to complex problems effectively.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 27.1:<strong></strong> Tail Recursion Optimization in Rust
-</p>
-
-- <p style="text-align: justify;">Implement a recursive function in Rust to calculate the factorial of a number using a standard recursive approach. Then, refactor the function to use tail recursion and analyze the differences in performance and stack usage between the two implementations. Provide a detailed report explaining the benefits and limitations of tail recursion in Rust, supported by code examples and performance benchmarks.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 27.2:<strong></strong> Parallel Quick Sort Using Divide and Conquer
-</p>
-
-- <p style="text-align: justify;">Write a Rust program that implements the Quick Sort algorithm using the divide and conquer strategy. Next, enhance the program by parallelizing the sorting process using the Rayon library. Compare the execution times of the sequential and parallel versions with different input sizes, and explain how Rust’s concurrency model contributes to the efficiency of the parallelized algorithm.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 27.3:<strong></strong> Building and Traversing a Recursive Data Structure
-</p>
-
-- <p style="text-align: justify;">Design and implement a binary search tree (BST) in Rust, using <code>Box<T></code> for node management. Include methods for inserting elements, searching for values, and traversing the tree in different orders (in-order, pre-order, and post-order). Test your implementation with a variety of input data sets, and document any issues encountered related to ownership, borrowing, or memory management in Rust, along with your solutions.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 27.4:<strong></strong> Optimizing a Recursive Algorithm with Memoization
-</p>
-
-- <p style="text-align: justify;">Implement a recursive solution in Rust for the classic Fibonacci sequence. Then, optimize your solution by introducing memoization to cache previously computed values. Compare the performance of the memoized version against the naive recursive implementation using large input values. Submit your Rust code along with a written analysis that includes performance metrics (e.g., execution time, memory usage) and discusses the trade-offs involved in using memoization.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 27.5:<strong></strong> Recursive Backtracking for Constraint Satisfaction
-</p>
-
-- <p style="text-align: justify;">Implement the N-Queens problem in Rust using a recursive backtracking approach. Your program should find all possible solutions for placing $N$ queens on an $N \times N$ chessboard so that no two queens threaten each other. Evaluate the efficiency of your solution with increasing values of $N$ and provide a detailed explanation of the recursive backtracking technique, including its time complexity and any optimizations you employed in your implementation.</p>
-<p style="text-align: justify;">
-Each assignment is an opportunity to not only practice coding but also to think critically about algorithm design, performance optimization, and the unique aspects of the Rust programming language. Tackle these challenges with curiosity and determination, and use the insights you gain to enhance your skills as a Rust developer.
-</p>
+### 27.6.3. Self-Exercises
+<section class="mt-5">
+    <p class="text-justify">
+        Completing these exercises will help solidify your knowledge and prepare you to apply recursive strategies to complex problems effectively.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 27.1: Tail Recursion Optimization in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a recursive function in Rust to calculate the factorial of a number using a standard recursive approach. Then, refactor the function to use tail recursion and analyze the differences in performance and stack usage between the two implementations.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand the benefits and limitations of tail recursion in Rust by comparing it with a standard recursive approach.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for both implementations along with a detailed report explaining the benefits and limitations of tail recursion, supported by code examples and performance benchmarks.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 27.2: Parallel Quick Sort Using Divide and Conquer
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust program that implements the Quick Sort algorithm using the divide and conquer strategy. Next, enhance the program by parallelizing the sorting process using the Rayon library.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Compare the execution times of the sequential and parallel versions of Quick Sort, and understand how Rust’s concurrency model contributes to the efficiency of the parallelized algorithm.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for both the sequential and parallel versions of Quick Sort, along with a report comparing their execution times with different input sizes.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 27.3: Building and Traversing a Recursive Data Structure
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design and implement a binary search tree (BST) in Rust, using <code>Box<T></code> for node management. Include methods for inserting elements, searching for values, and traversing the tree in different orders (in-order, pre-order, and post-order).</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Learn how to manage recursive data structures in Rust and handle issues related to ownership, borrowing, or memory management.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for the BST implementation, including test cases, and document any issues encountered related to ownership, borrowing, or memory management, along with your solutions.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 27.4: Optimizing a Recursive Algorithm with Memoization
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a recursive solution in Rust for the classic Fibonacci sequence. Then, optimize your solution by introducing memoization to cache previously computed values.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Compare the performance of the memoized version against the naive recursive implementation using large input values, focusing on execution time and memory usage.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for both the naive and memoized Fibonacci implementations, along with a written analysis that includes performance metrics and discusses the trade-offs involved in using memoization.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 27.5: Recursive Backtracking for Constraint Satisfaction
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the N-Queens problem in Rust using a recursive backtracking approach. Your program should find all possible solutions for placing $N$ queens on an $N \times N$ chessboard so that no two queens threaten each other.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Evaluate the efficiency of your solution with increasing values of $N$ and understand the recursive backtracking technique and its time complexity.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the N-Queens problem, along with a detailed explanation of the recursive backtracking technique, including its time complexity and any optimizations you employed.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Each assignment is an opportunity to not only practice coding but also to think critically about algorithm design, performance optimization, and the unique aspects of the Rust programming language. Tackle these challenges with curiosity and determination, and use the insights you gain to enhance your skills as a Rust developer.
+    </p>
+</section>

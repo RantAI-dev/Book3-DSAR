@@ -69,7 +69,7 @@ The algorithm operates by following a systematic approach. Initially, all edges 
 </p>
 
 <p style="text-align: justify;">
-The process continues until the MST contains exactly V−1V-1V−1 edges, where V is the number of vertices in the graph. This is because a tree with V vertices always has V−1V-1V−1 edges. At this point, the algorithm terminates, having found the MST with the minimum total edge weight.
+The process continues until the MST contains exactly $V−1$ edges, where $V$ is the number of vertices in the graph. This is because a tree with V vertices always has $V−1$ edges. At this point, the algorithm terminates, having found the MST with the minimum total edge weight.
 </p>
 
 - <p style="text-align: justify;">Sort Edges: The edges are first sorted based on their weights in non-decreasing order. This sorting ensures that the algorithm considers the least expensive edges first, which is essential for achieving the minimum total weight.</p>
@@ -734,45 +734,76 @@ Embarking on the journey to master Minimum Spanning Trees and their algorithms u
 </p>
 
 ### 24.6.3. Self-Exercises
-<p style="text-align: justify;">
-Here are five advanced homework exercises designed to challenge students and deepen their mastery of Minimum Spanning Trees (MSTs) using Rust. These exercises require a deeper understanding of the algorithms and their applications, along with advanced programming skills.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 24.1:<strong></strong> Advanced MST Algorithm Optimization and Benchmarking
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Develop and optimize advanced versions of Kruskal’s and Prim’s algorithms with custom data structures in Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Details<strong></strong>: Implement Kruskal’s and Prim’s algorithms using advanced data structures such as custom union-find implementations with path compression and union by rank, or Fibonacci heaps for Prim’s algorithm. Benchmark the performance of your optimized algorithms against standard implementations and analyze their efficiency with large-scale graphs.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit Rust code for both optimized algorithms, including custom data structures. Provide a detailed performance report that includes benchmarking results, analysis of improvements, and comparisons with standard implementations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 24.2:<strong></strong> Distributed MST Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement a distributed version of Borůvka’s Algorithm for large graphs.</p>
-- <p style="text-align: justify;"><strong></strong>Details<strong></strong>: Design and implement a distributed version of Borůvka’s Algorithm using Rust’s concurrency features, such as threads or asynchronous programming. Address challenges related to distributed computing, such as synchronization and data consistency. Test your implementation on a large graph and measure its scalability and performance.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit the Rust code for the distributed Borůvka’s Algorithm, including details on the concurrency model used. Provide a report on the implementation, performance metrics, and challenges faced in the distributed environment.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 24.3:<strong></strong> MST Algorithms for Dynamic Graphs
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Extend Kruskal’s and Prim’s algorithms to handle dynamic graphs with edge insertions and deletions.</p>
-- <p style="text-align: justify;"><strong></strong>Details<strong></strong>: Implement modifications to Kruskal’s and Prim’s algorithms that allow them to efficiently update the MST when edges are added or removed from the graph. Ensure that your implementation maintains correctness and efficiency. Compare the performance of your dynamic algorithms with static implementations.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit Rust code for the dynamic versions of both algorithms. Include test cases that demonstrate how your implementation handles various edge updates, and provide a performance analysis of the dynamic algorithms versus static ones.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 24.4:<strong></strong> MST-Based Approximation for TSP
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Implement an approximation algorithm for the Traveling Salesman Problem (TSP) using MSTs.</p>
-- <p style="text-align: justify;"><strong></strong>Details<strong></strong>: Use an MST-based approach to develop an approximation algorithm for TSP, such as the MST-based heuristic which involves constructing an MST and then performing a depth-first traversal to create a tour. Implement this approximation algorithm in Rust and compare its results with other heuristic methods.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit Rust code for the MST-based TSP approximation algorithm. Provide a comparative analysis of the approximation results against other heuristics, including a discussion on the quality of the solutions and the performance of your implementation.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 24.5:<strong></strong> Multi-Objective Optimization with MSTs
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task<strong></strong>: Explore multi-objective optimization problems using MSTs.</p>
-- <p style="text-align: justify;"><strong></strong>Details<strong></strong>: Implement an MST-based algorithm that handles multiple objectives, such as minimizing both edge weight and network diameter. Design a custom multi-objective optimization approach and implement it in Rust. Evaluate how your approach balances multiple objectives and its effectiveness compared to single-objective MST algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Submit Rust code for your multi-objective MST optimization algorithm. Include a detailed report on the objectives considered, the design of your approach, and results demonstrating how your algorithm balances and optimizes multiple objectives. Provide performance evaluations and comparisons with single-objective algorithms.</p>
-<p style="text-align: justify;">
-These advanced exercises are designed to push the boundaries of your understanding of MST algorithms and Rust programming, offering a challenging yet rewarding experience as you tackle complex problems and optimize solutions.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        Here are five advanced homework exercises designed to challenge students and deepen their mastery of Minimum Spanning Trees (MSTs) using Rust. These exercises require a deeper understanding of the algorithms and their applications, along with advanced programming skills.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 24.1: Advanced MST Algorithm Optimization and Benchmarking
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop and optimize advanced versions of Kruskal’s and Prim’s algorithms with custom data structures in Rust. Implement Kruskal’s and Prim’s algorithms using advanced data structures such as custom union-find implementations with path compression and union by rank, or Fibonacci heaps for Prim’s algorithm. Benchmark the performance of your optimized algorithms against standard implementations and analyze their efficiency with large-scale graphs.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Optimize and benchmark advanced versions of Kruskal’s and Prim’s algorithms using custom data structures in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for both optimized algorithms, including custom data structures. Provide a detailed performance report that includes benchmarking results, analysis of improvements, and comparisons with standard implementations.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 24.2: Distributed MST Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a distributed version of Borůvka’s Algorithm for large graphs. Design and implement a distributed version of Borůvka’s Algorithm using Rust’s concurrency features, such as threads or asynchronous programming. Address challenges related to distributed computing, such as synchronization and data consistency. Test your implementation on a large graph and measure its scalability and performance.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement a distributed version of Borůvka’s Algorithm for efficiently processing large graphs in a distributed environment.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the distributed Borůvka’s Algorithm, including details on the concurrency model used. Provide a report on the implementation, performance metrics, and challenges faced in the distributed environment.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 24.3: MST Algorithms for Dynamic Graphs
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Extend Kruskal’s and Prim’s algorithms to handle dynamic graphs with edge insertions and deletions. Implement modifications to Kruskal’s and Prim’s algorithms that allow them to efficiently update the MST when edges are added or removed from the graph. Ensure that your implementation maintains correctness and efficiency. Compare the performance of your dynamic algorithms with static implementations.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Extend Kruskal’s and Prim’s algorithms to handle dynamic graphs, allowing efficient updates with edge insertions and deletions.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for the dynamic versions of both algorithms. Include test cases that demonstrate how your implementation handles various edge updates, and provide a performance analysis of the dynamic algorithms versus static ones.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 24.4: MST-Based Approximation for TSP
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement an approximation algorithm for the Traveling Salesman Problem (TSP) using MSTs. Use an MST-based approach to develop an approximation algorithm for TSP, such as the MST-based heuristic which involves constructing an MST and then performing a depth-first traversal to create a tour. Implement this approximation algorithm in Rust and compare its results with other heuristic methods.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement an MST-based approximation algorithm for solving the Traveling Salesman Problem (TSP) in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for the MST-based TSP approximation algorithm. Provide a comparative analysis of the approximation results against other heuristics, including a discussion on the quality of the solutions and the performance of your implementation.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 24.5: Multi-Objective Optimization with MSTs
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Explore multi-objective optimization problems using MSTs. Implement an MST-based algorithm that handles multiple objectives, such as minimizing both edge weight and network diameter. Design a custom multi-objective optimization approach and implement it in Rust. Evaluate how your approach balances multiple objectives and its effectiveness compared to single-objective MST algorithms.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore and implement MST-based algorithms for multi-objective optimization problems in Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for your multi-objective MST optimization algorithm. Include a detailed report on the objectives considered, the design of your approach, and results demonstrating how your algorithm balances and optimizes multiple objectives. Provide performance evaluations and comparisons with single-objective algorithms.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These advanced exercises are designed to push the boundaries of your understanding of MST algorithms and Rust programming, offering a challenging yet rewarding experience as you tackle complex problems and optimize solutions.
+    </p>
+</section>

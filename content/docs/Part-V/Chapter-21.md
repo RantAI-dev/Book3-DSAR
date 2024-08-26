@@ -14,8 +14,10 @@ katex: true
 # 📘 Chapter 21: Graph Traversal Algorithms
 
 </center>
+{{% alert icon="💡" context="info" %}}
+<strong>"<em>The great thing about graphs is that they give us a way to think about the world in a very powerful and abstract way, which can then be applied to many practical problems..</em>" — Donald E. Knuth</strong>
+{{% /alert %}}
 
-> "The great thing about graphs is that they give us a way to think about the world in a very powerful and abstract way, which can then be applied to many practical problems." – Donald Knuth
 
 {{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
@@ -31,7 +33,7 @@ Graph traversal is a fundamental concept in computer science that involves syste
 
 ### 21.1.1. Graph Representation
 <p style="text-align: justify;">
-An adjacency matrix is one way to represent a graph. It is a 2D array where the entry at row <code>i</code> and column <code>j</code> represents the presence of an edge between vertices <code>i</code> and <code>j</code>. If there is an edge, the value is typically <code>1</code> (or the weight of the edge in a weighted graph); if there isn’t an edge, the value is <code>0</code>. This representation is particularly useful for dense graphs, where the number of edges is close to the maximum possible, i.e., when the graph has many connections between vertices.
+An adjacency matrix is one way to represent a graph. It is a 2D array where the entry at row $i$ and column $j$ represents the presence of an edge between vertices $i$ and $j$. If there is an edge, the value is typically $1$ (or the weight of the edge in a weighted graph); if there isn’t an edge, the value is $0$. This representation is particularly useful for dense graphs, where the number of edges is close to the maximum possible, i.e., when the graph has many connections between vertices.
 </p>
 
 <p style="text-align: justify;">
@@ -59,9 +61,7 @@ fn create_adjacency_matrix(n: usize, edges: &[(usize, usize)]) -> Vec<Vec<u8>> {
     matrix
 }
 {{< /prism >}}
-<p style="text-align: justify;">
-In this Rust implementation, we define a function <code>create_adjacency_matrix</code> that takes the number of vertices <code>n</code> and a list of edges. It initializes a 2D vector (<code>Vec&lt;Vec&lt;u8&gt;&gt;</code>) of size <code>n x n</code>, filled with zeros. Then, for each edge <code>(u, v)</code>, it sets the corresponding entries in the matrix to <code>1</code>. This code assumes the graph is undirected, so it sets both <code>matrix[u][v]</code> and <code>matrix[v][u]</code> to <code>1</code>.
-</p>
+<p style="text-align: justify;"> In this Rust implementation, we define a function <code>create_adjacency_matrix</code> that takes the number of vertices \(n\) and a list of edges. It initializes a 2D vector (<code>Vec&lt;Vec&lt;u8&gt;&gt;</code>) of size \(n \times n\), filled with zeros. Then, for each edge \((u, v)\), it sets the corresponding entries in the matrix to \(1\). This code assumes the graph is undirected, so it sets both $matrix[u][v]$ and $matrix[v][u]$ to \(1\). </p>
 
 <p style="text-align: justify;">
 Another common way to represent a graph is through an adjacency list. In this representation, each vertex has a list of adjacent vertices (i.e., vertices to which it is directly connected by an edge). This approach is particularly efficient for sparse graphs, where the number of edges is much smaller compared to the number of possible edges.
@@ -92,9 +92,7 @@ fn create_adjacency_list(n: usize, edges: &[(usize, usize)]) -> Vec<Vec<usize>> 
     adj_list
 }
 {{< /prism >}}
-<p style="text-align: justify;">
-In this implementation, the function <code>create_adjacency_list</code> initializes a vector of vectors, where each inner vector will store the neighbors of the corresponding vertex. As it iterates over each edge <code>(u, v)</code>, it adds <code>v</code> to the adjacency list of <code>u</code> and, for undirected graphs, also adds <code>u</code> to the adjacency list of <code>v</code>. This representation is space-efficient and well-suited for graphs with fewer edges.
-</p>
+<p style="text-align: justify;"> In this implementation, the function <code>create_adjacency_list</code> initializes a vector of vectors, where each inner vector will store the neighbors of the corresponding vertex. As it iterates over each edge \((u, v)\), it adds \(v\) to the adjacency list of \(u\) and, for undirected graphs, also adds \(u\) to the adjacency list of \(v\). This representation is space-efficient and well-suited for graphs with fewer edges. </p>
 
 ### 21.1.2. Traversal Algorithms
 <p style="text-align: justify;">
@@ -143,7 +141,7 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In the Rust implementation, the <code>dfs</code> function recursively visits each node. It marks the current node as visited and then recursively visits each of its unvisited neighbors. This implementation prints out each visited node, illustrating the traversal order. The main function sets up a simple graph and starts the DFS traversal from node <code>0</code>.
+In the Rust implementation, the <code>dfs</code> function recursively visits each node. It marks the current node as visited and then recursively visits each of its unvisited neighbors. This implementation prints out each visited node, illustrating the traversal order. The main function sets up a simple graph and starts the DFS traversal from node $0$.
 </p>
 
 <p style="text-align: justify;">
@@ -199,7 +197,7 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In this implementation, the <code>bfs</code> function uses a queue (<code>VecDeque</code>) to explore nodes level by level. It starts with the given node, marks it as visited, and enqueues it. The function then processes nodes from the front of the queue, exploring each of their unvisited neighbors and adding them to the queue. The main function initializes the graph and calls <code>bfs</code> starting from node <code>0</code>, printing each visited node in the order they are traversed.
+In this implementation, the <code>bfs</code> function uses a queue (<code>VecDeque</code>) to explore nodes level by level. It starts with the given node, marks it as visited, and enqueues it. The function then processes nodes from the front of the queue, exploring each of their unvisited neighbors and adding them to the queue. The main function initializes the graph and calls <code>bfs</code> starting from node $0$, printing each visited node in the order they are traversed.
 </p>
 
 <p style="text-align: justify;">
@@ -293,7 +291,7 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In this Rust implementation, the <code>dfs_recursive</code> function encapsulates the DFS logic. It uses several auxiliary data structures: <code>visited</code> to track which nodes have been explored, <code>discovery_time</code> to store when a node is first visited, <code>finish_time</code> to record when a node's exploration is complete, and <code>parent</code> to keep track of the DFS tree's structure. The <code>time</code> variable is used to incrementally assign discovery and finish times. This code starts DFS from node <code>0</code> and prints the discovery and finish times for each node, providing a detailed view of the traversal process.
+In this Rust implementation, the <code>dfs_recursive</code> function encapsulates the DFS logic. It uses several auxiliary data structures: <code>visited</code> to track which nodes have been explored, <code>discovery_time</code> to store when a node is first visited, <code>finish_time</code> to record when a node's exploration is complete, and <code>parent</code> to keep track of the DFS tree's structure. The <code>time</code> variable is used to incrementally assign discovery and finish times. This code starts DFS from node $0$ and prints the discovery and finish times for each node, providing a detailed view of the traversal process.
 </p>
 
 ### 21.2.2. Iterative Implementation
@@ -576,7 +574,7 @@ In this version, the <code>bfs_shortest_path</code> function not only performs t
 </p>
 
 <p style="text-align: justify;">
-BFS is an efficient algorithm with a time complexity of $O(V+E)O(V + E)O(V+E)$, where $V$ is the number of vertices and $EEE$ is the number of edges in the graph. The algorithm visits each vertex exactly once and explores each edge exactly once, ensuring that every reachable vertex is processed in linear time relative to the size of the graph.
+BFS is an efficient algorithm with a time complexity of $O(V+E)O(V + E)O(V+E)$, where $V$ is the number of vertices and $E$ is the number of edges in the graph. The algorithm visits each vertex exactly once and explores each edge exactly once, ensuring that every reachable vertex is processed in linear time relative to the size of the graph.
 </p>
 
 <p style="text-align: justify;">
@@ -1161,7 +1159,7 @@ Advanced traversal techniques require a nuanced understanding of their implement
 </p>
 
 <p style="text-align: justify;">
-Uniform Cost Search and A\<strong> Search introduce complexity with weighted edges and heuristics. Rust’s priority queues, available through crates like <code>binary_heap</code>, will be instrumental in efficiently managing node exploration based on cost. Implementing A\</strong> Search also involves integrating heuristics with the cost function, leveraging Rust’s precision with floating-point arithmetic and ensuring that heuristics are well-defined to guide the search effectively.
+Uniform Cost Search and A*  Search introduce complexity with weighted edges and heuristics. Rust’s priority queues, available through crates like <code>binary_heap</code>, will be instrumental in efficiently managing node exploration based on cost. Implementing A* Search also involves integrating heuristics with the cost function, leveraging Rust’s precision with floating-point arithmetic and ensuring that heuristics are well-defined to guide the search effectively.
 </p>
 
 <p style="text-align: justify;">
@@ -1180,7 +1178,7 @@ These prompts will help in grasping core concepts, diving into technical details
 - <p style="text-align: justify;">Illustrate the Bidirectional Search technique. How does it work, and what are its advantages over standard search methods? Provide a Rust example of a Bidirectional Search implementation.</p>
 - <p style="text-align: justify;">Explain Iterative Deepening DFS and its benefits compared to pure DFS and BFS. How can you implement this technique in Rust? Provide a sample code snippet.</p>
 - <p style="text-align: justify;">What is Uniform Cost Search, and how does it handle weighted graphs differently than BFS or DFS? Include a Rust code example to demonstrate its implementation.</p>
-- <p style="text-align: justify;"><strong>Describe the A Search algorithm and its heuristic-driven approach. How does Rust’s type system and standard library support the implementation of A</strong> Search? Provide sample Rust code.\<strong>\</strong></p>
+- <p style="text-align: justify;">Describe the A Search algorithm and its heuristic-driven approach. How does Rust’s type system and standard library support the implementation of A* Search?Provide sample Rust code.
 - <p style="text-align: justify;">How can Rust’s ownership and borrowing features affect the implementation of graph algorithms? Discuss the implications for memory management and data safety with example Rust code.</p>
 - <p style="text-align: justify;">Compare and contrast the performance and complexity of DFS and BFS. How do the time and space complexities of these algorithms impact their suitability for different types of graphs?</p>
 - <p style="text-align: justify;">Discuss practical considerations for implementing graph traversal algorithms in Rust, including handling large graphs and optimizing performance. What Rust tools and libraries are useful for these tasks?</p>
@@ -1192,58 +1190,77 @@ These prompts will help in grasping core concepts, diving into technical details
 By tackling these prompts, you will gain valuable insights into the fundamental principles and advanced techniques of graph traversal, as well as practical skills in implementing these algorithms efficiently in Rust. Dive into these prompts with curiosity and enthusiasm, experiment with the provided sample codes, and apply your knowledge to solve real-world problems. Your efforts will not only deepen your technical expertise but also prepare you for more complex challenges in algorithm design and implementation. Enjoy the process of discovery and coding, and let each prompt guide you towards becoming proficient in graph traversal with Rust.
 </p>
 
-### 21.6.3. Self-Exercises
-<p style="text-align: justify;">
-The following exercises are crafted to deepen your grasp of graph traversal algorithms and enhance your Rust programming skills.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 21.1:<strong></strong> Comprehensive DFS and BFS Implementation and Analysis
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Implement Depth-First Search (DFS) and Breadth-First Search (BFS) for an undirected graph in Rust. For DFS, provide both recursive and iterative implementations. Use the <code>Petgraph</code> crate for graph representations and operations.</p>
-- <p style="text-align: justify;"><strong></strong>Details:<strong></strong></p>
-- <p style="text-align: justify;">Create a graph structure using <code>Graph</code> from <code>Petgraph</code>, and implement DFS using recursion and an explicit stack.</p>
-- <p style="text-align: justify;">Implement BFS using a queue (<code>VecDeque</code> from Rust's standard library) to manage the exploration of nodes.</p>
-- <p style="text-align: justify;">Analysis: Measure and compare the performance of both DFS and BFS on different graph sizes (small, medium, and large) and structures (dense vs. sparse). Discuss the time and space complexity for each algorithm, and evaluate the trade-offs based on graph characteristics.</p>
-- <p style="text-align: justify;">Deliverables: Provide Rust code for both implementations, performance benchmarks, and a detailed analysis report of your findings.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 21.2:<strong></strong> Advanced Traversal Techniques with Practical Applications
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Implement and test advanced graph traversal techniques: Bidirectional Search, Iterative Deepening DFS, and Uniform Cost Search. Use these implementations to solve real-world problems.</p>
-- <p style="text-align: justify;"><strong></strong>Details:<strong></strong></p>
-- <p style="text-align: justify;">Bidirectional Search: Implement this technique to find the shortest path between two nodes in an undirected graph. Compare its efficiency with standard BFS in terms of time and space complexity.</p>
-- <p style="text-align: justify;">Iterative Deepening DFS: Combine depth-first and breadth-first approaches. Implement this algorithm and test it with various graphs to handle different depth limits.</p>
-- <p style="text-align: justify;">Uniform Cost Search: Implement this algorithm to handle weighted graphs. Use priority queues (<code>BinaryHeap</code> from Rust’s standard library or <code>PriorityQueue</code> from crates) to manage the exploration based on edge weights.</p>
-- <p style="text-align: justify;">Deliverables: Provide Rust code for each technique, demonstrate their application on different graphs, and include performance comparisons with traditional DFS and BFS.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 21.3:<strong></strong> Optimizing Graph Algorithms with Concurrency
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Enhance your DFS and BFS implementations to leverage Rust’s concurrency features for optimizing performance on large graphs.</p>
-- <p style="text-align: justify;"><strong></strong>Details:<strong></strong></p>
-- <p style="text-align: justify;">Use the <code>rayon</code> crate or Rust’s native threading model to parallelize graph traversal operations. Implement parallel BFS and DFS and ensure proper synchronization to handle concurrent modifications.</p>
-- <p style="text-align: justify;">Compare the performance of sequential vs. parallel algorithms using large-scale graphs. Measure execution time and resource usage to evaluate the impact of concurrency.</p>
-- <p style="text-align: justify;">Deliverables: Provide Rust code for the parallelized implementations, performance metrics, and a discussion on the benefits and limitations of using concurrency for graph algorithms.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 21.4:<strong></strong> Robust Error Handling and Testing for Graph Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Develop a comprehensive suite of unit tests and error handling mechanisms for your graph traversal algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Details:<strong></strong></p>
-- <p style="text-align: justify;">Create test cases to handle various edge cases such as disconnected graphs, graphs with loops, graphs with duplicate edges, and invalid graph structures.</p>
-- <p style="text-align: justify;">Implement error handling in your Rust code to manage issues like invalid input, graph anomalies, and traversal failures. Use Rust’s <code>Result</code> and <code>Option</code> types to handle errors gracefully.</p>
-- <p style="text-align: justify;">Deliverables<strong></strong>:<strong></strong> Provide Rust code with robust error handling and extensive unit tests. Document the types of errors handled, the testing strategy, and any insights gained from testing.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 21.5:<strong></strong> Develop a Graph Traversal Visualization Tool
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Task:<strong></strong> Build a visualization tool in Rust to graphically represent and animate graph traversal algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Details:<strong></strong></p>
-- <p style="text-align: justify;">Choose a graphical library, such as <code>egui</code> or <code>crossterm</code>, to create a user interface for visualizing graphs and their traversal.</p>
-- <p style="text-align: justify;">Implement visual representations of nodes and edges, and animate the traversal process for DFS and BFS. Allow users to input different graphs and observe how the algorithms explore them in real-time.</p>
-- <p style="text-align: justify;">Deliverables: Provide a functional Rust application with graphical visualizations of DFS and BFS traversals. Include documentation on the design, user instructions, and reflections on how visualization aids in understanding graph traversal.</p>
-<p style="text-align: justify;">
-By engaging with these assignments, you'll not only build robust implementations and optimize performance but also develop practical tools and gain insights into advanced algorithmic techniques. Embrace the challenge and use these exercises as an opportunity to refine your understanding and application of graph traversal concepts in Rust.
-</p>
+## 21.6.3. Self-Exercises
+<section class="mt-5">
+    <p class="text-justify">
+        The following exercises are crafted to deepen your grasp of graph traversal algorithms and enhance your Rust programming skills.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 21.1: Comprehensive DFS and BFS Implementation and Analysis
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and analyze Depth-First Search (DFS) and Breadth-First Search (BFS) for an undirected graph in Rust.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop both recursive and iterative implementations for DFS and use the <code>Petgraph</code> crate for graph representations and operations. Implement BFS using a queue (<code>VecDeque</code>) to manage node exploration. Measure and compare the performance of both DFS and BFS on different graph sizes (small, medium, and large) and structures (dense vs. sparse). Discuss the time and space complexity for each algorithm, and evaluate the trade-offs based on graph characteristics.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for both DFS and BFS implementations, performance benchmarks, and a detailed analysis report of your findings.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 21.2: Advanced Traversal Techniques with Practical Applications
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and test advanced graph traversal techniques to solve real-world problems.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop Bidirectional Search to find the shortest path between two nodes, Iterative Deepening DFS to handle different depth limits, and Uniform Cost Search for weighted graphs. Use priority queues such as <code>BinaryHeap</code> or <code>PriorityQueue</code> for managing edge weights in Uniform Cost Search. Compare their efficiency with standard BFS and DFS in terms of time and space complexity.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for each traversal technique, demonstrate their application on different graphs, and include performance comparisons with traditional DFS and BFS.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 21.3: Optimizing Graph Algorithms with Concurrency
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Enhance DFS and BFS implementations by leveraging Rust’s concurrency features to optimize performance on large graphs.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Utilize the <code>rayon</code> crate or Rust’s native threading model to parallelize graph traversal operations. Implement parallel versions of BFS and DFS, ensuring proper synchronization to handle concurrent modifications. Compare the performance of sequential versus parallel algorithms using large-scale graphs, and measure execution time and resource usage to evaluate the impact of concurrency.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code for the parallelized implementations, performance metrics, and a discussion on the benefits and limitations of using concurrency for graph algorithms.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 21.4: Robust Error Handling and Testing for Graph Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Develop a comprehensive suite of unit tests and error-handling mechanisms for graph traversal algorithms.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create test cases to handle various edge cases such as disconnected graphs, graphs with loops, duplicate edges, and invalid graph structures. Implement error handling to manage issues like invalid input and graph anomalies, using Rust’s <code>Result</code> and <code>Option</code> types for graceful error management.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit Rust code with robust error handling and extensive unit tests. Document the types of errors handled, the testing strategy, and any insights gained from testing.</p>
+        </div>
+    </div>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 21.5: Develop a Graph Traversal Visualization Tool
+        </div>
+        <div class="card-body">
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Build a visualization tool in Rust to graphically represent and animate graph traversal algorithms.</p>
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Choose a graphical library, such as <code>egui</code> or <code>crossterm</code>, to create a user interface for visualizing graphs and their traversal. Implement visual representations of nodes and edges, and animate the traversal process for DFS and BFS. Allow users to input different graphs and observe how the algorithms explore them in real-time.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit a functional Rust application with graphical visualizations of DFS and BFS traversals. Include documentation on the design, user instructions, and reflections on how visualization aids in understanding graph traversal.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        By engaging with these assignments, you'll not only build robust implementations and optimize performance but also develop practical tools and gain insights into advanced algorithmic techniques. Embrace the challenge and use these exercises as an opportunity to refine your understanding and application of graph traversal concepts in Rust.
+    </p>
+</section>

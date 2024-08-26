@@ -550,30 +550,79 @@ By tackling these prompts, you will gain a deep and nuanced understanding of Rus
 </p>
 
 ### 3.5.3. Self-Exercises
-<p style="text-align: justify;">
-Each exercise is crafted to be robust and engaging, encouraging hands-on practice and in-depth learning.
+<p class="text-justify">
+    Each exercise is crafted to be robust and engaging, encouraging hands-on practice and in-depth learning.
 </p>
 
-- <p style="text-align: justify;"><strong></strong>Exercise 3.1:<strong></strong> Ownership and Move Semantics Exploration</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Understand the implications of Rust's ownership model and move semantics on memory management and data integrity.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Implement a recursive algorithm that processes a tree structure, demonstrating ownership transfer and its impact on memory management. Start by defining a simple tree structure with nodes containing ownership of their children. Write functions to traverse and modify the tree while ensuring that ownership rules are followed. Document how move semantics affect the function's behavior and memory usage.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> A Rust code implementation of the recursive tree algorithm, including comments explaining ownership transfers and memory management.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 3.2:<strong></strong> Generics and Traits for Flexible Algorithms</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Explore the use of generics and traits to create flexible and reusable algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Develop a generic sorting algorithm that can handle different types of data, such as integers, floats, and strings. Use Rust's traits to define a custom trait for comparison and implement the sorting algorithm with this trait. Provide test cases for various data types and include explanations of how generics and traits contribute to type safety and code reuse.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> Rust code for a generic sorting algorithm and trait implementation, accompanied by a test suite and a brief report on how generics and traits enhance flexibility.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 3.3:<strong></strong> Iterators and Functional Programming Patterns</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Gain practical experience with Rust's iterators and functional programming constructs.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Create a data processing pipeline using Rust’s iterator methods such as <code>map</code>, <code>filter</code>, and <code>fold</code>. Design a problem, such as calculating statistics (mean, median, etc.) from a list of numbers or transforming a dataset. Implement custom iterators if needed and demonstrate how lazy evaluation benefits performance.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> A Rust program that processes data using iterators, with comments explaining the choice of methods and the performance benefits of lazy evaluation.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 3.4:<strong></strong> Concurrency and Parallel Algorithms Implementation</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Apply Rust's concurrency tools to implement parallel algorithms.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Write a parallel version of a matrix multiplication algorithm using Rust’s concurrency features. Utilize threads, channels, and synchronization primitives like mutexes to handle shared data. Compare the performance of the parallel implementation with a single-threaded version and analyze the trade-offs in terms of synchronization and data consistency.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> Rust code for both single-threaded and parallel matrix multiplication, including performance comparisons and an analysis of synchronization issues.</p>
-- <p style="text-align: justify;"><strong></strong>Exercise 3.5:<strong></strong> Lifetime Annotations and Reference Management</p>
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Understand and apply lifetime annotations to manage references and prevent dangling references.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment:<strong></strong> Develop a Rust program that involves complex data structures with multiple references. Implement functions that accept and return references with various lifetimes. Ensure that your code correctly uses lifetime annotations to prevent dangling references and enforce memory safety. Provide a detailed explanation of the lifetime annotations used and how they contribute to the safety of the program.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverable:<strong></strong> Rust code showcasing lifetime annotations in practice, with detailed comments on how the annotations prevent common memory safety issues.</p>
-<p style="text-align: justify;">
-These exercises are designed to challenge students to apply their knowledge practically, deepening their understanding of Rust's advanced features and their implications for algorithm design and performance.
-</p>
+---
+
+<section class="mt-5">
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 3.1: Ownership and Move Semantics Exploration
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a recursive algorithm that processes a tree structure, demonstrating ownership transfer and its impact on memory management. Start by defining a simple tree structure with nodes containing ownership of their children. Write functions to traverse and modify the tree while ensuring that ownership rules are followed. Document how move semantics affect the function's behavior and memory usage.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand how Rust's ownership model and move semantics impact memory management and algorithm behavior.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">A Rust code implementation of the recursive tree algorithm, including comments explaining ownership transfers and memory management.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 3.2: Generics and Traits for Flexible Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a generic sorting algorithm that can handle different types of data, such as integers, floats, and strings. Use Rust's traits to define a custom trait for comparison and implement the sorting algorithm with this trait. Provide test cases for various data types and include explanations of how generics and traits contribute to type safety and code reuse.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore how Rust's generics and trait system can be used to create flexible and reusable algorithms.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code for a generic sorting algorithm and trait implementation, accompanied by a test suite and a brief report on how generics and traits enhance flexibility.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 3.3: Iterators and Functional Programming Patterns
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a data processing pipeline using Rust’s iterator methods such as <code>map</code>, <code>filter</code>, and <code>fold</code>. Design a problem, such as calculating statistics (mean, median, etc.) from a list of numbers or transforming a dataset. Implement custom iterators if needed and demonstrate how lazy evaluation benefits performance.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Learn how to use Rust's iterators and functional programming patterns to efficiently process data.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">A Rust program that processes data using iterators, with comments explaining the choice of methods and the performance benefits of lazy evaluation.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 3.4: Concurrency and Parallel Algorithms Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a parallel version of a matrix multiplication algorithm using Rust’s concurrency features. Utilize threads, channels, and synchronization primitives like mutexes to handle shared data. Compare the performance of the parallel implementation with a single-threaded version and analyze the trade-offs in terms of synchronization and data consistency.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand how to implement concurrency in Rust and the challenges of parallel algorithm design.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code for both single-threaded and parallel matrix multiplication, including performance comparisons and an analysis of synchronization issues.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 3.5: Lifetime Annotations and Reference Management
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust program that involves complex data structures with multiple references. Implement functions that accept and return references with various lifetimes. Ensure that your code correctly uses lifetime annotations to prevent dangling references and enforce memory safety. Provide a detailed explanation of the lifetime annotations used and how they contribute to the safety of the program.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Gain a deep understanding of Rust's lifetime annotations and how they ensure memory safety in complex programs.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code showcasing lifetime annotations in practice, with detailed comments on how the annotations prevent common memory safety issues.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises are designed to challenge students to apply their knowledge practically, deepening their understanding of Rust's advanced features and their implications for algorithm design and performance.
+    </p>
+</section>

@@ -28,11 +28,11 @@ katex: true
 
 ## 8.1. Introduction to Order Statistics
 <p style="text-align: justify;">
-Order statistics are a fundamental concept in the field of algorithms and data structures, specifically concerned with determining the k-th smallest or largest element within a dataset. Understanding order statistics is crucial, as it plays a pivotal role in various algorithmic applications, including statistical analysis, data partitioning, and database queries.
+Order statistics are a fundamental concept in the field of algorithms and data structures, specifically concerned with determining the $k-th$ smallest or largest element within a dataset. Understanding order statistics is crucial, as it plays a pivotal role in various algorithmic applications, including statistical analysis, data partitioning, and database queries.
 </p>
 
 <p style="text-align: justify;">
-To define order statistics, consider a dataset that has been sorted in non-decreasing order. The k-th smallest element within this sorted dataset is referred to as the k-th order statistic. Common examples include the minimum (which is the 1st order statistic), the median (which is the middle order statistic in a dataset of odd size or the average of the two middle elements in a dataset of even size), and the maximum (which is the largest or n-th order statistic in a dataset of size $n$). Order statistics give us the ability to efficiently locate these specific elements, which is essential for tasks such as data analysis and algorithm design.
+To define order statistics, consider a dataset that has been sorted in non-decreasing order. The $k-th$ smallest element within this sorted dataset is referred to as the k-th order statistic. Common examples include the minimum (which is the 1st order statistic), the median (which is the middle order statistic in a dataset of odd size or the average of the two middle elements in a dataset of even size), and the maximum (which is the largest or $n-th$ order statistic in a dataset of size $n$). Order statistics give us the ability to efficiently locate these specific elements, which is essential for tasks such as data analysis and algorithm design.
 </p>
 
 <p style="text-align: justify;">
@@ -57,7 +57,7 @@ In conclusion, order statistics are a fundamental concept in modern data structu
 
 ## 8.2. Finding the Minimum and Maximum in Rust
 <p style="text-align: justify;">
-When dealing with the problem of finding the minimum and maximum values in a dataset, the most straightforward approach is a naive one. This method involves iterating through the dataset and comparing each element to the current minimum and maximum values. As we traverse the dataset, we update the minimum and maximum values whenever we encounter an element smaller than the current minimum or larger than the current maximum. The time complexity of this approach is O(n), where n is the number of elements in the dataset. This complexity arises because we must examine each element to ensure that no smaller or larger values are missed.
+When dealing with the problem of finding the minimum and maximum values in a dataset, the most straightforward approach is a naive one. This method involves iterating through the dataset and comparing each element to the current minimum and maximum values. As we traverse the dataset, we update the minimum and maximum values whenever we encounter an element smaller than the current minimum or larger than the current maximum. The time complexity of this approach is $O(n)$, where n is the number of elements in the dataset. This complexity arises because we must examine each element to ensure that no smaller or larger values are missed.
 </p>
 
 <p style="text-align: justify;">
@@ -134,7 +134,7 @@ The <code>main</code> function demonstrates the use of <code>find_min_max</code>
 </p>
 
 <p style="text-align: justify;">
-From an efficiency standpoint, this implementation is optimal for its purpose. It only requires a single pass through the dataset, making it an O(n) solution, which is the best possible time complexity for this problem in a comparison-based approach. Additionally, by leveraging Rust’s strong type system, the function ensures that it can handle a variety of numeric types safely and efficiently.
+From an efficiency standpoint, this implementation is optimal for its purpose. It only requires a single pass through the dataset, making it an $O(n)$ solution, which is the best possible time complexity for this problem in a comparison-based approach. Additionally, by leveraging Rust’s strong type system, the function ensures that it can handle a variety of numeric types safely and efficiently.
 </p>
 
 <p style="text-align: justify;">
@@ -194,7 +194,7 @@ function median_of_medians(array, k):
         return pivot
 {{< /prism >}}
 <p style="text-align: justify;">
-In this pseudo code, the function <code>median_of_medians</code> recursively divides the array into smaller groups, computes the median of each group, and then finds the median of these medians. The array is then partitioned into elements smaller and larger than the pivot, and the function is recursively called on the appropriate subarray until the k-th smallest element is found.
+In this pseudo code, the function <code>median_of_medians</code> recursively divides the array into smaller groups, computes the median of each group, and then finds the median of these medians. The array is then partitioned into elements smaller and larger than the pivot, and the function is recursively called on the appropriate subarray until the $k-th$ smallest element is found.
 </p>
 
 <p style="text-align: justify;">
@@ -285,7 +285,7 @@ function quickselect(array, left, right, k):
         return quickselect(array, pivot_index + 1, right, k)
 {{< /prism >}}
 <p style="text-align: justify;">
-In this pseudo code, <code>partition</code> is a function that partitions the array around a pivot element, similar to quicksort. The algorithm recursively narrows down the search to the portion of the array that contains the k-th element until it finds the exact element at position k.
+In this pseudo code, <code>partition</code> is a function that partitions the array around a pivot element, similar to quicksort. The algorithm recursively narrows down the search to the portion of the array that contains the $k-th$ element until it finds the exact element at position k.
 </p>
 
 <p style="text-align: justify;">
@@ -336,7 +336,7 @@ In this Rust implementation, the <code>partition</code> function partitions the 
 
 ### 8.4.2. Heap-based Selection Algorithm
 <p style="text-align: justify;">
-Heap-based selection is another method for finding the k-th smallest or largest element in a dataset. This approach leverages a min-heap (or max-heap for finding the k-th largest element). The main idea is to build a heap of size k from the first k elements of the array. For each subsequent element, the heap is adjusted to ensure that it contains the smallest k elements.
+Heap-based selection is another method for finding the $k-th$ smallest or largest element in a dataset. This approach leverages a min-heap (or max-heap for finding the $k-th$ largest element). The main idea is to build a heap of size $k$ from the first $k$ elements of the array. For each subsequent element, the heap is adjusted to ensure that it contains the smallest $k$ elements.
 </p>
 
 <p style="text-align: justify;">
@@ -401,7 +401,7 @@ fn main() {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-In this Rust implementation, we use Rust’s <code>BinaryHeap</code> to manage the min-heap. The <code>heap_select</code> function builds a heap from the first $k$ elements and then iterates through the remaining elements, adjusting the heap as necessary to ensure it contains the smallest k elements. Finally, the root of the heap (the smallest element in the heap) is returned as the k-th smallest element.
+In this Rust implementation, we use Rust’s <code>BinaryHeap</code> to manage the min-heap. The <code>heap_select</code> function builds a heap from the first $k$ elements and then iterates through the remaining elements, adjusting the heap as necessary to ensure it contains the smallest $k$ elements. Finally, the root of the heap (the smallest element in the heap) is returned as the k-th smallest element.
 </p>
 
 ### 8.4.3. Performance Comparison
@@ -503,7 +503,7 @@ The core operations of an Order Statistic Tree include:
 </p>
 
 - <p style="text-align: justify;"><strong>Rank Query:</strong> Determines the rank of a given element within the tree.</p>
-- <p style="text-align: justify;"><strong>Select Operation:</strong> Finds the k-th smallest element based on the rank information.</p>
+- <p style="text-align: justify;"><strong>Select Operation:</strong> Finds the $k-th$ smallest element based on the rank information.</p>
 <p style="text-align: justify;">
 Here’s a simplified pseudo code for an Order Statistic Tree:
 </p>
@@ -571,7 +571,7 @@ impl<T: Ord> Node<T> {
 }
 {{< /prism >}}
 <p style="text-align: justify;">
-This implementation ensures that rank queries and selection operations can be performed in O(log n) time, making Order Statistic Trees highly efficient for datasets requiring frequent order statistic queries.
+This implementation ensures that rank queries and selection operations can be performed in $O(\log n)$ time, making Order Statistic Trees highly efficient for datasets requiring frequent order statistic queries.
 </p>
 
 <p style="text-align: justify;">
@@ -813,56 +813,95 @@ Diving into these prompts will equip you with a profound understanding of median
 </p>
 
 ### 8.6.3. Self-Exercises
-<p style="text-align: justify;">
-Here are five exercises designed to deepen your understanding of median and order statistics. These assignments will help you apply theoretical concepts and enhance practical skills using Rust.
+<p class="text-justify">
+    Here are five exercises designed to deepen your understanding of median and order statistics. These assignments will help you apply theoretical concepts and enhance practical skills using Rust.
 </p>
 
-<p style="text-align: justify;">
-<strong></strong>Exercise 8.1:<strong></strong> Implement Order Statistics Algorithms in Rust
-</p>
+---
 
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement both the naive approach and the Quickselect algorithm in Rust to find the k-th smallest element in an unsorted array.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Write Rust functions for the naive method (linear scan) and Quickselect.</p>
-- <p style="text-align: justify;">Test your implementations with datasets of varying sizes and distributions.</p>
-- <p style="text-align: justify;">Measure and compare the performance (execution time and accuracy) of both methods.</p>
-- <p style="text-align: justify;">Document your findings and discuss the efficiency of each approach.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 8.2:<strong></strong> Median of Medians Algorithm Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement the Median of Medians algorithm in Rust to find an approximate median for pivot selection.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Develop a Rust function to perform the Median of Medians algorithm, including grouping elements, finding medians of groups, and using the median of medians as a pivot.</p>
-- <p style="text-align: justify;">Apply this implementation to sort datasets and analyze its performance in comparison to Quickselect.</p>
-- <p style="text-align: justify;">Provide a detailed explanation of how this algorithm guarantees worst-case linear time complexity.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 8.3:<strong></strong> Implement and Test Heap-Based Selection Algorithm
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Create a Rust implementation of a heap-based algorithm to find the k-th smallest element in an array.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Write a Rust function that uses a min-heap to identify the k-th smallest element.</p>
-- <p style="text-align: justify;">Test your implementation with various datasets and evaluate its time complexity.</p>
-- <p style="text-align: justify;">Compare the heap-based method’s performance to Quickselect and discuss the scenarios where each method is preferable.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 8.4:<strong></strong> Explore Order Statistic Trees in Rust
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement an Order Statistic Tree (e.g., an augmented binary search tree) in Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Develop a basic Order Statistic Tree with methods for rank queries and selection operations.</p>
-- <p style="text-align: justify;">Test the tree’s functionality with operations such as insertion, deletion, and querying ranks.</p>
-- <p style="text-align: justify;">Analyze the efficiency of your implementation and discuss its advantages over other data structures for order statistics.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 8.5:<strong></strong> Analyze and Handle Edge Cases in Selection Algorithms
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Test and enhance your selection algorithms to handle various edge cases effectively.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Create test cases that include arrays with duplicate elements, empty arrays, and large datasets.</p>
-- <p style="text-align: justify;">Write Rust code to handle these edge cases and ensure robustness in your algorithms.</p>
-- <p style="text-align: justify;">Document any issues encountered and explain how your solutions address these challenges, providing examples of input and output for each case.</p>
-<p style="text-align: justify;">
-These exercises will help you gain practical experience with key concepts in order statistics and enhance your ability to implement and analyze these algorithms using Rust. Completing these tasks will provide a thorough understanding of both theoretical and practical aspects of the topic.
-</p>
+<section class="mt-5">
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 8.1: Implement Order Statistics Algorithms in Rust
+        </div>
+        <div class="card-body ">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement both the naive approach and the Quickselect algorithm in Rust to find the k-th smallest element in an unsorted array.</p>
+            <p class="text-justify">Write Rust functions for the naive method (linear scan) and Quickselect.</p>
+            <p class="text-justify">Test your implementations with datasets of varying sizes and distributions.</p>
+            <p class="text-justify">Measure and compare the performance (execution time and accuracy) of both methods.</p>
+            <p class="text-justify">Document your findings and discuss the efficiency of each approach.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand the differences between naive and optimized algorithms for order statistics and evaluate their performance in different scenarios.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust implementations of both the naive approach and Quickselect, along with a report comparing their performance and efficiency.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 8.2: Median of Medians Algorithm Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement the Median of Medians algorithm in Rust to find an approximate median for pivot selection.</p>
+            <p class="text-justify">Develop a Rust function to perform the Median of Medians algorithm, including grouping elements, finding medians of groups, and using the median of medians as a pivot.</p>
+            <p class="text-justify">Apply this implementation to sort datasets and analyze its performance in comparison to Quickselect.</p>
+            <p class="text-justify">Provide a detailed explanation of how this algorithm guarantees worst-case linear time complexity.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Explore advanced algorithmic techniques for efficient pivot selection in sorting algorithms.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code for the Median of Medians algorithm, performance analysis, and a report explaining its advantages and complexity guarantees.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 8.3: Implement and Test Heap-Based Selection Algorithm
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust implementation of a heap-based algorithm to find the k-th smallest element in an array.</p>
+            <p class="text-justify">Write a Rust function that uses a min-heap to identify the k-th smallest element.</p>
+            <p class="text-justify">Test your implementation with various datasets and evaluate its time complexity.</p>
+            <p class="text-justify">Compare the heap-based method’s performance to Quickselect and discuss the scenarios where each method is preferable.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Learn the implementation of selection algorithms using heaps and compare their efficiency with other selection methods.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code for a heap-based selection algorithm, performance benchmarks, and a comparison report with Quickselect.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 8.4: Explore Order Statistic Trees in Rust
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement an Order Statistic Tree (e.g., an augmented binary search tree) in Rust.</p>
+            <p class="text-justify">Develop a basic Order Statistic Tree with methods for rank queries and selection operations.</p>
+            <p class="text-justify">Test the tree’s functionality with operations such as insertion, deletion, and querying ranks.</p>
+            <p class="text-justify">Analyze the efficiency of your implementation and discuss its advantages over other data structures for order statistics.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Understand and implement advanced data structures for efficient order statistic operations.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code for an Order Statistic Tree, along with a report on its efficiency and practical applications.</p>
+        </div>
+    </div>
+        <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 8.5: Analyze and Handle Edge Cases in Selection Algorithms
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Test and enhance your selection algorithms to handle various edge cases effectively.</p>
+            <p class="text-justify">Create test cases that include arrays with duplicate elements, empty arrays, and large datasets.</p>
+            <p class="text-justify">Write Rust code to handle these edge cases and ensure robustness in your algorithms.</p>
+            <p class="text-justify">Document any issues encountered and explain how your solutions address these challenges, providing examples of input and output for each case.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Ensure that selection algorithms are robust and handle edge cases correctly, improving their reliability in various scenarios.</p>
+            <p><strong>Deliverable:</strong></p>
+            <p class="text-justify">Rust code with enhanced selection algorithms, test cases, and a report on how edge cases are handled.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises will help you gain practical experience with key concepts in order statistics and enhance your ability to implement and analyze these algorithms using Rust. Completing these tasks will provide a thorough understanding of both theoretical and practical aspects of the topic.
+    </p>
+</section>

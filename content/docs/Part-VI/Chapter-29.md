@@ -446,45 +446,72 @@ Each prompt is crafted to challenge you and enhance your comprehension of comple
 </p>
 
 ### 29.6.3. Self-Exercises
-<p style="text-align: justify;">
-These advanced exercises are designed to challenge you by applying complex parallel and distributed computing concepts in Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 29.1:<strong></strong> Optimize a Parallel Computation with Custom Scheduling
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Implement and optimize a parallel computation with a custom task scheduler.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment<strong></strong>: Write a Rust application that performs a complex parallel computation (e.g., large-scale matrix multiplication or graph processing). Implement a custom task scheduler to manage workload distribution and synchronization. Compare the performance of your custom scheduler with the default scheduling provided by Rayon. Provide detailed performance metrics and discuss the impact of scheduling on efficiency.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Rust code with a custom scheduler, performance comparison report, and a discussion of the optimization techniques used.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 29.2:<strong></strong> Advanced Consistency Models Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Implement and compare multiple consistency models in a distributed system.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment<strong></strong>: Develop a distributed key-value store in Rust with support for different consistency models such as eventual consistency, strong consistency, and causal consistency. Implement these models using Rust’s async and network libraries. Conduct experiments to compare the performance and consistency guarantees of each model under various failure conditions and network partitions. Provide code, experimental results, and a detailed analysis of the trade-offs between consistency models.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Rust code for different consistency models, experimental results, and a thorough analysis of performance and consistency trade-offs.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 29.3:<strong></strong> Build a Fault-Tolerant Distributed Algorithm with Consensus
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Implement a fault-tolerant distributed algorithm that includes a consensus protocol.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment<strong></strong>: Design and implement a distributed algorithm in Rust that uses a consensus protocol (e.g., Paxos or Raft) to achieve fault tolerance and coordination among nodes. Simulate node failures and network partitions to test the algorithm's ability to reach consensus and maintain consistency. Provide comprehensive Rust code, simulation results, and an analysis of the protocol's robustness and performance.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Rust code for the consensus algorithm, simulation results, and an analysis of fault tolerance and performance.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 29.4:<strong></strong> Develop a High-Performance Scalable Distributed System
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Create a high-performance, scalable distributed system with advanced features.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment<strong></strong>: Build a scalable distributed system in Rust that includes advanced features such as dynamic load balancing, elastic scaling, and multi-region replication. Implement techniques for optimizing data locality and minimizing latency. Test the system under heavy load and document how it scales across multiple nodes and regions. Provide detailed Rust code, scalability analysis, and an explanation of the performance optimizations applied.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Rust code with advanced scaling features, performance and scalability analysis, and documentation of optimizations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 29.5:<strong></strong> Asynchronous Real-Time Network Service with High Throughput
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective<strong></strong>: Create an asynchronous network service with high throughput and real-time processing capabilities.</p>
-- <p style="text-align: justify;"><strong></strong>Assignment<strong></strong>: Develop a network service in Rust using async/await that is capable of handling high-throughput and real-time processing requirements. Implement advanced features such as connection pooling, request prioritization, and efficient resource management. Test the service under various throughput scenarios and analyze its performance and responsiveness. Provide Rust code, performance metrics, and an explanation of the strategies used to achieve high throughput and real-time processing.</p>
-- <p style="text-align: justify;"><strong></strong>Deliverables<strong></strong>: Rust code for high-throughput network service, performance metrics, and a discussion of strategies for achieving real-time processing.</p>
-<p style="text-align: justify;">
-These exercises will push you to explore optimization techniques, fault tolerance, scalability, and real-time processing, providing a deeper understanding and hands-on experience in building robust and high-performance systems.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These advanced exercises are designed to challenge you by applying complex parallel and distributed computing concepts in Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 29.1: Optimize a Parallel Computation with Custom Scheduling
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write a Rust application that performs a complex parallel computation (e.g., large-scale matrix multiplication or graph processing). Implement a custom task scheduler to manage workload distribution and synchronization. Compare the performance of your custom scheduler with the default scheduling provided by Rayon.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and optimize a parallel computation with a custom task scheduler.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code with a custom scheduler, performance comparison report, and a discussion of the optimization techniques used.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 29.2: Advanced Consistency Models Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a distributed key-value store in Rust with support for different consistency models such as eventual consistency, strong consistency, and causal consistency. Implement these models using Rust’s async and network libraries. Conduct experiments to compare the performance and consistency guarantees of each model under various failure conditions and network partitions.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and compare multiple consistency models in a distributed system.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for different consistency models, experimental results, and a thorough analysis of performance and consistency trade-offs.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 29.3: Build a Fault-Tolerant Distributed Algorithm with Consensus
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Design and implement a distributed algorithm in Rust that uses a consensus protocol (e.g., Paxos or Raft) to achieve fault tolerance and coordination among nodes. Simulate node failures and network partitions to test the algorithm's ability to reach consensus and maintain consistency.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement a fault-tolerant distributed algorithm that includes a consensus protocol.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for the consensus algorithm, simulation results, and an analysis of fault tolerance and performance.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 29.4: Develop a High-Performance Scalable Distributed System
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Build a scalable distributed system in Rust that includes advanced features such as dynamic load balancing, elastic scaling, and multi-region replication. Implement techniques for optimizing data locality and minimizing latency. Test the system under heavy load and document how it scales across multiple nodes and regions.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Create a high-performance, scalable distributed system with advanced features.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code with advanced scaling features, performance and scalability analysis, and documentation of optimizations.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 29.5: Asynchronous Real-Time Network Service with High Throughput
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a network service in Rust using async/await that is capable of handling high-throughput and real-time processing requirements. Implement advanced features such as connection pooling, request prioritization, and efficient resource management. Test the service under various throughput scenarios and analyze its performance and responsiveness.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Create an asynchronous network service with high throughput and real-time processing capabilities.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Rust code for high-throughput network service, performance metrics, and a discussion of strategies for achieving real-time processing.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        These exercises will push you to explore optimization techniques, fault tolerance, scalability, and real-time processing, providing a deeper understanding and hands-on experience in building robust and high-performance systems.
+    </p>
+</section>

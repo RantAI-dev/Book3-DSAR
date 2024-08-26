@@ -850,60 +850,72 @@ Engaging with these prompts will sharpen your skills in mathematical optimizatio
 </p>
 
 ### 32.5.3. Self-Exercises
-<p style="text-align: justify;">
-These exercises are designed to deepen your understanding of linear programming by combining theoretical knowledge with practical implementation in Rust.
-</p>
-
-<p style="text-align: justify;">
-<strong></strong>Exercise 32.1:<strong></strong> Advanced Simplex Algorithm Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement the Simplex Algorithm in Rust with a focus on advanced pivoting rules, such as Bland’s Rule and Dantzig’s Rule.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Develop a Rust application that solves a linear programming problem using the Simplex Algorithm.</p>
-- <p style="text-align: justify;">Incorporate both Bland’s Rule and Dantzig’s Rule in the pivot selection process.</p>
-- <p style="text-align: justify;">Test your implementation on various LP problems, including those with degenerate cases.</p>
-- <p style="text-align: justify;">Evaluate the performance and convergence of your implementation compared to standard Simplex implementations.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 32.2:<strong></strong> Dual Simplex Algorithm Application
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Implement and analyze the Dual Simplex Algorithm for LP problems with primal infeasibility.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Write Rust code to solve an LP problem where primal constraints are dynamically modified, making primal infeasibility a factor.</p>
-- <p style="text-align: justify;">Include functionalities to handle changes in primal constraints and maintain dual feasibility.</p>
-- <p style="text-align: justify;">Analyze the performance of the Dual Simplex Algorithm in terms of computational efficiency and convergence.</p>
-- <p style="text-align: justify;">Provide a detailed report on how the algorithm addresses primal infeasibility and its practical applications.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 32.3:<strong></strong> Interior-Point Methods Implementation
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Develop a Rust implementation of an Interior-Point Method, such as Karmarkar’s Algorithm or the Primal-Dual Path-Following Method.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Create a Rust program to solve linear programming problems using the chosen Interior-Point Method.</p>
-- <p style="text-align: justify;">Compare the performance of the Interior-Point Method against the Simplex Algorithm in terms of speed and accuracy for large-scale LP problems.</p>
-- <p style="text-align: justify;">Document the steps involved in the algorithm, including initialization, iteration, and convergence criteria.</p>
-- <p style="text-align: justify;">Analyze how the method handles high-dimensional problems and its efficiency.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 32.4:<strong></strong> Network Flow Optimization Problem
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Apply linear programming to solve a network flow optimization problem using Rust.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Develop a Rust application to model and solve a network flow problem, such as the Maximum Flow or Minimum Cost Flow problem.</p>
-- <p style="text-align: justify;">Implement constraints and objective functions to optimize flow through a network with given capacities and costs.</p>
-- <p style="text-align: justify;">Test your solution with various network sizes and configurations to assess its robustness and scalability.</p>
-- <p style="text-align: justify;">Provide a comprehensive analysis of how linear programming techniques can be applied to network flow problems, including potential challenges and solutions.</p>
-<p style="text-align: justify;">
-<strong></strong>Exercise 32.5:<strong></strong> Financial Portfolio Optimization
-</p>
-
-- <p style="text-align: justify;"><strong></strong>Objective:<strong></strong> Utilize linear programming to optimize a financial portfolio, incorporating constraints for risk management and return maximization.</p>
-- <p style="text-align: justify;"><strong></strong>Tasks:<strong></strong></p>
-- <p style="text-align: justify;">Implement a Rust program to solve a portfolio optimization problem, where the objective is to maximize returns while managing risk through constraints.</p>
-- <p style="text-align: justify;">Include functionalities to handle constraints such as budget limits, risk levels, and asset allocation.</p>
-- <p style="text-align: justify;">Test the model with different portfolio scenarios and analyze the results.</p>
-- <p style="text-align: justify;">Write a detailed report discussing the effectiveness of linear programming in financial portfolio management and any insights gained from the exercise.</p>
-<p style="text-align: justify;">
-Completing these assignments will enhance your proficiency in solving complex LP problems and applying advanced algorithms effectively.
-</p>
+<section class="mt-5">
+    <p class="text-justify">
+        These exercises are designed to deepen your understanding of linear programming by combining theoretical knowledge with practical implementation in Rust.
+    </p>
+    <div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 32.1: Advanced Simplex Algorithm Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust application that solves a linear programming problem using the Simplex Algorithm. Incorporate both Bland’s Rule and Dantzig’s Rule in the pivot selection process. Test your implementation on various LP problems, including those with degenerate cases. Evaluate the performance and convergence of your implementation compared to standard Simplex implementations.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement the Simplex Algorithm in Rust with a focus on advanced pivoting rules, such as Bland’s Rule and Dantzig’s Rule.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code and a performance analysis report comparing your implementation with standard Simplex implementations.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 32.2: Dual Simplex Algorithm Application
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Write Rust code to solve an LP problem where primal constraints are dynamically modified, making primal infeasibility a factor. Include functionalities to handle changes in primal constraints and maintain dual feasibility. Analyze the performance of the Dual Simplex Algorithm in terms of computational efficiency and convergence. Provide a detailed report on how the algorithm addresses primal infeasibility and its practical applications.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Implement and analyze the Dual Simplex Algorithm for LP problems with primal infeasibility.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the Dual Simplex Algorithm, test cases, and a detailed analysis report on its performance and applications.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 32.3: Interior-Point Methods Implementation
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Create a Rust program to solve linear programming problems using the chosen Interior-Point Method. Compare the performance of the Interior-Point Method against the Simplex Algorithm in terms of speed and accuracy for large-scale LP problems. Document the steps involved in the algorithm, including initialization, iteration, and convergence criteria. Analyze how the method handles high-dimensional problems and its efficiency.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Develop a Rust implementation of an Interior-Point Method, such as Karmarkar’s Algorithm or the Primal-Dual Path-Following Method.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the Interior-Point Method, performance comparison results, and a report documenting the implementation and analysis.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 32.4: Network Flow Optimization Problem
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Develop a Rust application to model and solve a network flow problem, such as the Maximum Flow or Minimum Cost Flow problem. Implement constraints and objective functions to optimize flow through a network with given capacities and costs. Test your solution with various network sizes and configurations to assess its robustness and scalability. Provide a comprehensive analysis of how linear programming techniques can be applied to network flow problems, including potential challenges and solutions.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Apply linear programming to solve a network flow optimization problem using Rust.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the network flow optimization problem, test results, and a detailed report analyzing the solution.</p>
+        </div>
+    </div><div class="card mb-4" style="background-color: #333; color: #ddd;">
+        <div class="card-header bg-primary text-white">
+            Exercise 32.5: Financial Portfolio Optimization
+        </div>
+        <div class="card-body">
+            <p><strong>Task:</strong></p>
+            <p class="text-justify">Implement a Rust program to solve a portfolio optimization problem, where the objective is to maximize returns while managing risk through constraints. Include functionalities to handle constraints such as budget limits, risk levels, and asset allocation. Test the model with different portfolio scenarios and analyze the results. Write a detailed report discussing the effectiveness of linear programming in financial portfolio management and any insights gained from the exercise.</p>
+            <p><strong>Objective:</strong></p>
+            <p class="text-justify">Utilize linear programming to optimize a financial portfolio, incorporating constraints for risk management and return maximization.</p>
+            <p><strong>Deliverables:</strong></p>
+            <p class="text-justify">Submit the Rust code for the portfolio optimization, test results, and a report discussing the findings and effectiveness of the model.</p>
+        </div>
+    </div>
+    <p class="text-justify">
+        Completing these assignments will enhance your proficiency in solving complex LP problems and applying advanced algorithms effectively.
+    </p>
+</section>
