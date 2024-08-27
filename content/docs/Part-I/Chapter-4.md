@@ -254,7 +254,7 @@ Here are prompts designed to delve into the technical depth of this Chapter, foc
 - <p style="text-align: justify;">Explain Big-O, Big-Ω, and Big-Θ notations, and provide a detailed Rust implementation of an algorithm that demonstrates each notation in practice. Analyze the code to illustrate how these notations apply.</p>
 - <p style="text-align: justify;">Discuss the significance of asymptotic analysis in evaluating algorithm efficiency. Implement a Rust function for a sorting algorithm, and analyze how its performance scales with input size using asymptotic analysis.</p>
 - <p style="text-align: justify;">Provide a Rust implementation of Binary Search, and explain the differences between its worst-case, best-case, and average-case complexities. How do these complexities influence the algorithm's efficiency?</p>
-- <p style="text-align: justify;">Explore the common time complexities (O(1), O(log n), O(n), O(n log n), O(n^2)) by implementing corresponding algorithms in Rust. Explain how the time complexity of each algorithm impacts its performance as input size grows.</p>
+- <p style="text-align: justify;">Explore the common time complexities $(O(1), O(log n), O(n), O(n log n), O(n^2))$ by implementing corresponding algorithms in Rust. Explain how the time complexity of each algorithm impacts its performance as input size grows.</p>
 - <p style="text-align: justify;">Discuss the trade-offs between time complexity and space complexity in algorithm design. Implement a Rust program that prioritizes space efficiency, and analyze how it compares to a time-efficient alternative.</p>
 - <p style="text-align: justify;">Implement the Merge Sort algorithm in Rust using the divide and conquer approach. Explain how the problem is recursively broken down, and analyze the overall time complexity of the algorithm.</p>
 - <p style="text-align: justify;">Demonstrate dynamic programming in Rust by implementing the Knapsack problem. Explain how dynamic programming optimizes the solution by storing and reusing subproblem results, and analyze the time complexity.</p>
@@ -284,7 +284,7 @@ Engaging with these prompts will immerse you in the intricacies of algorithm des
         </div>
         <div class="card-body">
             <p><strong>Task:</strong></p>
-            <p class="text-justify">Write a Rust program that implements three different algorithms: a linear search (<em>O(n)</em>), binary search (<em>O(log n)</em>), and bubble sort (<em>O(n^2)</em>). Measure and compare their time complexities with varying input sizes using Rust’s benchmarking tools.</p>
+            <p class="text-justify">Write a Rust program that implements three different algorithms: a linear search ($O(n)$), binary search ($O(log n)$), and bubble sort ($O(n^2)$). Measure and compare their time complexities with varying input sizes using Rust’s benchmarking tools.</p>
             <p><strong>Objective:</strong></p>
             <p class="text-justify">Understand how different algorithms behave in terms of time complexity and how to analyze their efficiency through benchmarking.</p>
             <p><strong>Deliverables:</strong></p>
@@ -299,9 +299,9 @@ Engaging with these prompts will immerse you in the intricacies of algorithm des
             <p><strong>Task:</strong></p>
             <p class="text-justify">Implement the Merge Sort algorithm in Rust using the divide and conquer strategy. Visualize the process by printing the sub-arrays at each level of recursion.</p>
             <p><strong>Objective:</strong></p>
-            <p class="text-justify">Gain an understanding of how the divide and conquer strategy optimizes the sorting process and why Merge Sort operates with <em>O(n \log n)</em> complexity.</p>
+            <p class="text-justify">Gain an understanding of how the divide and conquer strategy optimizes the sorting process and why Merge Sort operates with $O(n \log n)$ complexity.</p>
             <p><strong>Deliverables:</strong></p>
-            <p class="text-justify">Submit your code along with an explanation of how the algorithm’s <em>O(n \log n)</em> complexity is derived.</p>
+            <p class="text-justify">Submit your code along with an explanation of how the algorithm’s $O(n \log n)$ complexity is derived.</p>
         </div>
     </div>
         <div class="card mb-4" style="background-color: #333; color: #ddd;">
