@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 8: Median and Order Statistics
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The goal of Computer Science is to build something that will last at least until we can build something better.</em>" — Alan Turing</strong>

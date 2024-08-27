@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 13: Heaps and Priority Queues
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Complexity is your friend; it ensures that your system can handle the complexity of the real world.</em>" — Martin Fowler</strong>

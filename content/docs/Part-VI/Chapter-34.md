@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 34: String Matching Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Algorithmic thinking is a fundamental part of our toolbox, helping us solve problems with precision and elegance.</em>" — Donald E. Knuth</strong>

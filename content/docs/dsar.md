@@ -8,12 +8,6 @@ lastmod: "2024-08-24T21:49:21+07:00"
 draft: false
 toc: true
 ---
-<center>
-
-## 📘 Welcome to "Modern Data Structures and Algorithms in Rust"
-
-</center>
-
 {{< figure src="/images/cover.png" width="500" height="300" class="text-center" >}}
 
 <center>

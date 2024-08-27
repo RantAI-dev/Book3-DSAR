@@ -8,11 +8,6 @@ lastmod: "2024-08-24T23:41:03+07:00"
 draft: false
 toc: true
 ---
-<center>
-
-# 📘 Part V: Graph Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
  "Success in creating AI would be the biggest event in human history. Unfortunately, it might also be the last, unless we learn how to avoid the risks." – Stephen Hawking

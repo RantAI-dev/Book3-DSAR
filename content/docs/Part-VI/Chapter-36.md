@@ -10,11 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 36: Probabilistic and Randomized Algorithms
-
-</center>
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>To me, a good algorithm is a beautiful thing, but its beauty is often in its simplicity. The most complex algorithms are those that use randomization effectively to simplify otherwise complex problems.</em>" — Donald E. Knuth</strong>
 {{% /alert %}}

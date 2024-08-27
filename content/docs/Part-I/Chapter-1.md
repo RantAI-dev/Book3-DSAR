@@ -9,12 +9,6 @@ draft: false
 toc: true
 ---
 
-<center>
-
-# 📘 Chapter 1: The Role of Algorithms in Modern Software
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>An algorithm must be seen to be believed.</em>" — Donald Knuth</strong>
 {{% /alert %}}

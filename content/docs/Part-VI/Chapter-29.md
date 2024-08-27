@@ -9,11 +9,7 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
 
-# 📘 Chapter 29: Parallel and Distributed Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Parallel programming is not about making programs faster, but about creating solutions that can solve larger problems or provide more accurate results than serial algorithms alone.</em>" — Jeff Dean</strong>

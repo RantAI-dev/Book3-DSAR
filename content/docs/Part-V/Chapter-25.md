@@ -10,11 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 25: Network Flow Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Algorithms are the intellectual property of computer science; they are the critical tools for understanding how to solve complex problems effectively.</em>" — Donald Knuth</strong>

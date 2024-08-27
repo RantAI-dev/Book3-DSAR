@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 32: Linear Programming
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Optimization is a powerful tool for solving many types of problems in both science and engineering, and linear programming provides one of the most fundamental and versatile approaches to this challenge.</em>" — John Nash</strong>

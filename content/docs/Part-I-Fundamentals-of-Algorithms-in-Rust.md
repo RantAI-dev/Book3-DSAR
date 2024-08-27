@@ -8,11 +8,6 @@ lastmod: "2024-08-24T23:37:35+07:00"
 draft: false
 toc: true
 ---
-<center>
-
-# 📘 Part I: Introduction
-
-</center>
 
 {{% alert icon="💡" context="info" %}}<strong>"The Nobel Prize is the highest accolade that the world can offer a man, but no man is ever worthy of it." – Albert Einstein</strong>{{% /alert %}}
 

@@ -10,12 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 17: Complexity Analysis
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The best way to predict the future is to invent it.</em>" — Alan Kay</strong>
 {{% /alert %}}

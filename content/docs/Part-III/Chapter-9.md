@@ -10,12 +10,6 @@ toc: true
 katex: true
 ---
 
-center>
-
-# 📘 Chapter 9: Fundamental Data Structures in Rust
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>A program is only as good as its data structures.</em>" — Fred Brooks</strong>
 {{% /alert %}}

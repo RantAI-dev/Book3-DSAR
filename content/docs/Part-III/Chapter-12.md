@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 12: Trees and Balanced Trees
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Algorithms are the tools we use to solve problems and create software. The real challenge is not in the algorithms themselves, but in applying them effectively.</em>" — Donald D. Knuth</strong>

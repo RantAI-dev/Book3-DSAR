@@ -10,11 +10,7 @@ toc: true
 katex: true
 ---
 
-<center>
 
-# 📘 Chapter 28: Vector, Matrix, and Tensor Operations
-
-</center>
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The goal of Computer Science is to build things that work well, and that means dealing with data and algorithms efficiently.</em>" — Donald Knuth</strong>
 {{% /alert %}}

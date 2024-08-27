@@ -10,11 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 23: All-Pairs Shortest Paths
-
-</center>
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The greatest value of a picture is when it forces us to notice what we never expected to see.</em>" — John Tukey</strong>
 {{% /alert %}}

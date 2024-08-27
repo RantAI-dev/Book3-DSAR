@@ -8,11 +8,6 @@ lastmod: "2024-08-24T23:41:01+07:00"
 draft: false
 toc: true
 ---
-<center>
-
-# 📘 Part II: Sorting and Order Statistics
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The whole of science is nothing more than a refinement of everyday thinking.</em>" — Albert Einstein</strong>

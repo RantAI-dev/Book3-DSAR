@@ -10,12 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 22: Single-Source Shortest Paths
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Algorithmic thinking and reasoning will make you more effective in solving complex problems, but it’s important to use the right tool for the job.</em>" — Jeff Dean</strong>
 {{% /alert %}}

@@ -8,12 +8,6 @@ lastmod: "2024-08-24T23:41:02+07:00"
 draft: false
 toc: true
 ---
-<center>
-
-# 📘 Part IV: Design and Analysis
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Intelligence is the ability to adapt to change.</em>" — Stephen Hawking</strong>
 {{% /alert %}}

@@ -10,11 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 7: Advanced Sorting Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Sorting is a problem that can be solved in many ways, but the most interesting thing about sorting is not the algorithms but how they apply in practice and the trade-offs involved.</em>" — Donald E. Knuth</strong>

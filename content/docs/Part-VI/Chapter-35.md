@@ -10,11 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 35: Approximate Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Algorithms are the soul of computing, and the pursuit of approximate algorithms is the art of making the impossible possible, where exactness gives way to practicality.</em>" — David P. Williamson</strong>

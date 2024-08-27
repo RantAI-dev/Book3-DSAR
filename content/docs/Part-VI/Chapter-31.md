@@ -9,11 +9,7 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
 
-# 📘 Chapter 31: Blockchain Data Structures and Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.</em>" — Marc Kenigsberg</strong>

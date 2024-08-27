@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 27: Advanced Recursive Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>A recursive function calls itself, like a mirror facing a mirror, reflecting a problem into simpler and simpler versions of itself until it vanishes.</em>" — Brian Kernighan</strong>

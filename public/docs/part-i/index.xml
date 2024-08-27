@@ -13,35 +13,35 @@
       <link>http://localhost:1313/docs/part-i/chapter-1/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:35 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-1/</guid>
-      <description>📘 Chapter 1: The Role of Algorithms in Modern Software link&#xD;💡&#xA;&amp;quot;An algorithm must be seen to be believed.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 1 of DSAR delves into the foundational and evolving role of algorithms in contemporary software development, offering a comprehensive exploration of their historical evolution, technical significance, and ethical implications. The chapter begins by tracing the origins of algorithms from ancient mathematical techniques to the sophisticated computational models of today, highlighting key advancements such as asymptotic analysis and the emergence of specialized algorithmic paradigms.</description>
+      <description>💡&#xA;&amp;quot;An algorithm must be seen to be believed.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 1 of DSAR delves into the foundational and evolving role of algorithms in contemporary software development, offering a comprehensive exploration of their historical evolution, technical significance, and ethical implications. The chapter begins by tracing the origins of algorithms from ancient mathematical techniques to the sophisticated computational models of today, highlighting key advancements such as asymptotic analysis and the emergence of specialized algorithmic paradigms.</description>
     </item>
     <item>
       <title>Chapter 2</title>
       <link>http://localhost:1313/docs/part-i/chapter-2/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:35 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-2/</guid>
-      <description>📘 Chapter 2: Introduction to Data Structures and Algorithms in Rust link&#xD;💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 2 of DSAR provides a comprehensive exploration of why Rust is uniquely suited for implementing data structures and algorithms, focusing on its strengths in memory safety, performance, and concurrency. It begins by detailing Rust’s distinctive features, such as its ownership model that ensures memory safety without a garbage collector, its performance characteristics that rival low-level languages, and its advanced concurrency model that prevents data races.</description>
+      <description>💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 2 of DSAR provides a comprehensive exploration of why Rust is uniquely suited for implementing data structures and algorithms, focusing on its strengths in memory safety, performance, and concurrency. It begins by detailing Rust’s distinctive features, such as its ownership model that ensures memory safety without a garbage collector, its performance characteristics that rival low-level languages, and its advanced concurrency model that prevents data races.</description>
     </item>
     <item>
       <title>Chapter 3</title>
       <link>http://localhost:1313/docs/part-i/chapter-3/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:36 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-3/</guid>
-      <description>📘 Chapter 3: Fundamentals of Rust Programming for Algorithms link&#xD;💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 3 of the DSAR book delves into the foundational aspects of Rust programming essential for crafting efficient algorithms. It begins with an exploration of Rust&#39;s ownership model, emphasizing how ownership, borrowing, and lifetimes enforce memory safety and prevent data races, which is crucial for designing robust algorithms.</description>
+      <description>💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 3 of the DSAR book delves into the foundational aspects of Rust programming essential for crafting efficient algorithms. It begins with an exploration of Rust&#39;s ownership model, emphasizing how ownership, borrowing, and lifetimes enforce memory safety and prevent data races, which is crucial for designing robust algorithms. The chapter then examines Rust’s type system, highlighting static typing, generics, and type inference, and their roles in ensuring type safety and performance in algorithm development.</description>
     </item>
     <item>
       <title>Chapter 4</title>
       <link>http://localhost:1313/docs/part-i/chapter-4/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:47 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-4/</guid>
-      <description>📘 Chapter 4: Design of Algorithms and Running Times link&#xD;💡&#xA;&amp;quot;The art of programming is the skill of controlling complexity.&amp;quot; — Marijn Haverbeke&#xA;📘&#xA;Chapter 4 of DSAR delves into the intricate relationship between algorithm design and performance, providing a comprehensive exploration of how algorithmic complexity, design techniques, and data structures shape the efficiency of computational processes. The chapter begins by unpacking the foundational concepts of algorithmic complexity, including Big-O notation and various time and space complexities, to establish a rigorous framework for evaluating the efficiency of algorithms.</description>
+      <description>💡&#xA;&amp;quot;The art of programming is the skill of controlling complexity.&amp;quot; — Marijn Haverbeke&#xA;📘&#xA;Chapter 4 of DSAR delves into the intricate relationship between algorithm design and performance, providing a comprehensive exploration of how algorithmic complexity, design techniques, and data structures shape the efficiency of computational processes. The chapter begins by unpacking the foundational concepts of algorithmic complexity, including Big-O notation and various time and space complexities, to establish a rigorous framework for evaluating the efficiency of algorithms.</description>
     </item>
     <item>
       <title>Chapter 5</title>
       <link>http://localhost:1313/docs/part-i/chapter-5/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-5/</guid>
-      <description>📘 Chapter 5: Divide and Conquer link&#xD;💡&#xA;&amp;quot;A recursive method is often the most natural way to solve a problem that can be broken down into smaller problems of the same type.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 5 of DSAR delves deeply into the divide and conquer paradigm, a powerful algorithmic strategy that breaks complex problems into simpler subproblems, solves each recursively, and then combines the results. The chapter begins by laying a strong theoretical foundation, exploring how divide and conquer optimizes algorithmic efficiency through recurrence relations and compares it with other paradigms like dynamic programming and greedy algorithms.</description>
+      <description>💡&#xA;&amp;quot;A recursive method is often the most natural way to solve a problem that can be broken down into smaller problems of the same type.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 5 of DSAR delves deeply into the divide and conquer paradigm, a powerful algorithmic strategy that breaks complex problems into simpler subproblems, solves each recursively, and then combines the results. The chapter begins by laying a strong theoretical foundation, exploring how divide and conquer optimizes algorithmic efficiency through recurrence relations and compares it with other paradigms like dynamic programming and greedy algorithms.</description>
     </item>
   </channel>
 </rss>

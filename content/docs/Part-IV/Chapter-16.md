@@ -10,11 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 16: Algorithm Design Techniques
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The best algorithm designers are not the ones who know the most algorithms, but the ones who understand the underlying principles that govern them.</em>" — Donald Knuth</strong>

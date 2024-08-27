@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 21: Graph Traversal Algorithms
-
-</center>
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The great thing about graphs is that they give us a way to think about the world in a very powerful and abstract way, which can then be applied to many practical problems..</em>" — Donald E. Knuth</strong>
 {{% /alert %}}

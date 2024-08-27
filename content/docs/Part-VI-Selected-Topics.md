@@ -8,11 +8,6 @@ lastmod: "2024-08-25T20:56:06+07:00"
 draft: false
 toc: true
 ---
-<center>
-
-# 📘 Part VI: Selected Topics
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 "<em>Algorithms are the foundation of our digital world. They provide the means to transform ideas into action, shaping the future in ways we are only beginning to understand.</em>" — John Nash

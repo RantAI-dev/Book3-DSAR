@@ -13,28 +13,28 @@
       <link>http://localhost:1313/docs/part-iv/chapter-16/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:24 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv/chapter-16/</guid>
-      <description>📘 Chapter 16: Algorithm Design Techniques link&#xD;💡&#xA;&amp;quot;The best algorithm designers are not the ones who know the most algorithms, but the ones who understand the underlying principles that govern them.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 16 of the DSAR book delves into the core techniques of algorithm design, providing a rigorous and comprehensive exploration of the methodologies that underpin efficient problem-solving in computer science. The chapter begins by establishing a solid foundation in algorithm design, emphasizing the importance of selecting appropriate strategies tailored to the nature of the problem, balancing time and space complexity.</description>
+      <description>💡&#xA;&amp;quot;The best algorithm designers are not the ones who know the most algorithms, but the ones who understand the underlying principles that govern them.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 16 of the DSAR book delves into the core techniques of algorithm design, providing a rigorous and comprehensive exploration of the methodologies that underpin efficient problem-solving in computer science. The chapter begins by establishing a solid foundation in algorithm design, emphasizing the importance of selecting appropriate strategies tailored to the nature of the problem, balancing time and space complexity.</description>
     </item>
     <item>
       <title>Chapter 17</title>
       <link>http://localhost:1313/docs/part-iv/chapter-17/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:25 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv/chapter-17/</guid>
-      <description>📘 Chapter 17: Complexity Analysis link&#xD;💡&#xA;&amp;quot;The best way to predict the future is to invent it.&amp;quot; — Alan Kay&#xA;📘&#xA;Chapter 17 of DSAR delves into the fundamental aspects of complexity analysis, offering a comprehensive examination of both time and space complexities essential for evaluating algorithm performance. It begins with an introduction to the core principles of complexity analysis, including the significance of understanding how algorithms scale with input size.</description>
+      <description>💡&#xA;&amp;quot;The best way to predict the future is to invent it.&amp;quot; — Alan Kay&#xA;📘&#xA;Chapter 17 of DSAR delves into the fundamental aspects of complexity analysis, offering a comprehensive examination of both time and space complexities essential for evaluating algorithm performance. It begins with an introduction to the core principles of complexity analysis, including the significance of understanding how algorithms scale with input size. The chapter then progresses to in-depth methods for analyzing time complexity, exploring various classes such as constant, logarithmic, linear, quadratic, and exponential time complexities, and introducing asymptotic notations like Big O, Big Ω, and Big Θ for describing algorithm performance.</description>
     </item>
     <item>
       <title>Chapter 18</title>
       <link>http://localhost:1313/docs/part-iv/chapter-18/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:26 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv/chapter-18/</guid>
-      <description>📘 Chapter 18: Algorithm Optimization link&#xD;💡&#xA;&amp;quot;Optimization hones the art of making the best use of limited resources.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 18 of the DSAR book delves deeply into algorithm optimization, addressing both theoretical and practical aspects crucial for enhancing performance. It begins with an introduction to the principles of optimization, emphasizing the importance of balancing time and space complexities to achieve efficient algorithms. The chapter covers time optimization techniques, including algorithmic improvements such as adopting more efficient algorithms and leveraging data structures, as well as code-level strategies like loop optimization and function inlining.</description>
+      <description>💡&#xA;&amp;quot;Optimization hones the art of making the best use of limited resources.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 18 of the DSAR book delves deeply into algorithm optimization, addressing both theoretical and practical aspects crucial for enhancing performance. It begins with an introduction to the principles of optimization, emphasizing the importance of balancing time and space complexities to achieve efficient algorithms. The chapter covers time optimization techniques, including algorithmic improvements such as adopting more efficient algorithms and leveraging data structures, as well as code-level strategies like loop optimization and function inlining.</description>
     </item>
     <item>
       <title>Chapter 19</title>
       <link>http://localhost:1313/docs/part-iv/chapter-19/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:26 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv/chapter-19/</guid>
-      <description>📘 Chapter 19: Amortized Algorithms link&#xD;💡&#xA;&amp;quot;Never express yourself more clearly than you are able to think.&amp;quot; — Niels Bohr&#xA;📘&#xA;Chapter 19 of DSAR delves into the intricacies of amortized analysis, providing a thorough exploration of techniques and applications vital for understanding the performance of data structures over sequences of operations. It begins with an introduction to amortized analysis, highlighting its significance in assessing the average cost of operations where occasional costly operations are spread over a sequence.</description>
+      <description>💡&#xA;&amp;quot;Never express yourself more clearly than you are able to think.&amp;quot; — Niels Bohr&#xA;📘&#xA;Chapter 19 of DSAR delves into the intricacies of amortized analysis, providing a thorough exploration of techniques and applications vital for understanding the performance of data structures over sequences of operations. It begins with an introduction to amortized analysis, highlighting its significance in assessing the average cost of operations where occasional costly operations are spread over a sequence.</description>
     </item>
   </channel>
 </rss>

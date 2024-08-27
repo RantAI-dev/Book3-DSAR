@@ -13,21 +13,21 @@
       <link>http://localhost:1313/docs/part-ii/chapter-6/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-ii/chapter-6/</guid>
-      <description>📘 Chapter 6: Basic Sorting Algorithms link&#xD;💡&#xA;&amp;quot;Sorting is a fundamental operation that has a significant impact on the efficiency of algorithms and systems.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 6 of DSAR provides an in-depth exploration of fundamental sorting algorithms, focusing on their implementation in Rust. It begins with an introduction to sorting, emphasizing its critical role in organizing data efficiently and its implications for algorithm performance. The chapter then delves into the practical aspects of implementing three classic sorting algorithms: Insertion Sort, Selection Sort, and Bubble Sort.</description>
+      <description>💡&#xA;&amp;quot;Sorting is a fundamental operation that has a significant impact on the efficiency of algorithms and systems.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 6 of DSAR provides an in-depth exploration of fundamental sorting algorithms, focusing on their implementation in Rust. It begins with an introduction to sorting, emphasizing its critical role in organizing data efficiently and its implications for algorithm performance. The chapter then delves into the practical aspects of implementing three classic sorting algorithms: Insertion Sort, Selection Sort, and Bubble Sort.</description>
     </item>
     <item>
       <title>Chapter 7</title>
       <link>http://localhost:1313/docs/part-ii/chapter-7/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:52 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-ii/chapter-7/</guid>
-      <description>📘 Chapter 7: Advanced Sorting Algorithms link&#xD;💡&#xA;&amp;quot;Sorting is a problem that can be solved in many ways, but the most interesting thing about sorting is not the algorithms but how they apply in practice and the trade-offs involved.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 7 of the DSAR delves into advanced sorting algorithms, emphasizing their conceptual underpinnings, implementation techniques, and practical applications. It begins with an exploration of the significance of sorting in data organization and the comparative analysis of sorting algorithms based on their time and space complexities.</description>
+      <description>💡&#xA;&amp;quot;Sorting is a problem that can be solved in many ways, but the most interesting thing about sorting is not the algorithms but how they apply in practice and the trade-offs involved.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 7 of the DSAR delves into advanced sorting algorithms, emphasizing their conceptual underpinnings, implementation techniques, and practical applications. It begins with an exploration of the significance of sorting in data organization and the comparative analysis of sorting algorithms based on their time and space complexities.</description>
     </item>
     <item>
       <title>Chapter 8</title>
       <link>http://localhost:1313/docs/part-ii/chapter-8/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:53 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-ii/chapter-8/</guid>
-      <description>📘 Chapter 8: Median and Order Statistics link&#xD;💡&#xA;&amp;quot;The goal of Computer Science is to build something that will last at least until we can build something better.&amp;quot; — Alan Turing&#xA;📘&#xA;Chapter 8 of DSAR delves into the intricate world of median and order statistics, exploring fundamental concepts and advanced techniques essential for efficient data manipulation and analysis. It begins by defining order statistics, highlighting their critical role in algorithms for database management, statistical analysis, and data summarization.</description>
+      <description>💡&#xA;&amp;quot;The goal of Computer Science is to build something that will last at least until we can build something better.&amp;quot; — Alan Turing&#xA;📘&#xA;Chapter 8 of DSAR delves into the intricate world of median and order statistics, exploring fundamental concepts and advanced techniques essential for efficient data manipulation and analysis. It begins by defining order statistics, highlighting their critical role in algorithms for database management, statistical analysis, and data summarization.</description>
     </item>
   </channel>
 </rss>

@@ -13,49 +13,49 @@
       <link>http://localhost:1313/docs/part-v/chapter-20/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:27 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-20/</guid>
-      <description>📘 Chapter 20: Elementary Graph Theory for Algorithms link&#xD;💡&#xA;&amp;quot;Graph theory is a beautiful and powerful branch of mathematics that provides tools to solve complex problems and uncover deep insights about relationships and structures.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 20 of DSAR delves into fundamental concepts and practical applications of graph theory, essential for algorithm design. It begins with a thorough introduction to graph theory, covering basic definitions, types of graphs, and common representations such as adjacency matrices and lists.</description>
+      <description>💡&#xA;&amp;quot;Graph theory is a beautiful and powerful branch of mathematics that provides tools to solve complex problems and uncover deep insights about relationships and structures.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 20 of DSAR delves into fundamental concepts and practical applications of graph theory, essential for algorithm design. It begins with a thorough introduction to graph theory, covering basic definitions, types of graphs, and common representations such as adjacency matrices and lists.</description>
     </item>
     <item>
       <title>Chapter 21</title>
       <link>http://localhost:1313/docs/part-v/chapter-21/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:28 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-21/</guid>
-      <description>📘 Chapter 21: Graph Traversal Algorithms link&#xD;💡&#xA;&amp;quot;The great thing about graphs is that they give us a way to think about the world in a very powerful and abstract way, which can then be applied to many practical problems..&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 21 of DSAR delves into graph traversal algorithms, essential for exploring and analyzing graphs systematically. It begins with an overview of graph representations, such as adjacency matrices and lists, and their implications for traversal efficiency.</description>
+      <description>💡&#xA;&amp;quot;The great thing about graphs is that they give us a way to think about the world in a very powerful and abstract way, which can then be applied to many practical problems..&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 21 of DSAR delves into graph traversal algorithms, essential for exploring and analyzing graphs systematically. It begins with an overview of graph representations, such as adjacency matrices and lists, and their implications for traversal efficiency.</description>
     </item>
     <item>
       <title>Chapter 22</title>
       <link>http://localhost:1313/docs/part-v/chapter-22/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:28 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-22/</guid>
-      <description>📘 Chapter 22: Single-Source Shortest Paths link&#xD;💡&#xA;&amp;quot;Algorithmic thinking and reasoning will make you more effective in solving complex problems, but it’s important to use the right tool for the job.&amp;quot; — Jeff Dean&#xA;📘&#xA;Chapter 22 of DSAR delves into the critical topic of single-source shortest paths (SSSP) in graph theory, providing a comprehensive analysis of two fundamental algorithms: Dijkstra&#39;s and Bellman-Ford. The chapter begins by outlining the single-source shortest path problem, emphasizing its significance in various applications such as network routing and GPS navigation.</description>
+      <description>💡&#xA;&amp;quot;Algorithmic thinking and reasoning will make you more effective in solving complex problems, but it’s important to use the right tool for the job.&amp;quot; — Jeff Dean&#xA;📘&#xA;Chapter 22 of DSAR delves into the critical topic of single-source shortest paths (SSSP) in graph theory, providing a comprehensive analysis of two fundamental algorithms: Dijkstra&#39;s and Bellman-Ford. The chapter begins by outlining the single-source shortest path problem, emphasizing its significance in various applications such as network routing and GPS navigation.</description>
     </item>
     <item>
       <title>Chapter 23</title>
       <link>http://localhost:1313/docs/part-v/chapter-23/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:29 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-23/</guid>
-      <description>📘 Chapter 23: All-Pairs Shortest Paths link&#xD;💡&#xA;&amp;quot;The greatest value of a picture is when it forces us to notice what we never expected to see.&amp;quot; — John Tukey&#xA;📘&#xA;Chapter 23 of the DSAR book delves into the all-pairs shortest paths problem, a fundamental challenge in graph theory where the goal is to compute the shortest paths between every pair of vertices in a weighted graph. The chapter introduces the Floyd-Warshall algorithm, a dynamic programming approach that provides a straightforward $O(V^3)$ solution by iteratively refining a distance matrix to account for all possible intermediate vertices.</description>
+      <description>💡&#xA;&amp;quot;The greatest value of a picture is when it forces us to notice what we never expected to see.&amp;quot; — John Tukey&#xA;📘&#xA;Chapter 23 of the DSAR book delves into the all-pairs shortest paths problem, a fundamental challenge in graph theory where the goal is to compute the shortest paths between every pair of vertices in a weighted graph. The chapter introduces the Floyd-Warshall algorithm, a dynamic programming approach that provides a straightforward $O(V^3)$ solution by iteratively refining a distance matrix to account for all possible intermediate vertices.</description>
     </item>
     <item>
       <title>Chapter 24</title>
       <link>http://localhost:1313/docs/part-v/chapter-24/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:30 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-24/</guid>
-      <description>📘 Chapter 24: Minimum Spanning Trees link&#xD;💡&#xA;&amp;quot;The most damaging phrase in the language is: &amp;lsquo;We&amp;rsquo;ve always done it this way.&amp;rsquo;&amp;quot; — Grace Hopper&#xA;📘&#xA;Chapter 24 of DSAR delves into the fundamental concepts and algorithms related to Minimum Spanning Trees (MSTs), providing a comprehensive exploration of three key algorithms: Kruskal’s, Prim’s, and Borůvka’s. It begins with a detailed introduction to MSTs, defining their properties, uses in network design, clustering, and approximation algorithms, and their computational significance.</description>
+      <description>💡&#xA;&amp;quot;The most damaging phrase in the language is: &amp;lsquo;We&amp;rsquo;ve always done it this way.&amp;rsquo;&amp;quot; — Grace Hopper&#xA;📘&#xA;Chapter 24 of DSAR delves into the fundamental concepts and algorithms related to Minimum Spanning Trees (MSTs), providing a comprehensive exploration of three key algorithms: Kruskal’s, Prim’s, and Borůvka’s. It begins with a detailed introduction to MSTs, defining their properties, uses in network design, clustering, and approximation algorithms, and their computational significance.</description>
     </item>
     <item>
       <title>Chapter 25</title>
       <link>http://localhost:1313/docs/part-v/chapter-25/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:30 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-25/</guid>
-      <description>📘 Chapter 25: Network Flow Algorithms link&#xD;💡&#xA;&amp;quot;Algorithms are the intellectual property of computer science; they are the critical tools for understanding how to solve complex problems effectively.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 25 of DSAR delves deeply into network flow algorithms, offering a comprehensive exploration of methods to optimize the flow through a network. The chapter begins with an introduction to network flow problems, highlighting the fundamental concepts of flow networks, capacity constraints, and flow conservation.</description>
+      <description>💡&#xA;&amp;quot;Algorithms are the intellectual property of computer science; they are the critical tools for understanding how to solve complex problems effectively.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 25 of DSAR delves deeply into network flow algorithms, offering a comprehensive exploration of methods to optimize the flow through a network. The chapter begins with an introduction to network flow problems, highlighting the fundamental concepts of flow networks, capacity constraints, and flow conservation.</description>
     </item>
     <item>
       <title>Chapter 26</title>
       <link>http://localhost:1313/docs/part-v/chapter-26/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:32 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-26/</guid>
-      <description>📘 Chapter 26: Matchings in Bipartite Graphs link&#xD;💡&#xA;&amp;quot;Algorithms are the most direct way to make our ideas into action.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 26 of the DSAR book provides an in-depth exploration of matchings in bipartite graphs, delving into fundamental concepts, algorithms, and practical applications. It begins with a comprehensive introduction to bipartite graphs, where vertices are divided into two disjoint sets with edges only connecting vertices from different sets, and defines key concepts such as matchings, perfect matchings, and maximum matchings.</description>
+      <description>💡&#xA;&amp;quot;Algorithms are the most direct way to make our ideas into action.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 26 of the DSAR book provides an in-depth exploration of matchings in bipartite graphs, delving into fundamental concepts, algorithms, and practical applications. It begins with a comprehensive introduction to bipartite graphs, where vertices are divided into two disjoint sets with edges only connecting vertices from different sets, and defines key concepts such as matchings, perfect matchings, and maximum matchings.</description>
     </item>
   </channel>
 </rss>

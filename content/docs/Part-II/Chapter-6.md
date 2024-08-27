@@ -10,12 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 6: Basic Sorting Algorithms
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Sorting is a fundamental operation that has a significant impact on the efficiency of algorithms and systems.</em>" — Donald Knuth</strong>
 {{% /alert %}}

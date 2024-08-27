@@ -10,11 +10,7 @@ toc: true
 katex: true
 ---
 
-<center>
 
-# 📘 Chapter 30: Cryptographic Foundations Algorithms
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>To keep a system secure, we need to be always on our toes. If we wait for the attackers to find vulnerabilities, it’s already too late.</em>" — Whitfield Diffie</strong>

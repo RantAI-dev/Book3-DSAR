@@ -9,11 +9,6 @@ draft: false
 toc: true
 ---
 
-<center>
-
-# 📘 Chapter 2: Introduction to Data Structures and Algorithms in Rust
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Programs must be written for people to read, and only incidentally for machines to execute.</em>" — Harold Abelson</strong>

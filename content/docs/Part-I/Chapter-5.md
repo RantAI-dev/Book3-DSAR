@@ -10,12 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 5: Divide and Conquer
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>A recursive method is often the most natural way to solve a problem that can be broken down into smaller problems of the same type.</em>" — Donald Knuth</strong>
 {{% /alert %}}

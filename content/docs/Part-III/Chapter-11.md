@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 11: Hashing and Hash Tables
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Hashing is a powerful tool for creating efficient data structures. It provides an elegant solution to the problem of data retrieval, but its real power comes from understanding how to design hash functions and manage collisions effectively.</em>" — Donald E. Knuth</strong>

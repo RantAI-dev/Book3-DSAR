@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 24: Minimum Spanning Trees
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The most damaging phrase in the language is: 'We've always done it this way.'</em>" — Grace Hopper</strong>

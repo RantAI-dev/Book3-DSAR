@@ -9,11 +9,7 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
 
-# 📘 Chapter 10: Elementary Data Structures
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Programs must be written for people to read, and only incidentally for machines to execute.</em>" — Hal Abelson</strong>

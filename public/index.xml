@@ -13,14 +13,14 @@
       <link>http://localhost:1313/docs/dsar/</link>
       <pubDate>Sat, 24 Aug 2024 21:49:21 +0700</pubDate>
       <guid>http://localhost:1313/docs/dsar/</guid>
-      <description>📘 Welcome to &amp;ldquo;Modern Data Structures and Algorithms in Rust&amp;rdquo; link&#xD;📘 About this Book link&#xD;📘&#xA;&#34;Modern Data Structures and Algorithms in Rust&#34; (DSAR) is a groundbreaking text that merges the time-honored concepts of data structures and algorithms with the modern, powerful features of the Rust programming language. Designed for both students and professionals, this book provides a deep dive into the fundamental (F), conceptual (C), and practical (P) implementation of algorithms, all while leveraging Rust’s unique capabilities for memory safety, concurrency, and performance.</description>
+      <description>📘 About this Book link&#xD;📘&#xA;&#34;Modern Data Structures and Algorithms in Rust&#34; (DSAR) is a groundbreaking text that merges the time-honored concepts of data structures and algorithms with the modern, powerful features of the Rust programming language. Designed for both students and professionals, this book provides a deep dive into the fundamental (F), conceptual (C), and practical (P) implementation of algorithms, all while leveraging Rust’s unique capabilities for memory safety, concurrency, and performance.</description>
     </item>
     <item>
       <title>Table of Contents</title>
       <link>http://localhost:1313/docs/table-of-contents/</link>
       <pubDate>Sat, 24 Aug 2024 23:24:06 +0700</pubDate>
       <guid>http://localhost:1313/docs/table-of-contents/</guid>
-      <description>📘&#xA;DSAR&amp;rsquo;s Table of Contents linkExplore the chapters below to dive deep into the advanced programming data structures and algorithms using Rust.&#xA;Main Sections link Modern Data Structures and Algorithms in Rust Preface Foreword-1 Foreword-2 Part I - Fundamentals of Algorithms in Rust link Chapter 1: The Role of Algorithms in Modern Software Chapter 2: Introduction to Data Structures and Algorithms in Rust Chapter 3: Fundamentals of Rust Programming for Algorithms Chapter 4: Design of Algorithms and Running Times Chapter 5: Divide and Conquer Part II - Sorting and Searching Algorithms link Chapter 6: Basic Sorting Algorithms Chapter 7: Advanced Sorting Algorithms Chapter 8: Median and Order Statistics Part III - Complex Data Structures link Chapter 9: Fundamental Data Structures in Rust Chapter 10: Elementary Data Structures Chapter 11: Hashing and Hash Tables Chapter 12: Trees and Balanced Trees Chapter 13: Heaps and Priority Queues Chapter 14: Disjoint Sets Chapter 15: Graphs and Graph Representations Part IV - Design and Analysis link Chapter 16: Algorithm Design Techniques Chapter 17: Complexity Analysis Chapter 18: Algorithm Optimization Chapter 19: Amortized Algorithms Part V - Graph Algorithms link Chapter 20: Elementary Graph Theory for Algorithms Chapter 21: Graph Traversal Algorithms Chapter 22: Single-Source Shortest Paths Chapter 23: All-Pairs Shortest Paths Chapter 24: Minimum Spanning Trees Chapter 25: Network Flow Algorithms Chapter 26: Matchings in Bipartite Graphs Part VI - Selected Topics link Chapter 27: Advanced Recursive Algorithms Chapter 28: Vector, Matrix, and Tensor Operations Chapter 29: Parallel and Distributed Algorithms Chapter 30: Cryptographic Foundations Algorithms Chapter 31: Blockchain Data Structures and Algorithms Chapter 32: Linear Programming Chapter 33: Polynomial and FFT Chapter 34: String Matching Algorithms Chapter 35: Approximate Algorithms Chapter 36: Probabilistic and Randomized Algorithms ℹ️</description>
+      <description>📘&#xA;Explore the chapters below to dive deep into the advanced programming data structures and algorithms using Rust.&#xA;Main Sections link Modern Data Structures and Algorithms in Rust Preface Foreword-1 Foreword-2 Part I - Fundamentals of Algorithms in Rust link Chapter 1: The Role of Algorithms in Modern Software Chapter 2: Introduction to Data Structures and Algorithms in Rust Chapter 3: Fundamentals of Rust Programming for Algorithms Chapter 4: Design of Algorithms and Running Times Chapter 5: Divide and Conquer Part II - Sorting and Searching Algorithms link Chapter 6: Basic Sorting Algorithms Chapter 7: Advanced Sorting Algorithms Chapter 8: Median and Order Statistics Part III - Complex Data Structures link Chapter 9: Fundamental Data Structures in Rust Chapter 10: Elementary Data Structures Chapter 11: Hashing and Hash Tables Chapter 12: Trees and Balanced Trees Chapter 13: Heaps and Priority Queues Chapter 14: Disjoint Sets Chapter 15: Graphs and Graph Representations Part IV - Design and Analysis link Chapter 16: Algorithm Design Techniques Chapter 17: Complexity Analysis Chapter 18: Algorithm Optimization Chapter 19: Amortized Algorithms Part V - Graph Algorithms link Chapter 20: Elementary Graph Theory for Algorithms Chapter 21: Graph Traversal Algorithms Chapter 22: Single-Source Shortest Paths Chapter 23: All-Pairs Shortest Paths Chapter 24: Minimum Spanning Trees Chapter 25: Network Flow Algorithms Chapter 26: Matchings in Bipartite Graphs Part VI - Selected Topics link Chapter 27: Advanced Recursive Algorithms Chapter 28: Vector, Matrix, and Tensor Operations Chapter 29: Parallel and Distributed Algorithms Chapter 30: Cryptographic Foundations Algorithms Chapter 31: Blockchain Data Structures and Algorithms Chapter 32: Linear Programming Chapter 33: Polynomial and FFT Chapter 34: String Matching Algorithms Chapter 35: Approximate Algorithms Chapter 36: Probabilistic and Randomized Algorithms ℹ️</description>
     </item>
     <item>
       <title>Preface</title>
@@ -55,287 +55,294 @@
       <link>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</link>
       <pubDate>Sat, 24 Aug 2024 23:37:35 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i-fundamentals-of-algorithms-in-rust/</guid>
-      <description>📘 Part I: Introduction link&#xD;💡&#xA;&#34;The Nobel Prize is the highest accolade that the world can offer a man, but no man is ever worthy of it.&#34; – Albert Einstein&#xD;📘&#xA;Part I - Introduction provides a comprehensive foundation on the intersection of algorithms and modern software development, with a focus on Rust programming. It begins by exploring the evolution and significance of algorithms in contemporary software, emphasizing how they integrate with data structures to address complex problems and the ethical implications involved in their design.</description>
+      <description>💡&#xA;&#34;The Nobel Prize is the highest accolade that the world can offer a man, but no man is ever worthy of it.&#34; – Albert Einstein&#xD;📘&#xA;Part I - Introduction provides a comprehensive foundation on the intersection of algorithms and modern software development, with a focus on Rust programming. It begins by exploring the evolution and significance of algorithms in contemporary software, emphasizing how they integrate with data structures to address complex problems and the ethical implications involved in their design.</description>
     </item>
     <item>
       <title>Chapter 1</title>
       <link>http://localhost:1313/docs/part-i/chapter-1/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:35 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-1/</guid>
-      <description>📘 Chapter 1: The Role of Algorithms in Modern Software link&#xD;💡&#xA;&amp;quot;An algorithm must be seen to be believed.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 1 of DSAR delves into the foundational and evolving role of algorithms in contemporary software development, offering a comprehensive exploration of their historical evolution, technical significance, and ethical implications. The chapter begins by tracing the origins of algorithms from ancient mathematical techniques to the sophisticated computational models of today, highlighting key advancements such as asymptotic analysis and the emergence of specialized algorithmic paradigms.</description>
+      <description>💡&#xA;&amp;quot;An algorithm must be seen to be believed.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 1 of DSAR delves into the foundational and evolving role of algorithms in contemporary software development, offering a comprehensive exploration of their historical evolution, technical significance, and ethical implications. The chapter begins by tracing the origins of algorithms from ancient mathematical techniques to the sophisticated computational models of today, highlighting key advancements such as asymptotic analysis and the emergence of specialized algorithmic paradigms.</description>
     </item>
     <item>
       <title>Chapter 2</title>
       <link>http://localhost:1313/docs/part-i/chapter-2/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:35 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-2/</guid>
-      <description>📘 Chapter 2: Introduction to Data Structures and Algorithms in Rust link&#xD;💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 2 of DSAR provides a comprehensive exploration of why Rust is uniquely suited for implementing data structures and algorithms, focusing on its strengths in memory safety, performance, and concurrency. It begins by detailing Rust’s distinctive features, such as its ownership model that ensures memory safety without a garbage collector, its performance characteristics that rival low-level languages, and its advanced concurrency model that prevents data races.</description>
+      <description>💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 2 of DSAR provides a comprehensive exploration of why Rust is uniquely suited for implementing data structures and algorithms, focusing on its strengths in memory safety, performance, and concurrency. It begins by detailing Rust’s distinctive features, such as its ownership model that ensures memory safety without a garbage collector, its performance characteristics that rival low-level languages, and its advanced concurrency model that prevents data races.</description>
     </item>
     <item>
       <title>Chapter 3</title>
       <link>http://localhost:1313/docs/part-i/chapter-3/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:36 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-3/</guid>
-      <description>📘 Chapter 3: Fundamentals of Rust Programming for Algorithms link&#xD;💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 3 of the DSAR book delves into the foundational aspects of Rust programming essential for crafting efficient algorithms. It begins with an exploration of Rust&#39;s ownership model, emphasizing how ownership, borrowing, and lifetimes enforce memory safety and prevent data races, which is crucial for designing robust algorithms.</description>
+      <description>💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Harold Abelson&#xA;📘&#xA;Chapter 3 of the DSAR book delves into the foundational aspects of Rust programming essential for crafting efficient algorithms. It begins with an exploration of Rust&#39;s ownership model, emphasizing how ownership, borrowing, and lifetimes enforce memory safety and prevent data races, which is crucial for designing robust algorithms. The chapter then examines Rust’s type system, highlighting static typing, generics, and type inference, and their roles in ensuring type safety and performance in algorithm development.</description>
     </item>
     <item>
       <title>Chapter 4</title>
       <link>http://localhost:1313/docs/part-i/chapter-4/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:47 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-4/</guid>
-      <description>📘 Chapter 4: Design of Algorithms and Running Times link&#xD;💡&#xA;&amp;quot;The art of programming is the skill of controlling complexity.&amp;quot; — Marijn Haverbeke&#xA;📘&#xA;Chapter 4 of DSAR delves into the intricate relationship between algorithm design and performance, providing a comprehensive exploration of how algorithmic complexity, design techniques, and data structures shape the efficiency of computational processes. The chapter begins by unpacking the foundational concepts of algorithmic complexity, including Big-O notation and various time and space complexities, to establish a rigorous framework for evaluating the efficiency of algorithms.</description>
+      <description>💡&#xA;&amp;quot;The art of programming is the skill of controlling complexity.&amp;quot; — Marijn Haverbeke&#xA;📘&#xA;Chapter 4 of DSAR delves into the intricate relationship between algorithm design and performance, providing a comprehensive exploration of how algorithmic complexity, design techniques, and data structures shape the efficiency of computational processes. The chapter begins by unpacking the foundational concepts of algorithmic complexity, including Big-O notation and various time and space complexities, to establish a rigorous framework for evaluating the efficiency of algorithms.</description>
     </item>
     <item>
       <title>Chapter 5</title>
       <link>http://localhost:1313/docs/part-i/chapter-5/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-i/chapter-5/</guid>
-      <description>📘 Chapter 5: Divide and Conquer link&#xD;💡&#xA;&amp;quot;A recursive method is often the most natural way to solve a problem that can be broken down into smaller problems of the same type.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 5 of DSAR delves deeply into the divide and conquer paradigm, a powerful algorithmic strategy that breaks complex problems into simpler subproblems, solves each recursively, and then combines the results. The chapter begins by laying a strong theoretical foundation, exploring how divide and conquer optimizes algorithmic efficiency through recurrence relations and compares it with other paradigms like dynamic programming and greedy algorithms.</description>
+      <description>💡&#xA;&amp;quot;A recursive method is often the most natural way to solve a problem that can be broken down into smaller problems of the same type.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 5 of DSAR delves deeply into the divide and conquer paradigm, a powerful algorithmic strategy that breaks complex problems into simpler subproblems, solves each recursively, and then combines the results. The chapter begins by laying a strong theoretical foundation, exploring how divide and conquer optimizes algorithmic efficiency through recurrence relations and compares it with other paradigms like dynamic programming and greedy algorithms.</description>
     </item>
     <item>
       <title>Part II - Sorting and Searching Algorithms</title>
       <link>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:01 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-ii-sorting-and-searching-algorithms/</guid>
-      <description>📘 Part II: Sorting and Order Statistics link&#xD;💡&#xA;&amp;quot;The whole of science is nothing more than a refinement of everyday thinking.&amp;quot; — Albert Einstein&#xA;📘&#xA;Part II of &#34;Modern Data Structures and Algorithms in Rust&#34; delves into the essential algorithms that form the backbone of efficient data handling in software development: sorting and order statistics. It begins with an exploration of basic sorting algorithms, such as Insertion Sort, Selection Sort, and Bubble Sort, offering readers a thorough understanding of their principles, implementations in Rust, and performance characteristics.</description>
+      <description>💡&#xA;&amp;quot;The whole of science is nothing more than a refinement of everyday thinking.&amp;quot; — Albert Einstein&#xA;📘&#xA;Part II of &#34;Modern Data Structures and Algorithms in Rust&#34; delves into the essential algorithms that form the backbone of efficient data handling in software development: sorting and order statistics. It begins with an exploration of basic sorting algorithms, such as Insertion Sort, Selection Sort, and Bubble Sort, offering readers a thorough understanding of their principles, implementations in Rust, and performance characteristics.</description>
     </item>
     <item>
       <title>Chapter 6</title>
       <link>http://localhost:1313/docs/part-ii/chapter-6/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:51 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-ii/chapter-6/</guid>
-      <description>📘 Chapter 6: Basic Sorting Algorithms link&#xD;💡&#xA;&amp;quot;Sorting is a fundamental operation that has a significant impact on the efficiency of algorithms and systems.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 6 of DSAR provides an in-depth exploration of fundamental sorting algorithms, focusing on their implementation in Rust. It begins with an introduction to sorting, emphasizing its critical role in organizing data efficiently and its implications for algorithm performance. The chapter then delves into the practical aspects of implementing three classic sorting algorithms: Insertion Sort, Selection Sort, and Bubble Sort.</description>
+      <description>💡&#xA;&amp;quot;Sorting is a fundamental operation that has a significant impact on the efficiency of algorithms and systems.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 6 of DSAR provides an in-depth exploration of fundamental sorting algorithms, focusing on their implementation in Rust. It begins with an introduction to sorting, emphasizing its critical role in organizing data efficiently and its implications for algorithm performance. The chapter then delves into the practical aspects of implementing three classic sorting algorithms: Insertion Sort, Selection Sort, and Bubble Sort.</description>
     </item>
     <item>
       <title>Chapter 7</title>
       <link>http://localhost:1313/docs/part-ii/chapter-7/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:52 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-ii/chapter-7/</guid>
-      <description>📘 Chapter 7: Advanced Sorting Algorithms link&#xD;💡&#xA;&amp;quot;Sorting is a problem that can be solved in many ways, but the most interesting thing about sorting is not the algorithms but how they apply in practice and the trade-offs involved.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 7 of the DSAR delves into advanced sorting algorithms, emphasizing their conceptual underpinnings, implementation techniques, and practical applications. It begins with an exploration of the significance of sorting in data organization and the comparative analysis of sorting algorithms based on their time and space complexities.</description>
+      <description>💡&#xA;&amp;quot;Sorting is a problem that can be solved in many ways, but the most interesting thing about sorting is not the algorithms but how they apply in practice and the trade-offs involved.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 7 of the DSAR delves into advanced sorting algorithms, emphasizing their conceptual underpinnings, implementation techniques, and practical applications. It begins with an exploration of the significance of sorting in data organization and the comparative analysis of sorting algorithms based on their time and space complexities.</description>
     </item>
     <item>
       <title>Chapter 8</title>
       <link>http://localhost:1313/docs/part-ii/chapter-8/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:53 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-ii/chapter-8/</guid>
-      <description>📘 Chapter 8: Median and Order Statistics link&#xD;💡&#xA;&amp;quot;The goal of Computer Science is to build something that will last at least until we can build something better.&amp;quot; — Alan Turing&#xA;📘&#xA;Chapter 8 of DSAR delves into the intricate world of median and order statistics, exploring fundamental concepts and advanced techniques essential for efficient data manipulation and analysis. It begins by defining order statistics, highlighting their critical role in algorithms for database management, statistical analysis, and data summarization.</description>
+      <description>💡&#xA;&amp;quot;The goal of Computer Science is to build something that will last at least until we can build something better.&amp;quot; — Alan Turing&#xA;📘&#xA;Chapter 8 of DSAR delves into the intricate world of median and order statistics, exploring fundamental concepts and advanced techniques essential for efficient data manipulation and analysis. It begins by defining order statistics, highlighting their critical role in algorithms for database management, statistical analysis, and data summarization.</description>
     </item>
     <item>
       <title>Part III - Complex Data Structures</title>
       <link>http://localhost:1313/docs/part-iii-complex-data-structures/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:01 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii-complex-data-structures/</guid>
-      <description>📘 Part III: Data Structures link&#xD;💡&#xA;&amp;quot;The greatest danger in science is not being wrong, but being trivial.&amp;quot; — Stephen Hawking&#xA;📘&#xA;Part III - Data Structures provides an extensive overview of essential and advanced data structures implemented in Rust, offering a thorough examination of how to manage and manipulate data efficiently. It starts with fundamental data structures, introducing arrays, slices, and linked lists while explaining Rust’s memory model and standard collections.</description>
+      <description>💡&#xA;&amp;quot;The greatest danger in science is not being wrong, but being trivial.&amp;quot; — Stephen Hawking&#xA;📘&#xA;Part III - Data Structures provides an extensive overview of essential and advanced data structures implemented in Rust, offering a thorough examination of how to manage and manipulate data efficiently. It starts with fundamental data structures, introducing arrays, slices, and linked lists while explaining Rust’s memory model and standard collections. The section then progresses to elementary structures like stacks, queues, deques, strings, and bit manipulation, emphasizing practical usage and considerations.</description>
     </item>
     <item>
       <title>Chapter 9</title>
       <link>http://localhost:1313/docs/part-iii/chapter-9/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:09 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii/chapter-9/</guid>
-      <description>center&amp;gt;&#xA;📘 Chapter 9: Fundamental Data Structures in Rust link&#xD;💡&#xA;&amp;quot;A program is only as good as its data structures.&amp;quot; — Fred Brooks&#xA;📘&#xA;Chapter 9 of DSAR delves into the core principles and practical implementations of essential data structures within the context of Rust&amp;rsquo;s unique memory model. Beginning with a comprehensive introduction to data structures, this chapter emphasizes the pivotal role they play in algorithmic design, while also exploring Rust&amp;rsquo;s ownership, borrowing, and lifetime rules that ensure memory safety and concurrency without a garbage collector.</description>
+      <description>💡&#xA;&amp;quot;A program is only as good as its data structures.&amp;quot; — Fred Brooks&#xA;📘&#xA;Chapter 9 of DSAR delves into the core principles and practical implementations of essential data structures within the context of Rust&amp;rsquo;s unique memory model. Beginning with a comprehensive introduction to data structures, this chapter emphasizes the pivotal role they play in algorithmic design, while also exploring Rust&amp;rsquo;s ownership, borrowing, and lifetime rules that ensure memory safety and concurrency without a garbage collector.</description>
     </item>
     <item>
       <title>Chapter 10</title>
       <link>http://localhost:1313/docs/part-iii/chapter-10/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:09 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii/chapter-10/</guid>
-      <description>📘 Chapter 10: Elementary Data Structures link&#xD;💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Hal Abelson&#xA;📘&#xA;Chapter 10 of DSAR delves into the foundational elements of data structure design and manipulation, providing a comprehensive exploration of elementary data structures, including stacks, queues, deques, strings, and bitwise data structures. The chapter begins with an in-depth analysis of stacks and queues, highlighting their core principles, such as LIFO and FIFO, and their critical role in algorithms like function call management and task scheduling.</description>
+      <description>💡&#xA;&amp;quot;Programs must be written for people to read, and only incidentally for machines to execute.&amp;quot; — Hal Abelson&#xA;📘&#xA;Chapter 10 of DSAR delves into the foundational elements of data structure design and manipulation, providing a comprehensive exploration of elementary data structures, including stacks, queues, deques, strings, and bitwise data structures. The chapter begins with an in-depth analysis of stacks and queues, highlighting their core principles, such as LIFO and FIFO, and their critical role in algorithms like function call management and task scheduling.</description>
     </item>
     <item>
       <title>Chapter 11</title>
       <link>http://localhost:1313/docs/part-iii/chapter-11/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:10 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii/chapter-11/</guid>
-      <description>📘 Chapter 11: Hashing and Hash Tables link&#xD;💡&#xA;&amp;quot;Hashing is a powerful tool for creating efficient data structures. It provides an elegant solution to the problem of data retrieval, but its real power comes from understanding how to design hash functions and manage collisions effectively.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 11 of the DSAR book delves into the intricacies of hashing and hash tables, offering a comprehensive examination of their fundamental principles, implementations, and advanced techniques.</description>
+      <description>💡&#xA;&amp;quot;Hashing is a powerful tool for creating efficient data structures. It provides an elegant solution to the problem of data retrieval, but its real power comes from understanding how to design hash functions and manage collisions effectively.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 11 of the DSAR book delves into the intricacies of hashing and hash tables, offering a comprehensive examination of their fundamental principles, implementations, and advanced techniques.</description>
     </item>
     <item>
       <title>Chapter 12</title>
       <link>http://localhost:1313/docs/part-iii/chapter-12/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:11 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii/chapter-12/</guid>
-      <description>📘 Chapter 12: Trees and Balanced Trees link&#xD;💡&#xA;&amp;quot;Algorithms are the tools we use to solve problems and create software. The real challenge is not in the algorithms themselves, but in applying them effectively.&amp;quot; — Donald D. Knuth&#xA;📘&#xA;Chapter 12 of DSAR delves into the intricacies of trees and balanced trees, exploring their fundamental concepts, implementation strategies, and practical applications. The chapter begins with an introduction to tree structures, defining key terms such as nodes, roots, leaves, and subtrees, and covering essential properties and types of tree traversals.</description>
+      <description>💡&#xA;&amp;quot;Algorithms are the tools we use to solve problems and create software. The real challenge is not in the algorithms themselves, but in applying them effectively.&amp;quot; — Donald D. Knuth&#xA;📘&#xA;Chapter 12 of DSAR delves into the intricacies of trees and balanced trees, exploring their fundamental concepts, implementation strategies, and practical applications. The chapter begins with an introduction to tree structures, defining key terms such as nodes, roots, leaves, and subtrees, and covering essential properties and types of tree traversals.</description>
     </item>
     <item>
       <title>Chapter 13</title>
       <link>http://localhost:1313/docs/part-iii/chapter-13/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:12 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii/chapter-13/</guid>
-      <description>📘 Chapter 13: Heaps and Priority Queues link&#xD;💡&#xA;&amp;quot;Complexity is your friend; it ensures that your system can handle the complexity of the real world.&amp;quot; — Martin Fowler&#xA;📘&#xA;Chapter 13 of DSAR provides an in-depth exploration of heaps and priority queues, essential data structures for efficient data management. The chapter begins with an introduction to heaps, detailing their structure as complete binary trees and their properties, such as the max-heap and min-heap properties that dictate their use in various algorithms.</description>
+      <description>💡&#xA;&amp;quot;Complexity is your friend; it ensures that your system can handle the complexity of the real world.&amp;quot; — Martin Fowler&#xA;📘&#xA;Chapter 13 of DSAR provides an in-depth exploration of heaps and priority queues, essential data structures for efficient data management. The chapter begins with an introduction to heaps, detailing their structure as complete binary trees and their properties, such as the max-heap and min-heap properties that dictate their use in various algorithms.</description>
     </item>
     <item>
       <title>Chapter 14</title>
       <link>http://localhost:1313/docs/part-iii/chapter-14/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:21 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii/chapter-14/</guid>
-      <description>📘 Chapter 14: Disjoint Sets link&#xD;💡&#xA;&amp;quot;Data structures and algorithms are the building blocks of software engineering, and understanding them deeply is crucial to solving complex problems efficiently.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 14 of DSAR delves into the essential data structure known as Disjoint Sets or Union-Find, a critical component for managing collections of non-overlapping sets. This chapter begins with an introduction to the fundamental operations of Disjoint Sets, including find and union, highlighting their importance in efficiently handling dynamic connectivity problems.</description>
+      <description>💡&#xA;&amp;quot;Data structures and algorithms are the building blocks of software engineering, and understanding them deeply is crucial to solving complex problems efficiently.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 14 of DSAR delves into the essential data structure known as Disjoint Sets or Union-Find, a critical component for managing collections of non-overlapping sets. This chapter begins with an introduction to the fundamental operations of Disjoint Sets, including find and union, highlighting their importance in efficiently handling dynamic connectivity problems.</description>
     </item>
     <item>
       <title>Part IV - Design and Analysis</title>
       <link>http://localhost:1313/docs/part-iv-design-and-analysis/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:02 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv-design-and-analysis/</guid>
-      <description>📘 Part IV: Design and Analysis link&#xD;💡&#xA;&amp;quot;Intelligence is the ability to adapt to change.&amp;quot; — Stephen Hawking&#xA;📘&#xA;Part IV - Design and Analysis provides a deep exploration into the methodologies for crafting and evaluating algorithms. It begins with a thorough overview of algorithm design techniques, covering foundational strategies such as divide and conquer, dynamic programming, greedy algorithms, and backtracking, as well as problem reduction and transformations. The focus then shifts to complexity analysis, detailing methods for evaluating both time and space complexity, understanding asymptotic bounds, and exploring advanced complexity topics.</description>
+      <description>💡&#xA;&amp;quot;Intelligence is the ability to adapt to change.&amp;quot; — Stephen Hawking&#xA;📘&#xA;Part IV - Design and Analysis provides a deep exploration into the methodologies for crafting and evaluating algorithms. It begins with a thorough overview of algorithm design techniques, covering foundational strategies such as divide and conquer, dynamic programming, greedy algorithms, and backtracking, as well as problem reduction and transformations. The focus then shifts to complexity analysis, detailing methods for evaluating both time and space complexity, understanding asymptotic bounds, and exploring advanced complexity topics.</description>
     </item>
     <item>
       <title>Chapter 15</title>
       <link>http://localhost:1313/docs/part-iii/chapter-15/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:24 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iii/chapter-15/</guid>
-      <description>📘 Chapter 15: Graphs and Graph Representations link&#xD;💡&#xA;&amp;quot;A graph is a data structure that mirrors life itself. Complex relationships, dependencies, and networks are all captured within its vertices and edges. To master graphs is to master the very structure of thought.&amp;quot; — Edsger W. Dijkstra&#xA;📘&#xA;Chapter 15 of DSAR delves into the intricate world of graph theory, exploring both fundamental concepts and advanced techniques with a focus on practical implementation in Rust.</description>
+      <description>💡&#xA;&amp;quot;A graph is a data structure that mirrors life itself. Complex relationships, dependencies, and networks are all captured within its vertices and edges. To master graphs is to master the very structure of thought.&amp;quot; — Edsger W. Dijkstra&#xA;📘&#xA;Chapter 15 of DSAR delves into the intricate world of graph theory, exploring both fundamental concepts and advanced techniques with a focus on practical implementation in Rust. The chapter begins by introducing the foundational principles of graphs, including their various types, properties, and real-world applications.</description>
     </item>
     <item>
       <title>Chapter 16</title>
       <link>http://localhost:1313/docs/part-iv/chapter-16/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:24 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv/chapter-16/</guid>
-      <description>📘 Chapter 16: Algorithm Design Techniques link&#xD;💡&#xA;&amp;quot;The best algorithm designers are not the ones who know the most algorithms, but the ones who understand the underlying principles that govern them.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 16 of the DSAR book delves into the core techniques of algorithm design, providing a rigorous and comprehensive exploration of the methodologies that underpin efficient problem-solving in computer science. The chapter begins by establishing a solid foundation in algorithm design, emphasizing the importance of selecting appropriate strategies tailored to the nature of the problem, balancing time and space complexity.</description>
+      <description>💡&#xA;&amp;quot;The best algorithm designers are not the ones who know the most algorithms, but the ones who understand the underlying principles that govern them.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 16 of the DSAR book delves into the core techniques of algorithm design, providing a rigorous and comprehensive exploration of the methodologies that underpin efficient problem-solving in computer science. The chapter begins by establishing a solid foundation in algorithm design, emphasizing the importance of selecting appropriate strategies tailored to the nature of the problem, balancing time and space complexity.</description>
     </item>
     <item>
       <title>Chapter 17</title>
       <link>http://localhost:1313/docs/part-iv/chapter-17/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:25 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv/chapter-17/</guid>
-      <description>📘 Chapter 17: Complexity Analysis link&#xD;💡&#xA;&amp;quot;The best way to predict the future is to invent it.&amp;quot; — Alan Kay&#xA;📘&#xA;Chapter 17 of DSAR delves into the fundamental aspects of complexity analysis, offering a comprehensive examination of both time and space complexities essential for evaluating algorithm performance. It begins with an introduction to the core principles of complexity analysis, including the significance of understanding how algorithms scale with input size.</description>
+      <description>💡&#xA;&amp;quot;The best way to predict the future is to invent it.&amp;quot; — Alan Kay&#xA;📘&#xA;Chapter 17 of DSAR delves into the fundamental aspects of complexity analysis, offering a comprehensive examination of both time and space complexities essential for evaluating algorithm performance. It begins with an introduction to the core principles of complexity analysis, including the significance of understanding how algorithms scale with input size. The chapter then progresses to in-depth methods for analyzing time complexity, exploring various classes such as constant, logarithmic, linear, quadratic, and exponential time complexities, and introducing asymptotic notations like Big O, Big Ω, and Big Θ for describing algorithm performance.</description>
     </item>
     <item>
       <title>Chapter 18</title>
       <link>http://localhost:1313/docs/part-iv/chapter-18/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:26 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv/chapter-18/</guid>
-      <description>📘 Chapter 18: Algorithm Optimization link&#xD;💡&#xA;&amp;quot;Optimization hones the art of making the best use of limited resources.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 18 of the DSAR book delves deeply into algorithm optimization, addressing both theoretical and practical aspects crucial for enhancing performance. It begins with an introduction to the principles of optimization, emphasizing the importance of balancing time and space complexities to achieve efficient algorithms. The chapter covers time optimization techniques, including algorithmic improvements such as adopting more efficient algorithms and leveraging data structures, as well as code-level strategies like loop optimization and function inlining.</description>
+      <description>💡&#xA;&amp;quot;Optimization hones the art of making the best use of limited resources.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 18 of the DSAR book delves deeply into algorithm optimization, addressing both theoretical and practical aspects crucial for enhancing performance. It begins with an introduction to the principles of optimization, emphasizing the importance of balancing time and space complexities to achieve efficient algorithms. The chapter covers time optimization techniques, including algorithmic improvements such as adopting more efficient algorithms and leveraging data structures, as well as code-level strategies like loop optimization and function inlining.</description>
     </item>
     <item>
       <title>Chapter 19</title>
       <link>http://localhost:1313/docs/part-iv/chapter-19/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:26 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-iv/chapter-19/</guid>
-      <description>📘 Chapter 19: Amortized Algorithms link&#xD;💡&#xA;&amp;quot;Never express yourself more clearly than you are able to think.&amp;quot; — Niels Bohr&#xA;📘&#xA;Chapter 19 of DSAR delves into the intricacies of amortized analysis, providing a thorough exploration of techniques and applications vital for understanding the performance of data structures over sequences of operations. It begins with an introduction to amortized analysis, highlighting its significance in assessing the average cost of operations where occasional costly operations are spread over a sequence.</description>
+      <description>💡&#xA;&amp;quot;Never express yourself more clearly than you are able to think.&amp;quot; — Niels Bohr&#xA;📘&#xA;Chapter 19 of DSAR delves into the intricacies of amortized analysis, providing a thorough exploration of techniques and applications vital for understanding the performance of data structures over sequences of operations. It begins with an introduction to amortized analysis, highlighting its significance in assessing the average cost of operations where occasional costly operations are spread over a sequence.</description>
     </item>
     <item>
       <title>Part V - Graph Algorithms</title>
       <link>http://localhost:1313/docs/part-v-graph-algorithms/</link>
       <pubDate>Sat, 24 Aug 2024 23:41:03 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v-graph-algorithms/</guid>
-      <description>📘 Part V: Graph Algorithms link&#xD;💡&#xA;&amp;ldquo;Success in creating AI would be the biggest event in human history. Unfortunately, it might also be the last, unless we learn how to avoid the risks.&amp;rdquo; – Stephen Hawking&#xA;📘&#xA;Part V - Graph Algorithms offers a thorough exploration of fundamental and advanced graph algorithms essential for solving complex problems in graph theory. It begins with a foundational overview of elementary graph theory, covering core concepts such as graph properties, invariants, and theorems, and practical graph construction techniques in Rust.</description>
+      <description>💡&#xA;&amp;ldquo;Success in creating AI would be the biggest event in human history. Unfortunately, it might also be the last, unless we learn how to avoid the risks.&amp;rdquo; – Stephen Hawking&#xA;📘&#xA;Part V - Graph Algorithms offers a thorough exploration of fundamental and advanced graph algorithms essential for solving complex problems in graph theory. It begins with a foundational overview of elementary graph theory, covering core concepts such as graph properties, invariants, and theorems, and practical graph construction techniques in Rust.</description>
     </item>
     <item>
       <title>Chapter 20</title>
       <link>http://localhost:1313/docs/part-v/chapter-20/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:27 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-20/</guid>
-      <description>📘 Chapter 20: Elementary Graph Theory for Algorithms link&#xD;💡&#xA;&amp;quot;Graph theory is a beautiful and powerful branch of mathematics that provides tools to solve complex problems and uncover deep insights about relationships and structures.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 20 of DSAR delves into fundamental concepts and practical applications of graph theory, essential for algorithm design. It begins with a thorough introduction to graph theory, covering basic definitions, types of graphs, and common representations such as adjacency matrices and lists.</description>
+      <description>💡&#xA;&amp;quot;Graph theory is a beautiful and powerful branch of mathematics that provides tools to solve complex problems and uncover deep insights about relationships and structures.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 20 of DSAR delves into fundamental concepts and practical applications of graph theory, essential for algorithm design. It begins with a thorough introduction to graph theory, covering basic definitions, types of graphs, and common representations such as adjacency matrices and lists.</description>
     </item>
     <item>
       <title>Chapter 21</title>
       <link>http://localhost:1313/docs/part-v/chapter-21/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:28 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-21/</guid>
-      <description>📘 Chapter 21: Graph Traversal Algorithms link&#xD;💡&#xA;&amp;quot;The great thing about graphs is that they give us a way to think about the world in a very powerful and abstract way, which can then be applied to many practical problems..&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 21 of DSAR delves into graph traversal algorithms, essential for exploring and analyzing graphs systematically. It begins with an overview of graph representations, such as adjacency matrices and lists, and their implications for traversal efficiency.</description>
+      <description>💡&#xA;&amp;quot;The great thing about graphs is that they give us a way to think about the world in a very powerful and abstract way, which can then be applied to many practical problems..&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 21 of DSAR delves into graph traversal algorithms, essential for exploring and analyzing graphs systematically. It begins with an overview of graph representations, such as adjacency matrices and lists, and their implications for traversal efficiency.</description>
     </item>
     <item>
       <title>Chapter 22</title>
       <link>http://localhost:1313/docs/part-v/chapter-22/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:28 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-22/</guid>
-      <description>📘 Chapter 22: Single-Source Shortest Paths link&#xD;💡&#xA;&amp;quot;Algorithmic thinking and reasoning will make you more effective in solving complex problems, but it’s important to use the right tool for the job.&amp;quot; — Jeff Dean&#xA;📘&#xA;Chapter 22 of DSAR delves into the critical topic of single-source shortest paths (SSSP) in graph theory, providing a comprehensive analysis of two fundamental algorithms: Dijkstra&#39;s and Bellman-Ford. The chapter begins by outlining the single-source shortest path problem, emphasizing its significance in various applications such as network routing and GPS navigation.</description>
+      <description>💡&#xA;&amp;quot;Algorithmic thinking and reasoning will make you more effective in solving complex problems, but it’s important to use the right tool for the job.&amp;quot; — Jeff Dean&#xA;📘&#xA;Chapter 22 of DSAR delves into the critical topic of single-source shortest paths (SSSP) in graph theory, providing a comprehensive analysis of two fundamental algorithms: Dijkstra&#39;s and Bellman-Ford. The chapter begins by outlining the single-source shortest path problem, emphasizing its significance in various applications such as network routing and GPS navigation.</description>
     </item>
     <item>
       <title>Chapter 23</title>
       <link>http://localhost:1313/docs/part-v/chapter-23/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:29 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-23/</guid>
-      <description>📘 Chapter 23: All-Pairs Shortest Paths link&#xD;💡&#xA;&amp;quot;The greatest value of a picture is when it forces us to notice what we never expected to see.&amp;quot; — John Tukey&#xA;📘&#xA;Chapter 23 of the DSAR book delves into the all-pairs shortest paths problem, a fundamental challenge in graph theory where the goal is to compute the shortest paths between every pair of vertices in a weighted graph. The chapter introduces the Floyd-Warshall algorithm, a dynamic programming approach that provides a straightforward $O(V^3)$ solution by iteratively refining a distance matrix to account for all possible intermediate vertices.</description>
+      <description>💡&#xA;&amp;quot;The greatest value of a picture is when it forces us to notice what we never expected to see.&amp;quot; — John Tukey&#xA;📘&#xA;Chapter 23 of the DSAR book delves into the all-pairs shortest paths problem, a fundamental challenge in graph theory where the goal is to compute the shortest paths between every pair of vertices in a weighted graph. The chapter introduces the Floyd-Warshall algorithm, a dynamic programming approach that provides a straightforward $O(V^3)$ solution by iteratively refining a distance matrix to account for all possible intermediate vertices.</description>
     </item>
     <item>
       <title>Chapter 24</title>
       <link>http://localhost:1313/docs/part-v/chapter-24/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:30 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-24/</guid>
-      <description>📘 Chapter 24: Minimum Spanning Trees link&#xD;💡&#xA;&amp;quot;The most damaging phrase in the language is: &amp;lsquo;We&amp;rsquo;ve always done it this way.&amp;rsquo;&amp;quot; — Grace Hopper&#xA;📘&#xA;Chapter 24 of DSAR delves into the fundamental concepts and algorithms related to Minimum Spanning Trees (MSTs), providing a comprehensive exploration of three key algorithms: Kruskal’s, Prim’s, and Borůvka’s. It begins with a detailed introduction to MSTs, defining their properties, uses in network design, clustering, and approximation algorithms, and their computational significance.</description>
+      <description>💡&#xA;&amp;quot;The most damaging phrase in the language is: &amp;lsquo;We&amp;rsquo;ve always done it this way.&amp;rsquo;&amp;quot; — Grace Hopper&#xA;📘&#xA;Chapter 24 of DSAR delves into the fundamental concepts and algorithms related to Minimum Spanning Trees (MSTs), providing a comprehensive exploration of three key algorithms: Kruskal’s, Prim’s, and Borůvka’s. It begins with a detailed introduction to MSTs, defining their properties, uses in network design, clustering, and approximation algorithms, and their computational significance.</description>
     </item>
     <item>
       <title>Chapter 25</title>
       <link>http://localhost:1313/docs/part-v/chapter-25/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:30 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-25/</guid>
-      <description>📘 Chapter 25: Network Flow Algorithms link&#xD;💡&#xA;&amp;quot;Algorithms are the intellectual property of computer science; they are the critical tools for understanding how to solve complex problems effectively.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 25 of DSAR delves deeply into network flow algorithms, offering a comprehensive exploration of methods to optimize the flow through a network. The chapter begins with an introduction to network flow problems, highlighting the fundamental concepts of flow networks, capacity constraints, and flow conservation.</description>
+      <description>💡&#xA;&amp;quot;Algorithms are the intellectual property of computer science; they are the critical tools for understanding how to solve complex problems effectively.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 25 of DSAR delves deeply into network flow algorithms, offering a comprehensive exploration of methods to optimize the flow through a network. The chapter begins with an introduction to network flow problems, highlighting the fundamental concepts of flow networks, capacity constraints, and flow conservation.</description>
     </item>
     <item>
       <title>Chapter 26</title>
       <link>http://localhost:1313/docs/part-v/chapter-26/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:32 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-v/chapter-26/</guid>
-      <description>📘 Chapter 26: Matchings in Bipartite Graphs link&#xD;💡&#xA;&amp;quot;Algorithms are the most direct way to make our ideas into action.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 26 of the DSAR book provides an in-depth exploration of matchings in bipartite graphs, delving into fundamental concepts, algorithms, and practical applications. It begins with a comprehensive introduction to bipartite graphs, where vertices are divided into two disjoint sets with edges only connecting vertices from different sets, and defines key concepts such as matchings, perfect matchings, and maximum matchings.</description>
+      <description>💡&#xA;&amp;quot;Algorithms are the most direct way to make our ideas into action.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 26 of the DSAR book provides an in-depth exploration of matchings in bipartite graphs, delving into fundamental concepts, algorithms, and practical applications. It begins with a comprehensive introduction to bipartite graphs, where vertices are divided into two disjoint sets with edges only connecting vertices from different sets, and defines key concepts such as matchings, perfect matchings, and maximum matchings.</description>
     </item>
     <item>
       <title>Part VI Selected Topics</title>
       <link>http://localhost:1313/docs/part-vi-selected-topics/</link>
       <pubDate>Sun, 25 Aug 2024 20:56:06 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi-selected-topics/</guid>
-      <description>📘 Part VI: Selected Topics link&#xD;💡&#xA;&amp;ldquo;Algorithms are the foundation of our digital world. They provide the means to transform ideas into action, shaping the future in ways we are only beginning to understand.&amp;rdquo; — John Nash&#xA;📘&#xA;Part VI - Selected Topics offers an in-depth exploration of specialized algorithmic techniques and their applications in modern computing. It begins with advanced recursive algorithms, covering recursion fundamentals in Rust, divide and conquer strategies, recursive data structures, memoization, dynamic programming, and more sophisticated recursive approaches.</description>
+      <description>💡&#xA;&amp;ldquo;Algorithms are the foundation of our digital world. They provide the means to transform ideas into action, shaping the future in ways we are only beginning to understand.&amp;rdquo; — John Nash&#xA;📘&#xA;Part VI - Selected Topics offers an in-depth exploration of specialized algorithmic techniques and their applications in modern computing. It begins with advanced recursive algorithms, covering recursion fundamentals in Rust, divide and conquer strategies, recursive data structures, memoization, dynamic programming, and more sophisticated recursive approaches.</description>
     </item>
     <item>
       <title>Chapter 27</title>
       <link>http://localhost:1313/docs/part-vi/chapter-27/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:45 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-27/</guid>
-      <description>📘 Chapter 27: Advanced Recursive Algorithms link&#xD;💡&#xA;&amp;quot;A recursive function calls itself, like a mirror facing a mirror, reflecting a problem into simpler and simpler versions of itself until it vanishes.&amp;quot; — Brian Kernighan&#xA;📘&#xA;Chapter 27 DSAR delves into the intricate mechanisms of recursion, exploring its theoretical underpinnings, practical applications, and advanced techniques within the Rust programming language. The chapter begins by laying a solid foundation with an introduction to recursion, emphasizing the importance of base cases, stack management, and Rust’s unique handling of ownership and borrowing in recursive functions.</description>
+      <description>💡&#xA;&amp;quot;A recursive function calls itself, like a mirror facing a mirror, reflecting a problem into simpler and simpler versions of itself until it vanishes.&amp;quot; — Brian Kernighan&#xA;📘&#xA;Chapter 27 DSAR delves into the intricate mechanisms of recursion, exploring its theoretical underpinnings, practical applications, and advanced techniques within the Rust programming language. The chapter begins by laying a solid foundation with an introduction to recursion, emphasizing the importance of base cases, stack management, and Rust’s unique handling of ownership and borrowing in recursive functions.</description>
     </item>
     <item>
       <title>Chapter 28</title>
       <link>http://localhost:1313/docs/part-vi/chapter-28/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:45 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-28/</guid>
-      <description>📘 Chapter 28: Vector, Matrix, and Tensor Operations link&#xD;💡&#xA;&amp;quot;The goal of Computer Science is to build things that work well, and that means dealing with data and algorithms efficiently.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 28 of DSAR delves into the essential operations and optimizations for vectors, matrices, and tensors, which are pivotal in computational mathematics and data science. It begins with an introduction to vector operations, covering fundamental concepts like vector addition, scalar multiplication, and dot products, while emphasizing practical implementations in Rust using efficient data structures.</description>
+      <description>💡&#xA;&amp;quot;The goal of Computer Science is to build things that work well, and that means dealing with data and algorithms efficiently.&amp;quot; — Donald Knuth&#xA;📘&#xA;Chapter 28 of DSAR delves into the essential operations and optimizations for vectors, matrices, and tensors, which are pivotal in computational mathematics and data science. It begins with an introduction to vector operations, covering fundamental concepts like vector addition, scalar multiplication, and dot products, while emphasizing practical implementations in Rust using efficient data structures.</description>
     </item>
     <item>
       <title>Chapter 29</title>
       <link>http://localhost:1313/docs/part-vi/chapter-29/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:46 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-29/</guid>
-      <description>📘 Chapter 29: Parallel and Distributed Algorithms link&#xD;💡&#xA;&amp;quot;Parallel programming is not about making programs faster, but about creating solutions that can solve larger problems or provide more accurate results than serial algorithms alone.&amp;quot; — Jeff Dean&#xA;📘&#xA;Chapter 29 of the DSAR book delves into the intricate world of parallel and distributed computing, emphasizing the need for efficient and scalable solutions in modern computing environments. It begins with a foundational overview of parallel computing, exploring essential concepts such as data and task parallelism, and the impact of parallel architectures on performance.</description>
+      <description>💡&#xA;&amp;quot;Parallel programming is not about making programs faster, but about creating solutions that can solve larger problems or provide more accurate results than serial algorithms alone.&amp;quot; — Jeff Dean&#xA;📘&#xA;Chapter 29 of the DSAR book delves into the intricate world of parallel and distributed computing, emphasizing the need for efficient and scalable solutions in modern computing environments. It begins with a foundational overview of parallel computing, exploring essential concepts such as data and task parallelism, and the impact of parallel architectures on performance.</description>
     </item>
     <item>
       <title>Chapter 30</title>
       <link>http://localhost:1313/docs/part-vi/chapter-30/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:47 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-30/</guid>
-      <description>📘 Chapter 30: Cryptographic Foundations Algorithms link&#xD;💡&#xA;&amp;quot;To keep a system secure, we need to be always on our toes. If we wait for the attackers to find vulnerabilities, it’s already too late.&amp;quot; — Whitfield Diffie&#xA;📘&#xA;Chapter 30 of DSAR delves into the essential algorithms and principles of cryptography, elucidating its foundational role in securing modern digital communications and data. It begins with an introduction to cryptography, exploring its historical evolution from classical ciphers to contemporary algorithms that address key security objectives: confidentiality, integrity, authentication, and non-repudiation.</description>
+      <description>💡&#xA;&amp;quot;To keep a system secure, we need to be always on our toes. If we wait for the attackers to find vulnerabilities, it’s already too late.&amp;quot; — Whitfield Diffie&#xA;📘&#xA;Chapter 30 of DSAR delves into the essential algorithms and principles of cryptography, elucidating its foundational role in securing modern digital communications and data. It begins with an introduction to cryptography, exploring its historical evolution from classical ciphers to contemporary algorithms that address key security objectives: confidentiality, integrity, authentication, and non-repudiation.</description>
     </item>
     <item>
       <title>Chapter 31</title>
       <link>http://localhost:1313/docs/part-vi/chapter-31/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:48 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-31/</guid>
-      <description>📘 Chapter 31: Blockchain Data Structures and Algorithms link&#xD;💡&#xA;&amp;quot;Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.&amp;quot; — Marc Kenigsberg&#xA;📘&#xA;Chapter 31 of DSAR provides a comprehensive exploration of blockchain technology, focusing on its data structures, consensus algorithms, and practical applications. It begins with an introduction to blockchain technology, emphasizing its decentralized nature, immutability, and reliance on cryptographic hash functions to ensure data integrity and security.</description>
+      <description>💡&#xA;&amp;quot;Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.&amp;quot; — Marc Kenigsberg&#xA;📘&#xA;Chapter 31 of DSAR provides a comprehensive exploration of blockchain technology, focusing on its data structures, consensus algorithms, and practical applications. It begins with an introduction to blockchain technology, emphasizing its decentralized nature, immutability, and reliance on cryptographic hash functions to ensure data integrity and security. The chapter delves into blockchain data structures, detailing the composition of blocks, the role of Merkle trees in ensuring efficient and secure transaction verification, and the continuous linking of blocks to form an immutable chain.</description>
     </item>
     <item>
       <title>Chapter 32</title>
       <link>http://localhost:1313/docs/part-vi/chapter-32/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:49 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-32/</guid>
-      <description>📘 Chapter 32: Linear Programming link&#xD;💡&#xA;&amp;quot;Optimization is a powerful tool for solving many types of problems in both science and engineering, and linear programming provides one of the most fundamental and versatile approaches to this challenge.&amp;quot; — John Nash&#xA;📘&#xA;Chapter 32 of DSAR provides a comprehensive exploration of linear programming (LP), a pivotal technique in optimization. The chapter begins with an in-depth introduction to LP, detailing its core components including objective functions, constraints, and decision variables.</description>
+      <description>💡&#xA;&amp;quot;Optimization is a powerful tool for solving many types of problems in both science and engineering, and linear programming provides one of the most fundamental and versatile approaches to this challenge.&amp;quot; — John Nash&#xA;📘&#xA;Chapter 32 of DSAR provides a comprehensive exploration of linear programming (LP), a pivotal technique in optimization. The chapter begins with an in-depth introduction to LP, detailing its core components including objective functions, constraints, and decision variables.</description>
     </item>
     <item>
       <title>Chapter 33</title>
       <link>http://localhost:1313/docs/part-vi/chapter-33/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:49 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-33/</guid>
-      <description>📘 Chapter 33: Polynomial and FFT link&#xD;💡&#xA;&amp;quot;Algorithms are the backbone of modern computing. Without them, even the most powerful hardware would be rendered useless.&amp;quot; — Donald D. Knuth&#xA;📘&#xA;Chapter 33 of the DSAR book delves into the intricacies of polynomials and the Fast Fourier Transform (FFT), focusing on both their theoretical foundations and practical applications. It begins with a detailed examination of polynomials, covering their basic properties, operations (addition, subtraction, multiplication, and division), and evaluation techniques, particularly Horner’s method.</description>
+      <description>💡&#xA;&amp;quot;Algorithms are the backbone of modern computing. Without them, even the most powerful hardware would be rendered useless.&amp;quot; — Donald D. Knuth&#xA;📘&#xA;Chapter 33 of the DSAR book delves into the intricacies of polynomials and the Fast Fourier Transform (FFT), focusing on both their theoretical foundations and practical applications. It begins with a detailed examination of polynomials, covering their basic properties, operations (addition, subtraction, multiplication, and division), and evaluation techniques, particularly Horner’s method.</description>
     </item>
     <item>
       <title>Chapter 34</title>
       <link>http://localhost:1313/docs/part-vi/chapter-34/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:50 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-34/</guid>
-      <description>📘 Chapter 34: String Matching Algorithms link&#xD;💡&#xA;&amp;quot;Algorithmic thinking is a fundamental part of our toolbox, helping us solve problems with precision and elegance.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 34 of DSAR book offers a detailed exploration of string matching algorithms, covering both foundational and advanced techniques. It begins with an introduction to the string matching problem, emphasizing its significance in fields such as text search, bioinformatics, and data retrieval.</description>
+      <description>💡&#xA;&amp;quot;Algorithmic thinking is a fundamental part of our toolbox, helping us solve problems with precision and elegance.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 34 of DSAR book offers a detailed exploration of string matching algorithms, covering both foundational and advanced techniques. It begins with an introduction to the string matching problem, emphasizing its significance in fields such as text search, bioinformatics, and data retrieval. The chapter delves into classic algorithms, including the Naive algorithm, which is straightforward but inefficient for large texts; the Knuth-Morris-Pratt (KMP) algorithm, known for its preprocessing phase that facilitates faster search; the Boyer-Moore algorithm, which employs heuristics to skip unnecessary comparisons; and the Rabin-Karp algorithm, which utilizes hashing for efficient multiple pattern searches.</description>
     </item>
     <item>
       <title>Chapter 35</title>
       <link>http://localhost:1313/docs/part-vi/chapter-35/</link>
       <pubDate>Sat, 24 Aug 2024 23:42:51 +0700</pubDate>
       <guid>http://localhost:1313/docs/part-vi/chapter-35/</guid>
-      <description>📘 Chapter 35: Approximate Algorithms link&#xD;💡&#xA;&amp;quot;Algorithms are the soul of computing, and the pursuit of approximate algorithms is the art of making the impossible possible, where exactness gives way to practicality.&amp;quot; — David P. Williamson&#xA;📘&#xA;Chapter 35 of DSAR delves into the critical domain of approximate algorithms, offering a comprehensive exploration of their theory, techniques, and practical implementation in Rust. The chapter begins by defining approximate algorithms, emphasizing their role in providing feasible solutions to computationally intractable problems, such as NP-hard and NP-complete challenges, where exact solutions are impractical.</description>
+      <description>💡&#xA;&amp;quot;Algorithms are the soul of computing, and the pursuit of approximate algorithms is the art of making the impossible possible, where exactness gives way to practicality.&amp;quot; — David P. Williamson&#xA;📘&#xA;Chapter 35 of DSAR delves into the critical domain of approximate algorithms, offering a comprehensive exploration of their theory, techniques, and practical implementation in Rust. The chapter begins by defining approximate algorithms, emphasizing their role in providing feasible solutions to computationally intractable problems, such as NP-hard and NP-complete challenges, where exact solutions are impractical.</description>
+    </item>
+    <item>
+      <title>Chapter 36</title>
+      <link>http://localhost:1313/docs/part-vi/chapter-36/</link>
+      <pubDate>Sat, 24 Aug 2024 23:42:52 +0700</pubDate>
+      <guid>http://localhost:1313/docs/part-vi/chapter-36/</guid>
+      <description>💡&#xA;&amp;quot;To me, a good algorithm is a beautiful thing, but its beauty is often in its simplicity. The most complex algorithms are those that use randomization effectively to simplify otherwise complex problems.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 36 of DSAR book delves into the sophisticated realm of probabilistic and randomized algorithms, providing a comprehensive exploration of their theoretical foundations, practical applications, and associated challenges. The chapter begins with an introduction to probabilistic algorithms, emphasizing their use of randomness to achieve efficient solutions, often with expected polynomial time complexity.</description>
     </item>
     <item>
       <title>Closing Remark</title>
@@ -343,13 +350,6 @@
       <pubDate>Sat, 24 Aug 2024 23:50:58 +0700</pubDate>
       <guid>http://localhost:1313/docs/closing-remark/</guid>
       <description>💡&#xA;&amp;quot;The first principle is that you must not fool yourself — and you are the easiest person to fool.&amp;quot; — Richard Feynman&#xA;🚪&#xA;In the dynamic realm of software engineering, the mastery of data structures and algorithms often defines the line between average and exceptional performance. While proficiency in programming languages and object-oriented design provides a solid foundation, it is the depth of understanding and skill in implementing algorithms that truly distinguishes top-tier software engineers.</description>
-    </item>
-    <item>
-      <title>Chapter 36</title>
-      <link>http://localhost:1313/docs/part-vi/chapter-36/</link>
-      <pubDate>Sat, 24 Aug 2024 23:42:52 +0700</pubDate>
-      <guid>http://localhost:1313/docs/part-vi/chapter-36/</guid>
-      <description>📘 Chapter 36: Probabilistic and Randomized Algorithms link&#xD;💡&#xA;&amp;quot;To me, a good algorithm is a beautiful thing, but its beauty is often in its simplicity. The most complex algorithms are those that use randomization effectively to simplify otherwise complex problems.&amp;quot; — Donald E. Knuth&#xA;📘&#xA;Chapter 36 of DSAR book delves into the sophisticated realm of probabilistic and randomized algorithms, providing a comprehensive exploration of their theoretical foundations, practical applications, and associated challenges.</description>
     </item>
   </channel>
 </rss>

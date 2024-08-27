@@ -10,8 +10,6 @@ toc: true
 ---
 
 {{% alert icon="📘" context="info" %}}
-### **DSAR's Table of Contents**
-
 Explore the chapters below to dive deep into the advanced programming data structures and algorithms using Rust.
 {{% /alert %}}
 

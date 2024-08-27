@@ -10,12 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 15: Graphs and Graph Representations
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>A graph is a data structure that mirrors life itself. Complex relationships, dependencies, and networks are all captured within its vertices and edges. To master graphs is to master the very structure of thought.</em>" — Edsger W. Dijkstra</strong>
 {{% /alert %}}

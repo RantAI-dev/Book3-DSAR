@@ -9,12 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 18: Algorithm Optimization
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Optimization hones the art of making the best use of limited resources.</em>" — Donald E. Knuth</strong>
 {{% /alert %}}

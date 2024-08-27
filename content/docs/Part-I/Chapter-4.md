@@ -10,12 +10,6 @@ katex: true
 toc: true
 ---
 
-<center>
-
-# 📘 Chapter 4: Design of Algorithms and Running Times
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The art of programming is the skill of controlling complexity.</em>" — Marijn Haverbeke</strong>
 {{% /alert %}}

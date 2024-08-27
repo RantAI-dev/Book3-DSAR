@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 14: Disjoint Sets
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Data structures and algorithms are the building blocks of software engineering, and understanding them deeply is crucial to solving complex problems efficiently.</em>" — Donald E. Knuth</strong>

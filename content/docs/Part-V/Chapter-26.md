@@ -9,11 +9,6 @@ draft: false
 toc: true
 katex: true
 ---
-<center>
-
-# 📘 Chapter 26: Matchings in Bipartite Graphs
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Algorithms are the most direct way to make our ideas into action.</em>" — Donald Knuth</strong>

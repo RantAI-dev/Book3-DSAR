@@ -10,12 +10,6 @@ toc: true
 katex: true
 ---
 
-<center>
-
-# 📘 Chapter 20: Elementary Graph Theory for Algorithms
-
-</center>
-
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Graph theory is a beautiful and powerful branch of mathematics that provides tools to solve complex problems and uncover deep insights about relationships and structures.</em>" — Donald E. Knuth</strong>
 {{% /alert %}}
