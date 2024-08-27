@@ -1,19 +1,13 @@
 ---
 weight: 600
 title: "How to Use DSAR"
-description: ""
+description: "Guide for Students and Lecturers"
 icon: "article"
 date: "2024-08-24T23:46:41+07:00"
 lastmod: "2024-08-24T23:46:41+07:00"
 draft: false
 toc: true
 ---
-
-<center>
-
-# 📘 Chapter : Guide for Students and Lecturers
-
-</center>
 
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The more you know about something, the more you realize how much you don’t know. The more you learn, the more you understand, and the more you realize how much more there is to learn.</em>" — Richard Feynman</strong>
