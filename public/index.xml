@@ -37,7 +37,7 @@
       <description>💡&#xA;&amp;quot;Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.&amp;quot; — Albert Einstein&#xA;📘&#xA;It is with immense pride and enthusiasm that I introduce Modern Data Structures and Algorithms in Rust (DSAR), a groundbreaking work born out of the vision and determination of my sons and their dedicated team at RantAI. Their journey from inspiring ideas to creating a tech company at the cutting edge of digital twin technology and quantum computing has been nothing short of extraordinary.</description>
     </item>
     <item>
-      <title>Foreword-2</title>
+      <title>Foreword</title>
       <link>http://localhost:1313/docs/foreword-2/</link>
       <pubDate>Sat, 24 Aug 2024 23:23:41 +0700</pubDate>
       <guid>http://localhost:1313/docs/foreword-2/</guid>
@@ -48,7 +48,7 @@
       <link>http://localhost:1313/docs/how-to-use-dsar/</link>
       <pubDate>Sat, 24 Aug 2024 23:46:41 +0700</pubDate>
       <guid>http://localhost:1313/docs/how-to-use-dsar/</guid>
-      <description>📘 Chapter : Guide for Students and Lecturers link&#xD;💡&#xA;&amp;quot;The more you know about something, the more you realize how much you don’t know. The more you learn, the more you understand, and the more you realize how much more there is to learn.&amp;quot; — Richard Feynman&#xA;🎓&#xA;For Students: link&#xD;Modern Data Structures and Algorithms in Rust (DSAR) is an open-source web book available for free at https://dsar.</description>
+      <description>💡&#xA;&amp;quot;The more you know about something, the more you realize how much you don’t know. The more you learn, the more you understand, and the more you realize how much more there is to learn.&amp;quot; — Richard Feynman&#xA;🎓&#xA;For Students: link&#xD;Modern Data Structures and Algorithms in Rust (DSAR) is an open-source web book available for free at https://dsar.rantai.dev. We encourage you to dive deeply into this resource and actively contribute to its development.</description>
     </item>
     <item>
       <title>Part I - Fundamentals of Algorithms in Rust</title>
